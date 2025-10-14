@@ -1,6 +1,9 @@
 #define CROW_MAIN
 
 #include "crow_all.h"
+#include "Transaction.h"
+#include "TransactionAPI.h"
+#include "TransactionReporter.h"
 #include <iostream>
 using namespace std;
 using namespace crow;
@@ -17,14 +20,26 @@ void logTransaction(char* buf); // log transactions if needed
 int main()
 {
 	std::ofstream logStream("../public/log.txt"); // reset log data
+	crow::mustache::set_global_base("../public/templates/");
 	logStream.close();
 
 	//Create web application and socket
 	SimpleApp app;
+	TransactionReporter reporter;
 	
 	// index root route
-	CROW_ROUTE(app, "/").methods(crow::HTTPMethod::POST, crow::HTTPMethod::GET)([](const crow::request& req, crow::response& res) {
+	CROW_ROUTE(app, "/").methods(crow::HTTPMethod::GET)([](const crow::request& req, crow::response& res) {
 		sendHtml(res, "index");
+	});
+
+	CROW_ROUTE(app, "/generate_report").methods(crow::HTTPMethod::GET)([&]() {
+		
+        auto page = crow::mustache::load("report.html");
+
+        crow::mustache::context ctx;
+        ctx["report"] = reporter.generateReport();
+		
+        return page.render(ctx);
 	});
 
 	//route for JS files	
@@ -84,7 +99,7 @@ void sendScript(crow::response& res, std::string filename) {
 	sendFile(res, "scripts/" + filename, "text/javascript");
 }
 
-//Function to save transaction data to a file
+//Function to save transaction data to a file (not necessary?)
 void logTransaction(char* buf) {
 	std::ofstream out("../public/log.txt");
 	std::string s = std::string(buf);

@@ -8,5 +8,6 @@ class TransactionReporter {
 	std::vector<Transaction> dbDriver();
 public:
 	void addTransaction(Transaction t);
-	std::string generateReport();
+	std::string generateReport(bool HTMLFriendly=false);
+	
 };
