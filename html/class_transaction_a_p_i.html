@@ -73,6 +73,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_transaction_a_p_i-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">TransactionAPI Class Reference</div></div>
 </div><!--header-->
@@ -88,6 +89,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a01d86b9dec3f915ec66a94dd28f74d51" id="r_a01d86b9dec3f915ec66a94dd28f74d51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01d86b9dec3f915ec66a94dd28f74d51">generateTransaction</a> (double moneyGain, std::string details, std::string transactionInitiatingTeam)</td></tr>
 <tr class="memdesc:a01d86b9dec3f915ec66a94dd28f74d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">API for other teams to use. Generates a transaction and uploads it to the database.  <br /></td></tr>
 <tr class="separator:a01d86b9dec3f915ec66a94dd28f74d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a48dceb9e598080725f5f55a38ce53a30" id="r_a48dceb9e598080725f5f55a38ce53a30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48dceb9e598080725f5f55a38ce53a30">updateDatabase</a> (<a class="el" href="class_transaction.html">Transaction</a> t)</td></tr>
+<tr class="memdesc:a48dceb9e598080725f5f55a38ce53a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends a transaction record to the database  <br /></td></tr>
+<tr class="separator:a48dceb9e598080725f5f55a38ce53a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>an API for other teams to interface with the <a class="el" href="class_transaction.html" title="Holds all data related to a transaction.">Transaction</a> team modules </p>
@@ -128,9 +135,42 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a48dceb9e598080725f5f55a38ce53a30" name="a48dceb9e598080725f5f55a38ce53a30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48dceb9e598080725f5f55a38ce53a30">&#9670;&#160;</a></span>updateDatabase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TransactionAPI::updateDatabase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_transaction.html">Transaction</a></td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sends a transaction record to the database </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>the transaction to be sent to the database </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_transaction_a_p_i_8h_source.html">TransactionAPI.h</a></li>
-<li><b>TransactionAPI.cpp</b></li>
+<li><a class="el" href="_transaction_a_p_i_8cpp.html">TransactionAPI.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

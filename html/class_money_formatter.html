@@ -73,6 +73,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_money_formatter-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">MoneyFormatter Class Reference</div></div>
 </div><!--header-->
@@ -88,6 +89,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aac2a368d01feee5aaace099bd99a3cc2" id="r_aac2a368d01feee5aaace099bd99a3cc2"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac2a368d01feee5aaace099bd99a3cc2">formatMoney</a> (double value)</td></tr>
 <tr class="memdesc:aac2a368d01feee5aaace099bd99a3cc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">formats decimals into a money format (like 123.467 to $123.47)  <br /></td></tr>
 <tr class="separator:aac2a368d01feee5aaace099bd99a3cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a24ec91a3e1d17c4f033def3a072c3cb6" id="r_a24ec91a3e1d17c4f033def3a072c3cb6"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24ec91a3e1d17c4f033def3a072c3cb6">twoDecimalCorrection</a> = 100</td></tr>
+<tr class="memdesc:a24ec91a3e1d17c4f033def3a072c3cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">constant for rounding to the nearest hundredth (0.01)  <br /></td></tr>
+<tr class="separator:a24ec91a3e1d17c4f033def3a072c3cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>for formatting any variables storing money </p>
@@ -126,9 +133,34 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a24ec91a3e1d17c4f033def3a072c3cb6" name="a24ec91a3e1d17c4f033def3a072c3cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24ec91a3e1d17c4f033def3a072c3cb6">&#9670;&#160;</a></span>twoDecimalCorrection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int MoneyFormatter::twoDecimalCorrection = 100</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>constant for rounding to the nearest hundredth (0.01) </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_money_formatter_8h_source.html">MoneyFormatter.h</a></li>
-<li><b>MoneyFormatter.cpp</b></li>
+<li><a class="el" href="_money_formatter_8cpp.html">MoneyFormatter.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

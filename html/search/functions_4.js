@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['empty_5fobject_0',['empty_object',['../classcrow_1_1json_1_1wvalue.html#a8875c69038bd1a9c23485f099e471b96',1,'crow::json::wvalue']]],
-  ['end_1',['end',['../structcrow_1_1response.html#abef42200eca49c70dc1f5140ee3603ab',1,'crow::response::end()'],['../structcrow_1_1response.html#a10da2e17421586b68f27ef1533ec677b',1,'crow::response::end(const std::string &amp;body_part)']]],
-  ['estimate_5flength_2',['estimate_length',['../classcrow_1_1json_1_1wvalue.html#a5af23d208ed3d066a0fb5339350978c6',1,'crow::json::wvalue']]]
+  ['logtransaction_0',['logTransaction',['../main_8cpp.html#aecf8b17e98679a6d6ea0d9b1ed1c4b8f',1,'main.cpp']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['node_0',['Node',['../structcrow_1_1_trie_1_1_node.html',1,'crow::Trie']]],
-  ['nt_1',['nt',['../classcrow_1_1json_1_1rvalue.html#a9bf75ffd4603990be7d0eaa192ac54fb',1,'crow::json::rvalue']]]
+  ['updatedatabase_0',['updateDatabase',['../class_transaction_a_p_i.html#a48dceb9e598080725f5f55a38ce53a30',1,'TransactionAPI']]]
 ];

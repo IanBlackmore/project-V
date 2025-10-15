@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data_0',['data',['../structcrow_1_1http__parser.html#ac110503546750f343ad176dea0f48aa0',1,'crow::http_parser']]]
+  ['moneygain_0',['moneyGain',['../class_transaction.html#ab140e458c373dc285370897cae479f6e',1,'Transaction']]]
 ];

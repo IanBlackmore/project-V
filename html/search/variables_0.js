@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['body_0',['body',['../structcrow_1_1multipart_1_1part.html#acbfa0a181e86a89dccdf70d985365695',1,'crow::multipart::part::body'],['../structcrow_1_1response.html#ae9f3cc153eac05954f1f4e599527892d',1,'crow::response::body']]],
-  ['boundary_1',['boundary',['../structcrow_1_1multipart_1_1message.html#a56eb4bbf64d4930663ac4d5dd7b77d34',1,'crow::multipart::message']]]
+  ['details_0',['details',['../class_transaction.html#a84935cd3a99095eb9fad0a611dfef2c5',1,'Transaction']]]
 ];
