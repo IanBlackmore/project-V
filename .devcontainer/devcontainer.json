@@ -1,0 +1,21 @@
+{
+  "name": "Crow Webserver Dev Container",
+  "image": "docker.io/library/webserver_dev:latest",
+  "runArgs": [
+    "--network=host",
+    "-p", "23500:23500",
+    "-v", "${localWorkspaceFolder}:/app"
+  ],
+  "workspaceFolder": "/app",
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "twxs.cmake"
+      ]
+    }
+  },
+  "postCreateCommand": "apt update && apt install -y build-essential cmake libboost-all-dev"
+}
