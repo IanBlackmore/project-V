@@ -2,12 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Transaction index</title>
+    <title>Transaction Report</title>
     <link rel="stylesheet" href="/get_style/styles.css">
 </head>
 <body>
+    <header>
+        <h1>Transaction Report</h1>
+        <a href="/" class="btn">Back to Dashboard</a>
+    </header>
 
-    <p class="report">Report:<br>{{report}} </p>
+    <main>
+        <section class="report-container">
+            <h2>Summary</h2>
+            <div class="report">
+                {{report}}
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <p>&copy; 2025 Transaction System. All rights reserved.</p>
+    </footer>
 </body>
 </html>
