@@ -6,5 +6,5 @@ class TransactionAPI {
 	std::string dbString;
 	void updateDatabase(Transaction t);
 public:
-	void generateTransaction(double moneyGain, std::string details);
+	void generateTransaction(double moneyGain, std::string details, std::string transactionInitiatingTeam);
 };

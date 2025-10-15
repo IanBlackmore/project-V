@@ -20,11 +20,12 @@ class Transaction {
 	std::string transactionInitiatingTeam;
 public:
 	Transaction();
-	Transaction(double moneyGain, std::string details);
-	Transaction(double moneyGain, std::string details, std::string timestamp, unsigned long id);
+	Transaction(double moneyGain, std::string details, std::string transactionInitiatingTeam);
+	Transaction(double moneyGain, std::string details, std::string transactionInitiatingTeam, std::string timestamp, unsigned long id);
 	double getMoneyGain();
 	std::string getDetails();
 	std::string getTimestamp();
+	std::string getTransactionInitiatingTeam();
 	unsigned long getID();
 };
 

@@ -19,7 +19,7 @@ Transaction::Transaction(double moneyGain, std::string details, std::string tran
     this->transactionInitiatingTeam = transactionInitiatingTeam;
     id = 0;
 }
-Transaction::Transaction(double moneyGain, std::string details, std::string timestamp, unsigned long id, std::string transactionInitiatingTeam) {
+Transaction::Transaction(double moneyGain, std::string details, std::string transactionInitiatingTeam, std::string timestamp, unsigned long id) {
     this->details = details;
     this->moneyGain = moneyGain;
     this->timestamp = timestamp;

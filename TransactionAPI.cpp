@@ -5,7 +5,7 @@
 void TransactionAPI::updateDatabase(Transaction t) {
     // do db update stuff, use db's api for this
 }
-void TransactionAPI::generateTransaction(double moneyGain, std::string details) {
-    Transaction t(moneyGain, details);
+void TransactionAPI::generateTransaction(double moneyGain, std::string details, std::string transactionInitiatingTeam) {
+    Transaction t(moneyGain, details, transactionInitiatingTeam);
     updateDatabase(t);
 }
