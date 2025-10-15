@@ -16,6 +16,8 @@ class Transaction {
 	std::string timestamp;
 	// ideally, this will be handled by an auto increment in the db
 	unsigned long id;
+	// contains the team that initiated the transaction
+	std::string transactionInitiatingTeam;
 public:
 	Transaction();
 	Transaction(double moneyGain, std::string details);
