@@ -26,6 +26,7 @@ int main()
 	//Create web application and socket
 	SimpleApp app;
 	TransactionReporter reporter;
+	TransactionAPI api;
 	
 	// index root route
 	CROW_ROUTE(app, "/").methods(crow::HTTPMethod::GET)([](const crow::request& req, crow::response& res) {
@@ -41,6 +42,31 @@ int main()
 		
         return page.render(ctx);
 	});
+
+	//Mock Route for API transactions 
+	CROW_ROUTE(app, "/add_transaction/<double>/<string>/<string>")
+    .methods(crow::HTTPMethod::POST)
+    ([&](const crow::request& req, crow::response& res,
+         double moneyGain, std::string details, std::string teamName) {
+
+        TransactionAPI api;
+        api.generateTransaction(moneyGain, details, teamName);
+
+        std::ostringstream response;
+        response << "Transaction created:\n"
+                 << "Amount: " << moneyGain << "\n"
+                 << "Details: " << details << "\n"
+                 << "Team: " << teamName << "\n";
+
+        res.code = 200;
+        res.write(response.str());
+        res.end();
+    });
+
+
+
+
+
 
 	//route for JS files	
 	CROW_ROUTE(app, "/get_script/<string>") ([](const crow::request& req, crow::response& res, string filename) {
