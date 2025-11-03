@@ -12,12 +12,11 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-    #COPY CMakeLists.txt .
+#COPY CMakeLists.txt .
 COPY app .
 RUN rm -rf build
 RUN mkdir build
-WORKDIR build
-RUN cmake .. 
-RUN make
+WORKDIR /app/build
 
-CMD ["./proj_V"]
+
+CMD ["../runCommands.sh"]
