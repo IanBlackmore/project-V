@@ -377,3 +377,4 @@ CTestTestfile.cmake
 _deps
 CMakeUserPresets.json
 build/*
+app/build/*
