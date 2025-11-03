@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    container_name: proj_v_transactions
+    ports:
+      -  23500:23500
+    volumes:
+      - ./app:/app
+    restart: unless-stopped
