@@ -14,9 +14,5 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 #COPY CMakeLists.txt .
 COPY app .
-RUN rm -rf build
-RUN mkdir build
-WORKDIR /app/build
 
-
-CMD ["../runCommands.sh"]
+CMD ["./runCommands.sh"]

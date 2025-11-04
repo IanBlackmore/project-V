@@ -1,4 +1,8 @@
 #!/bin/bash
+rm -rf build
+mkdir build
+cd build
 cmake .. 
 make
-./proj_V
+./apiTests
+./proj_v

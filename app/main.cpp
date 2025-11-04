@@ -50,7 +50,7 @@ int main()
          double moneyGain, std::string details, std::string teamName) {
 
         TransactionAPI api;
-		std::ostringstream response = api.generateTransaction(moneyGain, details, teamName);
+		std::string response = api.generateTransaction(moneyGain, details, teamName);
 
         //response << "Transaction created:\n"
         //         << "Amount: " << moneyGain << "\n"
@@ -58,7 +58,7 @@ int main()
         //         << "Team: " << teamName << "\n";
 
         res.code = 200;
-        res.write(response.str());
+        res.write(response);
         res.end();
     });
 

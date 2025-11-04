@@ -11,5 +11,5 @@ public:
 	/// @param moneyGain money gained or lsot
 	/// @param details details of the transaction
 	/// @param transactionInitiatingTeam team that initiated the transaction
-	std::ostringstream generateTransaction(double moneyGain, std::string details, std::string transactionInitiatingTeam);
+	std::string generateTransaction(double moneyGain, std::string details, std::string transactionInitiatingTeam);
 };
