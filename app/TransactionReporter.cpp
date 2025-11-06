@@ -31,12 +31,12 @@ std::vector<Transaction> TransactionReporter::dbDriver()
 
 std::string TransactionReporter::generateReport()
 {
+    // pull information from database, simulated by dbDriver. Maybe add dbHandler?
+    transactionList = this->dbDriver();
     if (transactionList.size() == 0) {
         return "No transactions recorded";
     }
     std::string s = "";
-    // pull information from database, simulated by dbDriver. Maybe add dbHandler?
-    transactionList = this->dbDriver();
     std::vector<Transaction> revenueList;
     std::vector<Transaction> costList;
     double totalCost = 0;
