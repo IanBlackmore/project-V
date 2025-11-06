@@ -5,7 +5,7 @@
 #include "TransactionAPI.h"
 
 
-BOOST_AUTO_TEST_CASE(test_name) 
+BOOST_AUTO_TEST_CASE(generate_transaction) 
 {
     TransactionAPI api;
     std::string result;

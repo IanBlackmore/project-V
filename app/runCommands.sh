@@ -5,4 +5,5 @@ cd build
 cmake .. 
 make
 ./apiTests
+./MoneyFormatterTests
 ./proj_v

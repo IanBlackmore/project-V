@@ -1,7 +1,6 @@
-Instructions:
-run in podman container on webserver_dev/image that has asio, boost, linux etc
-cd into build
-do commands:
-cmake ..
-make
-run proj_v for final project 
+How to run:
+run docker-compose up --build while in this directory for best results
+
+Adding tests:
+Follow formatting and update CMakeLists.txt accordingly
+Update runCommands.sh to run your test executable before the project
