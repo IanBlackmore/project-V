@@ -25,6 +25,7 @@ class Transaction {
 
 
 public:
+	// LOCAL TEST CODE
 	//test var remove later
 	static inline int counter = 0;
 	/// @brief basic default constructor

@@ -8,6 +8,7 @@ class TransactionAPI {
 	void addDBTransaction(Transaction t);
 	static void updateDBBudget(double moneyGain);
 
+	//TEST VAR
 	/// @brief test variable
 	static inline double budget = 0;
 
@@ -16,6 +17,8 @@ class TransactionAPI {
 	/// @return True if money out is within budget, false if not
 	bool validateTransaction(double moneyGain);
 public:
+	/// @brief Gets the current budget
+	/// @return Returns a double of the budget
 	static double getBudget();
 	/// @brief API for other teams to use. Generates a transaction and uploads it to the database
 	/// @param moneyGain money gained or lsot
