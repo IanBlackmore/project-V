@@ -21,7 +21,12 @@ class Transaction {
 	unsigned long id;
 	/// @brief contains the team that initiated the transaction
 	std::string transactionInitiatingTeam;
+
+
+
 public:
+	//test var remove later
+	static inline int counter = 0;
 	/// @brief basic default constructor
 	Transaction();
 	/// @brief generates a transaction from moneyGain, details and the team that made it. Will autogenerate a timestamp.

@@ -4,6 +4,7 @@
 #include "Transaction.h"
 #include "TransactionAPI.h"
 #include "TransactionReporter.h"
+#include "MoneyFormatter.h"
 #include <iostream>
 using namespace std;
 using namespace crow;
@@ -15,10 +16,10 @@ void sendImage(crow::response& res, std::string filename); //Send images
 void sendScript(crow::response& res, std::string filename); //send Javascript files
 void sendFile(crow::response& res, std::string filename, std::string contentType); //generic file sender
 void sendHtml(crow::response& res, std::string filename); //send html files
-void logTransaction(char* buf); // log transactions if needed
 
 int main()
 {
+
 	std::ofstream logStream("../public/log.txt"); // reset log data
 	crow::mustache::set_global_base("../public/templates/");
 	logStream.close();
@@ -49,22 +50,32 @@ int main()
     ([&](const crow::request& req, crow::response& res,
          double moneyGain, std::string details, std::string teamName) {
 
-        TransactionAPI api;
+        
 		std::string response = api.generateTransaction(moneyGain, details, teamName);
 
-        //response << "Transaction created:\n"
-        //         << "Amount: " << moneyGain << "\n"
-        //         << "Details: " << details << "\n"
-        //         << "Team: " << teamName << "\n";
-
-        res.code = 200;
-        res.write(response);
-        res.end();
+		std::string invalidResponse = "Invalid";
+		if (response == invalidResponse) {
+			res.code = 409;
+			double budget = TransactionAPI::getBudget();
+			std::string errResponse = "Insufficient budget for this transaction\nTransaction denied\n";
+			
+			errResponse += "Current budget: " + MoneyFormatter::formatMoney(budget) + "\n";
+			errResponse += "Your transaction cost: " + MoneyFormatter::formatMoney(moneyGain) + "\n";
+			res.write(errResponse);
+			res.end();
+		}
+		else {
+			// TESTING CODE UNTIL DB GETS LINKED
+			Transaction::counter++;
+			Transaction t(moneyGain, details, teamName);
+			reporter.addTransaction(t);
+			
+			// END OF TEST CODE, REPLACE WITH DB FUNCTIONALITY
+			res.code = 200;
+			res.write(response);
+			res.end();
+		}
     });
-
-
-
-
 
 
 	//route for JS files	
@@ -81,9 +92,7 @@ int main()
 	CROW_ROUTE(app, "/get_image/<string>") ([](const crow::request& req, crow::response& res, string filename) {
 		sendImage(res, filename);
 	});
-
 	
-
 	//Start webserver
 	app.port(23500).multithreaded().run();
 	return 1;
@@ -125,9 +134,9 @@ void sendScript(crow::response& res, std::string filename) {
 }
 
 //Function to save transaction data to a file (not necessary?)
-void logTransaction(char* buf) {
-	std::ofstream out("../public/log.txt");
-	std::string s = std::string(buf);
-	out << s.c_str() << std::endl; //writing data
-	out.close();
-}
+//void logTransaction(char* buf) {
+//	std::ofstream out("../public/log.txt");
+//	std::string s = std::string(buf);
+//	out << s.c_str() << std::endl; //writing data
+//	out.close();
+//}
