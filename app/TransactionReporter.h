@@ -9,6 +9,7 @@ class TransactionReporter {
 	/// @brief stub for getting db information. will likely be changed later to "getTransactionData" or something like that
 	/// @return returns a vector of transactions
 	std::vector<Transaction> dbDriver();
+	std::vector<Transaction> getDBTransactions();
 public:
 	/// @brief adds a transaction to the internal list
 	/// @param t the transaction to be added

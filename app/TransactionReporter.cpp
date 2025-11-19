@@ -5,6 +5,7 @@
 #include <thread>
 #include "Transaction.h"
 #include "TransactionReporter.h"
+#include "TransactionAPI.h"
 #include "MoneyFormatter.h"
 
 void TransactionReporter::addTransaction(Transaction t)
@@ -29,10 +30,18 @@ std::vector<Transaction> TransactionReporter::dbDriver()
     return temp;
 }
 
+std::vector<Transaction> TransactionReporter::getDBTransactions() {
+    return dbDriver();
+}
+
 std::string TransactionReporter::generateReport()
 {
     // pull information from database, simulated by dbDriver. Maybe add dbHandler?
-    transactionList = this->dbDriver();
+    
+    //functionality should look more like this once DB is integrated
+    //transactionList = this->getDBTransactions();
+
+    // for now for testing it works without that line
     if (transactionList.size() == 0) {
         return "No transactions recorded";
     }
@@ -71,7 +80,7 @@ std::string TransactionReporter::generateReport()
     }
     if (revenueList.size() == 0)
     {
-        s += "No revenue in this report";
+        s += "No revenue in this report\n";
     }
     s += "\n";
     s += "---------------------------------------------------\n";
@@ -89,12 +98,20 @@ std::string TransactionReporter::generateReport()
     }
     if (costList.size() == 0)
     {
-        s += "No costs in this report";
+        s += "No costs in this report\n";
     }
+    s += "\n";
     s += "---------------------------------------------------\n";
     s += "                     TOTAL                         \n";
     s += "---------------------------------------------------\n";
     s += MoneyFormatter::formatMoney(totalRevenue + totalCost) + "\n";
 
+    s += "\n";
+    s += "---------------------------------------------------\n";
+    s += "                REMAINING BUDGET                   \n";
+    s += "---------------------------------------------------\n";
+    
+    
+    s += MoneyFormatter::formatMoney(TransactionAPI::getBudget()) + "\n";
     return s;
 }
