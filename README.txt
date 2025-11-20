@@ -1,10 +1,10 @@
-#Transactions-API
+# Transactions-API
 
 ## Table of Contents
 
-*[Project Overview]
-*[Install & Build]
-*[API Route]
+ *[Project Overview]
+ *[Install & Build]
+ *[API Route]
 
 ## Project Overview
 
