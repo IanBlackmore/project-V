@@ -8,6 +8,11 @@
 
 ## Project Overview
 
+This project is a C++ application that proccess and reports fincial transactions using REST API routes using CROW. The application collects transactions data, categorizes revenue and cost, formats monetary values and generates a structed HTML report viewable through teh web interface.
+
+The system runs in a Podman container and uses Boost ASIO and linux libraries. It includes compents for handling transactions, formatting currency values, updating budget and generating reports. 
+
+
 ## Install & Build
 
 
