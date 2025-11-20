@@ -3,9 +3,9 @@
 
 ## Table of Contents
 
-*[Project Overview]
-*[Install & Build]
-*[API Route]
+*[Project Overview](#project-overview)
+*[Install & Build](#install-&-build)
+*[API Route](#api-route)
 
 ## Project Overview
 
