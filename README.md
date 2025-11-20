@@ -1,5 +1,4 @@
-
-#Transactions-API
+# Transactions-API
 
 ## Table of Contents
 
