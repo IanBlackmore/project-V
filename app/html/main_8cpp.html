@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>transaction team: main.cpp File Reference</title>
+<title>My Project: main.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">transaction team
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -77,10 +77,11 @@ $(function() {
   <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;crow_all.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="crow__all_8h_source.html">crow_all.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_transaction_8h_source.html">Transaction.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_transaction_a_p_i_8h_source.html">TransactionAPI.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_transaction_reporter_8h_source.html">TransactionReporter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_money_formatter_8h_source.html">MoneyFormatter.h</a>&quot;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -90,18 +91,16 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a79d2fb94d42d2867afaf1dd5b22f98c1" id="r_a79d2fb94d42d2867afaf1dd5b22f98c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79d2fb94d42d2867afaf1dd5b22f98c1">sendStyle</a> (crow::response &amp;res, std::string filename)</td></tr>
+<tr class="memitem:a79d2fb94d42d2867afaf1dd5b22f98c1" id="r_a79d2fb94d42d2867afaf1dd5b22f98c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79d2fb94d42d2867afaf1dd5b22f98c1">sendStyle</a> (<a class="el" href="structcrow_1_1response.html">crow::response</a> &amp;res, std::string filename)</td></tr>
 <tr class="separator:a79d2fb94d42d2867afaf1dd5b22f98c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2304690fa862e7b47032f5f347e96435" id="r_a2304690fa862e7b47032f5f347e96435"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2304690fa862e7b47032f5f347e96435">sendImage</a> (crow::response &amp;res, std::string filename)</td></tr>
+<tr class="memitem:a2304690fa862e7b47032f5f347e96435" id="r_a2304690fa862e7b47032f5f347e96435"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2304690fa862e7b47032f5f347e96435">sendImage</a> (<a class="el" href="structcrow_1_1response.html">crow::response</a> &amp;res, std::string filename)</td></tr>
 <tr class="separator:a2304690fa862e7b47032f5f347e96435"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6f90adb81df0ce1d7ed4ceda46eea21" id="r_ad6f90adb81df0ce1d7ed4ceda46eea21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6f90adb81df0ce1d7ed4ceda46eea21">sendScript</a> (crow::response &amp;res, std::string filename)</td></tr>
+<tr class="memitem:ad6f90adb81df0ce1d7ed4ceda46eea21" id="r_ad6f90adb81df0ce1d7ed4ceda46eea21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6f90adb81df0ce1d7ed4ceda46eea21">sendScript</a> (<a class="el" href="structcrow_1_1response.html">crow::response</a> &amp;res, std::string filename)</td></tr>
 <tr class="separator:ad6f90adb81df0ce1d7ed4ceda46eea21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dfea30687098250a58c8537e88834a8" id="r_a0dfea30687098250a58c8537e88834a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dfea30687098250a58c8537e88834a8">sendFile</a> (crow::response &amp;res, std::string filename, std::string contentType)</td></tr>
+<tr class="memitem:a0dfea30687098250a58c8537e88834a8" id="r_a0dfea30687098250a58c8537e88834a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dfea30687098250a58c8537e88834a8">sendFile</a> (<a class="el" href="structcrow_1_1response.html">crow::response</a> &amp;res, std::string filename, std::string contentType)</td></tr>
 <tr class="separator:a0dfea30687098250a58c8537e88834a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad09ae299a53da1689f8c66beb9c53864" id="r_ad09ae299a53da1689f8c66beb9c53864"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad09ae299a53da1689f8c66beb9c53864">sendHtml</a> (crow::response &amp;res, std::string filename)</td></tr>
+<tr class="memitem:ad09ae299a53da1689f8c66beb9c53864" id="r_ad09ae299a53da1689f8c66beb9c53864"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad09ae299a53da1689f8c66beb9c53864">sendHtml</a> (<a class="el" href="structcrow_1_1response.html">crow::response</a> &amp;res, std::string filename)</td></tr>
 <tr class="separator:ad09ae299a53da1689f8c66beb9c53864"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecf8b17e98679a6d6ea0d9b1ed1c4b8f" id="r_aecf8b17e98679a6d6ea0d9b1ed1c4b8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecf8b17e98679a6d6ea0d9b1ed1c4b8f">logTransaction</a> (char *buf)</td></tr>
-<tr class="separator:aecf8b17e98679a6d6ea0d9b1ed1c4b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -121,23 +120,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aecf8b17e98679a6d6ea0d9b1ed1c4b8f" name="aecf8b17e98679a6d6ea0d9b1ed1c4b8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecf8b17e98679a6d6ea0d9b1ed1c4b8f">&#9670;&#160;</a></span>logTransaction()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void logTransaction </td>
-          <td>(</td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>buf</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
 
@@ -164,7 +146,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void sendFile </td>
           <td>(</td>
-          <td class="paramtype">crow::response &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em>, </span></td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1response.html">crow::response</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -190,7 +172,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void sendHtml </td>
           <td>(</td>
-          <td class="paramtype">crow::response &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em>, </span></td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1response.html">crow::response</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -211,7 +193,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void sendImage </td>
           <td>(</td>
-          <td class="paramtype">crow::response &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em>, </span></td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1response.html">crow::response</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -232,7 +214,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void sendScript </td>
           <td>(</td>
-          <td class="paramtype">crow::response &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em>, </span></td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1response.html">crow::response</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -253,7 +235,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void sendStyle </td>
           <td>(</td>
-          <td class="paramtype">crow::response &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em>, </span></td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1response.html">crow::response</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>

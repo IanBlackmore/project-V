@@ -1,0 +1,268 @@
+\doxysection{crow\+::request Struct Reference}
+\hypertarget{structcrow_1_1request}{}\label{structcrow_1_1request}\index{crow::request@{crow::request}}
+
+
+An HTTP request.  
+
+
+
+
+{\ttfamily \#include $<$crow\+\_\+all.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structcrow_1_1request_a838c9a8c9a5eb2283d57e66f3630b5a6}{request}} ()
+\begin{DoxyCompactList}\small\item\em Construct an empty request. (sets the method to {\ttfamily GET}) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structcrow_1_1request_a111b70ddb2a100a79415b539e152e145}{request}} (\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4}{HTTPMethod}} \mbox{\hyperlink{structcrow_1_1request_a79ac893dd6ad4ec5752dea0cec65ce71}{method}}, std\+::string \mbox{\hyperlink{structcrow_1_1request_a72f5504a56f9ba70d7d33f86aaf9bc8a}{raw\+\_\+url}}, std\+::string \mbox{\hyperlink{structcrow_1_1request_aa3df34c56847d6d42887e73655276167}{url}}, \mbox{\hyperlink{classcrow_1_1query__string}{query\+\_\+string}} \mbox{\hyperlink{structcrow_1_1request_a745d5a94e9e9ae1fed64674aae0194b0}{url\+\_\+params}}, \mbox{\hyperlink{namespacecrow_a9c2fb4390329e219e3d1532e81925b87}{ci\+\_\+map}} \mbox{\hyperlink{structcrow_1_1request_a86d6c2a93b50611c4a5b5643b6da6540}{headers}}, std\+::string \mbox{\hyperlink{structcrow_1_1request_afff683ed63a9e4067683786c3c6218c2}{body}}, unsigned char http\+\_\+major, unsigned char http\+\_\+minor, bool has\+\_\+keep\+\_\+alive, bool has\+\_\+close\+\_\+connection, bool is\+\_\+upgrade)
+\begin{DoxyCompactList}\small\item\em Construct a request with all values assigned. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structcrow_1_1request_a98b85749921fc63e57d6ea891fe17391}{add\+\_\+header}} (std\+::string key, std\+::string value)
+\item 
+const std\+::string \& \mbox{\hyperlink{structcrow_1_1request_aafcd554876d567781c9efe166653f240}{get\+\_\+header\+\_\+value}} (const std\+::string \&key) const
+\item 
+bool \mbox{\hyperlink{structcrow_1_1request_ac369309c6be61c011b93a5b8cf14515a}{check\+\_\+version}} (unsigned char major, unsigned char minor) const
+\item 
+const \mbox{\hyperlink{classcrow_1_1query__string}{query\+\_\+string}} \mbox{\hyperlink{structcrow_1_1request_af2679155b496b7d8d80a82c0d9a175b5}{get\+\_\+body\+\_\+params}} () const
+\begin{DoxyCompactList}\small\item\em Get the body as parameters in QS format. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Completion\+Handler $>$ }\\void \mbox{\hyperlink{structcrow_1_1request_a33aa146a3914864ce82ef22136451601}{post}} (Completion\+Handler handler)
+\begin{DoxyCompactList}\small\item\em Send data to whoever made this request with a completion handler and return immediately. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Completion\+Handler $>$ }\\void \mbox{\hyperlink{structcrow_1_1request_ac3e72e3fe415c68618dee999e3984160}{dispatch}} (Completion\+Handler handler)
+\begin{DoxyCompactList}\small\item\em Send data to whoever made this request with a completion handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4}{HTTPMethod}} \mbox{\hyperlink{structcrow_1_1request_a79ac893dd6ad4ec5752dea0cec65ce71}{method}}
+\item 
+std\+::string \mbox{\hyperlink{structcrow_1_1request_a72f5504a56f9ba70d7d33f86aaf9bc8a}{raw\+\_\+url}}
+\begin{DoxyCompactList}\small\item\em The full URL containing the {\ttfamily ?} and URL parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structcrow_1_1request_aa3df34c56847d6d42887e73655276167}{url}}
+\begin{DoxyCompactList}\small\item\em The endpoint without any parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcrow_1_1query__string}{query\+\_\+string}} \mbox{\hyperlink{structcrow_1_1request_a745d5a94e9e9ae1fed64674aae0194b0}{url\+\_\+params}}
+\begin{DoxyCompactList}\small\item\em The parameters associated with the request. (everything after the {\ttfamily ?} in the URL) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacecrow_a9c2fb4390329e219e3d1532e81925b87}{ci\+\_\+map}} \mbox{\hyperlink{structcrow_1_1request_a86d6c2a93b50611c4a5b5643b6da6540}{headers}}
+\item 
+std\+::string \mbox{\hyperlink{structcrow_1_1request_afff683ed63a9e4067683786c3c6218c2}{body}}
+\item 
+std\+::string \mbox{\hyperlink{structcrow_1_1request_aa8a04e30e2249f04614f233d25ffaad7}{remote\+\_\+ip\+\_\+address}}
+\begin{DoxyCompactList}\small\item\em The IP address from which the request was sent. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{structcrow_1_1request_aa51aa45a03c2efe581e9bf9f011e8378}{http\+\_\+ver\+\_\+major}}
+\item 
+unsigned char \mbox{\hyperlink{structcrow_1_1request_ac0603f5ffe5c7b93c0ca3a5bed4ebacc}{http\+\_\+ver\+\_\+minor}}
+\item 
+bool \mbox{\hyperlink{structcrow_1_1request_a5148ce95969d261e50ee977c1dc7960c}{keep\+\_\+alive}}
+\begin{DoxyCompactList}\small\item\em Whether or not the server should send a {\ttfamily connection\+: Keep-\/\+Alive} header to the client. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structcrow_1_1request_a4a3e4bcd0cd626ceaee38f4c17d28c8d}{close\+\_\+connection}}
+\begin{DoxyCompactList}\small\item\em Whether or not the server should shut down the TCP connection once a response is sent. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structcrow_1_1request_ac4b5e2e32e2e0b633211925158b03559}{upgrade}}
+\begin{DoxyCompactList}\small\item\em Whether or noth the server should change the HTTP connection to a different connection. \end{DoxyCompactList}\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structcrow_1_1request_a9de0c8721b1c26aab317db0bcdcf1b8a}{middleware\+\_\+context}} \{\}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structcrow_1_1request_a7b0dbe01000f103306f1b8370e0394b4}{middleware\+\_\+container}} \{\}
+\item 
+asio\+::io\+\_\+service \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structcrow_1_1request_a3752ac015c6ba0047842a4594e4e9ad5}{io\+\_\+service}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An HTTP request. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structcrow_1_1request_a838c9a8c9a5eb2283d57e66f3630b5a6}\label{structcrow_1_1request_a838c9a8c9a5eb2283d57e66f3630b5a6} 
+\index{crow::request@{crow::request}!request@{request}}
+\index{request@{request}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{request()}{request()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily crow\+::request\+::request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct an empty request. (sets the method to {\ttfamily GET}) 
+
+\Hypertarget{structcrow_1_1request_a111b70ddb2a100a79415b539e152e145}\label{structcrow_1_1request_a111b70ddb2a100a79415b539e152e145} 
+\index{crow::request@{crow::request}!request@{request}}
+\index{request@{request}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{request()}{request()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily crow\+::request\+::request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4}{HTTPMethod}}}]{method,  }\item[{std\+::string}]{raw\+\_\+url,  }\item[{std\+::string}]{url,  }\item[{\mbox{\hyperlink{classcrow_1_1query__string}{query\+\_\+string}}}]{url\+\_\+params,  }\item[{\mbox{\hyperlink{namespacecrow_a9c2fb4390329e219e3d1532e81925b87}{ci\+\_\+map}}}]{headers,  }\item[{std\+::string}]{body,  }\item[{unsigned char}]{http\+\_\+major,  }\item[{unsigned char}]{http\+\_\+minor,  }\item[{bool}]{has\+\_\+keep\+\_\+alive,  }\item[{bool}]{has\+\_\+close\+\_\+connection,  }\item[{bool}]{is\+\_\+upgrade }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a request with all values assigned. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structcrow_1_1request_a98b85749921fc63e57d6ea891fe17391}\label{structcrow_1_1request_a98b85749921fc63e57d6ea891fe17391} 
+\index{crow::request@{crow::request}!add\_header@{add\_header}}
+\index{add\_header@{add\_header}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{add\_header()}{add\_header()}}
+{\footnotesize\ttfamily void crow\+::request\+::add\+\_\+header (\begin{DoxyParamCaption}\item[{std\+::string}]{key,  }\item[{std\+::string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1request_ac369309c6be61c011b93a5b8cf14515a}\label{structcrow_1_1request_ac369309c6be61c011b93a5b8cf14515a} 
+\index{crow::request@{crow::request}!check\_version@{check\_version}}
+\index{check\_version@{check\_version}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{check\_version()}{check\_version()}}
+{\footnotesize\ttfamily bool crow\+::request\+::check\+\_\+version (\begin{DoxyParamCaption}\item[{unsigned char}]{major,  }\item[{unsigned char}]{minor }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1request_ac3e72e3fe415c68618dee999e3984160}\label{structcrow_1_1request_ac3e72e3fe415c68618dee999e3984160} 
+\index{crow::request@{crow::request}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily template$<$typename Completion\+Handler $>$ \\
+void crow\+::request\+::dispatch (\begin{DoxyParamCaption}\item[{Completion\+Handler}]{handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send data to whoever made this request with a completion handler. 
+
+\Hypertarget{structcrow_1_1request_af2679155b496b7d8d80a82c0d9a175b5}\label{structcrow_1_1request_af2679155b496b7d8d80a82c0d9a175b5} 
+\index{crow::request@{crow::request}!get\_body\_params@{get\_body\_params}}
+\index{get\_body\_params@{get\_body\_params}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{get\_body\_params()}{get\_body\_params()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classcrow_1_1query__string}{query\+\_\+string}} crow\+::request\+::get\+\_\+body\+\_\+params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the body as parameters in QS format. 
+
+This is meant to be used with requests of type "{}application/x-\/www-\/form-\/urlencoded"{} \Hypertarget{structcrow_1_1request_aafcd554876d567781c9efe166653f240}\label{structcrow_1_1request_aafcd554876d567781c9efe166653f240} 
+\index{crow::request@{crow::request}!get\_header\_value@{get\_header\_value}}
+\index{get\_header\_value@{get\_header\_value}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{get\_header\_value()}{get\_header\_value()}}
+{\footnotesize\ttfamily const std\+::string \& crow\+::request\+::get\+\_\+header\+\_\+value (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1request_a33aa146a3914864ce82ef22136451601}\label{structcrow_1_1request_a33aa146a3914864ce82ef22136451601} 
+\index{crow::request@{crow::request}!post@{post}}
+\index{post@{post}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{post()}{post()}}
+{\footnotesize\ttfamily template$<$typename Completion\+Handler $>$ \\
+void crow\+::request\+::post (\begin{DoxyParamCaption}\item[{Completion\+Handler}]{handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send data to whoever made this request with a completion handler and return immediately. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structcrow_1_1request_afff683ed63a9e4067683786c3c6218c2}\label{structcrow_1_1request_afff683ed63a9e4067683786c3c6218c2} 
+\index{crow::request@{crow::request}!body@{body}}
+\index{body@{body}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{body}{body}}
+{\footnotesize\ttfamily std\+::string crow\+::request\+::body}
+
+\Hypertarget{structcrow_1_1request_a4a3e4bcd0cd626ceaee38f4c17d28c8d}\label{structcrow_1_1request_a4a3e4bcd0cd626ceaee38f4c17d28c8d} 
+\index{crow::request@{crow::request}!close\_connection@{close\_connection}}
+\index{close\_connection@{close\_connection}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{close\_connection}{close\_connection}}
+{\footnotesize\ttfamily bool crow\+::request\+::close\+\_\+connection}
+
+
+
+Whether or not the server should shut down the TCP connection once a response is sent. 
+
+\Hypertarget{structcrow_1_1request_a86d6c2a93b50611c4a5b5643b6da6540}\label{structcrow_1_1request_a86d6c2a93b50611c4a5b5643b6da6540} 
+\index{crow::request@{crow::request}!headers@{headers}}
+\index{headers@{headers}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{headers}{headers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacecrow_a9c2fb4390329e219e3d1532e81925b87}{ci\+\_\+map}} crow\+::request\+::headers}
+
+\Hypertarget{structcrow_1_1request_aa51aa45a03c2efe581e9bf9f011e8378}\label{structcrow_1_1request_aa51aa45a03c2efe581e9bf9f011e8378} 
+\index{crow::request@{crow::request}!http\_ver\_major@{http\_ver\_major}}
+\index{http\_ver\_major@{http\_ver\_major}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{http\_ver\_major}{http\_ver\_major}}
+{\footnotesize\ttfamily unsigned char crow\+::request\+::http\+\_\+ver\+\_\+major}
+
+\Hypertarget{structcrow_1_1request_ac0603f5ffe5c7b93c0ca3a5bed4ebacc}\label{structcrow_1_1request_ac0603f5ffe5c7b93c0ca3a5bed4ebacc} 
+\index{crow::request@{crow::request}!http\_ver\_minor@{http\_ver\_minor}}
+\index{http\_ver\_minor@{http\_ver\_minor}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{http\_ver\_minor}{http\_ver\_minor}}
+{\footnotesize\ttfamily unsigned char crow\+::request\+::http\+\_\+ver\+\_\+minor}
+
+\Hypertarget{structcrow_1_1request_a3752ac015c6ba0047842a4594e4e9ad5}\label{structcrow_1_1request_a3752ac015c6ba0047842a4594e4e9ad5} 
+\index{crow::request@{crow::request}!io\_service@{io\_service}}
+\index{io\_service@{io\_service}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{io\_service}{io\_service}}
+{\footnotesize\ttfamily asio\+::io\+\_\+service\texorpdfstring{$\ast$}{*} crow\+::request\+::io\+\_\+service \{\}}
+
+\Hypertarget{structcrow_1_1request_a5148ce95969d261e50ee977c1dc7960c}\label{structcrow_1_1request_a5148ce95969d261e50ee977c1dc7960c} 
+\index{crow::request@{crow::request}!keep\_alive@{keep\_alive}}
+\index{keep\_alive@{keep\_alive}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{keep\_alive}{keep\_alive}}
+{\footnotesize\ttfamily bool crow\+::request\+::keep\+\_\+alive}
+
+
+
+Whether or not the server should send a {\ttfamily connection\+: Keep-\/\+Alive} header to the client. 
+
+\Hypertarget{structcrow_1_1request_a79ac893dd6ad4ec5752dea0cec65ce71}\label{structcrow_1_1request_a79ac893dd6ad4ec5752dea0cec65ce71} 
+\index{crow::request@{crow::request}!method@{method}}
+\index{method@{method}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{method}{method}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4}{HTTPMethod}} crow\+::request\+::method}
+
+\Hypertarget{structcrow_1_1request_a7b0dbe01000f103306f1b8370e0394b4}\label{structcrow_1_1request_a7b0dbe01000f103306f1b8370e0394b4} 
+\index{crow::request@{crow::request}!middleware\_container@{middleware\_container}}
+\index{middleware\_container@{middleware\_container}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{middleware\_container}{middleware\_container}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} crow\+::request\+::middleware\+\_\+container \{\}}
+
+\Hypertarget{structcrow_1_1request_a9de0c8721b1c26aab317db0bcdcf1b8a}\label{structcrow_1_1request_a9de0c8721b1c26aab317db0bcdcf1b8a} 
+\index{crow::request@{crow::request}!middleware\_context@{middleware\_context}}
+\index{middleware\_context@{middleware\_context}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{middleware\_context}{middleware\_context}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} crow\+::request\+::middleware\+\_\+context \{\}}
+
+\Hypertarget{structcrow_1_1request_a72f5504a56f9ba70d7d33f86aaf9bc8a}\label{structcrow_1_1request_a72f5504a56f9ba70d7d33f86aaf9bc8a} 
+\index{crow::request@{crow::request}!raw\_url@{raw\_url}}
+\index{raw\_url@{raw\_url}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{raw\_url}{raw\_url}}
+{\footnotesize\ttfamily std\+::string crow\+::request\+::raw\+\_\+url}
+
+
+
+The full URL containing the {\ttfamily ?} and URL parameters. 
+
+\Hypertarget{structcrow_1_1request_aa8a04e30e2249f04614f233d25ffaad7}\label{structcrow_1_1request_aa8a04e30e2249f04614f233d25ffaad7} 
+\index{crow::request@{crow::request}!remote\_ip\_address@{remote\_ip\_address}}
+\index{remote\_ip\_address@{remote\_ip\_address}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{remote\_ip\_address}{remote\_ip\_address}}
+{\footnotesize\ttfamily std\+::string crow\+::request\+::remote\+\_\+ip\+\_\+address}
+
+
+
+The IP address from which the request was sent. 
+
+\Hypertarget{structcrow_1_1request_ac4b5e2e32e2e0b633211925158b03559}\label{structcrow_1_1request_ac4b5e2e32e2e0b633211925158b03559} 
+\index{crow::request@{crow::request}!upgrade@{upgrade}}
+\index{upgrade@{upgrade}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{upgrade}{upgrade}}
+{\footnotesize\ttfamily bool crow\+::request\+::upgrade}
+
+
+
+Whether or noth the server should change the HTTP connection to a different connection. 
+
+\Hypertarget{structcrow_1_1request_aa3df34c56847d6d42887e73655276167}\label{structcrow_1_1request_aa3df34c56847d6d42887e73655276167} 
+\index{crow::request@{crow::request}!url@{url}}
+\index{url@{url}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily std\+::string crow\+::request\+::url}
+
+
+
+The endpoint without any parameters. 
+
+\Hypertarget{structcrow_1_1request_a745d5a94e9e9ae1fed64674aae0194b0}\label{structcrow_1_1request_a745d5a94e9e9ae1fed64674aae0194b0} 
+\index{crow::request@{crow::request}!url\_params@{url\_params}}
+\index{url\_params@{url\_params}!crow::request@{crow::request}}
+\doxysubsubsection{\texorpdfstring{url\_params}{url\_params}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcrow_1_1query__string}{query\+\_\+string}} crow\+::request\+::url\+\_\+params}
+
+
+
+The parameters associated with the request. (everything after the {\ttfamily ?} in the URL) 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{crow__all_8h}{crow\+\_\+all.\+h}}\end{DoxyCompactItemize}

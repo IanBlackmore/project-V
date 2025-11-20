@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>transaction team: TransactionAPI Class Reference</title>
+<title>My Project: TransactionAPI Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">transaction team
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -73,7 +73,10 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_transaction_a_p_i-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">TransactionAPI Class Reference</div></div>
 </div><!--header-->
@@ -86,27 +89,80 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a01d86b9dec3f915ec66a94dd28f74d51" id="r_a01d86b9dec3f915ec66a94dd28f74d51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01d86b9dec3f915ec66a94dd28f74d51">generateTransaction</a> (double moneyGain, std::string details, std::string transactionInitiatingTeam)</td></tr>
-<tr class="memdesc:a01d86b9dec3f915ec66a94dd28f74d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">API for other teams to use. Generates a transaction and uploads it to the database.  <br /></td></tr>
-<tr class="separator:a01d86b9dec3f915ec66a94dd28f74d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98989f632ca5a948e58a80f56007d956" id="r_a98989f632ca5a948e58a80f56007d956"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98989f632ca5a948e58a80f56007d956">generateTransaction</a> (double moneyGain, std::string details, std::string transactionInitiatingTeam)</td></tr>
+<tr class="memdesc:a98989f632ca5a948e58a80f56007d956"><td class="mdescLeft">&#160;</td><td class="mdescRight">API for other teams to use. Generates a transaction and uploads it to the database.  <br /></td></tr>
+<tr class="separator:a98989f632ca5a948e58a80f56007d956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a746166de11abcc2a4a6a81c8bf3d1d7e" id="r_a746166de11abcc2a4a6a81c8bf3d1d7e"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a746166de11abcc2a4a6a81c8bf3d1d7e">getBudget</a> ()</td></tr>
+<tr class="memdesc:a746166de11abcc2a4a6a81c8bf3d1d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current budget.  <br /></td></tr>
+<tr class="separator:a746166de11abcc2a4a6a81c8bf3d1d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a48dceb9e598080725f5f55a38ce53a30" id="r_a48dceb9e598080725f5f55a38ce53a30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48dceb9e598080725f5f55a38ce53a30">updateDatabase</a> (<a class="el" href="class_transaction.html">Transaction</a> t)</td></tr>
-<tr class="memdesc:a48dceb9e598080725f5f55a38ce53a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends a transaction record to the database  <br /></td></tr>
-<tr class="separator:a48dceb9e598080725f5f55a38ce53a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4158d12b6e00873201a716919ae70e8" id="r_ae4158d12b6e00873201a716919ae70e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4158d12b6e00873201a716919ae70e8">addDBTransaction</a> (<a class="el" href="class_transaction.html">Transaction</a> t)</td></tr>
+<tr class="memdesc:ae4158d12b6e00873201a716919ae70e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends a transaction record to the database  <br /></td></tr>
+<tr class="separator:ae4158d12b6e00873201a716919ae70e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1014183cf7fdb6f06992c15d91f07830" id="r_a1014183cf7fdb6f06992c15d91f07830"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1014183cf7fdb6f06992c15d91f07830">validateTransaction</a> (double moneyGain)</td></tr>
+<tr class="memdesc:a1014183cf7fdb6f06992c15d91f07830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates a transaction to be performed.  <br /></td></tr>
+<tr class="separator:a1014183cf7fdb6f06992c15d91f07830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a9f92922357db6e1edb117daabc2333dd" id="r_a9f92922357db6e1edb117daabc2333dd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f92922357db6e1edb117daabc2333dd">updateDBBudget</a> (double moneyGain)</td></tr>
+<tr class="separator:a9f92922357db6e1edb117daabc2333dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:af86de517b2ad2c6efc35408427218cf7" id="r_af86de517b2ad2c6efc35408427218cf7"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af86de517b2ad2c6efc35408427218cf7">budget</a> = 0</td></tr>
+<tr class="memdesc:af86de517b2ad2c6efc35408427218cf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">test variable  <br /></td></tr>
+<tr class="separator:af86de517b2ad2c6efc35408427218cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>an API for other teams to interface with the <a class="el" href="class_transaction.html" title="Holds all data related to a transaction.">Transaction</a> team modules </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a01d86b9dec3f915ec66a94dd28f74d51" name="a01d86b9dec3f915ec66a94dd28f74d51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01d86b9dec3f915ec66a94dd28f74d51">&#9670;&#160;</a></span>generateTransaction()</h2>
+<a id="ae4158d12b6e00873201a716919ae70e8" name="ae4158d12b6e00873201a716919ae70e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4158d12b6e00873201a716919ae70e8">&#9670;&#160;</a></span>addDBTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TransactionAPI::addDBTransaction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_transaction.html">Transaction</a></td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sends a transaction record to the database </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>the transaction to be sent to the database </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a98989f632ca5a948e58a80f56007d956" name="a98989f632ca5a948e58a80f56007d956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98989f632ca5a948e58a80f56007d956">&#9670;&#160;</a></span>generateTransaction()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TransactionAPI::generateTransaction </td>
+          <td class="memname">std::string TransactionAPI::generateTransaction </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>moneyGain</em>, </span></td>
         </tr>
@@ -135,8 +191,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a48dceb9e598080725f5f55a38ce53a30" name="a48dceb9e598080725f5f55a38ce53a30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48dceb9e598080725f5f55a38ce53a30">&#9670;&#160;</a></span>updateDatabase()</h2>
+<a id="a746166de11abcc2a4a6a81c8bf3d1d7e" name="a746166de11abcc2a4a6a81c8bf3d1d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a746166de11abcc2a4a6a81c8bf3d1d7e">&#9670;&#160;</a></span>getBudget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,9 +201,62 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void TransactionAPI::updateDatabase </td>
+          <td class="memname">double TransactionAPI::getBudget </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_transaction.html">Transaction</a></td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the current budget. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns a double of the budget </dd></dl>
+
+</div>
+</div>
+<a id="a9f92922357db6e1edb117daabc2333dd" name="a9f92922357db6e1edb117daabc2333dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f92922357db6e1edb117daabc2333dd">&#9670;&#160;</a></span>updateDBBudget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TransactionAPI::updateDBBudget </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>moneyGain</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1014183cf7fdb6f06992c15d91f07830" name="a1014183cf7fdb6f06992c15d91f07830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1014183cf7fdb6f06992c15d91f07830">&#9670;&#160;</a></span>validateTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TransactionAPI::validateTransaction </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>moneyGain</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -158,13 +267,39 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>sends a transaction record to the database </p>
+<p>Validates a transaction to be performed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>the transaction to be sent to the database </td></tr>
+    <tr><td class="paramname">moneyGain</td><td>Money in or out </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True if money out is within budget, false if not </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af86de517b2ad2c6efc35408427218cf7" name="af86de517b2ad2c6efc35408427218cf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af86de517b2ad2c6efc35408427218cf7">&#9670;&#160;</a></span>budget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double TransactionAPI::budget = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>test variable </p>
 
 </div>
 </div>

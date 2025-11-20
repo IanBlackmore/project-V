@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>transaction team: crow::detail::partial_context&lt; Middlewares &gt; Struct Template Reference</title>
+<title>My Project: crow::detail::partial_context&lt; Middlewares &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">transaction team
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>crow</b></li><li class="navelem"><b>detail</b></li><li class="navelem"><a class="el" href="structcrow_1_1detail_1_1partial__context.html">partial_context</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecrow.html">crow</a></li><li class="navelem"><a class="el" href="namespacecrow_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="structcrow_1_1detail_1_1partial__context.html">partial_context</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -82,6 +82,8 @@ $(function() {
   <div class="headertitle"><div class="title">crow::detail::partial_context&lt; Middlewares &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="crow__all_8h_source.html">crow_all.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for crow::detail::partial_context&lt; Middlewares &gt;:</div>
 <div class="dyncontent">
@@ -91,21 +93,83 @@ Inheritance diagram for crow::detail::partial_context&lt; Middlewares &gt;:</div
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a96e8bff131568e0e6ecffd75b5b29e09" id="r_a96e8bff131568e0e6ecffd75b5b29e09"><td class="memItemLeft" align="right" valign="top"><a id="a96e8bff131568e0e6ecffd75b5b29e09" name="a96e8bff131568e0e6ecffd75b5b29e09"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>parent_context</b> = typename black_magic::pop_back&lt;Middlewares...&gt;::template rebind&lt;<a class="el" href="structcrow_1_1detail_1_1partial__context.html">::crow::detail::partial_context</a>&gt;</td></tr>
+<tr class="memitem:a96e8bff131568e0e6ecffd75b5b29e09" id="r_a96e8bff131568e0e6ecffd75b5b29e09"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96e8bff131568e0e6ecffd75b5b29e09">parent_context</a> = typename black_magic::pop_back&lt;Middlewares...&gt;::template rebind&lt;<a class="el" href="structcrow_1_1detail_1_1partial__context.html">::crow::detail::partial_context</a>&gt;</td></tr>
 <tr class="separator:a96e8bff131568e0e6ecffd75b5b29e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae00cbeb2da4d329ca96684dd1439d261" id="r_ae00cbeb2da4d329ca96684dd1439d261"><td class="memTemplParams" colspan="2"><a id="ae00cbeb2da4d329ca96684dd1439d261" name="ae00cbeb2da4d329ca96684dd1439d261"></a>
-template&lt;int N&gt; </td></tr>
-<tr class="memitem:ae00cbeb2da4d329ca96684dd1439d261"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>partial</b> = typename std::conditional&lt;N == sizeof...(Middlewares) - 1, <a class="el" href="structcrow_1_1detail_1_1partial__context.html">partial_context</a>, typename parent_context::template partial&lt;N&gt;&gt;::type</td></tr>
+<tr class="memitem:ae00cbeb2da4d329ca96684dd1439d261" id="r_ae00cbeb2da4d329ca96684dd1439d261"><td class="memTemplParams" colspan="2">template&lt;int N&gt; </td></tr>
+<tr class="memitem:ae00cbeb2da4d329ca96684dd1439d261"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae00cbeb2da4d329ca96684dd1439d261">partial</a> = typename std::conditional&lt;N == sizeof...(Middlewares) - 1, <a class="el" href="structcrow_1_1detail_1_1partial__context.html">partial_context</a>, typename parent_context::template <a class="el" href="#ae00cbeb2da4d329ca96684dd1439d261">partial</a>&lt;N&gt;&gt;::type</td></tr>
 <tr class="separator:ae00cbeb2da4d329ca96684dd1439d261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a632760a6e5242592f35fdf9c4233eb3c" id="r_a632760a6e5242592f35fdf9c4233eb3c"><td class="memTemplParams" colspan="2"><a id="a632760a6e5242592f35fdf9c4233eb3c" name="a632760a6e5242592f35fdf9c4233eb3c"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a632760a6e5242592f35fdf9c4233eb3c"><td class="memTemplItemLeft" align="right" valign="top">T::context &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> ()</td></tr>
+<tr class="memitem:a632760a6e5242592f35fdf9c4233eb3c" id="r_a632760a6e5242592f35fdf9c4233eb3c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a632760a6e5242592f35fdf9c4233eb3c"><td class="memTemplItemLeft" align="right" valign="top">T::context &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a632760a6e5242592f35fdf9c4233eb3c">get</a> ()</td></tr>
 <tr class="separator:a632760a6e5242592f35fdf9c4233eb3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a96e8bff131568e0e6ecffd75b5b29e09" name="a96e8bff131568e0e6ecffd75b5b29e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96e8bff131568e0e6ecffd75b5b29e09">&#9670;&#160;</a></span>parent_context</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structcrow_1_1detail_1_1partial__context.html">crow::detail::partial_context</a>&lt; Middlewares &gt;::parent_context = typename black_magic::pop_back&lt;Middlewares...&gt;::template rebind&lt;<a class="el" href="structcrow_1_1detail_1_1partial__context.html">::crow::detail::partial_context</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae00cbeb2da4d329ca96684dd1439d261" name="ae00cbeb2da4d329ca96684dd1439d261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae00cbeb2da4d329ca96684dd1439d261">&#9670;&#160;</a></span>partial</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structcrow_1_1detail_1_1partial__context.html">crow::detail::partial_context</a>&lt; Middlewares &gt;::partial = typename std::conditional&lt;N == sizeof...(Middlewares) - 1, <a class="el" href="structcrow_1_1detail_1_1partial__context.html">partial_context</a>, typename parent_context::template <a class="el" href="#ae00cbeb2da4d329ca96684dd1439d261">partial</a>&lt;N&gt;&gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a632760a6e5242592f35fdf9c4233eb3c" name="a632760a6e5242592f35fdf9c4233eb3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a632760a6e5242592f35fdf9c4233eb3c">&#9670;&#160;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T::context &amp; <a class="el" href="structcrow_1_1detail_1_1partial__context.html">crow::detail::partial_context</a>&lt; Middlewares &gt;::get </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="crow__all_8h_source.html">crow_all.h</a></li>
 </ul>

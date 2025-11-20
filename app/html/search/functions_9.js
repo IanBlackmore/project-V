@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['lo_0',['lo',['../classcrow_1_1json_1_1rvalue.html#ae34b409f3f467c3e6e0b34d0ba625967',1,'crow::json::rvalue']]],
-  ['loglevel_1',['loglevel',['../classcrow_1_1_crow.html#adaaea481094e3f4488569c991772d27f',1,'crow::Crow']]]
+  ['json_0',['json',['../structcrow_1_1session_1_1multi__value.html#aa2ec92a7ee3d96e3d93d6ed4c00af013',1,'crow::session::multi_value']]]
 ];

@@ -1,0 +1,222 @@
+\doxysection{crow\+::detail\+::task\+\_\+timer Class Reference}
+\hypertarget{classcrow_1_1detail_1_1task__timer}{}\label{classcrow_1_1detail_1_1task__timer}\index{crow::detail::task\_timer@{crow::detail::task\_timer}}
+
+
+A class for scheduling functions to be called after a specific amount of ticks. A tick is equal to 1 second.  
+
+
+
+
+{\ttfamily \#include $<$crow\+\_\+all.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_a3d26d472f56d5085b08e3045585618f1}{task\+\_\+type}} = std\+::function$<$void()$>$
+\item 
+using \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aab902a1634760b439ab748d1cb0af56a}{identifier\+\_\+type}} = size\+\_\+t
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_a25715a0b6a6fae2d87c3aaef1d9387be}{task\+\_\+timer}} (asio\+::io\+\_\+service \&io\+\_\+service)
+\item 
+\mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aea48cde928f27e3ff011ecd6c8387e99}{\texorpdfstring{$\sim$}{\string~}task\+\_\+timer}} ()
+\item 
+void \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_a05b9d2725c0992aace3c50c942d56e92}{cancel}} (\mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aab902a1634760b439ab748d1cb0af56a}{identifier\+\_\+type}} id)
+\item 
+\mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aab902a1634760b439ab748d1cb0af56a}{identifier\+\_\+type}} \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_ac1a35eb9b85887368b65e01c07d3c91c}{schedule}} (const \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_a3d26d472f56d5085b08e3045585618f1}{task\+\_\+type}} \&task)
+\begin{DoxyCompactList}\small\item\em Schedule the given task to be executed after the default amount of ticks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aab902a1634760b439ab748d1cb0af56a}{identifier\+\_\+type}} \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_a777c073f4e895c638d2cbbf6a27ad1fa}{schedule}} (const \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_a3d26d472f56d5085b08e3045585618f1}{task\+\_\+type}} \&task, std\+::uint8\+\_\+t timeout)
+\begin{DoxyCompactList}\small\item\em Schedule the given task to be executed after the given time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aa67cab7afc1646a4127b0c6c97e5f5ea}{set\+\_\+default\+\_\+timeout}} (std\+::uint8\+\_\+t timeout)
+\begin{DoxyCompactList}\small\item\em Set the default timeout for this \doxylink{classcrow_1_1detail_1_1task__timer}{task\+\_\+timer} instance. (Default\+: 5) \end{DoxyCompactList}\item 
+std\+::uint8\+\_\+t \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_ae11e1259251e562ea3be457457b3b287}{get\+\_\+default\+\_\+timeout}} () const
+\begin{DoxyCompactList}\small\item\em Get the default timeout. (Default\+: 5) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aa06d4bf46f16b8b300778e0eb2dcceb8}{clock\+\_\+type}} = std\+::chrono\+::steady\+\_\+clock
+\item 
+using \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_abf87f8da0dbf8b213c285eb9d8450847}{time\+\_\+type}} = clock\+\_\+type\+::time\+\_\+point
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aa2d21738492c5a9b9c4c724a4045be0b}{process\+\_\+tasks}} ()
+\item 
+void \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aa395fbec3aa1a8d305a8c9e32e5dea81}{tick\+\_\+handler}} (const asio\+::error\+\_\+code \&ec)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::uint8\+\_\+t \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_a61024594a0de838c48b0bba78d9cafb1}{default\+\_\+timeout\+\_\+}} \{5\}
+\item 
+asio\+::io\+\_\+service \& \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_a0a20a91b7315e872fe61c84ef96709f9}{io\+\_\+service\+\_\+}}
+\item 
+asio\+::basic\+\_\+waitable\+\_\+timer$<$ \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aa06d4bf46f16b8b300778e0eb2dcceb8}{clock\+\_\+type}} $>$ \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_a868e4e3e492692c6817d68f7c509f229}{timer\+\_\+}}
+\item 
+std\+::map$<$ \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aab902a1634760b439ab748d1cb0af56a}{identifier\+\_\+type}}, std\+::pair$<$ \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_abf87f8da0dbf8b213c285eb9d8450847}{time\+\_\+type}}, \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_a3d26d472f56d5085b08e3045585618f1}{task\+\_\+type}} $>$ $>$ \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_a7e14842e34ba47aa752c58a8a809332f}{tasks\+\_\+}}
+\item 
+\mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aab902a1634760b439ab748d1cb0af56a}{identifier\+\_\+type}} \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_a3c3de8abb3c5f0bfc939aafe668a7f9f}{highest\+\_\+id\+\_\+}} \{0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for scheduling functions to be called after a specific amount of ticks. A tick is equal to 1 second. 
+
+\doxysubsection{Member Typedef Documentation}
+\Hypertarget{classcrow_1_1detail_1_1task__timer_aa06d4bf46f16b8b300778e0eb2dcceb8}\label{classcrow_1_1detail_1_1task__timer_aa06d4bf46f16b8b300778e0eb2dcceb8} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!clock\_type@{clock\_type}}
+\index{clock\_type@{clock\_type}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{clock\_type}{clock\_type}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aa06d4bf46f16b8b300778e0eb2dcceb8}{crow\+::detail\+::task\+\_\+timer\+::clock\+\_\+type}} = std\+::chrono\+::steady\+\_\+clock\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1detail_1_1task__timer_aab902a1634760b439ab748d1cb0af56a}\label{classcrow_1_1detail_1_1task__timer_aab902a1634760b439ab748d1cb0af56a} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!identifier\_type@{identifier\_type}}
+\index{identifier\_type@{identifier\_type}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{identifier\_type}{identifier\_type}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aab902a1634760b439ab748d1cb0af56a}{crow\+::detail\+::task\+\_\+timer\+::identifier\+\_\+type}} = size\+\_\+t}
+
+\Hypertarget{classcrow_1_1detail_1_1task__timer_a3d26d472f56d5085b08e3045585618f1}\label{classcrow_1_1detail_1_1task__timer_a3d26d472f56d5085b08e3045585618f1} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!task\_type@{task\_type}}
+\index{task\_type@{task\_type}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{task\_type}{task\_type}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_a3d26d472f56d5085b08e3045585618f1}{crow\+::detail\+::task\+\_\+timer\+::task\+\_\+type}} = std\+::function$<$void()$>$}
+
+\Hypertarget{classcrow_1_1detail_1_1task__timer_abf87f8da0dbf8b213c285eb9d8450847}\label{classcrow_1_1detail_1_1task__timer_abf87f8da0dbf8b213c285eb9d8450847} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!time\_type@{time\_type}}
+\index{time\_type@{time\_type}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{time\_type}{time\_type}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_abf87f8da0dbf8b213c285eb9d8450847}{crow\+::detail\+::task\+\_\+timer\+::time\+\_\+type}} = clock\+\_\+type\+::time\+\_\+point\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcrow_1_1detail_1_1task__timer_a25715a0b6a6fae2d87c3aaef1d9387be}\label{classcrow_1_1detail_1_1task__timer_a25715a0b6a6fae2d87c3aaef1d9387be} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!task\_timer@{task\_timer}}
+\index{task\_timer@{task\_timer}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{task\_timer()}{task\_timer()}}
+{\footnotesize\ttfamily crow\+::detail\+::task\+\_\+timer\+::task\+\_\+timer (\begin{DoxyParamCaption}\item[{asio\+::io\+\_\+service \&}]{io\+\_\+service }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1detail_1_1task__timer_aea48cde928f27e3ff011ecd6c8387e99}\label{classcrow_1_1detail_1_1task__timer_aea48cde928f27e3ff011ecd6c8387e99} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!````~task\_timer@{\texorpdfstring{$\sim$}{\string~}task\_timer}}
+\index{````~task\_timer@{\texorpdfstring{$\sim$}{\string~}task\_timer}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}task\_timer()}{\string~task\_timer()}}
+{\footnotesize\ttfamily crow\+::detail\+::task\+\_\+timer\+::\texorpdfstring{$\sim$}{\string~}task\+\_\+timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcrow_1_1detail_1_1task__timer_a05b9d2725c0992aace3c50c942d56e92}\label{classcrow_1_1detail_1_1task__timer_a05b9d2725c0992aace3c50c942d56e92} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!cancel@{cancel}}
+\index{cancel@{cancel}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily void crow\+::detail\+::task\+\_\+timer\+::cancel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aab902a1634760b439ab748d1cb0af56a}{identifier\+\_\+type}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1detail_1_1task__timer_ae11e1259251e562ea3be457457b3b287}\label{classcrow_1_1detail_1_1task__timer_ae11e1259251e562ea3be457457b3b287} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!get\_default\_timeout@{get\_default\_timeout}}
+\index{get\_default\_timeout@{get\_default\_timeout}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{get\_default\_timeout()}{get\_default\_timeout()}}
+{\footnotesize\ttfamily std\+::uint8\+\_\+t crow\+::detail\+::task\+\_\+timer\+::get\+\_\+default\+\_\+timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the default timeout. (Default\+: 5) 
+
+\Hypertarget{classcrow_1_1detail_1_1task__timer_aa2d21738492c5a9b9c4c724a4045be0b}\label{classcrow_1_1detail_1_1task__timer_aa2d21738492c5a9b9c4c724a4045be0b} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!process\_tasks@{process\_tasks}}
+\index{process\_tasks@{process\_tasks}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{process\_tasks()}{process\_tasks()}}
+{\footnotesize\ttfamily void crow\+::detail\+::task\+\_\+timer\+::process\+\_\+tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1detail_1_1task__timer_ac1a35eb9b85887368b65e01c07d3c91c}\label{classcrow_1_1detail_1_1task__timer_ac1a35eb9b85887368b65e01c07d3c91c} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!schedule@{schedule}}
+\index{schedule@{schedule}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{schedule()}{schedule()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aab902a1634760b439ab748d1cb0af56a}{identifier\+\_\+type}} crow\+::detail\+::task\+\_\+timer\+::schedule (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_a3d26d472f56d5085b08e3045585618f1}{task\+\_\+type}} \&}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Schedule the given task to be executed after the default amount of ticks. 
+
+\begin{DoxyReturn}{Returns}
+identifier\+\_\+type Used to cancel the thread. It is not bound to this \doxylink{classcrow_1_1detail_1_1task__timer}{task\+\_\+timer} instance and in some cases could lead to undefined behavior if used with other \doxylink{classcrow_1_1detail_1_1task__timer}{task\+\_\+timer} objects or after the task has been successfully executed. 
+\end{DoxyReturn}
+\Hypertarget{classcrow_1_1detail_1_1task__timer_a777c073f4e895c638d2cbbf6a27ad1fa}\label{classcrow_1_1detail_1_1task__timer_a777c073f4e895c638d2cbbf6a27ad1fa} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!schedule@{schedule}}
+\index{schedule@{schedule}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{schedule()}{schedule()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aab902a1634760b439ab748d1cb0af56a}{identifier\+\_\+type}} crow\+::detail\+::task\+\_\+timer\+::schedule (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_a3d26d472f56d5085b08e3045585618f1}{task\+\_\+type}} \&}]{task,  }\item[{std\+::uint8\+\_\+t}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Schedule the given task to be executed after the given time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timeout} & The amount of ticks (seconds) to wait before execution.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+identifier\+\_\+type Used to cancel the thread. It is not bound to this \doxylink{classcrow_1_1detail_1_1task__timer}{task\+\_\+timer} instance and in some cases could lead to undefined behavior if used with other \doxylink{classcrow_1_1detail_1_1task__timer}{task\+\_\+timer} objects or after the task has been successfully executed. 
+\end{DoxyReturn}
+\Hypertarget{classcrow_1_1detail_1_1task__timer_aa67cab7afc1646a4127b0c6c97e5f5ea}\label{classcrow_1_1detail_1_1task__timer_aa67cab7afc1646a4127b0c6c97e5f5ea} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!set\_default\_timeout@{set\_default\_timeout}}
+\index{set\_default\_timeout@{set\_default\_timeout}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{set\_default\_timeout()}{set\_default\_timeout()}}
+{\footnotesize\ttfamily void crow\+::detail\+::task\+\_\+timer\+::set\+\_\+default\+\_\+timeout (\begin{DoxyParamCaption}\item[{std\+::uint8\+\_\+t}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the default timeout for this \doxylink{classcrow_1_1detail_1_1task__timer}{task\+\_\+timer} instance. (Default\+: 5) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timeout} & The amount of ticks (seconds) to wait before execution. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcrow_1_1detail_1_1task__timer_aa395fbec3aa1a8d305a8c9e32e5dea81}\label{classcrow_1_1detail_1_1task__timer_aa395fbec3aa1a8d305a8c9e32e5dea81} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!tick\_handler@{tick\_handler}}
+\index{tick\_handler@{tick\_handler}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{tick\_handler()}{tick\_handler()}}
+{\footnotesize\ttfamily void crow\+::detail\+::task\+\_\+timer\+::tick\+\_\+handler (\begin{DoxyParamCaption}\item[{const asio\+::error\+\_\+code \&}]{ec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcrow_1_1detail_1_1task__timer_a61024594a0de838c48b0bba78d9cafb1}\label{classcrow_1_1detail_1_1task__timer_a61024594a0de838c48b0bba78d9cafb1} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!default\_timeout\_@{default\_timeout\_}}
+\index{default\_timeout\_@{default\_timeout\_}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{default\_timeout\_}{default\_timeout\_}}
+{\footnotesize\ttfamily std\+::uint8\+\_\+t crow\+::detail\+::task\+\_\+timer\+::default\+\_\+timeout\+\_\+ \{5\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1detail_1_1task__timer_a3c3de8abb3c5f0bfc939aafe668a7f9f}\label{classcrow_1_1detail_1_1task__timer_a3c3de8abb3c5f0bfc939aafe668a7f9f} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!highest\_id\_@{highest\_id\_}}
+\index{highest\_id\_@{highest\_id\_}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{highest\_id\_}{highest\_id\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aab902a1634760b439ab748d1cb0af56a}{identifier\+\_\+type}} crow\+::detail\+::task\+\_\+timer\+::highest\+\_\+id\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1detail_1_1task__timer_a0a20a91b7315e872fe61c84ef96709f9}\label{classcrow_1_1detail_1_1task__timer_a0a20a91b7315e872fe61c84ef96709f9} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!io\_service\_@{io\_service\_}}
+\index{io\_service\_@{io\_service\_}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{io\_service\_}{io\_service\_}}
+{\footnotesize\ttfamily asio\+::io\+\_\+service\& crow\+::detail\+::task\+\_\+timer\+::io\+\_\+service\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1detail_1_1task__timer_a7e14842e34ba47aa752c58a8a809332f}\label{classcrow_1_1detail_1_1task__timer_a7e14842e34ba47aa752c58a8a809332f} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!tasks\_@{tasks\_}}
+\index{tasks\_@{tasks\_}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{tasks\_}{tasks\_}}
+{\footnotesize\ttfamily std\+::map$<$\mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aab902a1634760b439ab748d1cb0af56a}{identifier\+\_\+type}}, std\+::pair$<$\mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_abf87f8da0dbf8b213c285eb9d8450847}{time\+\_\+type}}, \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_a3d26d472f56d5085b08e3045585618f1}{task\+\_\+type}}$>$ $>$ crow\+::detail\+::task\+\_\+timer\+::tasks\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1detail_1_1task__timer_a868e4e3e492692c6817d68f7c509f229}\label{classcrow_1_1detail_1_1task__timer_a868e4e3e492692c6817d68f7c509f229} 
+\index{crow::detail::task\_timer@{crow::detail::task\_timer}!timer\_@{timer\_}}
+\index{timer\_@{timer\_}!crow::detail::task\_timer@{crow::detail::task\_timer}}
+\doxysubsubsection{\texorpdfstring{timer\_}{timer\_}}
+{\footnotesize\ttfamily asio\+::basic\+\_\+waitable\+\_\+timer$<$\mbox{\hyperlink{classcrow_1_1detail_1_1task__timer_aa06d4bf46f16b8b300778e0eb2dcceb8}{clock\+\_\+type}}$>$ crow\+::detail\+::task\+\_\+timer\+::timer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{crow__all_8h}{crow\+\_\+all.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,276 @@
+\doxysection{crow\+::Web\+Socket\+Rule\texorpdfstring{$<$}{<} App \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classcrow_1_1_web_socket_rule}{}\label{classcrow_1_1_web_socket_rule}\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+
+
+A rule dealing with websockets.  
+
+
+
+
+{\ttfamily \#include $<$crow\+\_\+all.\+h$>$}
+
+Inheritance diagram for crow\+::Web\+Socket\+Rule\texorpdfstring{$<$}{<} App \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcrow_1_1_web_socket_rule}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcrow_1_1_web_socket_rule_a17c9e24812ae1d436ab9be61768966c8}{Web\+Socket\+Rule}} (std\+::string \mbox{\hyperlink{classcrow_1_1_base_rule_a068f3cacedc95b632efb0ed1035c95ac}{rule}}, \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} \texorpdfstring{$\ast$}{*}app)
+\item 
+void \mbox{\hyperlink{classcrow_1_1_web_socket_rule_abe8e71a9a3845698f432307f282be0cc}{validate}} () override
+\item 
+void \mbox{\hyperlink{classcrow_1_1_web_socket_rule_a921adb281f701d53187d9f20294010da}{handle}} (\mbox{\hyperlink{structcrow_1_1request}{request}} \&, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res, const routing\+\_\+params \&) override
+\item 
+void \mbox{\hyperlink{classcrow_1_1_web_socket_rule_af01bd035e8753d8e4fc7728b2d5d69e8}{handle\+\_\+upgrade}} (const \mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&, \mbox{\hyperlink{structcrow_1_1_socket_adaptor}{Socket\+Adaptor}} \&\&adaptor) override
+\item 
+\mbox{\hyperlink{classcrow_1_1_web_socket_rule_ae7cbf177d3161a621382c090b9addccb}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_web_socket_rule_a3000e7081fb4fa9e77bb103c47cc3f3e}{max\+\_\+payload}} (uint64\+\_\+t max\+\_\+payload)
+\begin{DoxyCompactList}\small\item\em Override the global payload limit for this single Web\+Socket rule. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Func $>$ }\\\mbox{\hyperlink{classcrow_1_1_web_socket_rule_ae7cbf177d3161a621382c090b9addccb}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_web_socket_rule_a44dd94a602da9eacabd145edbae18764}{onopen}} (Func f)
+\item 
+{\footnotesize template$<$typename Func $>$ }\\\mbox{\hyperlink{classcrow_1_1_web_socket_rule_ae7cbf177d3161a621382c090b9addccb}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_web_socket_rule_a3c173e7d4a27066bf07ee619ce08213d}{onmessage}} (Func f)
+\item 
+{\footnotesize template$<$typename Func $>$ }\\\mbox{\hyperlink{classcrow_1_1_web_socket_rule_ae7cbf177d3161a621382c090b9addccb}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_web_socket_rule_a2ec997d0a538e1124421f1c470386cd4}{onclose}} (Func f)
+\item 
+{\footnotesize template$<$typename Func $>$ }\\\mbox{\hyperlink{classcrow_1_1_web_socket_rule_ae7cbf177d3161a621382c090b9addccb}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_web_socket_rule_a5f80c41d2566bbb0e915b4620401f34f}{onerror}} (Func f)
+\item 
+{\footnotesize template$<$typename Func $>$ }\\\mbox{\hyperlink{classcrow_1_1_web_socket_rule_ae7cbf177d3161a621382c090b9addccb}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_web_socket_rule_a28a36f9503ccafa4b60108dc4748b867}{onaccept}} (Func f)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classcrow_1_1_base_rule}{crow\+::\+Base\+Rule}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcrow_1_1_base_rule_ada4c61f94eb32ebbb5d553cacbc83013}{Base\+Rule}} (std\+::string \mbox{\hyperlink{classcrow_1_1_base_rule_a068f3cacedc95b632efb0ed1035c95ac}{rule}})
+\item 
+virtual \mbox{\hyperlink{classcrow_1_1_base_rule_a270efe3d144ed2cc638e78758d08b0d8}{\texorpdfstring{$\sim$}{\string~}\+Base\+Rule}} ()
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classcrow_1_1_base_rule}{Base\+Rule}} $>$ \mbox{\hyperlink{classcrow_1_1_base_rule_a4c36eddaa2be13eb3b3b8be7b2882c7b}{upgrade}} ()
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classcrow_1_1_base_rule_aba0284ef74a04b9c2401b3a5022f57a6}{get\+\_\+methods}} ()
+\item 
+{\footnotesize template$<$typename F $>$ }\\void \mbox{\hyperlink{classcrow_1_1_base_rule_adea69ae04c498740b73408455197d6a0}{foreach\+\_\+method}} (F f)
+\item 
+const std\+::string \& \mbox{\hyperlink{classcrow_1_1_base_rule_a068f3cacedc95b632efb0ed1035c95ac}{rule}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classcrow_1_1_web_socket_rule_aab0e3390b3306fdc048f9fadaed50195}{app\+\_\+}}
+\item 
+std\+::function$<$ void(\mbox{\hyperlink{structcrow_1_1websocket_1_1connection}{crow\+::websocket\+::connection}} \&) \mbox{\hyperlink{classcrow_1_1_web_socket_rule_a4b4cfb712c1842784adb8ed8b7ba2ca4}{open\+\_\+handler\+\_\+}} )
+\item 
+std\+::function$<$ void(\mbox{\hyperlink{structcrow_1_1websocket_1_1connection}{crow\+::websocket\+::connection}} \&, const std\+::string \&, bool) \mbox{\hyperlink{classcrow_1_1_web_socket_rule_ab03caea3ed8ca62255e3bfb9a97e28d0}{message\+\_\+handler\+\_\+}} )
+\item 
+std\+::function$<$ void(\mbox{\hyperlink{structcrow_1_1websocket_1_1connection}{crow\+::websocket\+::connection}} \&, const std\+::string \&) \mbox{\hyperlink{classcrow_1_1_web_socket_rule_a2da5eec6b25e6790e5212140ed85d290}{close\+\_\+handler\+\_\+}} )
+\item 
+std\+::function$<$ void(\mbox{\hyperlink{structcrow_1_1websocket_1_1connection}{crow\+::websocket\+::connection}} \&, const std\+::string \&) \mbox{\hyperlink{classcrow_1_1_web_socket_rule_ab537e0f29fcd7c9e9148775cfadfe321}{error\+\_\+handler\+\_\+}} )
+\item 
+std\+::function$<$ bool(const \mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}) \mbox{\hyperlink{classcrow_1_1_web_socket_rule_a115efd6e8cbc1c1f4d817f6579012493}{accept\+\_\+handler\+\_\+}} )
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classcrow_1_1_web_socket_rule_a9ee993bdbed14eccd5232ba8cc472d52}{max\+\_\+payload\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classcrow_1_1_web_socket_rule_a4f169c0aedfa2161fb2cdd8e456fb5c0}{max\+\_\+payload\+\_\+override\+\_\+}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classcrow_1_1_base_rule}{crow\+::\+Base\+Rule}}}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classcrow_1_1_base_rule_a997e9942d597fe133df84c94558c1e13}{methods\+\_\+}} \{1 $<$$<$ static\+\_\+cast$<$int$>$(\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4ac55582518cba2c464f29f5bae1c68def}{HTTPMethod\+::\+Get}})\}
+\item 
+std\+::string \mbox{\hyperlink{classcrow_1_1_base_rule_a39f73fef34a8ff67907d96ef9c92b35a}{rule\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classcrow_1_1_base_rule_a34d579887fac170e179e9e69eac3d771}{name\+\_\+}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classcrow_1_1_base_rule}{Base\+Rule}} $>$ \mbox{\hyperlink{classcrow_1_1_base_rule_aa08be2b793fe80d462f71c064a9949b8}{rule\+\_\+to\+\_\+upgrade\+\_\+}}
+\item 
+\mbox{\hyperlink{structcrow_1_1detail_1_1middleware__indices}{detail\+::middleware\+\_\+indices}} \mbox{\hyperlink{classcrow_1_1_base_rule_acd5207b9a30813fcb344ae97bdcdeb72}{mw\+\_\+indices\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classcrow_1_1_web_socket_rule_ae7cbf177d3161a621382c090b9addccb}{self\+\_\+t}} = \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{Web\+Socket\+Rule}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classcrow_1_1_base_rule}{crow\+::\+Base\+Rule}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classcrow_1_1_base_rule_a864205b350008d9c4d8092797acbe4e5}{custom\+\_\+templates\+\_\+base}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}}$>$\newline
+class crow\+::\+Web\+Socket\+Rule$<$ App $>$}
+A rule dealing with websockets. 
+
+Provides the interface for the user to put in the necessary handlers for a websocket to work. 
+
+\doxysubsection{Member Typedef Documentation}
+\Hypertarget{classcrow_1_1_web_socket_rule_ae7cbf177d3161a621382c090b9addccb}\label{classcrow_1_1_web_socket_rule_ae7cbf177d3161a621382c090b9addccb} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!self\_t@{self\_t}}
+\index{self\_t@{self\_t}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{self\_t}{self\_t}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+using \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::self\+\_\+t = \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{Web\+Socket\+Rule}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcrow_1_1_web_socket_rule_a17c9e24812ae1d436ab9be61768966c8}\label{classcrow_1_1_web_socket_rule_a17c9e24812ae1d436ab9be61768966c8} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!WebSocketRule@{WebSocketRule}}
+\index{WebSocketRule@{WebSocketRule}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{WebSocketRule()}{WebSocketRule()}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+\mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::\+Web\+Socket\+Rule (\begin{DoxyParamCaption}\item[{std\+::string}]{rule,  }\item[{\mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} \texorpdfstring{$\ast$}{*}}]{app }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcrow_1_1_web_socket_rule_a921adb281f701d53187d9f20294010da}\label{classcrow_1_1_web_socket_rule_a921adb281f701d53187d9f20294010da} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!handle@{handle}}
+\index{handle@{handle}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+void \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{res,  }\item[{const routing\+\_\+params \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classcrow_1_1_base_rule_a0bdeac0dadf0aba8ae19b579e1e615ab}{crow\+::\+Base\+Rule}}.
+
+\Hypertarget{classcrow_1_1_web_socket_rule_af01bd035e8753d8e4fc7728b2d5d69e8}\label{classcrow_1_1_web_socket_rule_af01bd035e8753d8e4fc7728b2d5d69e8} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!handle\_upgrade@{handle\_upgrade}}
+\index{handle\_upgrade@{handle\_upgrade}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{handle\_upgrade()}{handle\_upgrade()}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+void \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::handle\+\_\+upgrade (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{,  }\item[{\mbox{\hyperlink{structcrow_1_1_socket_adaptor}{Socket\+Adaptor}} \&\&}]{adaptor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classcrow_1_1_base_rule_acf37339742cfca68b60b9d872382a43d}{crow\+::\+Base\+Rule}}.
+
+\Hypertarget{classcrow_1_1_web_socket_rule_a3000e7081fb4fa9e77bb103c47cc3f3e}\label{classcrow_1_1_web_socket_rule_a3000e7081fb4fa9e77bb103c47cc3f3e} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!max\_payload@{max\_payload}}
+\index{max\_payload@{max\_payload}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{max\_payload()}{max\_payload()}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+\mbox{\hyperlink{classcrow_1_1_web_socket_rule_ae7cbf177d3161a621382c090b9addccb}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::max\+\_\+payload (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{max\+\_\+payload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Override the global payload limit for this single Web\+Socket rule. 
+
+\Hypertarget{classcrow_1_1_web_socket_rule_a28a36f9503ccafa4b60108dc4748b867}\label{classcrow_1_1_web_socket_rule_a28a36f9503ccafa4b60108dc4748b867} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!onaccept@{onaccept}}
+\index{onaccept@{onaccept}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{onaccept()}{onaccept()}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+template$<$typename Func $>$ \\
+\mbox{\hyperlink{classcrow_1_1_web_socket_rule_ae7cbf177d3161a621382c090b9addccb}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::onaccept (\begin{DoxyParamCaption}\item[{Func}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_web_socket_rule_a2ec997d0a538e1124421f1c470386cd4}\label{classcrow_1_1_web_socket_rule_a2ec997d0a538e1124421f1c470386cd4} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!onclose@{onclose}}
+\index{onclose@{onclose}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{onclose()}{onclose()}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+template$<$typename Func $>$ \\
+\mbox{\hyperlink{classcrow_1_1_web_socket_rule_ae7cbf177d3161a621382c090b9addccb}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::onclose (\begin{DoxyParamCaption}\item[{Func}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_web_socket_rule_a5f80c41d2566bbb0e915b4620401f34f}\label{classcrow_1_1_web_socket_rule_a5f80c41d2566bbb0e915b4620401f34f} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!onerror@{onerror}}
+\index{onerror@{onerror}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{onerror()}{onerror()}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+template$<$typename Func $>$ \\
+\mbox{\hyperlink{classcrow_1_1_web_socket_rule_ae7cbf177d3161a621382c090b9addccb}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::onerror (\begin{DoxyParamCaption}\item[{Func}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_web_socket_rule_a3c173e7d4a27066bf07ee619ce08213d}\label{classcrow_1_1_web_socket_rule_a3c173e7d4a27066bf07ee619ce08213d} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!onmessage@{onmessage}}
+\index{onmessage@{onmessage}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{onmessage()}{onmessage()}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+template$<$typename Func $>$ \\
+\mbox{\hyperlink{classcrow_1_1_web_socket_rule_ae7cbf177d3161a621382c090b9addccb}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::onmessage (\begin{DoxyParamCaption}\item[{Func}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_web_socket_rule_a44dd94a602da9eacabd145edbae18764}\label{classcrow_1_1_web_socket_rule_a44dd94a602da9eacabd145edbae18764} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!onopen@{onopen}}
+\index{onopen@{onopen}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{onopen()}{onopen()}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+template$<$typename Func $>$ \\
+\mbox{\hyperlink{classcrow_1_1_web_socket_rule_ae7cbf177d3161a621382c090b9addccb}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::onopen (\begin{DoxyParamCaption}\item[{Func}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_web_socket_rule_abe8e71a9a3845698f432307f282be0cc}\label{classcrow_1_1_web_socket_rule_abe8e71a9a3845698f432307f282be0cc} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!validate@{validate}}
+\index{validate@{validate}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+void \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::validate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classcrow_1_1_base_rule_a895d85332340788206cee0b1555ac8c2}{crow\+::\+Base\+Rule}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcrow_1_1_web_socket_rule_a115efd6e8cbc1c1f4d817f6579012493}\label{classcrow_1_1_web_socket_rule_a115efd6e8cbc1c1f4d817f6579012493} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!accept\_handler\_@{accept\_handler\_}}
+\index{accept\_handler\_@{accept\_handler\_}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{accept\_handler\_}{accept\_handler\_}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+std\+::function$<$bool(const \mbox{\hyperlink{structcrow_1_1request}{crow\+::request}}\&, void\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}) \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::accept\+\_\+handler\+\_\+) \hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcrow_1_1_web_socket_rule_aab0e3390b3306fdc048f9fadaed50195}\label{classcrow_1_1_web_socket_rule_aab0e3390b3306fdc048f9fadaed50195} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!app\_@{app\_}}
+\index{app\_@{app\_}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{app\_}{app\_}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+\mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::app\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcrow_1_1_web_socket_rule_a2da5eec6b25e6790e5212140ed85d290}\label{classcrow_1_1_web_socket_rule_a2da5eec6b25e6790e5212140ed85d290} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!close\_handler\_@{close\_handler\_}}
+\index{close\_handler\_@{close\_handler\_}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{close\_handler\_}{close\_handler\_}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+std\+::function$<$void(\mbox{\hyperlink{structcrow_1_1websocket_1_1connection}{crow\+::websocket\+::connection}}\&, const std\+::string\&) \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::close\+\_\+handler\+\_\+) \hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcrow_1_1_web_socket_rule_ab537e0f29fcd7c9e9148775cfadfe321}\label{classcrow_1_1_web_socket_rule_ab537e0f29fcd7c9e9148775cfadfe321} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!error\_handler\_@{error\_handler\_}}
+\index{error\_handler\_@{error\_handler\_}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{error\_handler\_}{error\_handler\_}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+std\+::function$<$void(\mbox{\hyperlink{structcrow_1_1websocket_1_1connection}{crow\+::websocket\+::connection}}\&, const std\+::string\&) \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::error\+\_\+handler\+\_\+) \hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcrow_1_1_web_socket_rule_a9ee993bdbed14eccd5232ba8cc472d52}\label{classcrow_1_1_web_socket_rule_a9ee993bdbed14eccd5232ba8cc472d52} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!max\_payload\_@{max\_payload\_}}
+\index{max\_payload\_@{max\_payload\_}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{max\_payload\_}{max\_payload\_}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+uint64\+\_\+t \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::max\+\_\+payload\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcrow_1_1_web_socket_rule_a4f169c0aedfa2161fb2cdd8e456fb5c0}\label{classcrow_1_1_web_socket_rule_a4f169c0aedfa2161fb2cdd8e456fb5c0} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!max\_payload\_override\_@{max\_payload\_override\_}}
+\index{max\_payload\_override\_@{max\_payload\_override\_}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{max\_payload\_override\_}{max\_payload\_override\_}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+bool \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::max\+\_\+payload\+\_\+override\+\_\+ = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcrow_1_1_web_socket_rule_ab03caea3ed8ca62255e3bfb9a97e28d0}\label{classcrow_1_1_web_socket_rule_ab03caea3ed8ca62255e3bfb9a97e28d0} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!message\_handler\_@{message\_handler\_}}
+\index{message\_handler\_@{message\_handler\_}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{message\_handler\_}{message\_handler\_}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+std\+::function$<$void(\mbox{\hyperlink{structcrow_1_1websocket_1_1connection}{crow\+::websocket\+::connection}}\&, const std\+::string\&, bool) \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::message\+\_\+handler\+\_\+) \hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcrow_1_1_web_socket_rule_a4b4cfb712c1842784adb8ed8b7ba2ca4}\label{classcrow_1_1_web_socket_rule_a4b4cfb712c1842784adb8ed8b7ba2ca4} 
+\index{crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}!open\_handler\_@{open\_handler\_}}
+\index{open\_handler\_@{open\_handler\_}!crow::WebSocketRule$<$ App $>$@{crow::WebSocketRule$<$ App $>$}}
+\doxysubsubsection{\texorpdfstring{open\_handler\_}{open\_handler\_}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$ \\
+std\+::function$<$void(\mbox{\hyperlink{structcrow_1_1websocket_1_1connection}{crow\+::websocket\+::connection}}\&) \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule}}$<$ \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} $>$\+::open\+\_\+handler\+\_\+) \hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{crow__all_8h}{crow\+\_\+all.\+h}}\end{DoxyCompactItemize}

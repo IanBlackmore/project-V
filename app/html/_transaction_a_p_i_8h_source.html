@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>transaction team: TransactionAPI.h Source File</title>
+<title>My Project: TransactionAPI.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">transaction team
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -84,15 +84,27 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_transaction_8h.html">Transaction.h</a>&quot;</span></div>
 <div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_transaction_a_p_i.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="class_transaction_a_p_i.html">TransactionAPI</a> {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_transaction_a_p_i.html#a48dceb9e598080725f5f55a38ce53a30">updateDatabase</a>(<a class="code hl_class" href="class_transaction.html">Transaction</a> t);</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_transaction_a_p_i.html#a01d86b9dec3f915ec66a94dd28f74d51">generateTransaction</a>(<span class="keywordtype">double</span> moneyGain, std::string details, std::string transactionInitiatingTeam);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>};</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_transaction_a_p_i.html#ae4158d12b6e00873201a716919ae70e8">addDBTransaction</a>(<a class="code hl_class" href="class_transaction.html">Transaction</a> t);</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_transaction_a_p_i.html#a9f92922357db6e1edb117daabc2333dd">updateDBBudget</a>(<span class="keywordtype">double</span> moneyGain);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="comment">//TEST VAR</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_transaction_a_p_i.html#af86de517b2ad2c6efc35408427218cf7">   13</a></span>    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="class_transaction_a_p_i.html#af86de517b2ad2c6efc35408427218cf7">budget</a> = 0;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_transaction_a_p_i.html#a1014183cf7fdb6f06992c15d91f07830">validateTransaction</a>(<span class="keywordtype">double</span> moneyGain);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="class_transaction_a_p_i.html#a746166de11abcc2a4a6a81c8bf3d1d7e">getBudget</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    std::string <a class="code hl_function" href="class_transaction_a_p_i.html#a98989f632ca5a948e58a80f56007d956">generateTransaction</a>(<span class="keywordtype">double</span> moneyGain, std::string details, std::string transactionInitiatingTeam);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
 </div>
 <div class="ttc" id="a_transaction_8h_html"><div class="ttname"><a href="_transaction_8h.html">Transaction.h</a></div></div>
 <div class="ttc" id="aclass_transaction_a_p_i_html"><div class="ttname"><a href="class_transaction_a_p_i.html">TransactionAPI</a></div><div class="ttdoc">an API for other teams to interface with the Transaction team modules</div><div class="ttdef"><b>Definition</b> TransactionAPI.h:5</div></div>
-<div class="ttc" id="aclass_transaction_a_p_i_html_a01d86b9dec3f915ec66a94dd28f74d51"><div class="ttname"><a href="class_transaction_a_p_i.html#a01d86b9dec3f915ec66a94dd28f74d51">TransactionAPI::generateTransaction</a></div><div class="ttdeci">void generateTransaction(double moneyGain, std::string details, std::string transactionInitiatingTeam)</div><div class="ttdoc">API for other teams to use. Generates a transaction and uploads it to the database.</div><div class="ttdef"><b>Definition</b> TransactionAPI.cpp:8</div></div>
-<div class="ttc" id="aclass_transaction_a_p_i_html_a48dceb9e598080725f5f55a38ce53a30"><div class="ttname"><a href="class_transaction_a_p_i.html#a48dceb9e598080725f5f55a38ce53a30">TransactionAPI::updateDatabase</a></div><div class="ttdeci">void updateDatabase(Transaction t)</div><div class="ttdoc">sends a transaction record to the database</div><div class="ttdef"><b>Definition</b> TransactionAPI.cpp:5</div></div>
+<div class="ttc" id="aclass_transaction_a_p_i_html_a1014183cf7fdb6f06992c15d91f07830"><div class="ttname"><a href="class_transaction_a_p_i.html#a1014183cf7fdb6f06992c15d91f07830">TransactionAPI::validateTransaction</a></div><div class="ttdeci">bool validateTransaction(double moneyGain)</div><div class="ttdoc">Validates a transaction to be performed.</div><div class="ttdef"><b>Definition</b> TransactionAPI.cpp:42</div></div>
+<div class="ttc" id="aclass_transaction_a_p_i_html_a746166de11abcc2a4a6a81c8bf3d1d7e"><div class="ttname"><a href="class_transaction_a_p_i.html#a746166de11abcc2a4a6a81c8bf3d1d7e">TransactionAPI::getBudget</a></div><div class="ttdeci">static double getBudget()</div><div class="ttdoc">Gets the current budget.</div><div class="ttdef"><b>Definition</b> TransactionAPI.cpp:30</div></div>
+<div class="ttc" id="aclass_transaction_a_p_i_html_a98989f632ca5a948e58a80f56007d956"><div class="ttname"><a href="class_transaction_a_p_i.html#a98989f632ca5a948e58a80f56007d956">TransactionAPI::generateTransaction</a></div><div class="ttdeci">std::string generateTransaction(double moneyGain, std::string details, std::string transactionInitiatingTeam)</div><div class="ttdoc">API for other teams to use. Generates a transaction and uploads it to the database.</div><div class="ttdef"><b>Definition</b> TransactionAPI.cpp:56</div></div>
+<div class="ttc" id="aclass_transaction_a_p_i_html_a9f92922357db6e1edb117daabc2333dd"><div class="ttname"><a href="class_transaction_a_p_i.html#a9f92922357db6e1edb117daabc2333dd">TransactionAPI::updateDBBudget</a></div><div class="ttdeci">static void updateDBBudget(double moneyGain)</div><div class="ttdef"><b>Definition</b> TransactionAPI.cpp:16</div></div>
+<div class="ttc" id="aclass_transaction_a_p_i_html_ae4158d12b6e00873201a716919ae70e8"><div class="ttname"><a href="class_transaction_a_p_i.html#ae4158d12b6e00873201a716919ae70e8">TransactionAPI::addDBTransaction</a></div><div class="ttdeci">void addDBTransaction(Transaction t)</div><div class="ttdoc">sends a transaction record to the database</div><div class="ttdef"><b>Definition</b> TransactionAPI.cpp:6</div></div>
+<div class="ttc" id="aclass_transaction_a_p_i_html_af86de517b2ad2c6efc35408427218cf7"><div class="ttname"><a href="class_transaction_a_p_i.html#af86de517b2ad2c6efc35408427218cf7">TransactionAPI::budget</a></div><div class="ttdeci">static double budget</div><div class="ttdoc">test variable</div><div class="ttdef"><b>Definition</b> TransactionAPI.h:13</div></div>
 <div class="ttc" id="aclass_transaction_html"><div class="ttname"><a href="class_transaction.html">Transaction</a></div><div class="ttdoc">Holds all data related to a transaction.</div><div class="ttdef"><b>Definition</b> Transaction.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

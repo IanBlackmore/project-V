@@ -1,4 +1,24 @@
 var searchData=
 [
-  ['formatmoney_0',['formatMoney',['../class_money_formatter.html#aac2a368d01feee5aaace099bd99a3cc2',1,'MoneyFormatter']]]
+  ['cancel_0',['cancel',['../classcrow_1_1detail_1_1task__timer.html#a05b9d2725c0992aace3c50c942d56e92',1,'crow::detail::task_timer']]],
+  ['cancel_5fdeadline_5ftimer_1',['cancel_deadline_timer',['../classcrow_1_1_connection.html#abe2079bca519de51ce6135282cd0f488',1,'crow::Connection']]],
+  ['catchall_5froute_2',['catchall_route',['../classcrow_1_1_crow.html#abfb285bf01d12f28eabcc716423effe4',1,'crow::Crow']]],
+  ['catchall_5frule_3',['catchall_rule',['../classcrow_1_1_blueprint.html#a425ad65437b48439e7660259714e4b78',1,'crow::Blueprint::catchall_rule()'],['../classcrow_1_1_router.html#a51714cad01f6716eebe13f9dd649c3dd',1,'crow::Router::catchall_rule()']]],
+  ['check_5fdestroy_4',['check_destroy',['../classcrow_1_1websocket_1_1_connection.html#a8030e7ca3e9ee5d07ccf7f8cb43fa317',1,'crow::websocket::Connection']]],
+  ['check_5fnode_5',['check_node',['../structcrow_1_1_session_middleware_1_1context.html#acb951bd0438b1ee524617781b503b7c6',1,'crow::SessionMiddleware::context']]],
+  ['check_5fversion_6',['check_version',['../structcrow_1_1request.html#ac369309c6be61c011b93a5b8cf14515a',1,'crow::request']]],
+  ['chrono_5ftime_7',['chrono_time',['../structcrow_1_1_file_store.html#ad2af99efb2b255865b3165e067ff62c2',1,'crow::FileStore']]],
+  ['clear_8',['clear',['../classcrow_1_1query__string.html#a19138a2e29bba49996bf67e7403da405',1,'crow::query_string::clear()'],['../structcrow_1_1_h_t_t_p_parser.html#abc4649eacc92efe28b8c41c1d434e749',1,'crow::HTTPParser::clear()'],['../classcrow_1_1json_1_1wvalue.html#af46596998d8e639a23b401e951297b63',1,'crow::json::wvalue::clear()'],['../structcrow_1_1response.html#a068269fc8b7f1df3d5421ccd384fe1f3',1,'crow::response::clear()']]],
+  ['close_9',['close',['../structcrow_1_1_socket_adaptor.html#af925b4f600663b2293741947297d730e',1,'crow::SocketAdaptor::close()'],['../structcrow_1_1websocket_1_1connection.html#a0d1ac9e543d8e341979ed2b49c0fbaf7',1,'crow::websocket::connection::close()'],['../classcrow_1_1websocket_1_1_connection.html#a663d3f3917b8cc7f9b54e6c7dfc8d604',1,'crow::websocket::Connection::close()']]],
+  ['compile_10',['compile',['../namespacecrow_1_1mustache.html#a5823e2be647059121cc4f0329e44741a',1,'crow::mustache']]],
+  ['complete_5frequest_11',['complete_request',['../classcrow_1_1_connection.html#aa40019a3731cc55174401e3b31602524',1,'crow::Connection']]],
+  ['concurrency_12',['concurrency',['../classcrow_1_1_crow.html#aef4806351da08c271f1e0863e9c75b3e',1,'crow::Crow::concurrency(std::uint16_t concurrency)'],['../classcrow_1_1_crow.html#abd824d73fdd02ba810b8dd37e2900240',1,'crow::Crow::concurrency()']]],
+  ['connection_13',['Connection',['../classcrow_1_1_connection.html#ad83a6948c16db75e51dcf7514f298983',1,'crow::Connection::Connection()'],['../classcrow_1_1websocket_1_1_connection.html#ae13084d8ea772f54bf3397a9fab107d8',1,'crow::websocket::Connection::Connection()']]],
+  ['contains_14',['contains',['../structcrow_1_1_session_middleware_1_1context.html#aef298a499f4298cd3482e01aa4d8a189',1,'crow::SessionMiddleware::context::contains()'],['../structcrow_1_1_in_memory_store.html#a2d4c02f94bb38daf307f9cd771eae84b',1,'crow::InMemoryStore::contains()'],['../structcrow_1_1_file_store.html#a157b782b07d7cc33ca1df1a36dc7f123',1,'crow::FileStore::contains()']]],
+  ['cookie_15',['Cookie',['../structcrow_1_1_cookie_parser_1_1_cookie.html#a7a7894fa9160191014647f558459e993',1,'crow::CookieParser::Cookie::Cookie(const std::string &amp;key, U &amp;&amp;value)'],['../structcrow_1_1_cookie_parser_1_1_cookie.html#afa9bbac95f1b04e72b8fcef65011d103',1,'crow::CookieParser::Cookie::Cookie(const std::string &amp;key)'],['../structcrow_1_1_cookie_parser_1_1_cookie.html#a8dee0e3211bd6ec25a2aa3193ebe036f',1,'crow::CookieParser::Cookie::Cookie(const Cookie &amp;c)'],['../structcrow_1_1_cookie_parser_1_1_cookie.html#a407b58a20f2b7298e623deb4bfcb9269',1,'crow::CookieParser::Cookie::Cookie()=default']]],
+  ['copy_5fl_16',['copy_l',['../classcrow_1_1json_1_1rvalue.html#a77abbda8b5d69853973f147dfd1422eb',1,'crow::json::rvalue']]],
+  ['corsrules_17',['CORSRules',['../structcrow_1_1_c_o_r_s_rules.html#ab4fbb7e0a18e312ade1d0a2c6fa58003',1,'crow::CORSRules::CORSRules()=delete'],['../structcrow_1_1_c_o_r_s_rules.html#a3ef6c191bfd6d05eeb4aba9959a676d7',1,'crow::CORSRules::CORSRules(CORSHandler *handler)']]],
+  ['count_18',['count',['../classcrow_1_1json_1_1rvalue.html#a36b626fa33f7471c184b9b63a01ec9b6',1,'crow::json::rvalue::count()'],['../classcrow_1_1json_1_1wvalue.html#ade9b70f37264daab1b7992061eb526bd',1,'crow::json::wvalue::count()']]],
+  ['crlf_19',['crlf',['../namespacecrow.html#a664043b97bc65e838a04a35f2f4ce4b9',1,'crow']]],
+  ['crow_20',['Crow',['../classcrow_1_1_crow.html#a7a6ce30b00d6d2beb901ffbb3160c137',1,'crow::Crow::Crow()'],['../classcrow_1_1_crow.html#abb69a7bf5d4a791a398c838d37086d94',1,'crow::Crow::Crow(Ts &amp;&amp;... ts)']]]
 ];

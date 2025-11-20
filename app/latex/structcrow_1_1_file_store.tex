@@ -1,0 +1,122 @@
+\doxysection{crow\+::File\+Store Struct Reference}
+\hypertarget{structcrow_1_1_file_store}{}\label{structcrow_1_1_file_store}\index{crow::FileStore@{crow::FileStore}}
+
+
+{\ttfamily \#include $<$crow\+\_\+all.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structcrow_1_1_file_store_abb247faa5b37800faf1681c6135873cb}{File\+Store}} (const std\+::string \&folder, uint64\+\_\+t expiration\+\_\+seconds=30 \texorpdfstring{$\ast$}{*}24 \texorpdfstring{$\ast$}{*}60 \texorpdfstring{$\ast$}{*}60)
+\item 
+\mbox{\hyperlink{structcrow_1_1_file_store_a25d8848e78748954f0fc91f6a5b9b051}{\texorpdfstring{$\sim$}{\string~}\+File\+Store}} ()
+\item 
+void \mbox{\hyperlink{structcrow_1_1_file_store_abd0f1c1384a68727e76fd2fc2b57f08e}{handle\+\_\+expired}} ()
+\item 
+void \mbox{\hyperlink{structcrow_1_1_file_store_aeecb64930be79a90d445807c2985240f}{load}} (\mbox{\hyperlink{structcrow_1_1session_1_1_cached_session}{session\+::\+Cached\+Session}} \&cn)
+\item 
+void \mbox{\hyperlink{structcrow_1_1_file_store_a88d9dae30b9a1c86440c7b783a1b1802}{save}} (\mbox{\hyperlink{structcrow_1_1session_1_1_cached_session}{session\+::\+Cached\+Session}} \&cn)
+\item 
+std\+::string \mbox{\hyperlink{structcrow_1_1_file_store_a12a26b21bf86b6004419255ea2a19356}{get\+\_\+filename}} (const std\+::string \&key, bool suffix=true)
+\item 
+bool \mbox{\hyperlink{structcrow_1_1_file_store_a157b782b07d7cc33ca1df1a36dc7f123}{contains}} (const std\+::string \&key)
+\item 
+void \mbox{\hyperlink{structcrow_1_1_file_store_aa4d0a57ad03688b86a9917b8dc85afc6}{evict}} (const std\+::string \&key)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{structcrow_1_1_file_store_ad2af99efb2b255865b3165e067ff62c2}{chrono\+\_\+time}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structcrow_1_1_file_store_a6472dc22b56e7c677f6a63f1f44da64f}{path\+\_\+}}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{structcrow_1_1_file_store_a78dabec9a902dbdb16ab320f91ee0d6f}{expiration\+\_\+seconds\+\_\+}}
+\item 
+\mbox{\hyperlink{structcrow_1_1session_1_1_expiration_tracker}{session\+::\+Expiration\+Tracker}} \mbox{\hyperlink{structcrow_1_1_file_store_a86339c643e5d6b1fb36b4973a7efc9bf}{expirations\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structcrow_1_1_file_store_abb247faa5b37800faf1681c6135873cb}\label{structcrow_1_1_file_store_abb247faa5b37800faf1681c6135873cb} 
+\index{crow::FileStore@{crow::FileStore}!FileStore@{FileStore}}
+\index{FileStore@{FileStore}!crow::FileStore@{crow::FileStore}}
+\doxysubsubsection{\texorpdfstring{FileStore()}{FileStore()}}
+{\footnotesize\ttfamily crow\+::\+File\+Store\+::\+File\+Store (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{folder,  }\item[{uint64\+\_\+t}]{expiration\+\_\+seconds = {\ttfamily 30~\texorpdfstring{$\ast$}{*}~24~\texorpdfstring{$\ast$}{*}~60~\texorpdfstring{$\ast$}{*}~60} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1_file_store_a25d8848e78748954f0fc91f6a5b9b051}\label{structcrow_1_1_file_store_a25d8848e78748954f0fc91f6a5b9b051} 
+\index{crow::FileStore@{crow::FileStore}!````~FileStore@{\texorpdfstring{$\sim$}{\string~}FileStore}}
+\index{````~FileStore@{\texorpdfstring{$\sim$}{\string~}FileStore}!crow::FileStore@{crow::FileStore}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}FileStore()}{\string~FileStore()}}
+{\footnotesize\ttfamily crow\+::\+File\+Store\+::\texorpdfstring{$\sim$}{\string~}\+File\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structcrow_1_1_file_store_ad2af99efb2b255865b3165e067ff62c2}\label{structcrow_1_1_file_store_ad2af99efb2b255865b3165e067ff62c2} 
+\index{crow::FileStore@{crow::FileStore}!chrono\_time@{chrono\_time}}
+\index{chrono\_time@{chrono\_time}!crow::FileStore@{crow::FileStore}}
+\doxysubsubsection{\texorpdfstring{chrono\_time()}{chrono\_time()}}
+{\footnotesize\ttfamily uint64\+\_\+t crow\+::\+File\+Store\+::chrono\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1_file_store_a157b782b07d7cc33ca1df1a36dc7f123}\label{structcrow_1_1_file_store_a157b782b07d7cc33ca1df1a36dc7f123} 
+\index{crow::FileStore@{crow::FileStore}!contains@{contains}}
+\index{contains@{contains}!crow::FileStore@{crow::FileStore}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool crow\+::\+File\+Store\+::contains (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1_file_store_aa4d0a57ad03688b86a9917b8dc85afc6}\label{structcrow_1_1_file_store_aa4d0a57ad03688b86a9917b8dc85afc6} 
+\index{crow::FileStore@{crow::FileStore}!evict@{evict}}
+\index{evict@{evict}!crow::FileStore@{crow::FileStore}}
+\doxysubsubsection{\texorpdfstring{evict()}{evict()}}
+{\footnotesize\ttfamily void crow\+::\+File\+Store\+::evict (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1_file_store_a12a26b21bf86b6004419255ea2a19356}\label{structcrow_1_1_file_store_a12a26b21bf86b6004419255ea2a19356} 
+\index{crow::FileStore@{crow::FileStore}!get\_filename@{get\_filename}}
+\index{get\_filename@{get\_filename}!crow::FileStore@{crow::FileStore}}
+\doxysubsubsection{\texorpdfstring{get\_filename()}{get\_filename()}}
+{\footnotesize\ttfamily std\+::string crow\+::\+File\+Store\+::get\+\_\+filename (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{bool}]{suffix = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1_file_store_abd0f1c1384a68727e76fd2fc2b57f08e}\label{structcrow_1_1_file_store_abd0f1c1384a68727e76fd2fc2b57f08e} 
+\index{crow::FileStore@{crow::FileStore}!handle\_expired@{handle\_expired}}
+\index{handle\_expired@{handle\_expired}!crow::FileStore@{crow::FileStore}}
+\doxysubsubsection{\texorpdfstring{handle\_expired()}{handle\_expired()}}
+{\footnotesize\ttfamily void crow\+::\+File\+Store\+::handle\+\_\+expired (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1_file_store_aeecb64930be79a90d445807c2985240f}\label{structcrow_1_1_file_store_aeecb64930be79a90d445807c2985240f} 
+\index{crow::FileStore@{crow::FileStore}!load@{load}}
+\index{load@{load}!crow::FileStore@{crow::FileStore}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void crow\+::\+File\+Store\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1session_1_1_cached_session}{session\+::\+Cached\+Session}} \&}]{cn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1_file_store_a88d9dae30b9a1c86440c7b783a1b1802}\label{structcrow_1_1_file_store_a88d9dae30b9a1c86440c7b783a1b1802} 
+\index{crow::FileStore@{crow::FileStore}!save@{save}}
+\index{save@{save}!crow::FileStore@{crow::FileStore}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void crow\+::\+File\+Store\+::save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1session_1_1_cached_session}{session\+::\+Cached\+Session}} \&}]{cn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structcrow_1_1_file_store_a78dabec9a902dbdb16ab320f91ee0d6f}\label{structcrow_1_1_file_store_a78dabec9a902dbdb16ab320f91ee0d6f} 
+\index{crow::FileStore@{crow::FileStore}!expiration\_seconds\_@{expiration\_seconds\_}}
+\index{expiration\_seconds\_@{expiration\_seconds\_}!crow::FileStore@{crow::FileStore}}
+\doxysubsubsection{\texorpdfstring{expiration\_seconds\_}{expiration\_seconds\_}}
+{\footnotesize\ttfamily uint64\+\_\+t crow\+::\+File\+Store\+::expiration\+\_\+seconds\+\_\+}
+
+\Hypertarget{structcrow_1_1_file_store_a86339c643e5d6b1fb36b4973a7efc9bf}\label{structcrow_1_1_file_store_a86339c643e5d6b1fb36b4973a7efc9bf} 
+\index{crow::FileStore@{crow::FileStore}!expirations\_@{expirations\_}}
+\index{expirations\_@{expirations\_}!crow::FileStore@{crow::FileStore}}
+\doxysubsubsection{\texorpdfstring{expirations\_}{expirations\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcrow_1_1session_1_1_expiration_tracker}{session\+::\+Expiration\+Tracker}} crow\+::\+File\+Store\+::expirations\+\_\+}
+
+\Hypertarget{structcrow_1_1_file_store_a6472dc22b56e7c677f6a63f1f44da64f}\label{structcrow_1_1_file_store_a6472dc22b56e7c677f6a63f1f44da64f} 
+\index{crow::FileStore@{crow::FileStore}!path\_@{path\_}}
+\index{path\_@{path\_}!crow::FileStore@{crow::FileStore}}
+\doxysubsubsection{\texorpdfstring{path\_}{path\_}}
+{\footnotesize\ttfamily std\+::string crow\+::\+File\+Store\+::path\+\_\+}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{crow__all_8h}{crow\+\_\+all.\+h}}\end{DoxyCompactItemize}

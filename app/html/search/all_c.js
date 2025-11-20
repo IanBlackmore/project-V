@@ -1,4 +1,32 @@
 var searchData=
 [
-  ['updatedatabase_0',['updateDatabase',['../class_transaction_a_p_i.html#a48dceb9e598080725f5f55a38ce53a30',1,'TransactionAPI']]]
+  ['l_0',['l',['../classcrow_1_1json_1_1wvalue.html#ac79b37f22639b658c215992403792194',1,'crow::json::wvalue']]],
+  ['l_5f_1',['l_',['../classcrow_1_1json_1_1rvalue.html#af53bfe45ef959c38d2a190a79ed57bda',1,'crow::json::rvalue']]],
+  ['lax_2',['Lax',['../structcrow_1_1_cookie_parser_1_1_cookie.html#a60148a93277a6c5219fcea36b1c30ea0a6f0170fbfae85ec13f565665b8d74f3b',1,'crow::CookieParser::Cookie']]],
+  ['leftrotate_3',['LeftRotate',['../classsha1_1_1_s_h_a1.html#a88fa19fad6a3b06522b2826a5966f355',1,'sha1::SHA1']]],
+  ['len16_4',['Len16',['../namespacecrow_1_1websocket.html#a2d7a65cf1c63efe21238c6e75c02334ca6a687f78479d558a907bbaac0d7f53f0',1,'crow::websocket']]],
+  ['len64_5',['Len64',['../namespacecrow_1_1websocket.html#a2d7a65cf1c63efe21238c6e75c02334cab70bcc4d8160e709624eaa6377a35c5d',1,'crow::websocket']]],
+  ['lenient_5fhttp_5fheaders_6',['lenient_http_headers',['../structcrow_1_1http__parser.html#a4319f3554587e1a0c6ad22a091128323',1,'crow::http_parser']]],
+  ['level_5f_7',['level_',['../classcrow_1_1logger.html#a07951fb47991e262ef4b901eb184d0b7',1,'crow::logger']]],
+  ['lf_8',['lf',['../namespacecrow.html#ad64fc935fb542bd04fd30bf7708413cb',1,'crow']]],
+  ['link_9',['Link',['../namespacecrow.html#afe3a72ef7c3edbf71d0bceacf02517c4a97e7c9a7d06eac006a28bf05467fcc8b',1,'crow']]],
+  ['link_10',['LINK',['../namespacecrow.html#afe3a72ef7c3edbf71d0bceacf02517c4a58c0a0e97e6d2f615bc264c2775fda44',1,'crow']]],
+  ['list_11',['list',['../classcrow_1_1json_1_1wvalue.html#a4a885b86093c6fc423747a46865996b3',1,'crow::json::wvalue']]],
+  ['list_12',['List',['../namespacecrow_1_1json.html#adb9569a402d1b289a75025c8c96e5d99a4ee29ca12c7d126654bd0e5275de6135',1,'crow::json']]],
+  ['lo_13',['lo',['../classcrow_1_1json_1_1rvalue.html#ae34b409f3f467c3e6e0b34d0ba625967',1,'crow::json::rvalue']]],
+  ['load_14',['load',['../classcrow_1_1json_1_1rvalue.html#a10b60dd760c49dbb7c904e850b298eb5',1,'crow::json::rvalue::load'],['../structcrow_1_1_in_memory_store.html#af7f988e319fb83ccc6c5bab5e745bb2d',1,'crow::InMemoryStore::load()'],['../structcrow_1_1_file_store.html#aeecb64930be79a90d445807c2985240f',1,'crow::FileStore::load()'],['../namespacecrow_1_1json.html#a84a2fc9bc21a94b2791271e54879ab0a',1,'crow::json::load(const char *data, size_t size)'],['../namespacecrow_1_1json.html#ad995f1379ae1ddc8075cab8185c9a78a',1,'crow::json::load(const char *data)'],['../namespacecrow_1_1json.html#a59efe2ae1d83ded364cc3ecc143bce85',1,'crow::json::load(const std::string &amp;str)'],['../namespacecrow_1_1mustache.html#abe44de50c382e0d39e7ef5b7d5057ca6',1,'crow::mustache::load()']]],
+  ['load_5fid_15',['load_id',['../structcrow_1_1_session_middleware.html#a8872e6be7b57669fa82e6d35d06229ee',1,'crow::SessionMiddleware']]],
+  ['load_5fnocopy_5finternal_16',['load_nocopy_internal',['../classcrow_1_1json_1_1rvalue.html#ae5a3f52c3dd924c56c934a35d584077b',1,'crow::json::rvalue::load_nocopy_internal'],['../namespacecrow_1_1json.html#a0cd58f45702772a5aac929dec0966a0a',1,'crow::json::load_nocopy_internal()']]],
+  ['load_5ftext_17',['load_text',['../namespacecrow_1_1mustache.html#a8db3aff497ff60b32321fc0a16274576',1,'crow::mustache']]],
+  ['load_5ftext_5funsafe_18',['load_text_unsafe',['../namespacecrow_1_1mustache.html#a5c27c8fa1561611202419d8c2f6c80cc',1,'crow::mustache']]],
+  ['load_5funsafe_19',['load_unsafe',['../namespacecrow_1_1mustache.html#af883f129665fb698bc4da7659d0b0841',1,'crow::mustache']]],
+  ['lock_20',['lock',['../structcrow_1_1_session_middleware.html#a65b80dd03c71fe58e56db2df3586725e',1,'crow::SessionMiddleware']]],
+  ['lock_21',['LOCK',['../namespacecrow.html#afe3a72ef7c3edbf71d0bceacf02517c4af510b97de4ace11844b85f23d0fc012f',1,'crow']]],
+  ['lock_22',['Lock',['../namespacecrow.html#afe3a72ef7c3edbf71d0bceacf02517c4ab485167c5b0e59d47009a16f90fe2659',1,'crow']]],
+  ['log_23',['log',['../classcrow_1_1_i_log_handler.html#ae17f05549983c9d7d6aea77cda589f60',1,'crow::ILogHandler::log()'],['../classcrow_1_1_cerr_log_handler.html#a8c0f59589facc283b5cd99ead9a1d2c4',1,'crow::CerrLogHandler::log()']]],
+  ['logger_24',['logger',['../classcrow_1_1logger.html',1,'crow::logger'],['../classcrow_1_1logger.html#a1e8d38b6f23b020c5c008b0028210acc',1,'crow::logger::logger()']]],
+  ['loglevel_25',['loglevel',['../classcrow_1_1_crow.html#adaaea481094e3f4488569c991772d27f',1,'crow::Crow']]],
+  ['loglevel_26',['LogLevel',['../namespacecrow.html#ad07dc32e163caa516aa1225a1ec4afe4',1,'crow']]],
+  ['lremain_5f_27',['lremain_',['../classcrow_1_1json_1_1rvalue.html#a2033a53ac2aff31e56c73e515767b0f8',1,'crow::json::rvalue']]],
+  ['lsize_5f_28',['lsize_',['../classcrow_1_1json_1_1rvalue.html#a1442ccf4236ed2a5688e7a8c7fad6b8b',1,'crow::json::rvalue']]]
 ];

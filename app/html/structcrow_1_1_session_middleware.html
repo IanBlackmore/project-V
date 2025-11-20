@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>transaction team: crow::SessionMiddleware&lt; Store &gt; Struct Template Reference</title>
+<title>My Project: crow::SessionMiddleware&lt; Store &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">transaction team
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>crow</b></li><li class="navelem"><a class="el" href="structcrow_1_1_session_middleware.html">SessionMiddleware</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecrow.html">crow</a></li><li class="navelem"><a class="el" href="structcrow_1_1_session_middleware.html">SessionMiddleware</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -79,10 +79,14 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="structcrow_1_1_session_middleware-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">crow::SessionMiddleware&lt; Store &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="crow__all_8h_source.html">crow_all.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -91,32 +95,442 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a65b80dd03c71fe58e56db2df3586725e" id="r_a65b80dd03c71fe58e56db2df3586725e"><td class="memItemLeft" align="right" valign="top"><a id="a65b80dd03c71fe58e56db2df3586725e" name="a65b80dd03c71fe58e56db2df3586725e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>lock</b> = std::lock_guard&lt;std::mutex&gt;</td></tr>
+<tr class="memitem:a65b80dd03c71fe58e56db2df3586725e" id="r_a65b80dd03c71fe58e56db2df3586725e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65b80dd03c71fe58e56db2df3586725e">lock</a> = std::lock_guard&lt;std::mutex&gt;</td></tr>
 <tr class="separator:a65b80dd03c71fe58e56db2df3586725e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a291d0e284dd9c9b0550a5ef4718336ff" id="r_a291d0e284dd9c9b0550a5ef4718336ff"><td class="memItemLeft" align="right" valign="top"><a id="a291d0e284dd9c9b0550a5ef4718336ff" name="a291d0e284dd9c9b0550a5ef4718336ff"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>rc_lock</b> = std::lock_guard&lt;std::recursive_mutex&gt;</td></tr>
+<tr class="memitem:a291d0e284dd9c9b0550a5ef4718336ff" id="r_a291d0e284dd9c9b0550a5ef4718336ff"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a291d0e284dd9c9b0550a5ef4718336ff">rc_lock</a> = std::lock_guard&lt;std::recursive_mutex&gt;</td></tr>
 <tr class="separator:a291d0e284dd9c9b0550a5ef4718336ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a22ff1c31d382431eb42696b50b0cf64d" id="r_a22ff1c31d382431eb42696b50b0cf64d"><td class="memTemplParams" colspan="2"><a id="a22ff1c31d382431eb42696b50b0cf64d" name="a22ff1c31d382431eb42696b50b0cf64d"></a>
-template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:a22ff1c31d382431eb42696b50b0cf64d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SessionMiddleware</b> (<a class="el" href="structcrow_1_1_cookie_parser_1_1_cookie.html">CookieParser::Cookie</a> cookie, int id_length, Ts... ts)</td></tr>
+<tr class="memitem:a22ff1c31d382431eb42696b50b0cf64d" id="r_a22ff1c31d382431eb42696b50b0cf64d"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:a22ff1c31d382431eb42696b50b0cf64d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a22ff1c31d382431eb42696b50b0cf64d">SessionMiddleware</a> (<a class="el" href="structcrow_1_1_cookie_parser_1_1_cookie.html">CookieParser::Cookie</a> cookie, int id_length, Ts... ts)</td></tr>
 <tr class="separator:a22ff1c31d382431eb42696b50b0cf64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16695b86bc55c4e28b850310f49e96c4" id="r_a16695b86bc55c4e28b850310f49e96c4"><td class="memTemplParams" colspan="2"><a id="a16695b86bc55c4e28b850310f49e96c4" name="a16695b86bc55c4e28b850310f49e96c4"></a>
-template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:a16695b86bc55c4e28b850310f49e96c4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SessionMiddleware</b> (Ts... ts)</td></tr>
+<tr class="memitem:a16695b86bc55c4e28b850310f49e96c4" id="r_a16695b86bc55c4e28b850310f49e96c4"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:a16695b86bc55c4e28b850310f49e96c4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a16695b86bc55c4e28b850310f49e96c4">SessionMiddleware</a> (Ts... ts)</td></tr>
 <tr class="separator:a16695b86bc55c4e28b850310f49e96c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23dc5effe24c805defa4bce8b380b486" id="r_a23dc5effe24c805defa4bce8b380b486"><td class="memTemplParams" colspan="2"><a id="a23dc5effe24c805defa4bce8b380b486" name="a23dc5effe24c805defa4bce8b380b486"></a>
-template&lt;typename AllContext &gt; </td></tr>
-<tr class="memitem:a23dc5effe24c805defa4bce8b380b486"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>before_handle</b> (<a class="el" href="structcrow_1_1request.html">request</a> &amp;, <a class="el" href="structcrow_1_1response.html">response</a> &amp;, <a class="el" href="structcrow_1_1_session_middleware_1_1context.html">context</a> &amp;ctx, AllContext &amp;all_ctx)</td></tr>
+<tr class="memitem:a23dc5effe24c805defa4bce8b380b486" id="r_a23dc5effe24c805defa4bce8b380b486"><td class="memTemplParams" colspan="2">template&lt;typename AllContext &gt; </td></tr>
+<tr class="memitem:a23dc5effe24c805defa4bce8b380b486"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a23dc5effe24c805defa4bce8b380b486">before_handle</a> (<a class="el" href="structcrow_1_1request.html">request</a> &amp;, <a class="el" href="structcrow_1_1response.html">response</a> &amp;, <a class="el" href="structcrow_1_1_session_middleware_1_1context.html">context</a> &amp;ctx, AllContext &amp;all_ctx)</td></tr>
 <tr class="separator:a23dc5effe24c805defa4bce8b380b486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a650d4e9ec4c903b692f3543d8d9b83cd" id="r_a650d4e9ec4c903b692f3543d8d9b83cd"><td class="memTemplParams" colspan="2"><a id="a650d4e9ec4c903b692f3543d8d9b83cd" name="a650d4e9ec4c903b692f3543d8d9b83cd"></a>
-template&lt;typename AllContext &gt; </td></tr>
-<tr class="memitem:a650d4e9ec4c903b692f3543d8d9b83cd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>after_handle</b> (<a class="el" href="structcrow_1_1request.html">request</a> &amp;, <a class="el" href="structcrow_1_1response.html">response</a> &amp;, <a class="el" href="structcrow_1_1_session_middleware_1_1context.html">context</a> &amp;ctx, AllContext &amp;all_ctx)</td></tr>
+<tr class="memitem:a650d4e9ec4c903b692f3543d8d9b83cd" id="r_a650d4e9ec4c903b692f3543d8d9b83cd"><td class="memTemplParams" colspan="2">template&lt;typename AllContext &gt; </td></tr>
+<tr class="memitem:a650d4e9ec4c903b692f3543d8d9b83cd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a650d4e9ec4c903b692f3543d8d9b83cd">after_handle</a> (<a class="el" href="structcrow_1_1request.html">request</a> &amp;, <a class="el" href="structcrow_1_1response.html">response</a> &amp;, <a class="el" href="structcrow_1_1_session_middleware_1_1context.html">context</a> &amp;ctx, AllContext &amp;all_ctx)</td></tr>
 <tr class="separator:a650d4e9ec4c903b692f3543d8d9b83cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af8a064f9db3accffe6a1e176c8a8aba0" id="r_af8a064f9db3accffe6a1e176c8a8aba0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8a064f9db3accffe6a1e176c8a8aba0">next_id</a> ()</td></tr>
+<tr class="separator:af8a064f9db3accffe6a1e176c8a8aba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8872e6be7b57669fa82e6d35d06229ee" id="r_a8872e6be7b57669fa82e6d35d06229ee"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8872e6be7b57669fa82e6d35d06229ee">load_id</a> (const <a class="el" href="structcrow_1_1_cookie_parser_1_1context.html">CookieParser::context</a> &amp;cookies)</td></tr>
+<tr class="separator:a8872e6be7b57669fa82e6d35d06229ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae82eb5010b0def35b3cdad0afa80d7e9" id="r_ae82eb5010b0def35b3cdad0afa80d7e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae82eb5010b0def35b3cdad0afa80d7e9">store_id</a> (<a class="el" href="structcrow_1_1_cookie_parser_1_1context.html">CookieParser::context</a> &amp;cookies, const std::string &amp;session_id)</td></tr>
+<tr class="separator:ae82eb5010b0def35b3cdad0afa80d7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a817466664a41483dc9ce36315fe26994" id="r_a817466664a41483dc9ce36315fe26994"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a817466664a41483dc9ce36315fe26994">id_length_</a></td></tr>
+<tr class="separator:a817466664a41483dc9ce36315fe26994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4307b754b050610ad66a33395b17a284" id="r_a4307b754b050610ad66a33395b17a284"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrow_1_1_cookie_parser_1_1_cookie.html">CookieParser::Cookie</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4307b754b050610ad66a33395b17a284">cookie_</a></td></tr>
+<tr class="separator:a4307b754b050610ad66a33395b17a284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99caa3f9be9d172111f56918be8ac0f1" id="r_a99caa3f9be9d172111f56918be8ac0f1"><td class="memItemLeft" align="right" valign="top">Store&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99caa3f9be9d172111f56918be8ac0f1">store_</a></td></tr>
+<tr class="separator:a99caa3f9be9d172111f56918be8ac0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96caab9e7c99e0271d25219faa27fd9f" id="r_a96caab9e7c99e0271d25219faa27fd9f"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; std::mutex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96caab9e7c99e0271d25219faa27fd9f">mutex_</a></td></tr>
+<tr class="separator:a96caab9e7c99e0271d25219faa27fd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30c1872db8357a4dd262c7611dcf0ec4" id="r_a30c1872db8357a4dd262c7611dcf0ec4"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::shared_ptr&lt; <a class="el" href="structcrow_1_1session_1_1_cached_session.html">session::CachedSession</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30c1872db8357a4dd262c7611dcf0ec4">cache_</a></td></tr>
+<tr class="separator:a30c1872db8357a4dd262c7611dcf0ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a65b80dd03c71fe58e56db2df3586725e" name="a65b80dd03c71fe58e56db2df3586725e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65b80dd03c71fe58e56db2df3586725e">&#9670;&#160;</a></span>lock</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structcrow_1_1_session_middleware.html">crow::SessionMiddleware</a>&lt; Store &gt;::lock = std::lock_guard&lt;std::mutex&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a291d0e284dd9c9b0550a5ef4718336ff" name="a291d0e284dd9c9b0550a5ef4718336ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a291d0e284dd9c9b0550a5ef4718336ff">&#9670;&#160;</a></span>rc_lock</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structcrow_1_1_session_middleware.html">crow::SessionMiddleware</a>&lt; Store &gt;::rc_lock = std::lock_guard&lt;std::recursive_mutex&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a22ff1c31d382431eb42696b50b0cf64d" name="a22ff1c31d382431eb42696b50b0cf64d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22ff1c31d382431eb42696b50b0cf64d">&#9670;&#160;</a></span>SessionMiddleware() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcrow_1_1_session_middleware.html">crow::SessionMiddleware</a>&lt; Store &gt;::SessionMiddleware </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1_cookie_parser_1_1_cookie.html">CookieParser::Cookie</a></td>          <td class="paramname"><span class="paramname"><em>cookie</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id_length</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Ts...</td>          <td class="paramname"><span class="paramname"><em>ts</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16695b86bc55c4e28b850310f49e96c4" name="a16695b86bc55c4e28b850310f49e96c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16695b86bc55c4e28b850310f49e96c4">&#9670;&#160;</a></span>SessionMiddleware() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcrow_1_1_session_middleware.html">crow::SessionMiddleware</a>&lt; Store &gt;::SessionMiddleware </td>
+          <td>(</td>
+          <td class="paramtype">Ts...</td>          <td class="paramname"><span class="paramname"><em>ts</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a650d4e9ec4c903b692f3543d8d9b83cd" name="a650d4e9ec4c903b692f3543d8d9b83cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a650d4e9ec4c903b692f3543d8d9b83cd">&#9670;&#160;</a></span>after_handle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store &gt; </div>
+<div class="memtemplate">
+template&lt;typename AllContext &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structcrow_1_1_session_middleware.html">crow::SessionMiddleware</a>&lt; Store &gt;::after_handle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1request.html">request</a> &amp;</td>          <td class="paramname"><span class="paramname">, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1response.html">response</a> &amp;</td>          <td class="paramname"><span class="paramname">, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1_session_middleware_1_1context.html">context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AllContext &amp;</td>          <td class="paramname"><span class="paramname"><em>all_ctx</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23dc5effe24c805defa4bce8b380b486" name="a23dc5effe24c805defa4bce8b380b486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23dc5effe24c805defa4bce8b380b486">&#9670;&#160;</a></span>before_handle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store &gt; </div>
+<div class="memtemplate">
+template&lt;typename AllContext &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structcrow_1_1_session_middleware.html">crow::SessionMiddleware</a>&lt; Store &gt;::before_handle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1request.html">request</a> &amp;</td>          <td class="paramname"><span class="paramname">, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1response.html">response</a> &amp;</td>          <td class="paramname"><span class="paramname">, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1_session_middleware_1_1context.html">context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AllContext &amp;</td>          <td class="paramname"><span class="paramname"><em>all_ctx</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8872e6be7b57669fa82e6d35d06229ee" name="a8872e6be7b57669fa82e6d35d06229ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8872e6be7b57669fa82e6d35d06229ee">&#9670;&#160;</a></span>load_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="structcrow_1_1_session_middleware.html">crow::SessionMiddleware</a>&lt; Store &gt;::load_id </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcrow_1_1_cookie_parser_1_1context.html">CookieParser::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>cookies</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af8a064f9db3accffe6a1e176c8a8aba0" name="af8a064f9db3accffe6a1e176c8a8aba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a064f9db3accffe6a1e176c8a8aba0">&#9670;&#160;</a></span>next_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="structcrow_1_1_session_middleware.html">crow::SessionMiddleware</a>&lt; Store &gt;::next_id </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae82eb5010b0def35b3cdad0afa80d7e9" name="ae82eb5010b0def35b3cdad0afa80d7e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae82eb5010b0def35b3cdad0afa80d7e9">&#9670;&#160;</a></span>store_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structcrow_1_1_session_middleware.html">crow::SessionMiddleware</a>&lt; Store &gt;::store_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1_cookie_parser_1_1context.html">CookieParser::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>cookies</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>session_id</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a30c1872db8357a4dd262c7611dcf0ec4" name="a30c1872db8357a4dd262c7611dcf0ec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30c1872db8357a4dd262c7611dcf0ec4">&#9670;&#160;</a></span>cache_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;std::string, std::shared_ptr&lt;<a class="el" href="structcrow_1_1session_1_1_cached_session.html">session::CachedSession</a>&gt; &gt; <a class="el" href="structcrow_1_1_session_middleware.html">crow::SessionMiddleware</a>&lt; Store &gt;::cache_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4307b754b050610ad66a33395b17a284" name="a4307b754b050610ad66a33395b17a284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4307b754b050610ad66a33395b17a284">&#9670;&#160;</a></span>cookie_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcrow_1_1_cookie_parser_1_1_cookie.html">CookieParser::Cookie</a> <a class="el" href="structcrow_1_1_session_middleware.html">crow::SessionMiddleware</a>&lt; Store &gt;::cookie_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a817466664a41483dc9ce36315fe26994" name="a817466664a41483dc9ce36315fe26994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a817466664a41483dc9ce36315fe26994">&#9670;&#160;</a></span>id_length_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structcrow_1_1_session_middleware.html">crow::SessionMiddleware</a>&lt; Store &gt;::id_length_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96caab9e7c99e0271d25219faa27fd9f" name="a96caab9e7c99e0271d25219faa27fd9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96caab9e7c99e0271d25219faa27fd9f">&#9670;&#160;</a></span>mutex_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;std::mutex&gt; <a class="el" href="structcrow_1_1_session_middleware.html">crow::SessionMiddleware</a>&lt; Store &gt;::mutex_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99caa3f9be9d172111f56918be8ac0f1" name="a99caa3f9be9d172111f56918be8ac0f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99caa3f9be9d172111f56918be8ac0f1">&#9670;&#160;</a></span>store_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Store <a class="el" href="structcrow_1_1_session_middleware.html">crow::SessionMiddleware</a>&lt; Store &gt;::store_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="crow__all_8h_source.html">crow_all.h</a></li>
 </ul>

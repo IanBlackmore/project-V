@@ -1,0 +1,1472 @@
+\doxysection{crow\+\_\+all.\+h File Reference}
+\hypertarget{crow__all_8h}{}\label{crow__all_8h}\index{crow\_all.h@{crow\_all.h}}
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$asio.\+hpp$>$}\newline
+{\ttfamily \#include $<$asio/version.\+hpp$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$locale$>$}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$ios$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+set$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$asio/basic\+\_\+waitable\+\_\+timer.\+hpp$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$atomic$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$future$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$condition\+\_\+variable$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1returnable}{crow\+::returnable}}
+\begin{DoxyCompactList}\small\item\em An abstract class that allows any other class to be returned by a handler. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcrow_1_1query__string}{crow\+::query\+\_\+string}}
+\begin{DoxyCompactList}\small\item\em A class to represent any data coming after the {\ttfamily ?} in the request URL into key-\/value pairs. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classsha1_1_1_s_h_a1}{sha1\+::\+SHA1}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1_socket_adaptor}{crow\+::\+Socket\+Adaptor}}
+\begin{DoxyCompactList}\small\item\em A wrapper for the asio\+::ip\+::tcp\+::socket and asio\+::ssl\+::stream. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1ci__hash}{crow\+::ci\+\_\+hash}}
+\begin{DoxyCompactList}\small\item\em Hashing function for ci\+\_\+map (unordered\+\_\+multimap). \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1ci__key__eq}{crow\+::ci\+\_\+key\+\_\+eq}}
+\begin{DoxyCompactList}\small\item\em Equals function for ci\+\_\+map (unordered\+\_\+multimap). \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1routing__handle__result}{crow\+::routing\+\_\+handle\+\_\+result}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1request}{crow\+::request}}
+\begin{DoxyCompactList}\small\item\em An HTTP request. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1multipart_1_1header}{crow\+::multipart\+::header}}
+\begin{DoxyCompactList}\small\item\em The first part in a section, contains metadata about the part. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1multipart_1_1part}{crow\+::multipart\+::part}}
+\begin{DoxyCompactList}\small\item\em One part of the multipart message. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1multipart_1_1message}{crow\+::multipart\+::message}}
+\begin{DoxyCompactList}\small\item\em The parsed multipart request/response. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1http__parser}{crow\+::http\+\_\+parser}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1http__parser__settings}{crow\+::http\+\_\+parser\+\_\+settings}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1_h_t_t_p_parser}{crow\+::\+HTTPParser$<$ Handler $>$}}
+\begin{DoxyCompactList}\small\item\em A wrapper for {\ttfamily nodejs/http-\/parser}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcrow_1_1_i_log_handler}{crow\+::\+ILog\+Handler}}
+\item 
+class \mbox{\hyperlink{classcrow_1_1_cerr_log_handler}{crow\+::\+Cerr\+Log\+Handler}}
+\item 
+class \mbox{\hyperlink{classcrow_1_1logger}{crow\+::logger}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{crow\+::json\+::detail\+::r\+\_\+string}}
+\begin{DoxyCompactList}\small\item\em A read string implementation with comparison functionality. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcrow_1_1json_1_1rvalue}{crow\+::json\+::rvalue}}
+\begin{DoxyCompactList}\small\item\em JSON read value. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcrow_1_1json_1_1wvalue}{crow\+::json\+::wvalue}}
+\begin{DoxyCompactList}\small\item\em JSON write value. \end{DoxyCompactList}\item 
+union \mbox{\hyperlink{unioncrow_1_1json_1_1wvalue_1_1number}{crow\+::json\+::wvalue\+::number}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1json_1_1wvalue__reader}{crow\+::json\+::wvalue\+\_\+reader}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}}
+\begin{DoxyCompactList}\small\item\em HTTP response. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1response_1_1static__file__info}{crow\+::response\+::static\+\_\+file\+\_\+info}}
+\begin{DoxyCompactList}\small\item\em This constains metadata (coming from the {\ttfamily stat} command) related to any static files associated with this response. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1_u_t_f8}{crow\+::\+UTF8}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1_u_t_f8_1_1context}{crow\+::\+UTF8\+::context}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1_cookie_parser}{crow\+::\+Cookie\+Parser}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1_cookie_parser_1_1_cookie}{crow\+::\+Cookie\+Parser\+::\+Cookie}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1_cookie_parser_1_1context}{crow\+::\+Cookie\+Parser\+::context}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1session_1_1multi__value}{crow\+::session\+::multi\+\_\+value}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1session_1_1_expiration_tracker}{crow\+::session\+::\+Expiration\+Tracker}}
+\begin{DoxyCompactList}\small\item\em Expiration tracker keeps track of soonest-\/to-\/expire keys. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1session_1_1_cached_session}{crow\+::session\+::\+Cached\+Session}}
+\begin{DoxyCompactList}\small\item\em Cached\+Sessions are shared across requests. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1_session_middleware}{crow\+::\+Session\+Middleware$<$ Store $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1_session_middleware_1_1context}{crow\+::\+Session\+Middleware$<$ Store $>$\+::context}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1_in_memory_store}{crow\+::\+In\+Memory\+Store}}
+\begin{DoxyCompactList}\small\item\em \doxylink{structcrow_1_1_in_memory_store}{In\+Memory\+Store} stores all entries in memory. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1_file_store}{crow\+::\+File\+Store}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1_i_local_middleware}{crow\+::\+ILocal\+Middleware}}
+\begin{DoxyCompactList}\small\item\em Local middleware should extend \doxylink{structcrow_1_1_i_local_middleware}{ILocal\+Middleware}. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1check__before__handle__arity__3__const}{crow\+::detail\+::check\+\_\+before\+\_\+handle\+\_\+arity\+\_\+3\+\_\+const$<$ MW $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1check__before__handle__arity__3__const_1_1get}{crow\+::detail\+::check\+\_\+before\+\_\+handle\+\_\+arity\+\_\+3\+\_\+const$<$ MW $>$\+::get$<$ T, const  $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1check__before__handle__arity__3}{crow\+::detail\+::check\+\_\+before\+\_\+handle\+\_\+arity\+\_\+3$<$ MW $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1check__before__handle__arity__3_1_1get}{crow\+::detail\+::check\+\_\+before\+\_\+handle\+\_\+arity\+\_\+3$<$ MW $>$\+::get$<$ T, $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1check__after__handle__arity__3__const}{crow\+::detail\+::check\+\_\+after\+\_\+handle\+\_\+arity\+\_\+3\+\_\+const$<$ MW $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1check__after__handle__arity__3__const_1_1get}{crow\+::detail\+::check\+\_\+after\+\_\+handle\+\_\+arity\+\_\+3\+\_\+const$<$ MW $>$\+::get$<$ T, const  $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1check__after__handle__arity__3}{crow\+::detail\+::check\+\_\+after\+\_\+handle\+\_\+arity\+\_\+3$<$ MW $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1check__after__handle__arity__3_1_1get}{crow\+::detail\+::check\+\_\+after\+\_\+handle\+\_\+arity\+\_\+3$<$ MW $>$\+::get$<$ T, $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1check__global__call__false}{crow\+::detail\+::check\+\_\+global\+\_\+call\+\_\+false$<$ MW $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1check__global__call__false_1_1get}{crow\+::detail\+::check\+\_\+global\+\_\+call\+\_\+false$<$ MW $>$\+::get$<$ T, type $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1is__before__handle__arity__3__impl}{crow\+::detail\+::is\+\_\+before\+\_\+handle\+\_\+arity\+\_\+3\+\_\+impl$<$ T $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1is__after__handle__arity__3__impl}{crow\+::detail\+::is\+\_\+after\+\_\+handle\+\_\+arity\+\_\+3\+\_\+impl$<$ T $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1is__middleware__global}{crow\+::detail\+::is\+\_\+middleware\+\_\+global$<$ MW $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1middleware__call__criteria__only__global}{crow\+::detail\+::middleware\+\_\+call\+\_\+criteria\+\_\+only\+\_\+global}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1middleware__call__criteria__dynamic}{crow\+::detail\+::middleware\+\_\+call\+\_\+criteria\+\_\+dynamic$<$ Reversed $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1middleware__call__criteria__dynamic_3_01false_01_4}{crow\+::detail\+::middleware\+\_\+call\+\_\+criteria\+\_\+dynamic$<$ false $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1middleware__call__criteria__dynamic_3_01true_01_4}{crow\+::detail\+::middleware\+\_\+call\+\_\+criteria\+\_\+dynamic$<$ true $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1partial__context}{crow\+::detail\+::partial\+\_\+context$<$ Middlewares $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1partial__context_3_4}{crow\+::detail\+::partial\+\_\+context$<$$>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1context}{crow\+::detail\+::context$<$ Middlewares $>$}}
+\item 
+class \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer}{crow\+::detail\+::task\+\_\+timer}}
+\begin{DoxyCompactList}\small\item\em A class for scheduling functions to be called after a specific amount of ticks. A tick is equal to 1 second. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcrow_1_1_connection}{crow\+::\+Connection$<$ Adaptor, Handler, Middlewares $>$}}
+\begin{DoxyCompactList}\small\item\em An HTTP connection. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1websocket_1_1connection}{crow\+::websocket\+::connection}}
+\begin{DoxyCompactList}\small\item\em A base class for websocket connection. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcrow_1_1websocket_1_1_connection}{crow\+::websocket\+::\+Connection$<$ Adaptor, Handler $>$}}
+\begin{DoxyCompactList}\small\item\em A websocket connection. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1websocket_1_1_connection_1_1_weak_wrapped_message}{crow\+::websocket\+::\+Connection$<$ Adaptor, Handler $>$\+::\+Weak\+Wrapped\+Message$<$ Callable $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1websocket_1_1_connection_1_1_send_message_type}{crow\+::websocket\+::\+Connection$<$ Adaptor, Handler $>$\+::\+Send\+Message\+Type}}
+\item 
+class \mbox{\hyperlink{classcrow_1_1_server}{crow\+::\+Server$<$ Handler, Adaptor, Middlewares $>$}}
+\item 
+class \mbox{\hyperlink{classcrow_1_1mustache_1_1invalid__template__exception}{crow\+::mustache\+::invalid\+\_\+template\+\_\+exception}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1mustache_1_1rendered__template}{crow\+::mustache\+::rendered\+\_\+template}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1mustache_1_1_action}{crow\+::mustache\+::\+Action}}
+\item 
+class \mbox{\hyperlink{classcrow_1_1mustache_1_1template__t}{crow\+::mustache\+::template\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em A mustache template object. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1middleware__indices}{crow\+::detail\+::middleware\+\_\+indices}}
+\begin{DoxyCompactList}\small\item\em Typesafe wrapper for storing lists of middleware as their indices in the App. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcrow_1_1_base_rule}{crow\+::\+Base\+Rule}}
+\begin{DoxyCompactList}\small\item\em A base class for all rules. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1call__pair}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::call\+\_\+pair$<$ T, Pos $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1call__params}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::call\+\_\+params$<$ H1 $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1call}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::call$<$ F, NInt, NUint, NDouble, NString, S1, S2 $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1call_3_01_f_00_01_n_int_00_01_n_uint_0b63d09427b176e92959de8d063124ae4}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::call$<$ F, NInt, NUint, NDouble, NString, black\+\_\+magic\+::\+S$<$ int64\+\_\+t, Args1... $>$, black\+\_\+magic\+::\+S$<$ Args2... $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1call_3_01_f_00_01_n_int_00_01_n_uint_00f79d82c7e7da7530b290964906e13ef}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::call$<$ F, NInt, NUint, NDouble, NString, black\+\_\+magic\+::\+S$<$ uint64\+\_\+t, Args1... $>$, black\+\_\+magic\+::\+S$<$ Args2... $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1call_3_01_f_00_01_n_int_00_01_n_uint_0ac50968f63df9484eeaa96bf94c67fc5}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::call$<$ F, NInt, NUint, NDouble, NString, black\+\_\+magic\+::\+S$<$ double, Args1... $>$, black\+\_\+magic\+::\+S$<$ Args2... $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1call_3_01_f_00_01_n_int_00_01_n_uint_0eca3da881de1118eaf3d106d8d88f2d4}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::call$<$ F, NInt, NUint, NDouble, NString, black\+\_\+magic\+::\+S$<$ std\+::string, Args1... $>$, black\+\_\+magic\+::\+S$<$ Args2... $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1call_3_01_f_00_01_n_int_00_01_n_uint_019b104fb9907823e3e218e8e95ffa9c8}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::call$<$ F, NInt, NUint, NDouble, NString, black\+\_\+magic\+::\+S$<$$>$, black\+\_\+magic\+::\+S$<$ Args1... $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::\+Wrapped$<$ Func, Args\+Wrapped $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_1_1req__handler__wrapper}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::\+Wrapped$<$ Func, Args\+Wrapped $>$\+::req\+\_\+handler\+\_\+wrapper$<$ Req, Args $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_1_1handler__type__helper}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::\+Wrapped$<$ Func, Args\+Wrapped $>$\+::handler\+\_\+type\+\_\+helper$<$ Args $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_1_1handler__type__helper_3_012f01fc0d25e96ed100e3017a66fd4b36}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::\+Wrapped$<$ Func, Args\+Wrapped $>$\+::handler\+\_\+type\+\_\+helper$<$ const request \&, Args... $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_1_1handler__type__helper_3_01e78e01f0ab35f7c7c9ae99998f83560a}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::\+Wrapped$<$ Func, Args\+Wrapped $>$\+::handler\+\_\+type\+\_\+helper$<$ const request \&, response \&, Args... $>$}}
+\item 
+class \mbox{\hyperlink{classcrow_1_1_catchall_rule}{crow\+::\+Catchall\+Rule}}
+\item 
+class \mbox{\hyperlink{classcrow_1_1_web_socket_rule}{crow\+::\+Web\+Socket\+Rule$<$ App $>$}}
+\begin{DoxyCompactList}\small\item\em A rule dealing with websockets. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1_rule_parameter_traits}{crow\+::\+Rule\+Parameter\+Traits$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Allows the user to assign parameters using functions. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcrow_1_1_dynamic_rule}{crow\+::\+Dynamic\+Rule}}
+\begin{DoxyCompactList}\small\item\em A rule that can change its parameters during runtime. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcrow_1_1_tagged_rule}{crow\+::\+Tagged\+Rule$<$ Args $>$}}
+\begin{DoxyCompactList}\small\item\em Default rule created when CROW\+\_\+\+ROUTE is called. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcrow_1_1_trie}{crow\+::\+Trie}}
+\begin{DoxyCompactList}\small\item\em A search tree. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1_trie_1_1_node}{crow\+::\+Trie\+::\+Node}}
+\item 
+class \mbox{\hyperlink{classcrow_1_1_blueprint}{crow\+::\+Blueprint}}
+\begin{DoxyCompactList}\small\item\em A blueprint can be considered a smaller section of a \doxylink{classcrow_1_1_crow}{Crow} app, specifically where the router is conecerned. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcrow_1_1_router}{crow\+::\+Router}}
+\begin{DoxyCompactList}\small\item\em Handles matching requests to existing rules and upgrade requests. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1_router_1_1_per_method}{crow\+::\+Router\+::\+Per\+Method}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1_c_o_r_s_rules}{crow\+::\+CORSRules}}
+\begin{DoxyCompactList}\small\item\em Used for tuning CORS policies. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1_c_o_r_s_handler}{crow\+::\+CORSHandler}}
+\begin{DoxyCompactList}\small\item\em \doxylink{structcrow_1_1_c_o_r_s_handler}{CORSHandler} is a global middleware for setting CORS headers. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1_c_o_r_s_handler_1_1context}{crow\+::\+CORSHandler\+::context}}
+\item 
+class \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow$<$ Middlewares $>$}}
+\begin{DoxyCompactList}\small\item\em The main server application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacecrow}{crow}}
+\item 
+namespace \mbox{\hyperlink{namespacesha1}{sha1}}
+\item 
+namespace \mbox{\hyperlink{namespacecrow_1_1multipart}{crow\+::multipart}}
+\begin{DoxyCompactList}\small\item\em Encapsulates anything related to processing and organizing {\ttfamily multipart/xyz} messages. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespacecrow_1_1mustache}{crow\+::mustache}}
+\item 
+namespace \mbox{\hyperlink{namespacecrow_1_1json}{crow\+::json}}
+\item 
+namespace \mbox{\hyperlink{namespacecrow_1_1json_1_1detail}{crow\+::json\+::detail}}
+\item 
+namespace \mbox{\hyperlink{namespacecrow_1_1session}{crow\+::session}}
+\item 
+namespace \mbox{\hyperlink{namespacecrow_1_1detail}{crow\+::detail}}
+\item 
+namespace \mbox{\hyperlink{namespacecrow_1_1websocket}{crow\+::websocket}}
+\item 
+namespace \mbox{\hyperlink{namespacecrow_1_1mustache_1_1detail}{crow\+::mustache\+::detail}}
+\item 
+namespace \mbox{\hyperlink{namespacecrow_1_1detail_1_1routing__handler__call__helper}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a7a8bca8e3a638c16bac1c3389097d3ce}{CROW\+\_\+\+QS\+\_\+\+ISHEX}}(x)~((((x)$>$=\textquotesingle{}0\textquotesingle{}\&\&(x)$<$=\textquotesingle{}9\textquotesingle{}) \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} ((x)$>$=\textquotesingle{}A\textquotesingle{}\&\&(x)$<$=\textquotesingle{}F\textquotesingle{}) \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} ((x)$>$=\textquotesingle{}a\textquotesingle{}\&\&(x)$<$=\textquotesingle{}f\textquotesingle{})) ? 1 \+: 0)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_aaf00268a7a7ed20d2653c90dd7a233fa}{CROW\+\_\+\+QS\+\_\+\+HEX2\+DEC}}(x)~(((x)$>$=\textquotesingle{}0\textquotesingle{}\&\&(x)$<$=\textquotesingle{}9\textquotesingle{}) ? (x)-\/48 \+: ((x)$>$=\textquotesingle{}A\textquotesingle{}\&\&(x)$<$=\textquotesingle{}F\textquotesingle{}) ? (x)-\/55 \+: ((x)$>$=\textquotesingle{}a\textquotesingle{}\&\&(x)$<$=\textquotesingle{}f\textquotesingle{}) ? (x)-\/87 \+: 0)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a3ebe11e6ce19a05748bb9cb17c95298c}{CROW\+\_\+\+QS\+\_\+\+ISQSCHR}}(x)~((((x)==\textquotesingle{}=\textquotesingle{})\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}((x)==\textquotesingle{}\#\textquotesingle{})\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}((x)==\textquotesingle{}\&\textquotesingle{})\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}((x)==\textquotesingle{}\textbackslash{}0\textquotesingle{})) ? 0 \+: 1)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_ab5d9bbf144a59bcac465ece45ce5efad}{\+\_\+\+TINY\+\_\+\+SHA1\+\_\+\+HPP\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a774ed56ab317ba036de7bad2160b5325}{CROW\+\_\+\+ENABLE\+\_\+\+LOGGING}}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_ac940b34fb637756764dd80c791549e83}{CROW\+\_\+\+LOG\+\_\+\+LEVEL}}~1
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a5c9d709b448b25db7ea3f244748483b9}{CROW\+\_\+\+STATIC\+\_\+\+DIRECTORY}}~"{}static/"{}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a0fd760448a0f5fb4a3e36f95c8602a71}{CROW\+\_\+\+STATIC\+\_\+\+ENDPOINT}}~"{}/static/$<$path$>$"{}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a5b90f4adb6bc09ca319c35c3448ee67a}{ASIO\+\_\+\+STANDALONE}}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_ae4e1c9b3895a9efca6bf613707050d98}{GET\+\_\+\+IO\+\_\+\+SERVICE}}(s)~((s).get\+\_\+io\+\_\+service())
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a17fdd839006f72bdefc25310cbaaf038}{CROW\+\_\+\+LIKELY}}(X)~(X)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_acfd8ee37463ec78e15c4bde03cbc0d7d}{CROW\+\_\+\+UNLIKELY}}(X)~(X)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_ace06cf4141e31fba7aa2389df152dad4}{CROW\+\_\+\+HTTP\+\_\+\+MAX\+\_\+\+HEADER\+\_\+\+SIZE}}~(80\texorpdfstring{$\ast$}{*}1024)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_aa486036114607349115fc350675a0fe9}{CROW\+\_\+\+HTTP\+\_\+\+ERRNO\+\_\+\+MAP}}(\mbox{\hyperlink{crow__all_8h_abcca528b2f8ac5fb1ee69ad27e09c1ea}{CROW\+\_\+\+XX}})
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_aab0669bbc73f6fa477f24a7220ff1802}{CROW\+\_\+\+HTTP\+\_\+\+ERRNO\+\_\+\+GEN}}(n,  s)~CHPE\+\_\+\#\#n,
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_ab51dee950041f237616085fda584ea42}{CROW\+\_\+\+HTTP\+\_\+\+PARSER\+\_\+\+ERRNO}}(p)~((enum http\+\_\+errno)(p)-\/$>$http\+\_\+errno)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_ac170817262bd1c040ec6f9d261c74129}{CROW\+\_\+\+ULLONG\+\_\+\+MAX}}~((uint64\+\_\+t) -\/1) /\texorpdfstring{$\ast$}{*} 2\texorpdfstring{$^\wedge$}{\string^}64-\/1 \texorpdfstring{$\ast$}{*}/
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_ac26d1a0e73b675a3dd8f592f914be43b}{CROW\+\_\+\+MIN}}(a,  b)~((a) $<$ (b) ? (a) \+: (b))
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a4b58b683817d0bb9a4525388b1ae6dc9}{CROW\+\_\+\+ARRAY\+\_\+\+SIZE}}(a)~(sizeof(a) / sizeof((a)\mbox{[}0\mbox{]}))
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_ae453743cd3ecf6a7299a8dfcf886831d}{CROW\+\_\+\+BIT\+\_\+\+AT}}(a,  i)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a8e1b1b7d292602b4080d9b0a55e6e889}{CROW\+\_\+\+SET\+\_\+\+ERRNO}}(e)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_accf7685e7913157cface707cb8662bcb}{CROW\+\_\+\+CALLBACK\+\_\+\+NOTIFY\+\_\+}}(FOR,  ER)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_afa33afab1ac16c22f60a8436ec1c81d9}{CROW\+\_\+\+CALLBACK\+\_\+\+NOTIFY}}(FOR)~\mbox{\hyperlink{crow__all_8h_accf7685e7913157cface707cb8662bcb}{CROW\+\_\+\+CALLBACK\+\_\+\+NOTIFY\+\_\+}}(FOR, p -\/ data + 1)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a8ca12bd56afee676ea1aa64c776c85ae}{CROW\+\_\+\+CALLBACK\+\_\+\+NOTIFY\+\_\+\+NOADVANCE}}(FOR)~\mbox{\hyperlink{crow__all_8h_accf7685e7913157cface707cb8662bcb}{CROW\+\_\+\+CALLBACK\+\_\+\+NOTIFY\+\_\+}}(FOR, p -\/ data)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a887efae46ac2f1a67166f7494e0ed858}{CROW\+\_\+\+CALLBACK\+\_\+\+DATA\+\_\+}}(FOR,  LEN,  ER)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a9bb50ecb05fd7b68d5142a2d950c9c05}{CROW\+\_\+\+CALLBACK\+\_\+\+DATA}}(FOR)~    \mbox{\hyperlink{crow__all_8h_a887efae46ac2f1a67166f7494e0ed858}{CROW\+\_\+\+CALLBACK\+\_\+\+DATA\+\_\+}}(FOR, p -\/ FOR\#\#\+\_\+mark, p -\/ data + 1)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a4153ddb7186a3a95641e0ed8ef90ea80}{CROW\+\_\+\+CALLBACK\+\_\+\+DATA\+\_\+\+NOADVANCE}}(FOR)~    \mbox{\hyperlink{crow__all_8h_a887efae46ac2f1a67166f7494e0ed858}{CROW\+\_\+\+CALLBACK\+\_\+\+DATA\+\_\+}}(FOR, p -\/ FOR\#\#\+\_\+mark, p -\/ data)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a17e604a47bed0e6f2ee9ed740c786081}{CROW\+\_\+\+MARK}}(FOR)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a7e85abe6a3f9dd2785afb8d862c21b19}{CROW\+\_\+\+COUNT\+\_\+\+HEADER\+\_\+\+SIZE}}(V)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_aaf35f6e2c67ebb77e1fed6ad4d916a16}{CROW\+\_\+\+REEXECUTE}}()~  goto reexecute;                                                    \textbackslash{}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_ae06bd7d58313b052fc773220fdedab9a}{CROW\+\_\+\+PROXY\+\_\+\+CONNECTION}}~"{}proxy-\/connection"{}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_ae7bf8e02a0903d96bb4cd8f4df8b59b2}{CROW\+\_\+\+CONNECTION}}~"{}connection"{}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_aedf796f2dc7a733522c1fc32206bed07}{CROW\+\_\+\+CONTENT\+\_\+\+LENGTH}}~"{}content-\/length"{}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_ae58be6408389df7b996f3de90e22df9b}{CROW\+\_\+\+TRANSFER\+\_\+\+ENCODING}}~"{}transfer-\/encoding"{}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_ad5ce150d9c179a5de9366824c45f9c6e}{CROW\+\_\+\+UPGRADE}}~"{}upgrade"{}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_af05faf2ee9175e89321ba726fcdbe24f}{CROW\+\_\+\+CHUNKED}}~"{}chunked"{}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a9945c3e15589684daefe220f7cdbecc6}{CROW\+\_\+\+KEEP\+\_\+\+ALIVE}}~"{}keep-\/alive"{}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_af9dede02822dcebb74ada36d4b31cfd4}{CROW\+\_\+\+CLOSE}}~"{}close"{}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a1afe64d40b86c1b9b777dcf554bc8e9f}{CROW\+\_\+\+PARSING\+\_\+\+HEADER}}(state)~(state $<$= s\+\_\+headers\+\_\+done)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a6d96d14ccf8a6dc8a15974f1536f94ab}{CROW\+\_\+\+LOWER}}(c)~(unsigned char)(c \texorpdfstring{$\vert$}{|} 0x20)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a057d6a861a138ec82939dca60c383c2b}{CROW\+\_\+\+IS\+\_\+\+ALPHA}}(c)~(\mbox{\hyperlink{crow__all_8h_a6d96d14ccf8a6dc8a15974f1536f94ab}{CROW\+\_\+\+LOWER}}(c) $>$= \textquotesingle{}a\textquotesingle{} \&\& \mbox{\hyperlink{crow__all_8h_a6d96d14ccf8a6dc8a15974f1536f94ab}{CROW\+\_\+\+LOWER}}(c) $<$= \textquotesingle{}z\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_af3dae6586e09ad745ab219796c5beff9}{CROW\+\_\+\+IS\+\_\+\+NUM}}(c)~((c) $>$= \textquotesingle{}0\textquotesingle{} \&\& (c) $<$= \textquotesingle{}9\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a26b34891e2cc43267991355128466d5c}{CROW\+\_\+\+IS\+\_\+\+ALPHANUM}}(c)~(\mbox{\hyperlink{crow__all_8h_a057d6a861a138ec82939dca60c383c2b}{CROW\+\_\+\+IS\+\_\+\+ALPHA}}(c) \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \mbox{\hyperlink{crow__all_8h_af3dae6586e09ad745ab219796c5beff9}{CROW\+\_\+\+IS\+\_\+\+NUM}}(c))
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_af8ae3e53d4860276e9f456cc5b84b561}{CROW\+\_\+\+IS\+\_\+\+MARK}}(c)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a42eebb1e7640c049fd21d839ceb730ea}{CROW\+\_\+\+IS\+\_\+\+USERINFO\+\_\+\+CHAR}}(c)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_ab2ed12fede2b4d5b6a8c97b8370f97da}{CROW\+\_\+\+TOKEN}}(c)~(tokens\mbox{[}(unsigned char)c\mbox{]})
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a69710068a9d46b713f850a1d532b338c}{CROW\+\_\+\+IS\+\_\+\+URL\+\_\+\+CHAR}}(c)~(\mbox{\hyperlink{crow__all_8h_ae453743cd3ecf6a7299a8dfcf886831d}{CROW\+\_\+\+BIT\+\_\+\+AT}}(normal\+\_\+url\+\_\+char, (unsigned char)c))
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a19f05e8b42cd2c099a7584cac46d880c}{CROW\+\_\+\+IS\+\_\+\+HEADER\+\_\+\+CHAR}}(ch)~  (ch == cr \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} ch == lf \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} ch == 9 \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} ((unsigned char)ch $>$ 31 \&\& ch != 127))
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a6658f9876572cddab901907eb73fc3ff}{CROW\+\_\+start\+\_\+state}}~s\+\_\+start\+\_\+req
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a2040baf9907b175e06c045b93a93d334}{CROW\+\_\+\+STRICT\+\_\+\+CHECK}}(cond)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a6d7dcab1ca99df53ff7af463a71eca78}{CROW\+\_\+\+NEW\+\_\+\+MESSAGE}}()~(\mbox{\hyperlink{crow__all_8h_a6658f9876572cddab901907eb73fc3ff}{CROW\+\_\+start\+\_\+state}})
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_aa9a6c6a6a35804b5e8c2f6a1e8109a15}{CROW\+\_\+T}}(v)~0
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_abcca528b2f8ac5fb1ee69ad27e09c1ea}{CROW\+\_\+\+XX}}(meth,  pos,  ch,  new\+\_\+meth)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_abf1ad99cf73c72021a47a34767abbbc8}{CROW\+\_\+\+HTTP\+\_\+\+STRERROR\+\_\+\+GEN}}(n,  s)~\{ "{}CHPE\+\_\+"{} \#n, s \},
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_abf1ad99cf73c72021a47a34767abbbc8}{CROW\+\_\+\+HTTP\+\_\+\+STRERROR\+\_\+\+GEN}}(n,  s)~\{ "{}CHPE\+\_\+"{} \#n, s \},
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a7f164412824f41677fb87b815dcde3e6}{CROW\+\_\+\+LOG\+\_\+\+CRITICAL}}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a55552f276363f89da860381839592e42}{CROW\+\_\+\+LOG\+\_\+\+ERROR}}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a5a191289d36d5c518735d60a3626fad5}{CROW\+\_\+\+LOG\+\_\+\+WARNING}}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_adeb20cf9a97ea5328f1de282f5669e75}{CROW\+\_\+\+LOG\+\_\+\+INFO}}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_ac077d50a4cd93181ac12592f2df158b6}{CROW\+\_\+\+LOG\+\_\+\+DEBUG}}
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a6aa7ec3a2f3ee3f17d5f9acd879e7381}{CROW\+\_\+\+ROUTE}}(app,  url)~app.\+template route$<$crow\+::black\+\_\+magic\+::get\+\_\+parameter\+\_\+tag(url)$>$(url)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a479d0a674825fb289848dad80379efc7}{CROW\+\_\+\+BP\+\_\+\+ROUTE}}(blueprint,  url)~blueprint.\+new\+\_\+rule\+\_\+tagged$<$crow\+::black\+\_\+magic\+::get\+\_\+parameter\+\_\+tag(url)$>$(url)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a8deb011ba0eae4684d6c6bb13014c926}{CROW\+\_\+\+WEBSOCKET\+\_\+\+ROUTE}}(app,  url)~app.\+route$<$crow\+::black\+\_\+magic\+::get\+\_\+parameter\+\_\+tag(url)$>$(url).websocket$<$std\+::remove\+\_\+reference$<$decltype(app)$>$\+::type$>$(\&app)
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a12ac01cb1979c953ac1c1203114c5e0e}{CROW\+\_\+\+MIDDLEWARES}}(app, ...)~template middlewares$<$typename std\+::remove\+\_\+reference$<$decltype(app)$>$\+::type, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+$>$()
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a182dcf033f11eb89855a7b98bd6cfe02}{CROW\+\_\+\+CATCHALL\+\_\+\+ROUTE}}(app)~app.\+catchall\+\_\+route()
+\item 
+\#define \mbox{\hyperlink{crow__all_8h_a8490c9a408955fcdb2237c694427754b}{CROW\+\_\+\+BP\+\_\+\+CATCHALL\+\_\+\+ROUTE}}(blueprint)~blueprint.\+catchall\+\_\+rule()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespacecrow_a97ae34b17c2a18c235cd6a78fc2032c7}{crow\+::tcp}} = asio\+::ip\+::tcp
+\item 
+using \mbox{\hyperlink{namespacecrow_a9c2fb4390329e219e3d1532e81925b87}{crow\+::ci\+\_\+map}} = std\+::unordered\+\_\+multimap$<$std\+::string, std\+::string, \mbox{\hyperlink{structcrow_1_1ci__hash}{ci\+\_\+hash}}, \mbox{\hyperlink{structcrow_1_1ci__key__eq}{ci\+\_\+key\+\_\+eq}}$>$
+\item 
+using \mbox{\hyperlink{namespacecrow_1_1multipart_aa1f5ad4f67597a6b9791a336ac52e57f}{crow\+::multipart\+::mph\+\_\+map}} = std\+::unordered\+\_\+multimap$<$std\+::string, \mbox{\hyperlink{structcrow_1_1multipart_1_1header}{header}}, \mbox{\hyperlink{structcrow_1_1ci__hash}{ci\+\_\+hash}}, \mbox{\hyperlink{structcrow_1_1ci__key__eq}{ci\+\_\+key\+\_\+eq}}$>$
+\begin{DoxyCompactList}\small\item\em Multipart header map (key is header key). \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{namespacecrow_1_1multipart_ad6d43459496bf9f4da10cffd8152aa32}{crow\+::multipart\+::mp\+\_\+map}} = std\+::unordered\+\_\+multimap$<$std\+::string, \mbox{\hyperlink{structcrow_1_1multipart_1_1part}{part}}, \mbox{\hyperlink{structcrow_1_1ci__hash}{ci\+\_\+hash}}, \mbox{\hyperlink{structcrow_1_1ci__key__eq}{ci\+\_\+key\+\_\+eq}}$>$
+\begin{DoxyCompactList}\small\item\em Multipart map (key is the name parameter). \end{DoxyCompactList}\item 
+typedef struct http\+\_\+parser \mbox{\hyperlink{namespacecrow_a924fefc9c36b2db0e5d33a7d411282df}{crow\+::http\+\_\+parser}}
+\item 
+typedef struct http\+\_\+parser\+\_\+settings \mbox{\hyperlink{namespacecrow_a363ac66c79459472e2af679f99966d0f}{crow\+::http\+\_\+parser\+\_\+settings}}
+\item 
+typedef int(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacecrow_a170dd039834658eb49e3fc875cc7de2a}{crow\+::http\+\_\+data\+\_\+cb}}) (\mbox{\hyperlink{structcrow_1_1http__parser}{http\+\_\+parser}} \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}at, size\+\_\+t length)
+\item 
+typedef int(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacecrow_ac8d886c5987c6c3517844254c64702d8}{crow\+::http\+\_\+cb}}) (\mbox{\hyperlink{structcrow_1_1http__parser}{http\+\_\+parser}} \texorpdfstring{$\ast$}{*})
+\item 
+using \mbox{\hyperlink{namespacecrow_1_1mustache_a3aa87645a7b19f68db0b1eddded3e77b}{crow\+::mustache\+::context}} = \mbox{\hyperlink{classcrow_1_1json_1_1wvalue}{json\+::wvalue}}
+\item 
+{\footnotesize template$<$typename... Middlewares$>$ }\\using \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{crow\+::\+App}} = \mbox{\hyperlink{classcrow_1_1_crow}{Crow}}$<$Middlewares...$>$
+\item 
+using \mbox{\hyperlink{namespacecrow_a7f291a5abda44fb1bf965c10d8198730}{crow\+::\+Simple\+App}} = \mbox{\hyperlink{classcrow_1_1_crow}{Crow}}$<$$>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4}{crow\+::\+HTTPMethod}} \+: char \{ \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a32f68a60cef40faedbc6af20298c1a1e}{crow\+::\+DELETE}} = 0
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a7528035a93ee69cedb1dbddb2f0bfcc8}{crow\+::\+GET}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4ae15e216fc1c639f787b1231ecdfa1bf8}{crow\+::\+HEAD}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4aa02439ec229d8be0e74b0c1602392310}{crow\+::\+POST}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a3e75383a5992a6d15fb81e872e46e256}{crow\+::\+PUT}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4ab57e2519e26151feacdbe52076bc39ec}{crow\+::\+CONNECT}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a164dd62adb30ca051b5289672a572f9b}{crow\+::\+OPTIONS}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a2d3e4144aa384b18849ab9a8abad74d6}{crow\+::\+TRACE}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a63bc9a3997d66d835d9f3ec29451407d}{crow\+::\+PATCH}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4af29973ceeff9e3672f9827d2b3615283}{crow\+::\+PURGE}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4ae8606d021da140a92c7eba8d9b8af84f}{crow\+::\+COPY}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4af510b97de4ace11844b85f23d0fc012f}{crow\+::\+LOCK}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4aa02411acd2f70fdd738894061f7d87c1}{crow\+::\+MKCOL}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4af7f93635f8e193a924ae4a691bb66b8f}{crow\+::\+MOVE}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a599a96a4db707f1cdcb9affd34ca8d72}{crow\+::\+PROPFIND}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4afe20db8c57ee09e59fcc6ae857443e02}{crow\+::\+PROPPATCH}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a0f544d682c3a664870f025f48c4b04b5}{crow\+::\+SEARCH}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a08f473e8e1515801cb25e584a6832f34}{crow\+::\+UNLOCK}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a5c179f2c26f1208979f95a11f886c7c6}{crow\+::\+BIND}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a165c797424624799cb60ff4fe6d5164c}{crow\+::\+REBIND}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a82c3132801d8e123a351387716e61247}{crow\+::\+UNBIND}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a5bec55d452dbea99476cd51a1c821b8a}{crow\+::\+ACL}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4ad02a38d7ff75e9aed743437fd9539a44}{crow\+::\+REPORT}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4aabc1e2b31f1af0e5b07860bd52ac5841}{crow\+::\+MKACTIVITY}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4ae488f04180a5804feba48dbc87f0787d}{crow\+::\+CHECKOUT}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a97c51054c5ed46d2f88641ac57ff6347}{crow\+::\+MERGE}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a1a05a7da73d0e7a957db62621927ce17}{crow\+::\+MSEARCH}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a9d087bfb809874e1b3e9adcbae8ca761}{crow\+::\+NOTIFY}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a45b73ef479821e71be9f69a190f2bb86}{crow\+::\+SUBSCRIBE}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a62b18b8274e34fd701d0b684a32c633f}{crow\+::\+UNSUBSCRIBE}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a2f79dc519744e08cebb04946a6b9e9f9}{crow\+::\+MKCALENDAR}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a58c0a0e97e6d2f615bc264c2775fda44}{crow\+::\+LINK}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4aa07e75cb3ec757003bb6b1284024135b}{crow\+::\+UNLINK}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4ae60b4854b44ccfb2d92aa6f035171bb4}{crow\+::\+SOURCE}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4af2a6c498fb90ee345d997f888fce3b18}{crow\+::\+Delete}} = 0
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4ac55582518cba2c464f29f5bae1c68def}{crow\+::\+Get}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a98921133d10fbdb0fb6dbb7b2648befe}{crow\+::\+Head}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a03d947a2158373c3b9d74325850cb8b9}{crow\+::\+Post}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4ad0bf1810982e9728fcf3ac444a015373}{crow\+::\+Put}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a49ab28040dfa07f53544970c6d147e1e}{crow\+::\+Connect}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4adae8ace18bdcbcc6ae5aece263e14fe8}{crow\+::\+Options}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4add4ec0ac4e58f7c32a01244ae91150b1}{crow\+::\+Trace}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a156e10596fdc76ee5300bab931d89c0f}{crow\+::\+Patch}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4ad67c704564d7976991e2f23e4315ccfd}{crow\+::\+Purge}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a5fb63579fc981698f97d55bfecb213ea}{crow\+::\+Copy}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4ab485167c5b0e59d47009a16f90fe2659}{crow\+::\+Lock}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a0253c02f8d9e5333b541145dfbfc35a0}{crow\+::\+Mk\+Col}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a6bc362dbf494c61ea117fe3c71ca48a5}{crow\+::\+Move}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a0d5bba9a5baaf04c7cda36449ebed7bf}{crow\+::\+Propfind}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a29a53f1d67dd56d8b58a48dc93eb246b}{crow\+::\+Proppatch}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a13348442cc6a27032d2b4aa28b75a5d3}{crow\+::\+Search}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a7e7123b0d269ad5d9ec8d12c52a8ed8a}{crow\+::\+Unlock}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a0b172674284d79079624051d2ae11581}{crow\+::\+Bind}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a2c8b844cbfb121428d378232606d6b47}{crow\+::\+Rebind}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a4bffa5083d48d52f00eb873b6e136d5f}{crow\+::\+Unbind}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4ad740ec45faa5dde148d59cf627722130}{crow\+::\+Acl}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a4b1b4dc8cf38b3c64b1d657da8f5ac8c}{crow\+::\+Report}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a7860be0b5977633991049ba7e2db928a}{crow\+::\+Mk\+Activity}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a6ff063fbc860a79759a7369ac32cee22}{crow\+::\+Checkout}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a68be4837f6c739877233e527a996dd00}{crow\+::\+Merge}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a2cbcb616339472c9cc37591f3b95372e}{crow\+::\+MSearch}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4aaaf9ed605d0193362321ba0def15c9b7}{crow\+::\+Notify}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4ab26917587d98330d93f87808fc9d7267}{crow\+::\+Subscribe}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a4182c8f19d40c7ca236a5f4f83faeb6b}{crow\+::\+Unsubscribe}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4afd8731b039d3bcb16908de23a2932d9a}{crow\+::\+Mk\+Calendar}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a97e7c9a7d06eac006a28bf05467fcc8b}{crow\+::\+Link}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4ac1a39b6a60f8b2f87e23d60ab649d994}{crow\+::\+Unlink}}
+, \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4af31bbdd1b3e85bccd652680e16935819}{crow\+::\+Source}}
+, \newline
+\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4a783e32402715ea977e4e06eb22b370b6}{crow\+::\+Internal\+Method\+Count}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2}{crow\+::status}} \{ \newline
+\mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a473f2f24e8c923537fb87b5d3e3ddd1a}{crow\+::\+CONTINUE}} = 100
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a515df58240b20796066ffadd186ca4e5}{crow\+::\+SWITCHING\+\_\+\+PROTOCOLS}} = 101
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2abf75a89ed4b41a208bce65376c6a2218}{crow\+::\+OK}} = 200
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2aaaef35bbfd12ebea9c8a708dce25a620}{crow\+::\+CREATED}} = 201
+, \newline
+\mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2add6aa560363c5206b76df02a698bdaf1}{crow\+::\+ACCEPTED}} = 202
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2afdb182b863f49ea57ec1bde6e2d99eba}{crow\+::\+NON\+\_\+\+AUTHORITATIVE\+\_\+\+INFORMATION}} = 203
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a7ba6f58b2b3331b37b91cb562a8cc296}{crow\+::\+NO\+\_\+\+CONTENT}} = 204
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2aae353d39be103077cd80b41f39c73deb}{crow\+::\+RESET\+\_\+\+CONTENT}} = 205
+, \newline
+\mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2abad2df9a126f98eb3e889d6fd83a74c6}{crow\+::\+PARTIAL\+\_\+\+CONTENT}} = 206
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a36eadfd0ea37bcb89c012ce41702c939}{crow\+::\+MULTIPLE\+\_\+\+CHOICES}} = 300
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2aead42cbdf2f1aa04422e0b3cabd61ae6}{crow\+::\+MOVED\+\_\+\+PERMANENTLY}} = 301
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2af262b382f021488bb913d9cf179ccd6e}{crow\+::\+FOUND}} = 302
+, \newline
+\mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a0db092278813afae4ce28611ac6deae2}{crow\+::\+SEE\+\_\+\+OTHER}} = 303
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2aa5c1413df923fc24345cc479cdb3789e}{crow\+::\+NOT\+\_\+\+MODIFIED}} = 304
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2af01b5584cbcde1b1c9a6717f96a29223}{crow\+::\+TEMPORARY\+\_\+\+REDIRECT}} = 307
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2ae3f6c6e0ee7b2c99e0e5165c8f2e007b}{crow\+::\+PERMANENT\+\_\+\+REDIRECT}} = 308
+, \newline
+\mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2aea8e1cf302f8f6b1f5e3365555f71976}{crow\+::\+BAD\+\_\+\+REQUEST}} = 400
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2aa4c229683e23e7ce3de0c6f27f1dfd34}{crow\+::\+UNAUTHORIZED}} = 401
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a05240c5b2cb4e0763c5d978dbb4983b8}{crow\+::\+FORBIDDEN}} = 403
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a6a8e1449312141170a8dca8e03daefde}{crow\+::\+NOT\+\_\+\+FOUND}} = 404
+, \newline
+\mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a0c13e49395e3eec357ff5e24e6d5c976}{crow\+::\+METHOD\+\_\+\+NOT\+\_\+\+ALLOWED}} = 405
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a4d63e712f283450fb3216cc4eed26e2e}{crow\+::\+PROXY\+\_\+\+AUTHENTICATION\+\_\+\+REQUIRED}} = 407
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a635a1496ca032ba8b5cef9557cefeb40}{crow\+::\+CONFLICT}} = 409
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2af7917fa7182fbd44a677ff497b4e0581}{crow\+::\+GONE}} = 410
+, \newline
+\mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2aa58af15ca6e403c5ebdf487528b25181}{crow\+::\+PAYLOAD\+\_\+\+TOO\+\_\+\+LARGE}} = 413
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a169ba79197aad876ca5314d6eefebb59}{crow\+::\+UNSUPPORTED\+\_\+\+MEDIA\+\_\+\+TYPE}} = 415
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2af2ac4d9dd8af2c6830a5c05c3ddd1883}{crow\+::\+RANGE\+\_\+\+NOT\+\_\+\+SATISFIABLE}} = 416
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2ad93870a374394e469f3a91be54ef0f3a}{crow\+::\+EXPECTATION\+\_\+\+FAILED}} = 417
+, \newline
+\mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a0b61a6d0a97c0e433e194d6a927569b8}{crow\+::\+PRECONDITION\+\_\+\+REQUIRED}} = 428
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a5cd8322fa600e7b84b62d4f231e23542}{crow\+::\+TOO\+\_\+\+MANY\+\_\+\+REQUESTS}} = 429
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2af85b2be08a05b35370dd31bc8bbb31e2}{crow\+::\+UNAVAILABLE\+\_\+\+FOR\+\_\+\+LEGAL\+\_\+\+REASONS}} = 451
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a831d1d03d432e5bc39f2867443c2c039}{crow\+::\+INTERNAL\+\_\+\+SERVER\+\_\+\+ERROR}} = 500
+, \newline
+\mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2aa1746b1ff431505dfb1ebf1833595bbb}{crow\+::\+NOT\+\_\+\+IMPLEMENTED}} = 501
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a8bdf8e1a9f962b56c67e7566d456677f}{crow\+::\+BAD\+\_\+\+GATEWAY}} = 502
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a677e9fc48ff03728ef8315d1cfb1fff9}{crow\+::\+SERVICE\+\_\+\+UNAVAILABLE}} = 503
+, \mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a9b0687f77d4aacb25c799220daac9086}{crow\+::\+GATEWAY\+\_\+\+TIMEOUT}} = 504
+, \newline
+\mbox{\hyperlink{namespacecrow_aa3ae5c0994dff8425d7515e2806180d2a95ff44a69992d4043ef2c93dc3468340}{crow\+::\+VARIANT\+\_\+\+ALSO\+\_\+\+NEGOTIATES}} = 506
+ \}
+\item 
+enum class \mbox{\hyperlink{namespacecrow_a6ea84108a731cd6a42a55737c9970d5f}{crow\+::\+Param\+Type}} \+: char \{ \newline
+\mbox{\hyperlink{namespacecrow_a6ea84108a731cd6a42a55737c9970d5fa53f93baa3057821107c750323892fa92}{crow\+::\+INT}}
+, \mbox{\hyperlink{namespacecrow_a6ea84108a731cd6a42a55737c9970d5fa3351504090a741e69da641a42e00da80}{crow\+::\+UINT}}
+, \mbox{\hyperlink{namespacecrow_a6ea84108a731cd6a42a55737c9970d5fafd3e4ece78a7d422280d5ed379482229}{crow\+::\+DOUBLE}}
+, \mbox{\hyperlink{namespacecrow_a6ea84108a731cd6a42a55737c9970d5fa63b588d5559f64f89a416e656880b949}{crow\+::\+STRING}}
+, \newline
+\mbox{\hyperlink{namespacecrow_a6ea84108a731cd6a42a55737c9970d5fa5ffb5f0d0de78321df46fc7c93ca64a3}{crow\+::\+PATH}}
+, \mbox{\hyperlink{namespacecrow_a6ea84108a731cd6a42a55737c9970d5fa26a4b44a837bf97b972628509912b4a5}{crow\+::\+MAX}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacecrow_ace318a1645dc41d46e6b7bf1470e000f}{crow\+::http\+\_\+connection\+\_\+flags}} \{ \newline
+\mbox{\hyperlink{namespacecrow_ace318a1645dc41d46e6b7bf1470e000fab7d4c78c3acafdc959b2029ee7d3d726}{crow\+::\+F\+\_\+\+CHUNKED}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 0
+, \mbox{\hyperlink{namespacecrow_ace318a1645dc41d46e6b7bf1470e000fa29ac3060dc7313e3adf7e46fb90ac441}{crow\+::\+F\+\_\+\+CONNECTION\+\_\+\+KEEP\+\_\+\+ALIVE}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 1
+, \mbox{\hyperlink{namespacecrow_ace318a1645dc41d46e6b7bf1470e000fa8546968a8575638a3a43c6e5e028d0be}{crow\+::\+F\+\_\+\+CONNECTION\+\_\+\+CLOSE}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 2
+, \mbox{\hyperlink{namespacecrow_ace318a1645dc41d46e6b7bf1470e000fa1ce6101990da561f3aff08c2e53c01f9}{crow\+::\+F\+\_\+\+TRAILING}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 3
+, \newline
+\mbox{\hyperlink{namespacecrow_ace318a1645dc41d46e6b7bf1470e000fa7f3716810d80eabe0cc216c42305ac73}{crow\+::\+F\+\_\+\+UPGRADE}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 4
+, \mbox{\hyperlink{namespacecrow_ace318a1645dc41d46e6b7bf1470e000faeef386931f6a052decf071c1b5c15ed8}{crow\+::\+F\+\_\+\+SKIPBODY}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5
+, \mbox{\hyperlink{namespacecrow_ace318a1645dc41d46e6b7bf1470e000fafa15be75dca505aacdf5d2f2f99e0faa}{crow\+::\+F\+\_\+\+CONTENTLENGTH}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 6
+ \}
+\item 
+enum \mbox{\hyperlink{namespacecrow_a500a501f00a9398f69e054b30ef011cd}{crow\+::http\+\_\+errno}} 
+\item 
+enum \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035}{crow\+::state}} \{ \newline
+\mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a6f457a0b5a3dcd69d76a265151a1d8ad}{crow\+::s\+\_\+dead}} = 1
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a6f2fbe258aaec2de63dedbc86fe51d0d}{crow\+::s\+\_\+start\+\_\+req}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035ad6bec0a97fed8d010a4c0540a3b6bb49}{crow\+::s\+\_\+req\+\_\+method}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a551f46283343164101131f5d32ce6a49}{crow\+::s\+\_\+req\+\_\+spaces\+\_\+before\+\_\+url}}
+, \newline
+\mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a53fe02c624c9f56538641b8052e26578}{crow\+::s\+\_\+req\+\_\+schema}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a0ef9378606e88b0aa793d15e1e893477}{crow\+::s\+\_\+req\+\_\+schema\+\_\+slash}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035aa61fc69931f3e2be09f2427c3dd81986}{crow\+::s\+\_\+req\+\_\+schema\+\_\+slash\+\_\+slash}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a4c4d2db8611e5e683521bdc2ee4a87f2}{crow\+::s\+\_\+req\+\_\+server\+\_\+start}}
+, \newline
+\mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a6575d3343b1930eb8f457aa8eb3f743e}{crow\+::s\+\_\+req\+\_\+server}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a37a603acbe6557edbbaea8bcb7a969ad}{crow\+::s\+\_\+req\+\_\+server\+\_\+with\+\_\+at}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a9de78cb29653ee80a58cb38cdfa4ee14}{crow\+::s\+\_\+req\+\_\+path}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a1a8a06bc10b835d77010c89d9abd910d}{crow\+::s\+\_\+req\+\_\+query\+\_\+string\+\_\+start}}
+, \newline
+\mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035aa4bea65ec09b163d1e5eda520ddab207}{crow\+::s\+\_\+req\+\_\+query\+\_\+string}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035ad7f9bf23f11f5115d4a9917959b3ceda}{crow\+::s\+\_\+req\+\_\+http\+\_\+start}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a6e56cc8a122a9215795d0b91e3a0acbe}{crow\+::s\+\_\+req\+\_\+http\+\_\+H}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a5a6bba2702871884527bfbfbf638a264}{crow\+::s\+\_\+req\+\_\+http\+\_\+\+HT}}
+, \newline
+\mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035aad5b0d0d564638c3eaa49e9cfd48ef45}{crow\+::s\+\_\+req\+\_\+http\+\_\+\+HTT}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a65b0b4b07a85e830650956f9bf2aa5c2}{crow\+::s\+\_\+req\+\_\+http\+\_\+\+HTTP}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a9ff15c49b19ad13cf6c0bf5b0f02724b}{crow\+::s\+\_\+req\+\_\+http\+\_\+I}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035ad86d7906fb080fa0fb73008334f2fa82}{crow\+::s\+\_\+req\+\_\+http\+\_\+\+IC}}
+, \newline
+\mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a9c6a58d43d0961f2cedc1735a209ac6f}{crow\+::s\+\_\+req\+\_\+http\+\_\+major}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035aba4b7f096fe2909beb19adca8790fbb9}{crow\+::s\+\_\+req\+\_\+http\+\_\+dot}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035abb8c5a16ad1450f2b980dc4a12ae3e57}{crow\+::s\+\_\+req\+\_\+http\+\_\+minor}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a395957f606e53997c93035187c3c5e3d}{crow\+::s\+\_\+req\+\_\+http\+\_\+end}}
+, \newline
+\mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035ad180b64ac2b6a18cb63f3741d9555a5d}{crow\+::s\+\_\+req\+\_\+line\+\_\+almost\+\_\+done}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a68761da5f3673f20d8ee36d47e5b16fa}{crow\+::s\+\_\+header\+\_\+field\+\_\+start}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a3712d831a741db722152b7b956e2bfc1}{crow\+::s\+\_\+header\+\_\+field}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a138e3cff06f29c223df8a755ed15e7a2}{crow\+::s\+\_\+header\+\_\+value\+\_\+discard\+\_\+ws}}
+, \newline
+\mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a056d79e3cf170f63d6b3c82d23d64dce}{crow\+::s\+\_\+header\+\_\+value\+\_\+discard\+\_\+ws\+\_\+almost\+\_\+done}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a25c34ce845c6ec63dc9627fdfc4f4739}{crow\+::s\+\_\+header\+\_\+value\+\_\+discard\+\_\+lws}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a026d65a36e6c9c13b3bf3be8081f9be0}{crow\+::s\+\_\+header\+\_\+value\+\_\+start}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035aaf613f0d885e13bbfa331817acce56af}{crow\+::s\+\_\+header\+\_\+value}}
+, \newline
+\mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035aa148b954cc8659aea0df9011c9301ceb}{crow\+::s\+\_\+header\+\_\+value\+\_\+lws}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a44792f187e513c48eee00d8418ec75b2}{crow\+::s\+\_\+header\+\_\+almost\+\_\+done}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a11779f7ccdaa7d5033b4b6fdae04d2ba}{crow\+::s\+\_\+chunk\+\_\+size\+\_\+start}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a3f33db95f05de0c9a1e760d432470973}{crow\+::s\+\_\+chunk\+\_\+size}}
+, \newline
+\mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a190a73f676b005463ee9c4698390f129}{crow\+::s\+\_\+chunk\+\_\+parameters}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a68949314ff53417470b24170f2134913}{crow\+::s\+\_\+chunk\+\_\+size\+\_\+almost\+\_\+done}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a971b230de2d497d4b279454a6f1576e2}{crow\+::s\+\_\+headers\+\_\+almost\+\_\+done}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035aa9dd932a2affc469260c0c70e1e58b5f}{crow\+::s\+\_\+headers\+\_\+done}}
+, \newline
+\mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a83fde3fd2b2ce7dd92032727611c882c}{crow\+::s\+\_\+chunk\+\_\+data}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a2922196e969caf4295b88ab1409cb2ec}{crow\+::s\+\_\+chunk\+\_\+data\+\_\+almost\+\_\+done}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035adc071f4cbd9d8c435e63bd3ad18febf1}{crow\+::s\+\_\+chunk\+\_\+data\+\_\+done}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a00310ada2a3c20b950e6d6310700c569}{crow\+::s\+\_\+body\+\_\+identity}}
+, \newline
+\mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a0620dd59a431733919fefc81746d6c7d}{crow\+::s\+\_\+body\+\_\+identity\+\_\+eof}}
+, \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035a62d6e16b3c689b7a1fecc3fb337c6e9a}{crow\+::s\+\_\+message\+\_\+done}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660ed}{crow\+::header\+\_\+states}} \{ \newline
+\mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660edaf87086fb007768e9efef33a437a88e43}{crow\+::h\+\_\+general}} = 0
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda515ecfb573b179b0e24dd00cbc7a89f0}{crow\+::h\+\_\+C}}
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda906a558bb5dc4ebe0625f1a88cef34d3}{crow\+::h\+\_\+\+CO}}
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda4e7d8f10a6a54cb2b230611f4a50c04d}{crow\+::h\+\_\+\+CON}}
+, \newline
+\mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda25abca0c62b09298e03bb35bb0d1710b}{crow\+::h\+\_\+matching\+\_\+connection}}
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda8d9bbcc8863353fc01d5edf2aa3fa446}{crow\+::h\+\_\+matching\+\_\+proxy\+\_\+connection}}
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660edacc7bcb87d42ef38c5382d65b982047dd}{crow\+::h\+\_\+matching\+\_\+content\+\_\+length}}
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda121255b93b3c09430864db3bfafa1024}{crow\+::h\+\_\+matching\+\_\+transfer\+\_\+encoding}}
+, \newline
+\mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda45dc51062a550b0d66d7e7e18ce5d5e5}{crow\+::h\+\_\+matching\+\_\+upgrade}}
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660edaa4e048cf97537459aa55374e8a05850b}{crow\+::h\+\_\+connection}}
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660edadd29916b27b202d0978aac177be25239}{crow\+::h\+\_\+content\+\_\+length}}
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660edaf413528456bd997e3bb20053d4bd1829}{crow\+::h\+\_\+content\+\_\+length\+\_\+num}}
+, \newline
+\mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda63ef8d6678cf7d802e7136a01ca1c9ed}{crow\+::h\+\_\+content\+\_\+length\+\_\+ws}}
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda2b451501568ed19813ed5fed394cd024}{crow\+::h\+\_\+transfer\+\_\+encoding}}
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda0802709e79fb35e6261b3427124b421f}{crow\+::h\+\_\+upgrade}}
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda42ad044a7ad200def86396ff72046d74}{crow\+::h\+\_\+matching\+\_\+transfer\+\_\+encoding\+\_\+token\+\_\+start}}
+, \newline
+\mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda8439d492c5da6ed2b5d60c575f9b1b39}{crow\+::h\+\_\+matching\+\_\+transfer\+\_\+encoding\+\_\+chunked}}
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda9b9b1cc555e3f32c02c2c29254c725e5}{crow\+::h\+\_\+matching\+\_\+transfer\+\_\+encoding\+\_\+token}}
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda7fd544e9de8e4bb7cf3e98fa39a923b4}{crow\+::h\+\_\+matching\+\_\+connection\+\_\+keep\+\_\+alive}}
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda18f335af664c0ccc6d36cffe239edad5}{crow\+::h\+\_\+matching\+\_\+connection\+\_\+close}}
+, \newline
+\mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda9c268a1e11ec491387b59585372d4ad2}{crow\+::h\+\_\+transfer\+\_\+encoding\+\_\+chunked}}
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660eda8ff3d778ccc85bb6fd7ca9cb4d03668f}{crow\+::h\+\_\+connection\+\_\+keep\+\_\+alive}}
+, \mbox{\hyperlink{namespacecrow_a3f9dce1dea158e8997e5c79561e660edae15064c99fc2f07a06ec795c378efd5b}{crow\+::h\+\_\+connection\+\_\+close}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacecrow_a920284a6db56250dd828ce47ddae0c0d}{crow\+::http\+\_\+host\+\_\+state}} \{ \newline
+\mbox{\hyperlink{namespacecrow_a920284a6db56250dd828ce47ddae0c0dadad6faee5de3ef26a56e4d5450cd8588}{crow\+::s\+\_\+http\+\_\+host\+\_\+dead}} = 1
+, \mbox{\hyperlink{namespacecrow_a920284a6db56250dd828ce47ddae0c0daa34ae7256f1f3d4d370ccb8a49558e15}{crow\+::s\+\_\+http\+\_\+userinfo\+\_\+start}}
+, \mbox{\hyperlink{namespacecrow_a920284a6db56250dd828ce47ddae0c0daa5d562c698895e0de54a998d2177e7b6}{crow\+::s\+\_\+http\+\_\+userinfo}}
+, \mbox{\hyperlink{namespacecrow_a920284a6db56250dd828ce47ddae0c0dab8aea2e2fe8a6d77d766f3166341575f}{crow\+::s\+\_\+http\+\_\+host\+\_\+start}}
+, \newline
+\mbox{\hyperlink{namespacecrow_a920284a6db56250dd828ce47ddae0c0da852b7e1f2d0f1f1d61d270cafac6808b}{crow\+::s\+\_\+http\+\_\+host\+\_\+v6\+\_\+start}}
+, \mbox{\hyperlink{namespacecrow_a920284a6db56250dd828ce47ddae0c0da882814ab7656cc07edfa3a862fe3ba8d}{crow\+::s\+\_\+http\+\_\+host}}
+, \mbox{\hyperlink{namespacecrow_a920284a6db56250dd828ce47ddae0c0da7e2b3543ed53eb50742e5cb3982a1d65}{crow\+::s\+\_\+http\+\_\+host\+\_\+v6}}
+, \mbox{\hyperlink{namespacecrow_a920284a6db56250dd828ce47ddae0c0da94539b38bdfce2e948613b7e718b13af}{crow\+::s\+\_\+http\+\_\+host\+\_\+v6\+\_\+end}}
+, \newline
+\mbox{\hyperlink{namespacecrow_a920284a6db56250dd828ce47ddae0c0daa166e0a42f4c1c9d786ab823d97cc1d3}{crow\+::s\+\_\+http\+\_\+host\+\_\+v6\+\_\+zone\+\_\+start}}
+, \mbox{\hyperlink{namespacecrow_a920284a6db56250dd828ce47ddae0c0da202a5bc99c3f1b9d7525b2f43d1b4d39}{crow\+::s\+\_\+http\+\_\+host\+\_\+v6\+\_\+zone}}
+, \mbox{\hyperlink{namespacecrow_a920284a6db56250dd828ce47ddae0c0da9a69af78ba46a5ec27035ceeb2607445}{crow\+::s\+\_\+http\+\_\+host\+\_\+port\+\_\+start}}
+, \mbox{\hyperlink{namespacecrow_a920284a6db56250dd828ce47ddae0c0da56344313c2d6f34acac3ba67348a4fde}{crow\+::s\+\_\+http\+\_\+host\+\_\+port}}
+ \}
+\item 
+enum class \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4}{crow\+::\+Log\+Level}} \{ \newline
+\mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4adc30ec20708ef7b0f641ef78b7880a15}{crow\+::\+DEBUG}} = 0
+, \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a551b723eafd6a31d444fcb2f5920fbd3}{crow\+::\+INFO}}
+, \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a059e9861e0400dfbe05c98a841f3f96b}{crow\+::\+WARNING}}
+, \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4abb1ca97ec761fc37101737ba0aa2e7c5}{crow\+::\+ERROR}}
+, \newline
+\mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a99cd1c61610c76a57cb8d10d6df6b870}{crow\+::\+CRITICAL}}
+, \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4aa603905470e2a5b8c13e96b579ef0dba}{crow\+::\+Debug}} = 0
+, \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a4059b0251f66a18cb56f544728796875}{crow\+::\+Info}}
+, \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a0eaadb4fcb48a0a0ed7bc9868be9fbaa}{crow\+::\+Warning}}
+, \newline
+\mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a902b0d55fddef6f8d651fe1035b7d4bd}{crow\+::\+Error}}
+, \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a278d01e5af56273bae1bb99a98b370cd}{crow\+::\+Critical}}
+ \}
+\item 
+enum class \mbox{\hyperlink{namespacecrow_1_1json_adb9569a402d1b289a75025c8c96e5d99}{crow\+::json\+::type}} \+: char \{ \newline
+\mbox{\hyperlink{namespacecrow_1_1json_adb9569a402d1b289a75025c8c96e5d99abbb93ef26e3c101ff11cdd21cab08a94}{crow\+::json\+::\+Null}}
+, \mbox{\hyperlink{namespacecrow_1_1json_adb9569a402d1b289a75025c8c96e5d99af8320b26d30ab433c5a54546d21f414c}{crow\+::json\+::\+False}}
+, \mbox{\hyperlink{namespacecrow_1_1json_adb9569a402d1b289a75025c8c96e5d99af827cf462f62848df37c5e1e94a4da74}{crow\+::json\+::\+True}}
+, \mbox{\hyperlink{namespacecrow_1_1json_adb9569a402d1b289a75025c8c96e5d99ab2ee912b91d69b435159c7c3f6df7f5f}{crow\+::json\+::\+Number}}
+, \newline
+\mbox{\hyperlink{namespacecrow_1_1json_adb9569a402d1b289a75025c8c96e5d99a27118326006d3829667a400ad23d5d98}{crow\+::json\+::\+String}}
+, \mbox{\hyperlink{namespacecrow_1_1json_adb9569a402d1b289a75025c8c96e5d99a4ee29ca12c7d126654bd0e5275de6135}{crow\+::json\+::\+List}}
+, \mbox{\hyperlink{namespacecrow_1_1json_adb9569a402d1b289a75025c8c96e5d99a497031794414a552435f90151ac3b54b}{crow\+::json\+::\+Object}}
+, \mbox{\hyperlink{namespacecrow_1_1json_adb9569a402d1b289a75025c8c96e5d99a86408593c34af77fdd90df932f8b5261}{crow\+::json\+::\+Function}}
+ \}
+\item 
+enum class \mbox{\hyperlink{namespacecrow_1_1json_a0058ebd08b7ec4cd8055d1b2cd4fc527}{crow\+::json\+::num\+\_\+type}} \+: char \{ \mbox{\hyperlink{namespacecrow_1_1json_a0058ebd08b7ec4cd8055d1b2cd4fc527a7d34b6470342f082796613d4c31ae118}{crow\+::json\+::\+Signed\+\_\+integer}}
+, \mbox{\hyperlink{namespacecrow_1_1json_a0058ebd08b7ec4cd8055d1b2cd4fc527ae5842290ab3530ab2a35bf0dcaa61608}{crow\+::json\+::\+Unsigned\+\_\+integer}}
+, \mbox{\hyperlink{namespacecrow_1_1json_a0058ebd08b7ec4cd8055d1b2cd4fc527ae16636555d5d2b8a59366e7f28bdc57b}{crow\+::json\+::\+Floating\+\_\+point}}
+, \mbox{\hyperlink{namespacecrow_1_1json_a0058ebd08b7ec4cd8055d1b2cd4fc527abbb93ef26e3c101ff11cdd21cab08a94}{crow\+::json\+::\+Null}}
+ \}
+\item 
+enum class \mbox{\hyperlink{namespacecrow_1_1websocket_a2d7a65cf1c63efe21238c6e75c02334c}{crow\+::websocket\+::\+Web\+Socket\+Read\+State}} \{ \newline
+\mbox{\hyperlink{namespacecrow_1_1websocket_a2d7a65cf1c63efe21238c6e75c02334cad637a34702e8bfb6adc600f1ae827f35}{crow\+::websocket\+::\+Mini\+Header}}
+, \mbox{\hyperlink{namespacecrow_1_1websocket_a2d7a65cf1c63efe21238c6e75c02334ca6a687f78479d558a907bbaac0d7f53f0}{crow\+::websocket\+::\+Len16}}
+, \mbox{\hyperlink{namespacecrow_1_1websocket_a2d7a65cf1c63efe21238c6e75c02334cab70bcc4d8160e709624eaa6377a35c5d}{crow\+::websocket\+::\+Len64}}
+, \mbox{\hyperlink{namespacecrow_1_1websocket_a2d7a65cf1c63efe21238c6e75c02334ca4a18312b5b75f549d5551e5912ad6ebf}{crow\+::websocket\+::\+Mask}}
+, \newline
+\mbox{\hyperlink{namespacecrow_1_1websocket_a2d7a65cf1c63efe21238c6e75c02334ca00f4e5788aab6d3546bb433842dbbefc}{crow\+::websocket\+::\+Payload}}
+ \}
+\item 
+enum class \mbox{\hyperlink{namespacecrow_1_1mustache_aeb8da2ae9d8d9fe55f6ab0a7455dd667}{crow\+::mustache\+::\+Action\+Type}} \{ \newline
+\mbox{\hyperlink{namespacecrow_1_1mustache_aeb8da2ae9d8d9fe55f6ab0a7455dd667afd038fc7f319e48f3115d92bf5bdbef9}{crow\+::mustache\+::\+Ignore}}
+, \mbox{\hyperlink{namespacecrow_1_1mustache_aeb8da2ae9d8d9fe55f6ab0a7455dd667ac101058e7ea21bbbf2a5ac893088e90b}{crow\+::mustache\+::\+Tag}}
+, \mbox{\hyperlink{namespacecrow_1_1mustache_aeb8da2ae9d8d9fe55f6ab0a7455dd667a6a92aa81e0cd0b1c2f77a84226ad4777}{crow\+::mustache\+::\+Unescape\+Tag}}
+, \mbox{\hyperlink{namespacecrow_1_1mustache_aeb8da2ae9d8d9fe55f6ab0a7455dd667a047e46a0bc852354acb31de6a507a3fe}{crow\+::mustache\+::\+Open\+Block}}
+, \newline
+\mbox{\hyperlink{namespacecrow_1_1mustache_aeb8da2ae9d8d9fe55f6ab0a7455dd667a470529d743a17635308c52dc50efccd8}{crow\+::mustache\+::\+Close\+Block}}
+, \mbox{\hyperlink{namespacecrow_1_1mustache_aeb8da2ae9d8d9fe55f6ab0a7455dd667ab82f53ea35520be1175d4764c22d2b30}{crow\+::mustache\+::\+Else\+Block}}
+, \mbox{\hyperlink{namespacecrow_1_1mustache_aeb8da2ae9d8d9fe55f6ab0a7455dd667a44ffd38a6dea695cbe2b34efdcc6cf27}{crow\+::mustache\+::\+Partial}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacecrow_adcc1e7c149f03db601f2ca22a827f399}{crow\+::qs\+\_\+strncmp}} (const char \texorpdfstring{$\ast$}{*}s, const char \texorpdfstring{$\ast$}{*}qs, size\+\_\+t n)
+\item 
+size\+\_\+t \mbox{\hyperlink{namespacecrow_a3b114d3a6123223c5280ee85cc46fdc5}{crow\+::qs\+\_\+parse}} (char \texorpdfstring{$\ast$}{*}qs, char \texorpdfstring{$\ast$}{*}qs\+\_\+kv\mbox{[}$\,$\mbox{]}, size\+\_\+t qs\+\_\+kv\+\_\+size, bool parse\+\_\+url)
+\item 
+int \mbox{\hyperlink{namespacecrow_a14fbbb7c98eecbb8d718dbc3d4ca5d96}{crow\+::qs\+\_\+decode}} (char \texorpdfstring{$\ast$}{*}qs)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacecrow_ad97a80f336978f6d8594e135ee69ceda}{crow\+::qs\+\_\+k2v}} (const char \texorpdfstring{$\ast$}{*}key, char \texorpdfstring{$\ast$}{*}const \texorpdfstring{$\ast$}{*}qs\+\_\+kv, size\+\_\+t qs\+\_\+kv\+\_\+size, int nth)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacecrow_a7cb7caaae568c2c55779c4a02fd6cf52}{crow\+::qs\+\_\+scanvalue}} (const char \texorpdfstring{$\ast$}{*}key, const char \texorpdfstring{$\ast$}{*}qs, char \texorpdfstring{$\ast$}{*}val, size\+\_\+t val\+\_\+len)
+\item 
+std\+::unique\+\_\+ptr$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \mbox{\hyperlink{namespacecrow_ae5452ccaf92850d1922cef1dedbf2b94}{crow\+::qs\+\_\+dict\+\_\+name2kv}} (const char \texorpdfstring{$\ast$}{*}dict\+\_\+name, char \texorpdfstring{$\ast$}{*}const \texorpdfstring{$\ast$}{*}qs\+\_\+kv, size\+\_\+t qs\+\_\+kv\+\_\+size, int nth=0)
+\item 
+const std\+::string \mbox{\hyperlink{namespacecrow_a664043b97bc65e838a04a35f2f4ce4b9}{crow\+::crlf}} ("{}\textbackslash{}r\textbackslash{}n"{})
+\item 
+std\+::string \mbox{\hyperlink{namespacecrow_a2e95f26db5041c7f322bd38c2de6a6b1}{crow\+::method\+\_\+name}} (\mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4}{HTTPMethod}} method)
+\item 
+constexpr \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4}{crow\+::\+HTTPMethod}} \mbox{\hyperlink{crow__all_8h_a71fc026072484584cd06fdcdf78a2455}{method\+\_\+from\+\_\+string}} (const char \texorpdfstring{$\ast$}{*}str)
+\item 
+constexpr \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4}{crow\+::\+HTTPMethod}} \mbox{\hyperlink{crow__all_8h_af3a48071ea299e4c589403d01af96a4d}{operator"{}"{}\+\_\+method}} (const char \texorpdfstring{$\ast$}{*}str, size\+\_\+t)
+\item 
+{\footnotesize template$<$typename T $>$ }\\const std\+::string \& \mbox{\hyperlink{namespacecrow_a28cea0cb8e934bf4c6ee5250f10f2ef7}{crow\+::get\+\_\+header\+\_\+value}} (const T \&headers, const std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em Find and return the value associated with the key. (returns an empty string if nothing is found) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename O , typename T $>$ }\\const O \& \mbox{\hyperlink{namespacecrow_1_1multipart_a0319ef6ff161bdbb52b6de9580fe9a72}{crow\+::multipart\+::get\+\_\+header\+\_\+value\+\_\+object}} (const T \&headers, const std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em Find and return the value object associated with the key. (returns an empty class if nothing is found) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\const \mbox{\hyperlink{structcrow_1_1multipart_1_1header}{header}} \& \mbox{\hyperlink{namespacecrow_1_1multipart_a0f1be9cb3ce9e5ebed1a68465d7c13f9}{crow\+::multipart\+::get\+\_\+header\+\_\+object}} (const T \&headers, const std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em Same as \doxylink{namespacecrow_1_1multipart_a0319ef6ff161bdbb52b6de9580fe9a72}{get\+\_\+header\+\_\+value\+\_\+object()} but for \doxylink{structcrow_1_1multipart_1_1header}{multipart\+::header}. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035}{state}} \mbox{\hyperlink{namespacecrow_a92a181e0dc142c79e06ac976e4696024}{crow\+::parse\+\_\+url\+\_\+char}} (enum \mbox{\hyperlink{namespacecrow_af3683f183a8154824b3e77db7769a035}{state}} s, const char ch, \mbox{\hyperlink{structcrow_1_1http__parser}{http\+\_\+parser}} \texorpdfstring{$\ast$}{*}parser, const char \texorpdfstring{$\ast$}{*}url\+\_\+mark, const char \texorpdfstring{$\ast$}{*}p)
+\item 
+size\+\_\+t \mbox{\hyperlink{namespacecrow_a74a220575597e34e963b9e4dd3d72ab5}{crow\+::http\+\_\+parser\+\_\+execute}} (\mbox{\hyperlink{structcrow_1_1http__parser}{http\+\_\+parser}} \texorpdfstring{$\ast$}{*}parser, const \mbox{\hyperlink{structcrow_1_1http__parser__settings}{http\+\_\+parser\+\_\+settings}} \texorpdfstring{$\ast$}{*}settings, const char \texorpdfstring{$\ast$}{*}data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{namespacecrow_a9827c30b69b8d145960be294cc637421}{crow\+::http\+\_\+parser\+\_\+init}} (\mbox{\hyperlink{structcrow_1_1http__parser}{http\+\_\+parser}} \texorpdfstring{$\ast$}{*}parser)
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacecrow_afd834ab2baee4b565d71d9587b5ce9cc}{crow\+::http\+\_\+errno\+\_\+name}} (enum \mbox{\hyperlink{namespacecrow_a500a501f00a9398f69e054b30ef011cd}{http\+\_\+errno}} err)
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacecrow_a7ca7a2e6ec69897e147dd1ac45acfbdc}{crow\+::http\+\_\+errno\+\_\+description}} (enum \mbox{\hyperlink{namespacecrow_a500a501f00a9398f69e054b30ef011cd}{http\+\_\+errno}} err)
+\item 
+int \mbox{\hyperlink{namespacecrow_ae7c980723de3eaf3184cae9e2f3a5a68}{crow\+::http\+\_\+body\+\_\+is\+\_\+final}} (const struct \mbox{\hyperlink{structcrow_1_1http__parser}{http\+\_\+parser}} \texorpdfstring{$\ast$}{*}parser)
+\item 
+void \mbox{\hyperlink{namespacecrow_a5cdaa545f75beccb7dfdecccdb7f5dfc}{crow\+::http\+\_\+parser\+\_\+set\+\_\+max\+\_\+header\+\_\+size}} (uint32\+\_\+t size)
+\item 
+void \mbox{\hyperlink{namespacecrow_1_1json_a98e83fcd8d2e51b3acfc99d868b4e41a}{crow\+::json\+::escape}} (const std\+::string \&str, std\+::string \&ret)
+\item 
+std\+::string \mbox{\hyperlink{namespacecrow_1_1json_a27086e84491472bba7ff876c929f5df3}{crow\+::json\+::escape}} (const std\+::string \&str)
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacecrow_1_1json_a6104b7f66a6db997c7eb0d900de245c4}{crow\+::json\+::get\+\_\+type\+\_\+str}} (\mbox{\hyperlink{namespacecrow_1_1json_adb9569a402d1b289a75025c8c96e5d99}{type}} t)
+\item 
+\mbox{\hyperlink{classcrow_1_1json_1_1rvalue}{rvalue}} \mbox{\hyperlink{namespacecrow_1_1json_a84a2fc9bc21a94b2791271e54879ab0a}{crow\+::json\+::load}} (const char \texorpdfstring{$\ast$}{*}data, size\+\_\+t size)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_1_1detail_a9e05ef194e02704d74fe40a02f747723}{crow\+::json\+::detail\+::operator$<$}} (const \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{r\+\_\+string}} \&l, const \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{r\+\_\+string}} \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_1_1detail_a6ebe4a1331b93ac4d1e4f1f169388234}{crow\+::json\+::detail\+::operator$<$}} (const \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{r\+\_\+string}} \&l, const std\+::string \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_1_1detail_ae20971e8abb83474a7b790d1e8fb7777}{crow\+::json\+::detail\+::operator$<$}} (const std\+::string \&l, const \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{r\+\_\+string}} \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_1_1detail_a45d4a8e8e09e2fd22e6b454eb35e1920}{crow\+::json\+::detail\+::operator$>$}} (const \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{r\+\_\+string}} \&l, const \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{r\+\_\+string}} \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_1_1detail_a11f03601163525452ff2d9d08fc669b3}{crow\+::json\+::detail\+::operator$>$}} (const \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{r\+\_\+string}} \&l, const std\+::string \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_1_1detail_af676b63abf30ef6d3708798a5204dec8}{crow\+::json\+::detail\+::operator$>$}} (const std\+::string \&l, const \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{r\+\_\+string}} \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_1_1detail_a0c2d17963f4159c72621f429cdf48d95}{crow\+::json\+::detail\+::operator==}} (const \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{r\+\_\+string}} \&l, const \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{r\+\_\+string}} \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_1_1detail_a2d67be22770ab4c241c39408d6ff766c}{crow\+::json\+::detail\+::operator==}} (const \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{r\+\_\+string}} \&l, const std\+::string \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_1_1detail_a9712fe0ae36d479e51bb0ee4ffdc1fc4}{crow\+::json\+::detail\+::operator==}} (const std\+::string \&l, const \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{r\+\_\+string}} \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_1_1detail_a6355e19700f6ea936e3eb4a492f12fea}{crow\+::json\+::detail\+::operator!=}} (const \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{r\+\_\+string}} \&l, const \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{r\+\_\+string}} \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_1_1detail_a264fb7593561920c92734edef8e7d008}{crow\+::json\+::detail\+::operator!=}} (const \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{r\+\_\+string}} \&l, const std\+::string \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_1_1detail_a81f35f9e2a231426f4c827b791ce305f}{crow\+::json\+::detail\+::operator!=}} (const std\+::string \&l, const \mbox{\hyperlink{structcrow_1_1json_1_1detail_1_1r__string}{r\+\_\+string}} \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_a516708ab016de1caa6d3203529929b2e}{crow\+::json\+::operator==}} (const \mbox{\hyperlink{classcrow_1_1json_1_1rvalue}{rvalue}} \&l, const std\+::string \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_aa9ae087edb7382ba2df19bb5b4b8165b}{crow\+::json\+::operator==}} (const std\+::string \&l, const \mbox{\hyperlink{classcrow_1_1json_1_1rvalue}{rvalue}} \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_a2f0451a26844bed78da38c06d18d76f7}{crow\+::json\+::operator!=}} (const \mbox{\hyperlink{classcrow_1_1json_1_1rvalue}{rvalue}} \&l, const std\+::string \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_aba197bed8a4a07e34a0733d633b14e9b}{crow\+::json\+::operator!=}} (const std\+::string \&l, const \mbox{\hyperlink{classcrow_1_1json_1_1rvalue}{rvalue}} \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_a1079ce699fb8174f6f4092b79ef44fc0}{crow\+::json\+::operator==}} (const \mbox{\hyperlink{classcrow_1_1json_1_1rvalue}{rvalue}} \&l, double r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_a90cbe3f52220c2062156cf256e43c631}{crow\+::json\+::operator==}} (double l, const \mbox{\hyperlink{classcrow_1_1json_1_1rvalue}{rvalue}} \&r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_a4b737b3cf606bf2e63ed09ceff8ce89a}{crow\+::json\+::operator!=}} (const \mbox{\hyperlink{classcrow_1_1json_1_1rvalue}{rvalue}} \&l, double r)
+\item 
+bool \mbox{\hyperlink{namespacecrow_1_1json_ac606c21e102f1104500667e9060ee0ed}{crow\+::json\+::operator!=}} (double l, const \mbox{\hyperlink{classcrow_1_1json_1_1rvalue}{rvalue}} \&r)
+\item 
+\mbox{\hyperlink{classcrow_1_1json_1_1rvalue}{rvalue}} \mbox{\hyperlink{namespacecrow_1_1json_a0cd58f45702772a5aac929dec0966a0a}{crow\+::json\+::load\+\_\+nocopy\+\_\+internal}} (char \texorpdfstring{$\ast$}{*}data, size\+\_\+t size)
+\item 
+\mbox{\hyperlink{classcrow_1_1json_1_1rvalue}{rvalue}} \mbox{\hyperlink{namespacecrow_1_1json_ad995f1379ae1ddc8075cab8185c9a78a}{crow\+::json\+::load}} (const char \texorpdfstring{$\ast$}{*}data)
+\item 
+\mbox{\hyperlink{classcrow_1_1json_1_1rvalue}{rvalue}} \mbox{\hyperlink{namespacecrow_1_1json_a59efe2ae1d83ded364cc3ecc143bce85}{crow\+::json\+::load}} (const std\+::string \&str)
+\item 
+{\footnotesize template$<$typename MW , typename Context , typename Parent\+Context $>$ }\\std\+::enable\+\_\+if$<$!\mbox{\hyperlink{structcrow_1_1detail_1_1is__before__handle__arity__3__impl}{is\+\_\+before\+\_\+handle\+\_\+arity\+\_\+3\+\_\+impl}}$<$ MW $>$\+::value $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a3299769a85b70adcf3c5cbaa994ea371}{crow\+::detail\+::before\+\_\+handler\+\_\+call}} (MW \&mw, \mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res, Context \&ctx, Parent\+Context \&)
+\item 
+{\footnotesize template$<$typename MW , typename Context , typename Parent\+Context $>$ }\\std\+::enable\+\_\+if$<$ \mbox{\hyperlink{structcrow_1_1detail_1_1is__before__handle__arity__3__impl}{is\+\_\+before\+\_\+handle\+\_\+arity\+\_\+3\+\_\+impl}}$<$ MW $>$\+::value $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a81015d865129667f9f9b76bd20d581e7}{crow\+::detail\+::before\+\_\+handler\+\_\+call}} (MW \&mw, \mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res, Context \&ctx, Parent\+Context \&)
+\item 
+{\footnotesize template$<$typename MW , typename Context , typename Parent\+Context $>$ }\\std\+::enable\+\_\+if$<$!\mbox{\hyperlink{structcrow_1_1detail_1_1is__after__handle__arity__3__impl}{is\+\_\+after\+\_\+handle\+\_\+arity\+\_\+3\+\_\+impl}}$<$ MW $>$\+::value $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a4719793ead6a6f30d42d0d4ca530f281}{crow\+::detail\+::after\+\_\+handler\+\_\+call}} (MW \&mw, \mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res, Context \&ctx, Parent\+Context \&)
+\item 
+{\footnotesize template$<$typename MW , typename Context , typename Parent\+Context $>$ }\\std\+::enable\+\_\+if$<$ \mbox{\hyperlink{structcrow_1_1detail_1_1is__after__handle__arity__3__impl}{is\+\_\+after\+\_\+handle\+\_\+arity\+\_\+3\+\_\+impl}}$<$ MW $>$\+::value $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a0b254b8e4caa54fc30158a962c2a7054}{crow\+::detail\+::after\+\_\+handler\+\_\+call}} (MW \&mw, \mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res, Context \&ctx, Parent\+Context \&)
+\item 
+{\footnotesize template$<$typename Call\+Criteria , int N, typename Context , typename Container $>$ }\\std\+::enable\+\_\+if$<$(N$<$ std\+::tuple\+\_\+size$<$ typenamestd\+::remove\+\_\+reference$<$ Container $>$\+::type $>$\+::value), bool $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_ad2062e8efff213c9172fbaa2d9db1eba}{crow\+::detail\+::middleware\+\_\+call\+\_\+helper}} (const Call\+Criteria \&cc, Container \&middlewares, \mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res, Context \&ctx)
+\item 
+{\footnotesize template$<$typename Call\+Criteria , int N, typename Context , typename Container $>$ }\\std\+::enable\+\_\+if$<$(N $>$=std\+::tuple\+\_\+size$<$ typenamestd\+::remove\+\_\+reference$<$ Container $>$\+::type $>$\+::value), bool $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a595f5d1723137e6b446edb8282c52d48}{crow\+::detail\+::middleware\+\_\+call\+\_\+helper}} (const Call\+Criteria \&, Container \&, \mbox{\hyperlink{structcrow_1_1request}{request}} \&, \mbox{\hyperlink{structcrow_1_1response}{response}} \&, Context \&)
+\item 
+{\footnotesize template$<$typename Call\+Criteria , int N, typename Context , typename Container $>$ }\\std\+::enable\+\_\+if$<$(N$<$ 0)$>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a6ab4867a8cf66738f9de281dfeb562f1}{crow\+::detail\+::after\+\_\+handlers\+\_\+call\+\_\+helper}} (const Call\+Criteria \&, Container \&, Context \&, \mbox{\hyperlink{structcrow_1_1request}{request}} \&, \mbox{\hyperlink{structcrow_1_1response}{response}} \&)
+\item 
+{\footnotesize template$<$typename Call\+Criteria , int N, typename Context , typename Container $>$ }\\std\+::enable\+\_\+if$<$(N==0)$>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a9111261bc5c81aad1fc0f762e47a1258}{crow\+::detail\+::after\+\_\+handlers\+\_\+call\+\_\+helper}} (const Call\+Criteria \&cc, Container \&middlewares, Context \&ctx, \mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res)
+\item 
+{\footnotesize template$<$typename Call\+Criteria , int N, typename Context , typename Container $>$ }\\std\+::enable\+\_\+if$<$(N $>$0)$>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a157669b7b6ac9d9ba238acf3966e7d33}{crow\+::detail\+::after\+\_\+handlers\+\_\+call\+\_\+helper}} (const Call\+Criteria \&cc, Container \&middlewares, Context \&ctx, \mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res)
+\item 
+{\footnotesize template$<$typename F , typename... Args$>$ }\\std\+::enable\+\_\+if$<$ black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ Args... $>$ $>$\+::value, void $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a66d991e5d80ddf4f74d477d4f32e7d54}{crow\+::detail\+::wrapped\+\_\+handler\+\_\+call}} (\mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&res, const F \&f, Args \&\&... args)
+\item 
+{\footnotesize template$<$typename F , typename... Args$>$ }\\std\+::enable\+\_\+if$<$!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ Args... $>$ $>$\+::value \&\&black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, Args... $>$ $>$\+::value, void $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_ac89c13a434c22eabbf7625c6500a9c43}{crow\+::detail\+::wrapped\+\_\+handler\+\_\+call}} (\mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&res, const F \&f, Args \&\&... args)
+\item 
+{\footnotesize template$<$typename F , typename... Args$>$ }\\std\+::enable\+\_\+if$<$!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, Args... $>$ $>$\+::value \&\&black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&, Args... $>$ $>$\+::value, void $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a91dfc3bd465aed89803c832fd173f220}{crow\+::detail\+::wrapped\+\_\+handler\+\_\+call}} (\mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&res, const F \&f, Args \&\&... args)
+\item 
+{\footnotesize template$<$typename F , typename... Args$>$ }\\std\+::enable\+\_\+if$<$!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&, Args... $>$ $>$\+::value \&\&black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ constcrow\+::request \&, \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&, Args... $>$ $>$\+::value, void $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_af369a95a7c5a4bfff99eca981c236e0e}{crow\+::detail\+::wrapped\+\_\+handler\+\_\+call}} (\mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&res, const F \&f, Args \&\&... args)
+\item 
+{\footnotesize template$<$typename F , typename... Args$>$ }\\std\+::enable\+\_\+if$<$!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&, Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ constcrow\+::request \&, \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&, Args... $>$ $>$\+::value, void $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_ae839f420f99e06f31cfcbc8a43dc70be}{crow\+::detail\+::wrapped\+\_\+handler\+\_\+call}} (\mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&res, const F \&f, Args \&\&... args)
+\item 
+\mbox{\hyperlink{classcrow_1_1mustache_1_1template__t}{template\+\_\+t}} \mbox{\hyperlink{namespacecrow_1_1mustache_abe44de50c382e0d39e7ef5b7d5057ca6}{crow\+::mustache\+::load}} (const std\+::string \&filename)
+\item 
+\mbox{\hyperlink{classcrow_1_1mustache_1_1template__t}{template\+\_\+t}} \mbox{\hyperlink{namespacecrow_1_1mustache_a5823e2be647059121cc4f0329e44741a}{crow\+::mustache\+::compile}} (const std\+::string \&body)
+\item 
+std\+::string \& \mbox{\hyperlink{namespacecrow_1_1mustache_1_1detail_ac8a9965e154f51ec5fdd5a3c8061d776}{crow\+::mustache\+::detail\+::get\+\_\+template\+\_\+base\+\_\+directory\+\_\+ref}} ()
+\item 
+std\+::string \& \mbox{\hyperlink{namespacecrow_1_1mustache_1_1detail_a3a94d5be5893031eb4299a6e47927a71}{crow\+::mustache\+::detail\+::get\+\_\+global\+\_\+template\+\_\+base\+\_\+directory\+\_\+ref}} ()
+\begin{DoxyCompactList}\small\item\em A base directory not related to any blueprint. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacecrow_1_1mustache_a7e8660fbdeeb994a1f00c704b469c792}{crow\+::mustache\+::default\+\_\+loader}} (const std\+::string \&filename)
+\item 
+std\+::function$<$ std\+::string(std\+::string)$>$ \& \mbox{\hyperlink{namespacecrow_1_1mustache_1_1detail_a24ea7d709012e9da0aab9484a476b675}{crow\+::mustache\+::detail\+::get\+\_\+loader\+\_\+ref}} ()
+\item 
+void \mbox{\hyperlink{namespacecrow_1_1mustache_a88cf75099968de883a8e2bf14ce6d1cb}{crow\+::mustache\+::set\+\_\+base}} (const std\+::string \&path)
+\item 
+void \mbox{\hyperlink{namespacecrow_1_1mustache_a5cdb6a51dda64e4916a8cb49358ac0b6}{crow\+::mustache\+::set\+\_\+global\+\_\+base}} (const std\+::string \&path)
+\item 
+void \mbox{\hyperlink{namespacecrow_1_1mustache_a064911bc597a2a849f008b50cdead53e}{crow\+::mustache\+::set\+\_\+loader}} (std\+::function$<$ std\+::string(std\+::string)$>$ loader)
+\item 
+std\+::string \mbox{\hyperlink{namespacecrow_1_1mustache_a8db3aff497ff60b32321fc0a16274576}{crow\+::mustache\+::load\+\_\+text}} (const std\+::string \&filename)
+\item 
+std\+::string \mbox{\hyperlink{namespacecrow_1_1mustache_a5c27c8fa1561611202419d8c2f6c80cc}{crow\+::mustache\+::load\+\_\+text\+\_\+unsafe}} (const std\+::string \&filename)
+\item 
+\mbox{\hyperlink{classcrow_1_1mustache_1_1template__t}{template\+\_\+t}} \mbox{\hyperlink{namespacecrow_1_1mustache_af883f129665fb698bc4da7659d0b0841}{crow\+::mustache\+::load\+\_\+unsafe}} (const std\+::string \&filename)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{namespacecrow_ae3bc69c854fcab2bbf5a8c628fbe6894}{crow\+::mime\+\_\+types}}
+\item 
+const char \mbox{\hyperlink{namespacecrow_a348a7fc1fc788f1974ad34d1b1cf5b9e}{crow\+::cr}} = \textquotesingle{}\textbackslash{}r\textquotesingle{}
+\item 
+const char \mbox{\hyperlink{namespacecrow_ad64fc935fb542bd04fd30bf7708413cb}{crow\+::lf}} = \textquotesingle{}\textbackslash{}n\textquotesingle{}
+\item 
+constexpr const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacecrow_aa7c30f564257452fb6e9c074351f53d1}{crow\+::method\+\_\+strings}} \mbox{[}$\,$\mbox{]}
+\item 
+const std\+::string \mbox{\hyperlink{namespacecrow_1_1multipart_a7abf735303db9e568bea5787e1a63b72}{crow\+::multipart\+::dd}} = "{}-\/-\/"{}
+\item 
+constexpr const char \mbox{\hyperlink{namespacecrow_abb19b56c65f91e49d56abadf3fc947f1}{crow\+::\+VERSION}} \mbox{[}$\,$\mbox{]} = "{}1.\+1.\+0"{}
+\item 
+constexpr const uint16\+\_\+t \mbox{\hyperlink{namespacecrow_af15d23b18fca6cb5f5cf45be0e43db71}{crow\+::\+INVALID\+\_\+\+BP\+\_\+\+ID}} \{((uint16\+\_\+t)-\/1)\}
+\item 
+const int \mbox{\hyperlink{namespacecrow_a73062c5f5d45cb57eb32fd8a3f916132}{crow\+::\+RULE\+\_\+\+SPECIAL\+\_\+\+REDIRECT\+\_\+\+SLASH}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{crow__all_8h_ab5d9bbf144a59bcac465ece45ce5efad}\label{crow__all_8h_ab5d9bbf144a59bcac465ece45ce5efad} 
+\index{crow\_all.h@{crow\_all.h}!\_TINY\_SHA1\_HPP\_@{\_TINY\_SHA1\_HPP\_}}
+\index{\_TINY\_SHA1\_HPP\_@{\_TINY\_SHA1\_HPP\_}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{\_TINY\_SHA1\_HPP\_}{\_TINY\_SHA1\_HPP\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+TINY\+\_\+\+SHA1\+\_\+\+HPP\+\_\+}
+
+\Hypertarget{crow__all_8h_a5b90f4adb6bc09ca319c35c3448ee67a}\label{crow__all_8h_a5b90f4adb6bc09ca319c35c3448ee67a} 
+\index{crow\_all.h@{crow\_all.h}!ASIO\_STANDALONE@{ASIO\_STANDALONE}}
+\index{ASIO\_STANDALONE@{ASIO\_STANDALONE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{ASIO\_STANDALONE}{ASIO\_STANDALONE}}
+{\footnotesize\ttfamily \#define ASIO\+\_\+\+STANDALONE}
+
+\Hypertarget{crow__all_8h_a4b58b683817d0bb9a4525388b1ae6dc9}\label{crow__all_8h_a4b58b683817d0bb9a4525388b1ae6dc9} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_ARRAY\_SIZE@{CROW\_ARRAY\_SIZE}}
+\index{CROW\_ARRAY\_SIZE@{CROW\_ARRAY\_SIZE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_ARRAY\_SIZE}{CROW\_ARRAY\_SIZE}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+ARRAY\+\_\+\+SIZE(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~(sizeof(a) / sizeof((a)\mbox{[}0\mbox{]}))}
+
+\Hypertarget{crow__all_8h_ae453743cd3ecf6a7299a8dfcf886831d}\label{crow__all_8h_ae453743cd3ecf6a7299a8dfcf886831d} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_BIT\_AT@{CROW\_BIT\_AT}}
+\index{CROW\_BIT\_AT@{CROW\_BIT\_AT}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_BIT\_AT}{CROW\_BIT\_AT}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+BIT\+\_\+\+AT(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{i }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ (!!((\textcolor{keywordtype}{unsigned}\ int)\ (a)[(\textcolor{keywordtype}{unsigned}\ int)\ (i)\ >>\ 3]\ \&\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ (1\ <<\ ((\textcolor{keywordtype}{unsigned}\ int)\ (i)\ \&\ 7))))}
+
+\end{DoxyCode}
+\Hypertarget{crow__all_8h_a8490c9a408955fcdb2237c694427754b}\label{crow__all_8h_a8490c9a408955fcdb2237c694427754b} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_BP\_CATCHALL\_ROUTE@{CROW\_BP\_CATCHALL\_ROUTE}}
+\index{CROW\_BP\_CATCHALL\_ROUTE@{CROW\_BP\_CATCHALL\_ROUTE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_BP\_CATCHALL\_ROUTE}{CROW\_BP\_CATCHALL\_ROUTE}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+BP\+\_\+\+CATCHALL\+\_\+\+ROUTE(\begin{DoxyParamCaption}\item[{}]{blueprint }\end{DoxyParamCaption})~blueprint.\+catchall\+\_\+rule()}
+
+\Hypertarget{crow__all_8h_a479d0a674825fb289848dad80379efc7}\label{crow__all_8h_a479d0a674825fb289848dad80379efc7} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_BP\_ROUTE@{CROW\_BP\_ROUTE}}
+\index{CROW\_BP\_ROUTE@{CROW\_BP\_ROUTE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_BP\_ROUTE}{CROW\_BP\_ROUTE}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+BP\+\_\+\+ROUTE(\begin{DoxyParamCaption}\item[{}]{blueprint,  }\item[{}]{url }\end{DoxyParamCaption})~blueprint.\+new\+\_\+rule\+\_\+tagged$<$crow\+::black\+\_\+magic\+::get\+\_\+parameter\+\_\+tag(url)$>$(url)}
+
+\Hypertarget{crow__all_8h_a9bb50ecb05fd7b68d5142a2d950c9c05}\label{crow__all_8h_a9bb50ecb05fd7b68d5142a2d950c9c05} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_CALLBACK\_DATA@{CROW\_CALLBACK\_DATA}}
+\index{CROW\_CALLBACK\_DATA@{CROW\_CALLBACK\_DATA}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_CALLBACK\_DATA}{CROW\_CALLBACK\_DATA}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+CALLBACK\+\_\+\+DATA(\begin{DoxyParamCaption}\item[{}]{FOR }\end{DoxyParamCaption})~    \mbox{\hyperlink{crow__all_8h_a887efae46ac2f1a67166f7494e0ed858}{CROW\+\_\+\+CALLBACK\+\_\+\+DATA\+\_\+}}(FOR, p -\/ FOR\#\#\+\_\+mark, p -\/ data + 1)}
+
+\Hypertarget{crow__all_8h_a887efae46ac2f1a67166f7494e0ed858}\label{crow__all_8h_a887efae46ac2f1a67166f7494e0ed858} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_CALLBACK\_DATA\_@{CROW\_CALLBACK\_DATA\_}}
+\index{CROW\_CALLBACK\_DATA\_@{CROW\_CALLBACK\_DATA\_}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_CALLBACK\_DATA\_}{CROW\_CALLBACK\_DATA\_}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+CALLBACK\+\_\+\+DATA\+\_\+(\begin{DoxyParamCaption}\item[{}]{FOR,  }\item[{}]{LEN,  }\item[{}]{ER }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ assert(\mbox{\hyperlink{crow__all_8h_ab51dee950041f237616085fda584ea42}{CROW\_HTTP\_PARSER\_ERRNO}}(parser)\ ==\ CHPE\_OK);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ if\ (FOR\#\#\_mark)\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (\mbox{\hyperlink{crow__all_8h_a17fdd839006f72bdefc25310cbaaf038}{CROW\_LIKELY}}(settings-\/>on\_\#\#FOR))\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ if\ (\mbox{\hyperlink{crow__all_8h_acfd8ee37463ec78e15c4bde03cbc0d7d}{CROW\_UNLIKELY}}(0\ !=\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ settings-\/>on\_\#\#FOR(parser,\ FOR\#\#\_mark,\ (LEN))))\ \{\ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ CROW\_SET\_ERRNO(CHPE\_CB\_\#\#FOR);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{comment}{/*\ We\ either\ errored\ above\ or\ got\ paused;\ get\ out\ */}\ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ if\ (\mbox{\hyperlink{crow__all_8h_acfd8ee37463ec78e15c4bde03cbc0d7d}{CROW\_UNLIKELY}}(\mbox{\hyperlink{crow__all_8h_ab51dee950041f237616085fda584ea42}{CROW\_HTTP\_PARSER\_ERRNO}}(parser)\ !=\ CHPE\_OK))\ \{\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ return\ (ER);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ FOR\#\#\_mark\ =\ NULL;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{while}\ (0)}
+
+\end{DoxyCode}
+\Hypertarget{crow__all_8h_a4153ddb7186a3a95641e0ed8ef90ea80}\label{crow__all_8h_a4153ddb7186a3a95641e0ed8ef90ea80} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_CALLBACK\_DATA\_NOADVANCE@{CROW\_CALLBACK\_DATA\_NOADVANCE}}
+\index{CROW\_CALLBACK\_DATA\_NOADVANCE@{CROW\_CALLBACK\_DATA\_NOADVANCE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_CALLBACK\_DATA\_NOADVANCE}{CROW\_CALLBACK\_DATA\_NOADVANCE}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+CALLBACK\+\_\+\+DATA\+\_\+\+NOADVANCE(\begin{DoxyParamCaption}\item[{}]{FOR }\end{DoxyParamCaption})~    \mbox{\hyperlink{crow__all_8h_a887efae46ac2f1a67166f7494e0ed858}{CROW\+\_\+\+CALLBACK\+\_\+\+DATA\+\_\+}}(FOR, p -\/ FOR\#\#\+\_\+mark, p -\/ data)}
+
+\Hypertarget{crow__all_8h_afa33afab1ac16c22f60a8436ec1c81d9}\label{crow__all_8h_afa33afab1ac16c22f60a8436ec1c81d9} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_CALLBACK\_NOTIFY@{CROW\_CALLBACK\_NOTIFY}}
+\index{CROW\_CALLBACK\_NOTIFY@{CROW\_CALLBACK\_NOTIFY}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_CALLBACK\_NOTIFY}{CROW\_CALLBACK\_NOTIFY}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+CALLBACK\+\_\+\+NOTIFY(\begin{DoxyParamCaption}\item[{}]{FOR }\end{DoxyParamCaption})~\mbox{\hyperlink{crow__all_8h_accf7685e7913157cface707cb8662bcb}{CROW\+\_\+\+CALLBACK\+\_\+\+NOTIFY\+\_\+}}(FOR, p -\/ data + 1)}
+
+\Hypertarget{crow__all_8h_accf7685e7913157cface707cb8662bcb}\label{crow__all_8h_accf7685e7913157cface707cb8662bcb} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_CALLBACK\_NOTIFY\_@{CROW\_CALLBACK\_NOTIFY\_}}
+\index{CROW\_CALLBACK\_NOTIFY\_@{CROW\_CALLBACK\_NOTIFY\_}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_CALLBACK\_NOTIFY\_}{CROW\_CALLBACK\_NOTIFY\_}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+CALLBACK\+\_\+\+NOTIFY\+\_\+(\begin{DoxyParamCaption}\item[{}]{FOR,  }\item[{}]{ER }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ assert(\mbox{\hyperlink{crow__all_8h_ab51dee950041f237616085fda584ea42}{CROW\_HTTP\_PARSER\_ERRNO}}(parser)\ ==\ CHPE\_OK);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ if\ (\mbox{\hyperlink{crow__all_8h_a17fdd839006f72bdefc25310cbaaf038}{CROW\_LIKELY}}(settings-\/>on\_\#\#FOR))\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (\mbox{\hyperlink{crow__all_8h_acfd8ee37463ec78e15c4bde03cbc0d7d}{CROW\_UNLIKELY}}(0\ !=\ settings-\/>on\_\#\#FOR(parser)))\ \{\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ CROW\_SET\_ERRNO(CHPE\_CB\_\#\#FOR);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{/*\ We\ either\ errored\ above\ or\ got\ paused;\ get\ out\ */}\ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (\mbox{\hyperlink{crow__all_8h_acfd8ee37463ec78e15c4bde03cbc0d7d}{CROW\_UNLIKELY}}(\mbox{\hyperlink{crow__all_8h_ab51dee950041f237616085fda584ea42}{CROW\_HTTP\_PARSER\_ERRNO}}(parser)\ !=\ CHPE\_OK))\ \{\ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ return\ (ER);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{while}\ (0)}
+
+\end{DoxyCode}
+\Hypertarget{crow__all_8h_a8ca12bd56afee676ea1aa64c776c85ae}\label{crow__all_8h_a8ca12bd56afee676ea1aa64c776c85ae} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_CALLBACK\_NOTIFY\_NOADVANCE@{CROW\_CALLBACK\_NOTIFY\_NOADVANCE}}
+\index{CROW\_CALLBACK\_NOTIFY\_NOADVANCE@{CROW\_CALLBACK\_NOTIFY\_NOADVANCE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_CALLBACK\_NOTIFY\_NOADVANCE}{CROW\_CALLBACK\_NOTIFY\_NOADVANCE}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+CALLBACK\+\_\+\+NOTIFY\+\_\+\+NOADVANCE(\begin{DoxyParamCaption}\item[{}]{FOR }\end{DoxyParamCaption})~\mbox{\hyperlink{crow__all_8h_accf7685e7913157cface707cb8662bcb}{CROW\+\_\+\+CALLBACK\+\_\+\+NOTIFY\+\_\+}}(FOR, p -\/ data)}
+
+\Hypertarget{crow__all_8h_a182dcf033f11eb89855a7b98bd6cfe02}\label{crow__all_8h_a182dcf033f11eb89855a7b98bd6cfe02} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_CATCHALL\_ROUTE@{CROW\_CATCHALL\_ROUTE}}
+\index{CROW\_CATCHALL\_ROUTE@{CROW\_CATCHALL\_ROUTE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_CATCHALL\_ROUTE}{CROW\_CATCHALL\_ROUTE}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+CATCHALL\+\_\+\+ROUTE(\begin{DoxyParamCaption}\item[{}]{app }\end{DoxyParamCaption})~app.\+catchall\+\_\+route()}
+
+\Hypertarget{crow__all_8h_af05faf2ee9175e89321ba726fcdbe24f}\label{crow__all_8h_af05faf2ee9175e89321ba726fcdbe24f} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_CHUNKED@{CROW\_CHUNKED}}
+\index{CROW\_CHUNKED@{CROW\_CHUNKED}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_CHUNKED}{CROW\_CHUNKED}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+CHUNKED~"{}chunked"{}}
+
+\Hypertarget{crow__all_8h_af9dede02822dcebb74ada36d4b31cfd4}\label{crow__all_8h_af9dede02822dcebb74ada36d4b31cfd4} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_CLOSE@{CROW\_CLOSE}}
+\index{CROW\_CLOSE@{CROW\_CLOSE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_CLOSE}{CROW\_CLOSE}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+CLOSE~"{}close"{}}
+
+\Hypertarget{crow__all_8h_ae7bf8e02a0903d96bb4cd8f4df8b59b2}\label{crow__all_8h_ae7bf8e02a0903d96bb4cd8f4df8b59b2} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_CONNECTION@{CROW\_CONNECTION}}
+\index{CROW\_CONNECTION@{CROW\_CONNECTION}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_CONNECTION}{CROW\_CONNECTION}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+CONNECTION~"{}connection"{}}
+
+\Hypertarget{crow__all_8h_aedf796f2dc7a733522c1fc32206bed07}\label{crow__all_8h_aedf796f2dc7a733522c1fc32206bed07} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_CONTENT\_LENGTH@{CROW\_CONTENT\_LENGTH}}
+\index{CROW\_CONTENT\_LENGTH@{CROW\_CONTENT\_LENGTH}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_CONTENT\_LENGTH}{CROW\_CONTENT\_LENGTH}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+CONTENT\+\_\+\+LENGTH~"{}content-\/length"{}}
+
+\Hypertarget{crow__all_8h_a7e85abe6a3f9dd2785afb8d862c21b19}\label{crow__all_8h_a7e85abe6a3f9dd2785afb8d862c21b19} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_COUNT\_HEADER\_SIZE@{CROW\_COUNT\_HEADER\_SIZE}}
+\index{CROW\_COUNT\_HEADER\_SIZE@{CROW\_COUNT\_HEADER\_SIZE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_COUNT\_HEADER\_SIZE}{CROW\_COUNT\_HEADER\_SIZE}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+COUNT\+\_\+\+HEADER\+\_\+\+SIZE(\begin{DoxyParamCaption}\item[{}]{V }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ nread\ +=\ (uint32\_t)(V);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ if\ (\mbox{\hyperlink{crow__all_8h_acfd8ee37463ec78e15c4bde03cbc0d7d}{CROW\_UNLIKELY}}(nread\ >\ max\_header\_size))\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ CROW\_SET\_ERRNO(CHPE\_HEADER\_OVERFLOW);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{goto}\ error;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{while}\ (0)}
+
+\end{DoxyCode}
+\Hypertarget{crow__all_8h_a774ed56ab317ba036de7bad2160b5325}\label{crow__all_8h_a774ed56ab317ba036de7bad2160b5325} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_ENABLE\_LOGGING@{CROW\_ENABLE\_LOGGING}}
+\index{CROW\_ENABLE\_LOGGING@{CROW\_ENABLE\_LOGGING}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_ENABLE\_LOGGING}{CROW\_ENABLE\_LOGGING}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+ENABLE\+\_\+\+LOGGING}
+
+\Hypertarget{crow__all_8h_aab0669bbc73f6fa477f24a7220ff1802}\label{crow__all_8h_aab0669bbc73f6fa477f24a7220ff1802} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_HTTP\_ERRNO\_GEN@{CROW\_HTTP\_ERRNO\_GEN}}
+\index{CROW\_HTTP\_ERRNO\_GEN@{CROW\_HTTP\_ERRNO\_GEN}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_HTTP\_ERRNO\_GEN}{CROW\_HTTP\_ERRNO\_GEN}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+HTTP\+\_\+\+ERRNO\+\_\+\+GEN(\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{s }\end{DoxyParamCaption})~CHPE\+\_\+\#\#n,}
+
+\Hypertarget{crow__all_8h_aa486036114607349115fc350675a0fe9}\label{crow__all_8h_aa486036114607349115fc350675a0fe9} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_HTTP\_ERRNO\_MAP@{CROW\_HTTP\_ERRNO\_MAP}}
+\index{CROW\_HTTP\_ERRNO\_MAP@{CROW\_HTTP\_ERRNO\_MAP}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_HTTP\_ERRNO\_MAP}{CROW\_HTTP\_ERRNO\_MAP}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+HTTP\+\_\+\+ERRNO\+\_\+\+MAP(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{crow__all_8h_abcca528b2f8ac5fb1ee69ad27e09c1ea}{CROW\+\_\+\+XX}} }\end{DoxyParamCaption})}
+
+\Hypertarget{crow__all_8h_ace06cf4141e31fba7aa2389df152dad4}\label{crow__all_8h_ace06cf4141e31fba7aa2389df152dad4} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_HTTP\_MAX\_HEADER\_SIZE@{CROW\_HTTP\_MAX\_HEADER\_SIZE}}
+\index{CROW\_HTTP\_MAX\_HEADER\_SIZE@{CROW\_HTTP\_MAX\_HEADER\_SIZE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_HTTP\_MAX\_HEADER\_SIZE}{CROW\_HTTP\_MAX\_HEADER\_SIZE}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+HTTP\+\_\+\+MAX\+\_\+\+HEADER\+\_\+\+SIZE~(80\texorpdfstring{$\ast$}{*}1024)}
+
+\Hypertarget{crow__all_8h_ab51dee950041f237616085fda584ea42}\label{crow__all_8h_ab51dee950041f237616085fda584ea42} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_HTTP\_PARSER\_ERRNO@{CROW\_HTTP\_PARSER\_ERRNO}}
+\index{CROW\_HTTP\_PARSER\_ERRNO@{CROW\_HTTP\_PARSER\_ERRNO}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_HTTP\_PARSER\_ERRNO}{CROW\_HTTP\_PARSER\_ERRNO}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+HTTP\+\_\+\+PARSER\+\_\+\+ERRNO(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~((enum http\+\_\+errno)(p)-\/$>$http\+\_\+errno)}
+
+\Hypertarget{crow__all_8h_abf1ad99cf73c72021a47a34767abbbc8}\label{crow__all_8h_abf1ad99cf73c72021a47a34767abbbc8} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_HTTP\_STRERROR\_GEN@{CROW\_HTTP\_STRERROR\_GEN}}
+\index{CROW\_HTTP\_STRERROR\_GEN@{CROW\_HTTP\_STRERROR\_GEN}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_HTTP\_STRERROR\_GEN}{CROW\_HTTP\_STRERROR\_GEN}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+HTTP\+\_\+\+STRERROR\+\_\+\+GEN(\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{s }\end{DoxyParamCaption})~\{ "{}CHPE\+\_\+"{} \#n, s \},}
+
+\Hypertarget{crow__all_8h_abf1ad99cf73c72021a47a34767abbbc8}\label{crow__all_8h_abf1ad99cf73c72021a47a34767abbbc8} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_HTTP\_STRERROR\_GEN@{CROW\_HTTP\_STRERROR\_GEN}}
+\index{CROW\_HTTP\_STRERROR\_GEN@{CROW\_HTTP\_STRERROR\_GEN}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_HTTP\_STRERROR\_GEN}{CROW\_HTTP\_STRERROR\_GEN}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+HTTP\+\_\+\+STRERROR\+\_\+\+GEN(\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{s }\end{DoxyParamCaption})~\{ "{}CHPE\+\_\+"{} \#n, s \},}
+
+\Hypertarget{crow__all_8h_a057d6a861a138ec82939dca60c383c2b}\label{crow__all_8h_a057d6a861a138ec82939dca60c383c2b} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_IS\_ALPHA@{CROW\_IS\_ALPHA}}
+\index{CROW\_IS\_ALPHA@{CROW\_IS\_ALPHA}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_IS\_ALPHA}{CROW\_IS\_ALPHA}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+IS\+\_\+\+ALPHA(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})~(\mbox{\hyperlink{crow__all_8h_a6d96d14ccf8a6dc8a15974f1536f94ab}{CROW\+\_\+\+LOWER}}(c) $>$= \textquotesingle{}a\textquotesingle{} \&\& \mbox{\hyperlink{crow__all_8h_a6d96d14ccf8a6dc8a15974f1536f94ab}{CROW\+\_\+\+LOWER}}(c) $<$= \textquotesingle{}z\textquotesingle{})}
+
+\Hypertarget{crow__all_8h_a26b34891e2cc43267991355128466d5c}\label{crow__all_8h_a26b34891e2cc43267991355128466d5c} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_IS\_ALPHANUM@{CROW\_IS\_ALPHANUM}}
+\index{CROW\_IS\_ALPHANUM@{CROW\_IS\_ALPHANUM}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_IS\_ALPHANUM}{CROW\_IS\_ALPHANUM}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+IS\+\_\+\+ALPHANUM(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})~(\mbox{\hyperlink{crow__all_8h_a057d6a861a138ec82939dca60c383c2b}{CROW\+\_\+\+IS\+\_\+\+ALPHA}}(c) \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \mbox{\hyperlink{crow__all_8h_af3dae6586e09ad745ab219796c5beff9}{CROW\+\_\+\+IS\+\_\+\+NUM}}(c))}
+
+\Hypertarget{crow__all_8h_a19f05e8b42cd2c099a7584cac46d880c}\label{crow__all_8h_a19f05e8b42cd2c099a7584cac46d880c} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_IS\_HEADER\_CHAR@{CROW\_IS\_HEADER\_CHAR}}
+\index{CROW\_IS\_HEADER\_CHAR@{CROW\_IS\_HEADER\_CHAR}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_IS\_HEADER\_CHAR}{CROW\_IS\_HEADER\_CHAR}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+IS\+\_\+\+HEADER\+\_\+\+CHAR(\begin{DoxyParamCaption}\item[{}]{ch }\end{DoxyParamCaption})~  (ch == cr \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} ch == lf \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} ch == 9 \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} ((unsigned char)ch $>$ 31 \&\& ch != 127))}
+
+Verify that a char is a valid visible (printable) US-\/\+ASCII character or x80-\/FF \Hypertarget{crow__all_8h_af8ae3e53d4860276e9f456cc5b84b561}\label{crow__all_8h_af8ae3e53d4860276e9f456cc5b84b561} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_IS\_MARK@{CROW\_IS\_MARK}}
+\index{CROW\_IS\_MARK@{CROW\_IS\_MARK}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_IS\_MARK}{CROW\_IS\_MARK}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+IS\+\_\+\+MARK(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ ((c)\ ==\ \textcolor{charliteral}{'-\/'}\ ||\ (c)\ ==\ \textcolor{charliteral}{'\_'}\ ||\ (c)\ ==\ \textcolor{charliteral}{'.'}\ ||\ \(\backslash\)}
+\DoxyCodeLine{\ \ (c)\ ==\ \textcolor{charliteral}{'!'}\ ||\ (c)\ ==\ \textcolor{charliteral}{'\string~'}\ ||\ (c)\ ==\ \textcolor{charliteral}{'*'}\ ||\ (c)\ ==\ \textcolor{charliteral}{'\(\backslash\)''}\ ||\ (c)\ ==\ \textcolor{charliteral}{'('}\ ||\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ (c)\ ==\ \textcolor{charliteral}{')'})}
+
+\end{DoxyCode}
+\Hypertarget{crow__all_8h_af3dae6586e09ad745ab219796c5beff9}\label{crow__all_8h_af3dae6586e09ad745ab219796c5beff9} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_IS\_NUM@{CROW\_IS\_NUM}}
+\index{CROW\_IS\_NUM@{CROW\_IS\_NUM}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_IS\_NUM}{CROW\_IS\_NUM}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+IS\+\_\+\+NUM(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})~((c) $>$= \textquotesingle{}0\textquotesingle{} \&\& (c) $<$= \textquotesingle{}9\textquotesingle{})}
+
+\Hypertarget{crow__all_8h_a69710068a9d46b713f850a1d532b338c}\label{crow__all_8h_a69710068a9d46b713f850a1d532b338c} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_IS\_URL\_CHAR@{CROW\_IS\_URL\_CHAR}}
+\index{CROW\_IS\_URL\_CHAR@{CROW\_IS\_URL\_CHAR}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_IS\_URL\_CHAR}{CROW\_IS\_URL\_CHAR}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+IS\+\_\+\+URL\+\_\+\+CHAR(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})~(\mbox{\hyperlink{crow__all_8h_ae453743cd3ecf6a7299a8dfcf886831d}{CROW\+\_\+\+BIT\+\_\+\+AT}}(normal\+\_\+url\+\_\+char, (unsigned char)c))}
+
+\Hypertarget{crow__all_8h_a42eebb1e7640c049fd21d839ceb730ea}\label{crow__all_8h_a42eebb1e7640c049fd21d839ceb730ea} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_IS\_USERINFO\_CHAR@{CROW\_IS\_USERINFO\_CHAR}}
+\index{CROW\_IS\_USERINFO\_CHAR@{CROW\_IS\_USERINFO\_CHAR}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_IS\_USERINFO\_CHAR}{CROW\_IS\_USERINFO\_CHAR}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+IS\+\_\+\+USERINFO\+\_\+\+CHAR(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ (\mbox{\hyperlink{crow__all_8h_a26b34891e2cc43267991355128466d5c}{CROW\_IS\_ALPHANUM}}(c)\ ||\ \mbox{\hyperlink{crow__all_8h_af8ae3e53d4860276e9f456cc5b84b561}{CROW\_IS\_MARK}}(c)\ ||\ (c)\ ==\ \textcolor{charliteral}{'\%'}\ ||\ \(\backslash\)}
+\DoxyCodeLine{\ \ (c)\ ==\ \textcolor{charliteral}{';'}\ ||\ (c)\ ==\ \textcolor{charliteral}{':'}\ ||\ (c)\ ==\ \textcolor{charliteral}{'\&'}\ ||\ (c)\ ==\ \textcolor{charliteral}{'='}\ ||\ (c)\ ==\ \textcolor{charliteral}{'+'}\ ||\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ (c)\ ==\ \textcolor{charliteral}{'\$'}\ ||\ (c)\ ==\ \textcolor{charliteral}{','})}
+
+\end{DoxyCode}
+\Hypertarget{crow__all_8h_a9945c3e15589684daefe220f7cdbecc6}\label{crow__all_8h_a9945c3e15589684daefe220f7cdbecc6} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_KEEP\_ALIVE@{CROW\_KEEP\_ALIVE}}
+\index{CROW\_KEEP\_ALIVE@{CROW\_KEEP\_ALIVE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_KEEP\_ALIVE}{CROW\_KEEP\_ALIVE}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+KEEP\+\_\+\+ALIVE~"{}keep-\/alive"{}}
+
+\Hypertarget{crow__all_8h_a17fdd839006f72bdefc25310cbaaf038}\label{crow__all_8h_a17fdd839006f72bdefc25310cbaaf038} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_LIKELY@{CROW\_LIKELY}}
+\index{CROW\_LIKELY@{CROW\_LIKELY}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_LIKELY}{CROW\_LIKELY}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+LIKELY(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})~(X)}
+
+\Hypertarget{crow__all_8h_a7f164412824f41677fb87b815dcde3e6}\label{crow__all_8h_a7f164412824f41677fb87b815dcde3e6} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_LOG\_CRITICAL@{CROW\_LOG\_CRITICAL}}
+\index{CROW\_LOG\_CRITICAL@{CROW\_LOG\_CRITICAL}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_LOG\_CRITICAL}{CROW\_LOG\_CRITICAL}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+LOG\+\_\+\+CRITICAL}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classcrow_1_1logger_aa4cdbc8ac1fc9a28bddc7de736fde564}{crow::logger::get\_current\_log\_level}}()\ <=\ \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a278d01e5af56273bae1bb99a98b370cd}{crow::LogLevel::Critical}})\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ crow::logger(\mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a278d01e5af56273bae1bb99a98b370cd}{crow::LogLevel::Critical}})}
+
+\end{DoxyCode}
+\Hypertarget{crow__all_8h_ac077d50a4cd93181ac12592f2df158b6}\label{crow__all_8h_ac077d50a4cd93181ac12592f2df158b6} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_LOG\_DEBUG@{CROW\_LOG\_DEBUG}}
+\index{CROW\_LOG\_DEBUG@{CROW\_LOG\_DEBUG}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_LOG\_DEBUG}{CROW\_LOG\_DEBUG}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+LOG\+\_\+\+DEBUG}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classcrow_1_1logger_aa4cdbc8ac1fc9a28bddc7de736fde564}{crow::logger::get\_current\_log\_level}}()\ <=\ \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4aa603905470e2a5b8c13e96b579ef0dba}{crow::LogLevel::Debug}})\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ crow::logger(\mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4aa603905470e2a5b8c13e96b579ef0dba}{crow::LogLevel::Debug}})}
+
+\end{DoxyCode}
+\Hypertarget{crow__all_8h_a55552f276363f89da860381839592e42}\label{crow__all_8h_a55552f276363f89da860381839592e42} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_LOG\_ERROR@{CROW\_LOG\_ERROR}}
+\index{CROW\_LOG\_ERROR@{CROW\_LOG\_ERROR}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_LOG\_ERROR}{CROW\_LOG\_ERROR}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+LOG\+\_\+\+ERROR}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classcrow_1_1logger_aa4cdbc8ac1fc9a28bddc7de736fde564}{crow::logger::get\_current\_log\_level}}()\ <=\ \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a902b0d55fddef6f8d651fe1035b7d4bd}{crow::LogLevel::Error}})\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ crow::logger(\mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a902b0d55fddef6f8d651fe1035b7d4bd}{crow::LogLevel::Error}})}
+
+\end{DoxyCode}
+\Hypertarget{crow__all_8h_adeb20cf9a97ea5328f1de282f5669e75}\label{crow__all_8h_adeb20cf9a97ea5328f1de282f5669e75} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_LOG\_INFO@{CROW\_LOG\_INFO}}
+\index{CROW\_LOG\_INFO@{CROW\_LOG\_INFO}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_LOG\_INFO}{CROW\_LOG\_INFO}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+LOG\+\_\+\+INFO}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classcrow_1_1logger_aa4cdbc8ac1fc9a28bddc7de736fde564}{crow::logger::get\_current\_log\_level}}()\ <=\ \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a4059b0251f66a18cb56f544728796875}{crow::LogLevel::Info}})\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ crow::logger(\mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a4059b0251f66a18cb56f544728796875}{crow::LogLevel::Info}})}
+
+\end{DoxyCode}
+\Hypertarget{crow__all_8h_ac940b34fb637756764dd80c791549e83}\label{crow__all_8h_ac940b34fb637756764dd80c791549e83} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_LOG\_LEVEL@{CROW\_LOG\_LEVEL}}
+\index{CROW\_LOG\_LEVEL@{CROW\_LOG\_LEVEL}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_LOG\_LEVEL}{CROW\_LOG\_LEVEL}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+LOG\+\_\+\+LEVEL~1}
+
+\Hypertarget{crow__all_8h_a5a191289d36d5c518735d60a3626fad5}\label{crow__all_8h_a5a191289d36d5c518735d60a3626fad5} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_LOG\_WARNING@{CROW\_LOG\_WARNING}}
+\index{CROW\_LOG\_WARNING@{CROW\_LOG\_WARNING}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_LOG\_WARNING}{CROW\_LOG\_WARNING}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+LOG\+\_\+\+WARNING}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classcrow_1_1logger_aa4cdbc8ac1fc9a28bddc7de736fde564}{crow::logger::get\_current\_log\_level}}()\ <=\ \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a0eaadb4fcb48a0a0ed7bc9868be9fbaa}{crow::LogLevel::Warning}})\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ crow::logger(\mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a0eaadb4fcb48a0a0ed7bc9868be9fbaa}{crow::LogLevel::Warning}})}
+
+\end{DoxyCode}
+\Hypertarget{crow__all_8h_a6d96d14ccf8a6dc8a15974f1536f94ab}\label{crow__all_8h_a6d96d14ccf8a6dc8a15974f1536f94ab} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_LOWER@{CROW\_LOWER}}
+\index{CROW\_LOWER@{CROW\_LOWER}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_LOWER}{CROW\_LOWER}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+LOWER(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})~(unsigned char)(c \texorpdfstring{$\vert$}{|} 0x20)}
+
+\Hypertarget{crow__all_8h_a17e604a47bed0e6f2ee9ed740c786081}\label{crow__all_8h_a17e604a47bed0e6f2ee9ed740c786081} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_MARK@{CROW\_MARK}}
+\index{CROW\_MARK@{CROW\_MARK}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_MARK}{CROW\_MARK}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+MARK(\begin{DoxyParamCaption}\item[{}]{FOR }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ if\ (!FOR\#\#\_mark)\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ FOR\#\#\_mark\ =\ p;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{while}\ (0)}
+
+\end{DoxyCode}
+\Hypertarget{crow__all_8h_a12ac01cb1979c953ac1c1203114c5e0e}\label{crow__all_8h_a12ac01cb1979c953ac1c1203114c5e0e} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_MIDDLEWARES@{CROW\_MIDDLEWARES}}
+\index{CROW\_MIDDLEWARES@{CROW\_MIDDLEWARES}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_MIDDLEWARES}{CROW\_MIDDLEWARES}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+MIDDLEWARES(\begin{DoxyParamCaption}\item[{}]{app,  }\item[{}]{... }\end{DoxyParamCaption})~template middlewares$<$typename std\+::remove\+\_\+reference$<$decltype(app)$>$\+::type, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+$>$()}
+
+\Hypertarget{crow__all_8h_ac26d1a0e73b675a3dd8f592f914be43b}\label{crow__all_8h_ac26d1a0e73b675a3dd8f592f914be43b} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_MIN@{CROW\_MIN}}
+\index{CROW\_MIN@{CROW\_MIN}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_MIN}{CROW\_MIN}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+MIN(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~((a) $<$ (b) ? (a) \+: (b))}
+
+\Hypertarget{crow__all_8h_a6d7dcab1ca99df53ff7af463a71eca78}\label{crow__all_8h_a6d7dcab1ca99df53ff7af463a71eca78} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_NEW\_MESSAGE@{CROW\_NEW\_MESSAGE}}
+\index{CROW\_NEW\_MESSAGE@{CROW\_NEW\_MESSAGE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_NEW\_MESSAGE}{CROW\_NEW\_MESSAGE}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+NEW\+\_\+\+MESSAGE(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~(\mbox{\hyperlink{crow__all_8h_a6658f9876572cddab901907eb73fc3ff}{CROW\+\_\+start\+\_\+state}})}
+
+\Hypertarget{crow__all_8h_a1afe64d40b86c1b9b777dcf554bc8e9f}\label{crow__all_8h_a1afe64d40b86c1b9b777dcf554bc8e9f} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_PARSING\_HEADER@{CROW\_PARSING\_HEADER}}
+\index{CROW\_PARSING\_HEADER@{CROW\_PARSING\_HEADER}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_PARSING\_HEADER}{CROW\_PARSING\_HEADER}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+PARSING\+\_\+\+HEADER(\begin{DoxyParamCaption}\item[{}]{state }\end{DoxyParamCaption})~(state $<$= s\+\_\+headers\+\_\+done)}
+
+\Hypertarget{crow__all_8h_ae06bd7d58313b052fc773220fdedab9a}\label{crow__all_8h_ae06bd7d58313b052fc773220fdedab9a} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_PROXY\_CONNECTION@{CROW\_PROXY\_CONNECTION}}
+\index{CROW\_PROXY\_CONNECTION@{CROW\_PROXY\_CONNECTION}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_PROXY\_CONNECTION}{CROW\_PROXY\_CONNECTION}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+PROXY\+\_\+\+CONNECTION~"{}proxy-\/connection"{}}
+
+\Hypertarget{crow__all_8h_aaf00268a7a7ed20d2653c90dd7a233fa}\label{crow__all_8h_aaf00268a7a7ed20d2653c90dd7a233fa} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_QS\_HEX2DEC@{CROW\_QS\_HEX2DEC}}
+\index{CROW\_QS\_HEX2DEC@{CROW\_QS\_HEX2DEC}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_QS\_HEX2DEC}{CROW\_QS\_HEX2DEC}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+QS\+\_\+\+HEX2\+DEC(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((x)$>$=\textquotesingle{}0\textquotesingle{}\&\&(x)$<$=\textquotesingle{}9\textquotesingle{}) ? (x)-\/48 \+: ((x)$>$=\textquotesingle{}A\textquotesingle{}\&\&(x)$<$=\textquotesingle{}F\textquotesingle{}) ? (x)-\/55 \+: ((x)$>$=\textquotesingle{}a\textquotesingle{}\&\&(x)$<$=\textquotesingle{}f\textquotesingle{}) ? (x)-\/87 \+: 0)}
+
+\Hypertarget{crow__all_8h_a7a8bca8e3a638c16bac1c3389097d3ce}\label{crow__all_8h_a7a8bca8e3a638c16bac1c3389097d3ce} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_QS\_ISHEX@{CROW\_QS\_ISHEX}}
+\index{CROW\_QS\_ISHEX@{CROW\_QS\_ISHEX}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_QS\_ISHEX}{CROW\_QS\_ISHEX}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+QS\+\_\+\+ISHEX(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((((x)$>$=\textquotesingle{}0\textquotesingle{}\&\&(x)$<$=\textquotesingle{}9\textquotesingle{}) \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} ((x)$>$=\textquotesingle{}A\textquotesingle{}\&\&(x)$<$=\textquotesingle{}F\textquotesingle{}) \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} ((x)$>$=\textquotesingle{}a\textquotesingle{}\&\&(x)$<$=\textquotesingle{}f\textquotesingle{})) ? 1 \+: 0)}
+
+\Hypertarget{crow__all_8h_a3ebe11e6ce19a05748bb9cb17c95298c}\label{crow__all_8h_a3ebe11e6ce19a05748bb9cb17c95298c} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_QS\_ISQSCHR@{CROW\_QS\_ISQSCHR}}
+\index{CROW\_QS\_ISQSCHR@{CROW\_QS\_ISQSCHR}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_QS\_ISQSCHR}{CROW\_QS\_ISQSCHR}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+QS\+\_\+\+ISQSCHR(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((((x)==\textquotesingle{}=\textquotesingle{})\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}((x)==\textquotesingle{}\#\textquotesingle{})\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}((x)==\textquotesingle{}\&\textquotesingle{})\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}((x)==\textquotesingle{}\textbackslash{}0\textquotesingle{})) ? 0 \+: 1)}
+
+\Hypertarget{crow__all_8h_aaf35f6e2c67ebb77e1fed6ad4d916a16}\label{crow__all_8h_aaf35f6e2c67ebb77e1fed6ad4d916a16} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_REEXECUTE@{CROW\_REEXECUTE}}
+\index{CROW\_REEXECUTE@{CROW\_REEXECUTE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_REEXECUTE}{CROW\_REEXECUTE}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+REEXECUTE(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~  goto reexecute;                                                    \textbackslash{}}
+
+\Hypertarget{crow__all_8h_a6aa7ec3a2f3ee3f17d5f9acd879e7381}\label{crow__all_8h_a6aa7ec3a2f3ee3f17d5f9acd879e7381} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_ROUTE@{CROW\_ROUTE}}
+\index{CROW\_ROUTE@{CROW\_ROUTE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_ROUTE}{CROW\_ROUTE}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+ROUTE(\begin{DoxyParamCaption}\item[{}]{app,  }\item[{}]{url }\end{DoxyParamCaption})~app.\+template route$<$crow\+::black\+\_\+magic\+::get\+\_\+parameter\+\_\+tag(url)$>$(url)}
+
+\Hypertarget{crow__all_8h_a8e1b1b7d292602b4080d9b0a55e6e889}\label{crow__all_8h_a8e1b1b7d292602b4080d9b0a55e6e889} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_SET\_ERRNO@{CROW\_SET\_ERRNO}}
+\index{CROW\_SET\_ERRNO@{CROW\_SET\_ERRNO}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_SET\_ERRNO}{CROW\_SET\_ERRNO}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+SET\+\_\+\+ERRNO(\begin{DoxyParamCaption}\item[{}]{e }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ parser-\/>nread\ =\ nread;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ parser-\/>http\_errno\ =\ (e);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+\Hypertarget{crow__all_8h_a6658f9876572cddab901907eb73fc3ff}\label{crow__all_8h_a6658f9876572cddab901907eb73fc3ff} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_start\_state@{CROW\_start\_state}}
+\index{CROW\_start\_state@{CROW\_start\_state}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_start\_state}{CROW\_start\_state}}
+{\footnotesize\ttfamily \#define CROW\+\_\+start\+\_\+state~s\+\_\+start\+\_\+req}
+
+\Hypertarget{crow__all_8h_a5c9d709b448b25db7ea3f244748483b9}\label{crow__all_8h_a5c9d709b448b25db7ea3f244748483b9} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_STATIC\_DIRECTORY@{CROW\_STATIC\_DIRECTORY}}
+\index{CROW\_STATIC\_DIRECTORY@{CROW\_STATIC\_DIRECTORY}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_STATIC\_DIRECTORY}{CROW\_STATIC\_DIRECTORY}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+STATIC\+\_\+\+DIRECTORY~"{}static/"{}}
+
+\Hypertarget{crow__all_8h_a0fd760448a0f5fb4a3e36f95c8602a71}\label{crow__all_8h_a0fd760448a0f5fb4a3e36f95c8602a71} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_STATIC\_ENDPOINT@{CROW\_STATIC\_ENDPOINT}}
+\index{CROW\_STATIC\_ENDPOINT@{CROW\_STATIC\_ENDPOINT}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_STATIC\_ENDPOINT}{CROW\_STATIC\_ENDPOINT}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+STATIC\+\_\+\+ENDPOINT~"{}/static/$<$path$>$"{}}
+
+\Hypertarget{crow__all_8h_a2040baf9907b175e06c045b93a93d334}\label{crow__all_8h_a2040baf9907b175e06c045b93a93d334} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_STRICT\_CHECK@{CROW\_STRICT\_CHECK}}
+\index{CROW\_STRICT\_CHECK@{CROW\_STRICT\_CHECK}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_STRICT\_CHECK}{CROW\_STRICT\_CHECK}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+STRICT\+\_\+\+CHECK(\begin{DoxyParamCaption}\item[{}]{cond }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ if\ (cond)\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ CROW\_SET\_ERRNO(CHPE\_STRICT);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{goto}\ error;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{while}\ (0)}
+
+\end{DoxyCode}
+\Hypertarget{crow__all_8h_aa9a6c6a6a35804b5e8c2f6a1e8109a15}\label{crow__all_8h_aa9a6c6a6a35804b5e8c2f6a1e8109a15} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_T@{CROW\_T}}
+\index{CROW\_T@{CROW\_T}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_T}{CROW\_T}}
+{\footnotesize\ttfamily \#define CROW\+\_\+T(\begin{DoxyParamCaption}\item[{}]{v }\end{DoxyParamCaption})~0}
+
+\Hypertarget{crow__all_8h_ab2ed12fede2b4d5b6a8c97b8370f97da}\label{crow__all_8h_ab2ed12fede2b4d5b6a8c97b8370f97da} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_TOKEN@{CROW\_TOKEN}}
+\index{CROW\_TOKEN@{CROW\_TOKEN}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_TOKEN}{CROW\_TOKEN}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+TOKEN(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})~(tokens\mbox{[}(unsigned char)c\mbox{]})}
+
+\Hypertarget{crow__all_8h_ae58be6408389df7b996f3de90e22df9b}\label{crow__all_8h_ae58be6408389df7b996f3de90e22df9b} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_TRANSFER\_ENCODING@{CROW\_TRANSFER\_ENCODING}}
+\index{CROW\_TRANSFER\_ENCODING@{CROW\_TRANSFER\_ENCODING}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_TRANSFER\_ENCODING}{CROW\_TRANSFER\_ENCODING}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+TRANSFER\+\_\+\+ENCODING~"{}transfer-\/encoding"{}}
+
+\Hypertarget{crow__all_8h_ac170817262bd1c040ec6f9d261c74129}\label{crow__all_8h_ac170817262bd1c040ec6f9d261c74129} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_ULLONG\_MAX@{CROW\_ULLONG\_MAX}}
+\index{CROW\_ULLONG\_MAX@{CROW\_ULLONG\_MAX}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_ULLONG\_MAX}{CROW\_ULLONG\_MAX}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+ULLONG\+\_\+\+MAX~((uint64\+\_\+t) -\/1) /\texorpdfstring{$\ast$}{*} 2\texorpdfstring{$^\wedge$}{\string^}64-\/1 \texorpdfstring{$\ast$}{*}/}
+
+\Hypertarget{crow__all_8h_acfd8ee37463ec78e15c4bde03cbc0d7d}\label{crow__all_8h_acfd8ee37463ec78e15c4bde03cbc0d7d} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_UNLIKELY@{CROW\_UNLIKELY}}
+\index{CROW\_UNLIKELY@{CROW\_UNLIKELY}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_UNLIKELY}{CROW\_UNLIKELY}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+UNLIKELY(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})~(X)}
+
+\Hypertarget{crow__all_8h_ad5ce150d9c179a5de9366824c45f9c6e}\label{crow__all_8h_ad5ce150d9c179a5de9366824c45f9c6e} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_UPGRADE@{CROW\_UPGRADE}}
+\index{CROW\_UPGRADE@{CROW\_UPGRADE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_UPGRADE}{CROW\_UPGRADE}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+UPGRADE~"{}upgrade"{}}
+
+\Hypertarget{crow__all_8h_a8deb011ba0eae4684d6c6bb13014c926}\label{crow__all_8h_a8deb011ba0eae4684d6c6bb13014c926} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_WEBSOCKET\_ROUTE@{CROW\_WEBSOCKET\_ROUTE}}
+\index{CROW\_WEBSOCKET\_ROUTE@{CROW\_WEBSOCKET\_ROUTE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_WEBSOCKET\_ROUTE}{CROW\_WEBSOCKET\_ROUTE}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+WEBSOCKET\+\_\+\+ROUTE(\begin{DoxyParamCaption}\item[{}]{app,  }\item[{}]{url }\end{DoxyParamCaption})~app.\+route$<$crow\+::black\+\_\+magic\+::get\+\_\+parameter\+\_\+tag(url)$>$(url).websocket$<$std\+::remove\+\_\+reference$<$decltype(app)$>$\+::type$>$(\&app)}
+
+\Hypertarget{crow__all_8h_abcca528b2f8ac5fb1ee69ad27e09c1ea}\label{crow__all_8h_abcca528b2f8ac5fb1ee69ad27e09c1ea} 
+\index{crow\_all.h@{crow\_all.h}!CROW\_XX@{CROW\_XX}}
+\index{CROW\_XX@{CROW\_XX}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{CROW\_XX}{CROW\_XX}}
+{\footnotesize\ttfamily \#define CROW\+\_\+\+XX(\begin{DoxyParamCaption}\item[{}]{meth,  }\item[{}]{pos,  }\item[{}]{ch,  }\item[{}]{new\+\_\+meth }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ ((\textcolor{keywordtype}{unsigned})HTTPMethod::meth\ <<\ 16\ |\ pos\ <<\ 8\ |\ ch):\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ parser-\/>method\ =\ (unsigned)HTTPMethod::new\_meth;\ \textcolor{keywordflow}{break};}
+
+\end{DoxyCode}
+\Hypertarget{crow__all_8h_ae4e1c9b3895a9efca6bf613707050d98}\label{crow__all_8h_ae4e1c9b3895a9efca6bf613707050d98} 
+\index{crow\_all.h@{crow\_all.h}!GET\_IO\_SERVICE@{GET\_IO\_SERVICE}}
+\index{GET\_IO\_SERVICE@{GET\_IO\_SERVICE}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{GET\_IO\_SERVICE}{GET\_IO\_SERVICE}}
+{\footnotesize\ttfamily \#define GET\+\_\+\+IO\+\_\+\+SERVICE(\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})~((s).get\+\_\+io\+\_\+service())}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{crow__all_8h_a71fc026072484584cd06fdcdf78a2455}\label{crow__all_8h_a71fc026072484584cd06fdcdf78a2455} 
+\index{crow\_all.h@{crow\_all.h}!method\_from\_string@{method\_from\_string}}
+\index{method\_from\_string@{method\_from\_string}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{method\_from\_string()}{method\_from\_string()}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4}{crow\+::\+HTTPMethod}} method\+\_\+from\+\_\+string (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\Hypertarget{crow__all_8h_af3a48071ea299e4c589403d01af96a4d}\label{crow__all_8h_af3a48071ea299e4c589403d01af96a4d} 
+\index{crow\_all.h@{crow\_all.h}!operator"{}"{}\_method@{operator""""\_method}}
+\index{operator"{}"{}\_method@{operator""""\_method}!crow\_all.h@{crow\_all.h}}
+\doxysubsubsection{\texorpdfstring{operator""""\_method()}{operator""\_method()}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{namespacecrow_afe3a72ef7c3edbf71d0bceacf02517c4}{crow\+::\+HTTPMethod}} operator"{}"{}\+\_\+method (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{size\+\_\+t}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+

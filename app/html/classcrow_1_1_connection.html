@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>transaction team: crow::Connection&lt; Adaptor, Handler, Middlewares &gt; Class Template Reference</title>
+<title>My Project: crow::Connection&lt; Adaptor, Handler, Middlewares &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">transaction team
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -71,12 +71,14 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>crow</b></li><li class="navelem"><a class="el" href="classcrow_1_1_connection.html">Connection</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecrow.html">crow</a></li><li class="navelem"><a class="el" href="classcrow_1_1_connection.html">Connection</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classcrow_1_1_connection-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">crow::Connection&lt; Adaptor, Handler, Middlewares &gt; Class Template Reference</div></div>
@@ -96,40 +98,1178 @@ Inheritance diagram for crow::Connection&lt; Adaptor, Handler, Middlewares &gt;:
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad83a6948c16db75e51dcf7514f298983" id="r_ad83a6948c16db75e51dcf7514f298983"><td class="memItemLeft" align="right" valign="top"><a id="ad83a6948c16db75e51dcf7514f298983" name="ad83a6948c16db75e51dcf7514f298983"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Connection</b> (asio::io_service &amp;io_service, Handler *handler, const std::string &amp;server_name, std::tuple&lt; Middlewares... &gt; *middlewares, std::function&lt; std::string()&gt; &amp;get_cached_date_str_f, <a class="el" href="classcrow_1_1detail_1_1task__timer.html">detail::task_timer</a> &amp;task_timer, typename Adaptor::context *adaptor_ctx_, std::atomic&lt; unsigned int &gt; &amp;queue_length)</td></tr>
+<tr class="memitem:ad83a6948c16db75e51dcf7514f298983" id="r_ad83a6948c16db75e51dcf7514f298983"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad83a6948c16db75e51dcf7514f298983">Connection</a> (asio::io_service &amp;io_service, Handler *handler, const std::string &amp;server_name, std::tuple&lt; Middlewares... &gt; *middlewares, std::function&lt; std::string()&gt; &amp;get_cached_date_str_f, <a class="el" href="classcrow_1_1detail_1_1task__timer.html">detail::task_timer</a> &amp;task_timer, typename Adaptor::context *adaptor_ctx_, std::atomic&lt; unsigned int &gt; &amp;queue_length)</td></tr>
 <tr class="separator:ad83a6948c16db75e51dcf7514f298983"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e1e6e41ec0fbf059c93fae2b9738a19" id="r_a4e1e6e41ec0fbf059c93fae2b9738a19"><td class="memItemLeft" align="right" valign="top"><a id="a4e1e6e41ec0fbf059c93fae2b9738a19" name="a4e1e6e41ec0fbf059c93fae2b9738a19"></a>
-decltype(std::declval&lt; Adaptor &gt;().raw_socket()) &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> ()</td></tr>
-<tr class="memdesc:a4e1e6e41ec0fbf059c93fae2b9738a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">The TCP socket on top of which the connection is established. <br /></td></tr>
+<tr class="memitem:a4800edf5f2600ecdefd7d792d237b945" id="r_a4800edf5f2600ecdefd7d792d237b945"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4800edf5f2600ecdefd7d792d237b945">~Connection</a> ()</td></tr>
+<tr class="separator:a4800edf5f2600ecdefd7d792d237b945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e1e6e41ec0fbf059c93fae2b9738a19" id="r_a4e1e6e41ec0fbf059c93fae2b9738a19"><td class="memItemLeft" align="right" valign="top">decltype(std::declval&lt; Adaptor &gt;().raw_socket()) &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e1e6e41ec0fbf059c93fae2b9738a19">socket</a> ()</td></tr>
+<tr class="memdesc:a4e1e6e41ec0fbf059c93fae2b9738a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">The TCP socket on top of which the connection is established.  <br /></td></tr>
 <tr class="separator:a4e1e6e41ec0fbf059c93fae2b9738a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00e6802466a18fd967ce065522844e2f" id="r_a00e6802466a18fd967ce065522844e2f"><td class="memItemLeft" align="right" valign="top"><a id="a00e6802466a18fd967ce065522844e2f" name="a00e6802466a18fd967ce065522844e2f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> ()</td></tr>
+<tr class="memitem:a00e6802466a18fd967ce065522844e2f" id="r_a00e6802466a18fd967ce065522844e2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00e6802466a18fd967ce065522844e2f">start</a> ()</td></tr>
 <tr class="separator:a00e6802466a18fd967ce065522844e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeca557cd8422769c3b819343a7ed012d" id="r_aeca557cd8422769c3b819343a7ed012d"><td class="memItemLeft" align="right" valign="top"><a id="aeca557cd8422769c3b819343a7ed012d" name="aeca557cd8422769c3b819343a7ed012d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handle_url</b> ()</td></tr>
+<tr class="memitem:aeca557cd8422769c3b819343a7ed012d" id="r_aeca557cd8422769c3b819343a7ed012d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeca557cd8422769c3b819343a7ed012d">handle_url</a> ()</td></tr>
 <tr class="separator:aeca557cd8422769c3b819343a7ed012d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adde7a01b5ad446b0f7b1fb6fa6d3c23b" id="r_adde7a01b5ad446b0f7b1fb6fa6d3c23b"><td class="memItemLeft" align="right" valign="top"><a id="adde7a01b5ad446b0f7b1fb6fa6d3c23b" name="adde7a01b5ad446b0f7b1fb6fa6d3c23b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handle_header</b> ()</td></tr>
+<tr class="memitem:adde7a01b5ad446b0f7b1fb6fa6d3c23b" id="r_adde7a01b5ad446b0f7b1fb6fa6d3c23b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adde7a01b5ad446b0f7b1fb6fa6d3c23b">handle_header</a> ()</td></tr>
 <tr class="separator:adde7a01b5ad446b0f7b1fb6fa6d3c23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac347b6e80cfbc071579781062c78e667" id="r_ac347b6e80cfbc071579781062c78e667"><td class="memItemLeft" align="right" valign="top"><a id="ac347b6e80cfbc071579781062c78e667" name="ac347b6e80cfbc071579781062c78e667"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> ()</td></tr>
+<tr class="memitem:ac347b6e80cfbc071579781062c78e667" id="r_ac347b6e80cfbc071579781062c78e667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac347b6e80cfbc071579781062c78e667">handle</a> ()</td></tr>
 <tr class="separator:ac347b6e80cfbc071579781062c78e667"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa40019a3731cc55174401e3b31602524" id="r_aa40019a3731cc55174401e3b31602524"><td class="memItemLeft" align="right" valign="top"><a id="aa40019a3731cc55174401e3b31602524" name="aa40019a3731cc55174401e3b31602524"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>complete_request</b> ()</td></tr>
-<tr class="memdesc:aa40019a3731cc55174401e3b31602524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the after handle middleware and send the write the response to the connection. <br /></td></tr>
+<tr class="memitem:aa40019a3731cc55174401e3b31602524" id="r_aa40019a3731cc55174401e3b31602524"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa40019a3731cc55174401e3b31602524">complete_request</a> ()</td></tr>
+<tr class="memdesc:aa40019a3731cc55174401e3b31602524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the after handle middleware and send the write the response to the connection.  <br /></td></tr>
 <tr class="separator:aa40019a3731cc55174401e3b31602524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a9e6bae16dcb1277bbc094b4ef1aaea25" id="r_a9e6bae16dcb1277bbc094b4ef1aaea25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e6bae16dcb1277bbc094b4ef1aaea25">prepare_buffers</a> ()</td></tr>
+<tr class="separator:a9e6bae16dcb1277bbc094b4ef1aaea25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaaa39e9edde6ed11e788dc31fce5afc" id="r_afaaa39e9edde6ed11e788dc31fce5afc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afaaa39e9edde6ed11e788dc31fce5afc">do_write_static</a> ()</td></tr>
+<tr class="separator:afaaa39e9edde6ed11e788dc31fce5afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68eee1844c547e43da428132f3f85730" id="r_a68eee1844c547e43da428132f3f85730"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68eee1844c547e43da428132f3f85730">do_write_general</a> ()</td></tr>
+<tr class="separator:a68eee1844c547e43da428132f3f85730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16bd3bac91e0054aa41342b11dec68be" id="r_a16bd3bac91e0054aa41342b11dec68be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16bd3bac91e0054aa41342b11dec68be">do_read</a> ()</td></tr>
+<tr class="separator:a16bd3bac91e0054aa41342b11dec68be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc21b65985aef703122dc290c695e6e6" id="r_adc21b65985aef703122dc290c695e6e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc21b65985aef703122dc290c695e6e6">do_write</a> ()</td></tr>
+<tr class="separator:adc21b65985aef703122dc290c695e6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84a99d04d27e52060c05b95a6fff1dad" id="r_a84a99d04d27e52060c05b95a6fff1dad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84a99d04d27e52060c05b95a6fff1dad">do_write_sync</a> (std::vector&lt; asio::const_buffer &gt; &amp;buffers)</td></tr>
+<tr class="separator:a84a99d04d27e52060c05b95a6fff1dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe2079bca519de51ce6135282cd0f488" id="r_abe2079bca519de51ce6135282cd0f488"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe2079bca519de51ce6135282cd0f488">cancel_deadline_timer</a> ()</td></tr>
+<tr class="separator:abe2079bca519de51ce6135282cd0f488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab013bee0ff70d7262633aee6610663b4" id="r_ab013bee0ff70d7262633aee6610663b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab013bee0ff70d7262633aee6610663b4">start_deadline</a> ()</td></tr>
+<tr class="separator:ab013bee0ff70d7262633aee6610663b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3c07e29502e347add702fa702fb09cfc" id="r_a3c07e29502e347add702fa702fb09cfc"><td class="memItemLeft" align="right" valign="top">Adaptor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c07e29502e347add702fa702fb09cfc">adaptor_</a></td></tr>
+<tr class="separator:a3c07e29502e347add702fa702fb09cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44732813638141ac32e8792de9f08617" id="r_a44732813638141ac32e8792de9f08617"><td class="memItemLeft" align="right" valign="top">Handler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44732813638141ac32e8792de9f08617">handler_</a></td></tr>
+<tr class="separator:a44732813638141ac32e8792de9f08617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d7d8117a455b74b617ee1a9ef3ea12" id="r_aa7d7d8117a455b74b617ee1a9ef3ea12"><td class="memItemLeft" align="right" valign="top">std::array&lt; char, 4096 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7d7d8117a455b74b617ee1a9ef3ea12">buffer_</a></td></tr>
+<tr class="separator:aa7d7d8117a455b74b617ee1a9ef3ea12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72980abf02b804b5e500a09d8dd72023" id="r_a72980abf02b804b5e500a09d8dd72023"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrow_1_1_h_t_t_p_parser.html">HTTPParser</a>&lt; <a class="el" href="classcrow_1_1_connection.html">Connection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72980abf02b804b5e500a09d8dd72023">parser_</a></td></tr>
+<tr class="separator:a72980abf02b804b5e500a09d8dd72023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75fc48e9d4d9727744c65781db63940b" id="r_a75fc48e9d4d9727744c65781db63940b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structcrow_1_1routing__handle__result.html">routing_handle_result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75fc48e9d4d9727744c65781db63940b">routing_handle_result_</a></td></tr>
+<tr class="separator:a75fc48e9d4d9727744c65781db63940b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b5135fb8b838e2b2a9d5f55bf8588a" id="r_a08b5135fb8b838e2b2a9d5f55bf8588a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrow_1_1request.html">request</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08b5135fb8b838e2b2a9d5f55bf8588a">req_</a></td></tr>
+<tr class="separator:a08b5135fb8b838e2b2a9d5f55bf8588a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48547043c36181d95742bd2d217a08b3" id="r_a48547043c36181d95742bd2d217a08b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrow_1_1response.html">response</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48547043c36181d95742bd2d217a08b3">res</a></td></tr>
+<tr class="separator:a48547043c36181d95742bd2d217a08b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaefe00149abfc5df631766fa214c3e48" id="r_aaefe00149abfc5df631766fa214c3e48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaefe00149abfc5df631766fa214c3e48">close_connection_</a> = false</td></tr>
+<tr class="separator:aaefe00149abfc5df631766fa214c3e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c8672b52d07a491451ef0487979122" id="r_ad8c8672b52d07a491451ef0487979122"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8c8672b52d07a491451ef0487979122">server_name_</a></td></tr>
+<tr class="separator:ad8c8672b52d07a491451ef0487979122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae790a43004641f434a4e865d94dfbb8c" id="r_ae790a43004641f434a4e865d94dfbb8c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; asio::const_buffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae790a43004641f434a4e865d94dfbb8c">buffers_</a></td></tr>
+<tr class="separator:ae790a43004641f434a4e865d94dfbb8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b6591b97c75486c3d1f9a72caf85306" id="r_a9b6591b97c75486c3d1f9a72caf85306"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b6591b97c75486c3d1f9a72caf85306">content_length_</a></td></tr>
+<tr class="separator:a9b6591b97c75486c3d1f9a72caf85306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32d4bbce17159db617270972deb80100" id="r_a32d4bbce17159db617270972deb80100"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32d4bbce17159db617270972deb80100">date_str_</a></td></tr>
+<tr class="separator:a32d4bbce17159db617270972deb80100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a940156d38a23c103a0612ccb707ac337" id="r_a940156d38a23c103a0612ccb707ac337"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a940156d38a23c103a0612ccb707ac337">res_body_copy_</a></td></tr>
+<tr class="separator:a940156d38a23c103a0612ccb707ac337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a347653454f32af66ec0a985a13ed2326" id="r_a347653454f32af66ec0a985a13ed2326"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcrow_1_1detail_1_1task__timer.html#aab902a1634760b439ab748d1cb0af56a">detail::task_timer::identifier_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a347653454f32af66ec0a985a13ed2326">task_id_</a> {}</td></tr>
+<tr class="separator:a347653454f32af66ec0a985a13ed2326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e5ab6005daff2102d5f151692c78d0" id="r_af1e5ab6005daff2102d5f151692c78d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1e5ab6005daff2102d5f151692c78d0">continue_requested</a> {}</td></tr>
+<tr class="separator:af1e5ab6005daff2102d5f151692c78d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab827a570ee4893ed80238693d19cd804" id="r_ab827a570ee4893ed80238693d19cd804"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab827a570ee4893ed80238693d19cd804">need_to_call_after_handlers_</a> {}</td></tr>
+<tr class="separator:ab827a570ee4893ed80238693d19cd804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59deb20bd531f924be3ff096adcf3dd" id="r_ac59deb20bd531f924be3ff096adcf3dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac59deb20bd531f924be3ff096adcf3dd">need_to_start_read_after_complete_</a> {}</td></tr>
+<tr class="separator:ac59deb20bd531f924be3ff096adcf3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a116a1311a7caf0433f7b23029815ee5a" id="r_a116a1311a7caf0433f7b23029815ee5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a116a1311a7caf0433f7b23029815ee5a">add_keep_alive_</a> {}</td></tr>
+<tr class="separator:a116a1311a7caf0433f7b23029815ee5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fffb102a0090d8ef79538ff5110b571" id="r_a9fffb102a0090d8ef79538ff5110b571"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; Middlewares... &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fffb102a0090d8ef79538ff5110b571">middlewares_</a></td></tr>
+<tr class="separator:a9fffb102a0090d8ef79538ff5110b571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a843a03f6822f3ace49e15706727238b0" id="r_a843a03f6822f3ace49e15706727238b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrow_1_1detail_1_1context.html">detail::context</a>&lt; Middlewares... &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a843a03f6822f3ace49e15706727238b0">ctx_</a></td></tr>
+<tr class="separator:a843a03f6822f3ace49e15706727238b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d217f01d9e35240b1ebaf0cf25d305a" id="r_a4d217f01d9e35240b1ebaf0cf25d305a"><td class="memItemLeft" align="right" valign="top">std::function&lt; std::string()&gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d217f01d9e35240b1ebaf0cf25d305a">get_cached_date_str</a></td></tr>
+<tr class="separator:a4d217f01d9e35240b1ebaf0cf25d305a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa38fb6ddd39df724dc82404f532bdb2" id="r_afa38fb6ddd39df724dc82404f532bdb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcrow_1_1detail_1_1task__timer.html">detail::task_timer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa38fb6ddd39df724dc82404f532bdb2">task_timer_</a></td></tr>
+<tr class="separator:afa38fb6ddd39df724dc82404f532bdb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a78da94a71972d39fad666a7d940b9f" id="r_a2a78da94a71972d39fad666a7d940b9f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a78da94a71972d39fad666a7d940b9f">res_stream_threshold_</a></td></tr>
+<tr class="separator:a2a78da94a71972d39fad666a7d940b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c1eb7cd08c569f030f9af936a05f92" id="r_a19c1eb7cd08c569f030f9af936a05f92"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; unsigned int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19c1eb7cd08c569f030f9af936a05f92">queue_length_</a></td></tr>
+<tr class="separator:a19c1eb7cd08c569f030f9af936a05f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a6fdaf752fa7f9477577ad34e5a2b1506" id="r_a6fdaf752fa7f9477577ad34e5a2b1506"><td class="memItemLeft" align="right" valign="top"><a id="a6fdaf752fa7f9477577ad34e5a2b1506" name="a6fdaf752fa7f9477577ad34e5a2b1506"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>crow::response</b></td></tr>
+<tr class="memitem:a6fdaf752fa7f9477577ad34e5a2b1506" id="r_a6fdaf752fa7f9477577ad34e5a2b1506"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fdaf752fa7f9477577ad34e5a2b1506">crow::response</a></td></tr>
 <tr class="separator:a6fdaf752fa7f9477577ad34e5a2b1506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Adaptor, typename Handler, typename... Middlewares&gt;<br />
 class crow::Connection&lt; Adaptor, Handler, Middlewares &gt;</div><p>An HTTP connection. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad83a6948c16db75e51dcf7514f298983" name="ad83a6948c16db75e51dcf7514f298983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad83a6948c16db75e51dcf7514f298983">&#9670;&#160;</a></span>Connection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::Connection </td>
+          <td>(</td>
+          <td class="paramtype">asio::io_service &amp;</td>          <td class="paramname"><span class="paramname"><em>io_service</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler *</td>          <td class="paramname"><span class="paramname"><em>handler</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>server_name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::tuple&lt; Middlewares... &gt; *</td>          <td class="paramname"><span class="paramname"><em>middlewares</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; std::string()&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>get_cached_date_str_f</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcrow_1_1detail_1_1task__timer.html">detail::task_timer</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>task_timer</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename Adaptor::context *</td>          <td class="paramname"><span class="paramname"><em>adaptor_ctx_</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::atomic&lt; unsigned int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>queue_length</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4800edf5f2600ecdefd7d792d237b945" name="a4800edf5f2600ecdefd7d792d237b945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4800edf5f2600ecdefd7d792d237b945">&#9670;&#160;</a></span>~Connection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::~<a class="el" href="classcrow_1_1_connection.html">Connection</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="abe2079bca519de51ce6135282cd0f488" name="abe2079bca519de51ce6135282cd0f488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe2079bca519de51ce6135282cd0f488">&#9670;&#160;</a></span>cancel_deadline_timer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::cancel_deadline_timer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa40019a3731cc55174401e3b31602524" name="aa40019a3731cc55174401e3b31602524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa40019a3731cc55174401e3b31602524">&#9670;&#160;</a></span>complete_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::complete_request </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call the after handle middleware and send the write the response to the connection. </p>
+
+</div>
+</div>
+<a id="a16bd3bac91e0054aa41342b11dec68be" name="a16bd3bac91e0054aa41342b11dec68be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16bd3bac91e0054aa41342b11dec68be">&#9670;&#160;</a></span>do_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::do_read </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc21b65985aef703122dc290c695e6e6" name="adc21b65985aef703122dc290c695e6e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc21b65985aef703122dc290c695e6e6">&#9670;&#160;</a></span>do_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::do_write </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68eee1844c547e43da428132f3f85730" name="a68eee1844c547e43da428132f3f85730"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68eee1844c547e43da428132f3f85730">&#9670;&#160;</a></span>do_write_general()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::do_write_general </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afaaa39e9edde6ed11e788dc31fce5afc" name="afaaa39e9edde6ed11e788dc31fce5afc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaaa39e9edde6ed11e788dc31fce5afc">&#9670;&#160;</a></span>do_write_static()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::do_write_static </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84a99d04d27e52060c05b95a6fff1dad" name="a84a99d04d27e52060c05b95a6fff1dad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84a99d04d27e52060c05b95a6fff1dad">&#9670;&#160;</a></span>do_write_sync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::do_write_sync </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; asio::const_buffer &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>buffers</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac347b6e80cfbc071579781062c78e667" name="ac347b6e80cfbc071579781062c78e667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac347b6e80cfbc071579781062c78e667">&#9670;&#160;</a></span>handle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::handle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adde7a01b5ad446b0f7b1fb6fa6d3c23b" name="adde7a01b5ad446b0f7b1fb6fa6d3c23b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adde7a01b5ad446b0f7b1fb6fa6d3c23b">&#9670;&#160;</a></span>handle_header()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::handle_header </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeca557cd8422769c3b819343a7ed012d" name="aeca557cd8422769c3b819343a7ed012d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeca557cd8422769c3b819343a7ed012d">&#9670;&#160;</a></span>handle_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::handle_url </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e6bae16dcb1277bbc094b4ef1aaea25" name="a9e6bae16dcb1277bbc094b4ef1aaea25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e6bae16dcb1277bbc094b4ef1aaea25">&#9670;&#160;</a></span>prepare_buffers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::prepare_buffers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e1e6e41ec0fbf059c93fae2b9738a19" name="a4e1e6e41ec0fbf059c93fae2b9738a19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e1e6e41ec0fbf059c93fae2b9738a19">&#9670;&#160;</a></span>socket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">decltype(std::declval&lt; Adaptor &gt;().raw_socket()) &amp; <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::socket </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The TCP socket on top of which the connection is established. </p>
+
+</div>
+</div>
+<a id="a00e6802466a18fd967ce065522844e2f" name="a00e6802466a18fd967ce065522844e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00e6802466a18fd967ce065522844e2f">&#9670;&#160;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::start </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab013bee0ff70d7262633aee6610663b4" name="ab013bee0ff70d7262633aee6610663b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab013bee0ff70d7262633aee6610663b4">&#9670;&#160;</a></span>start_deadline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::start_deadline </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a6fdaf752fa7f9477577ad34e5a2b1506" name="a6fdaf752fa7f9477577ad34e5a2b1506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fdaf752fa7f9477577ad34e5a2b1506">&#9670;&#160;</a></span>crow::response</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend struct <a class="el" href="structcrow_1_1response.html">crow::response</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3c07e29502e347add702fa702fb09cfc" name="a3c07e29502e347add702fa702fb09cfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c07e29502e347add702fa702fb09cfc">&#9670;&#160;</a></span>adaptor_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Adaptor <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::adaptor_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a116a1311a7caf0433f7b23029815ee5a" name="a116a1311a7caf0433f7b23029815ee5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a116a1311a7caf0433f7b23029815ee5a">&#9670;&#160;</a></span>add_keep_alive_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::add_keep_alive_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7d7d8117a455b74b617ee1a9ef3ea12" name="aa7d7d8117a455b74b617ee1a9ef3ea12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7d7d8117a455b74b617ee1a9ef3ea12">&#9670;&#160;</a></span>buffer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;char, 4096&gt; <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::buffer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae790a43004641f434a4e865d94dfbb8c" name="ae790a43004641f434a4e865d94dfbb8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae790a43004641f434a4e865d94dfbb8c">&#9670;&#160;</a></span>buffers_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;asio::const_buffer&gt; <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::buffers_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaefe00149abfc5df631766fa214c3e48" name="aaefe00149abfc5df631766fa214c3e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaefe00149abfc5df631766fa214c3e48">&#9670;&#160;</a></span>close_connection_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::close_connection_ = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b6591b97c75486c3d1f9a72caf85306" name="a9b6591b97c75486c3d1f9a72caf85306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b6591b97c75486c3d1f9a72caf85306">&#9670;&#160;</a></span>content_length_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::content_length_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1e5ab6005daff2102d5f151692c78d0" name="af1e5ab6005daff2102d5f151692c78d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1e5ab6005daff2102d5f151692c78d0">&#9670;&#160;</a></span>continue_requested</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::continue_requested {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a843a03f6822f3ace49e15706727238b0" name="a843a03f6822f3ace49e15706727238b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a843a03f6822f3ace49e15706727238b0">&#9670;&#160;</a></span>ctx_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcrow_1_1detail_1_1context.html">detail::context</a>&lt;Middlewares...&gt; <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::ctx_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a32d4bbce17159db617270972deb80100" name="a32d4bbce17159db617270972deb80100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32d4bbce17159db617270972deb80100">&#9670;&#160;</a></span>date_str_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::date_str_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d217f01d9e35240b1ebaf0cf25d305a" name="a4d217f01d9e35240b1ebaf0cf25d305a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d217f01d9e35240b1ebaf0cf25d305a">&#9670;&#160;</a></span>get_cached_date_str</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;std::string()&gt;&amp; <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::get_cached_date_str</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44732813638141ac32e8792de9f08617" name="a44732813638141ac32e8792de9f08617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44732813638141ac32e8792de9f08617">&#9670;&#160;</a></span>handler_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Handler* <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::handler_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9fffb102a0090d8ef79538ff5110b571" name="a9fffb102a0090d8ef79538ff5110b571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fffb102a0090d8ef79538ff5110b571">&#9670;&#160;</a></span>middlewares_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt;Middlewares...&gt;* <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::middlewares_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab827a570ee4893ed80238693d19cd804" name="ab827a570ee4893ed80238693d19cd804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab827a570ee4893ed80238693d19cd804">&#9670;&#160;</a></span>need_to_call_after_handlers_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::need_to_call_after_handlers_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac59deb20bd531f924be3ff096adcf3dd" name="ac59deb20bd531f924be3ff096adcf3dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac59deb20bd531f924be3ff096adcf3dd">&#9670;&#160;</a></span>need_to_start_read_after_complete_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::need_to_start_read_after_complete_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72980abf02b804b5e500a09d8dd72023" name="a72980abf02b804b5e500a09d8dd72023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72980abf02b804b5e500a09d8dd72023">&#9670;&#160;</a></span>parser_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcrow_1_1_h_t_t_p_parser.html">HTTPParser</a>&lt;<a class="el" href="classcrow_1_1_connection.html">Connection</a>&gt; <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::parser_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19c1eb7cd08c569f030f9af936a05f92" name="a19c1eb7cd08c569f030f9af936a05f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19c1eb7cd08c569f030f9af936a05f92">&#9670;&#160;</a></span>queue_length_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;unsigned int&gt;&amp; <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::queue_length_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08b5135fb8b838e2b2a9d5f55bf8588a" name="a08b5135fb8b838e2b2a9d5f55bf8588a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b5135fb8b838e2b2a9d5f55bf8588a">&#9670;&#160;</a></span>req_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcrow_1_1request.html">request</a>&amp; <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::req_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48547043c36181d95742bd2d217a08b3" name="a48547043c36181d95742bd2d217a08b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48547043c36181d95742bd2d217a08b3">&#9670;&#160;</a></span>res</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcrow_1_1response.html">response</a> <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::res</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a940156d38a23c103a0612ccb707ac337" name="a940156d38a23c103a0612ccb707ac337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a940156d38a23c103a0612ccb707ac337">&#9670;&#160;</a></span>res_body_copy_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::res_body_copy_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a78da94a71972d39fad666a7d940b9f" name="a2a78da94a71972d39fad666a7d940b9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a78da94a71972d39fad666a7d940b9f">&#9670;&#160;</a></span>res_stream_threshold_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::res_stream_threshold_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75fc48e9d4d9727744c65781db63940b" name="a75fc48e9d4d9727744c65781db63940b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75fc48e9d4d9727744c65781db63940b">&#9670;&#160;</a></span>routing_handle_result_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="structcrow_1_1routing__handle__result.html">routing_handle_result</a>&gt; <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::routing_handle_result_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8c8672b52d07a491451ef0487979122" name="ad8c8672b52d07a491451ef0487979122"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8c8672b52d07a491451ef0487979122">&#9670;&#160;</a></span>server_name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::server_name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a347653454f32af66ec0a985a13ed2326" name="a347653454f32af66ec0a985a13ed2326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a347653454f32af66ec0a985a13ed2326">&#9670;&#160;</a></span>task_id_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcrow_1_1detail_1_1task__timer.html#aab902a1634760b439ab748d1cb0af56a">detail::task_timer::identifier_type</a> <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::task_id_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa38fb6ddd39df724dc82404f532bdb2" name="afa38fb6ddd39df724dc82404f532bdb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa38fb6ddd39df724dc82404f532bdb2">&#9670;&#160;</a></span>task_timer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Adaptor , typename Handler , typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcrow_1_1detail_1_1task__timer.html">detail::task_timer</a>&amp; <a class="el" href="classcrow_1_1_connection.html">crow::Connection</a>&lt; Adaptor, Handler, Middlewares &gt;::task_timer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="crow__all_8h_source.html">crow_all.h</a></li>
 </ul>
 </div><!-- contents -->

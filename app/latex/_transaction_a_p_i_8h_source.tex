@@ -1,0 +1,21 @@
+\doxysection{Transaction\+API.\+h}
+\hypertarget{_transaction_a_p_i_8h_source}{}\label{_transaction_a_p_i_8h_source}\mbox{\hyperlink{_transaction_a_p_i_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_transaction_8h}{Transaction.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_transaction_a_p_i}{TransactionAPI}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_transaction_a_p_i_ae4158d12b6e00873201a716919ae70e8}{addDBTransaction}}(\mbox{\hyperlink{class_transaction}{Transaction}}\ t);}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_transaction_a_p_i_a9f92922357db6e1edb117daabc2333dd}{updateDBBudget}}(\textcolor{keywordtype}{double}\ moneyGain);}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{comment}{//TEST\ VAR}}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_transaction_a_p_i_af86de517b2ad2c6efc35408427218cf7}{budget}}\ =\ 0;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_transaction_a_p_i_a1014183cf7fdb6f06992c15d91f07830}{validateTransaction}}(\textcolor{keywordtype}{double}\ moneyGain);}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_transaction_a_p_i_a746166de11abcc2a4a6a81c8bf3d1d7e}{getBudget}}();}
+\DoxyCodeLine{00027\ \ \ \ \ std::string\ \mbox{\hyperlink{class_transaction_a_p_i_a98989f632ca5a948e58a80f56007d956}{generateTransaction}}(\textcolor{keywordtype}{double}\ moneyGain,\ std::string\ details,\ std::string\ transactionInitiatingTeam);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \};}
+
+\end{DoxyCode}

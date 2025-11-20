@@ -1,8 +1,20 @@
 var searchData=
 [
-  ['opcode_0',['opcode',['../classcrow_1_1websocket_1_1_connection.html#a6d74305323202dc7ebd07cbd3ee19f98',1,'crow::websocket::Connection']]],
-  ['operator_20double_1',['operator double',['../structcrow_1_1multipart_1_1header.html#a0b87278e0ebe8d323f46c9ed64fc385a',1,'crow::multipart::header::operator double()'],['../structcrow_1_1multipart_1_1part.html#ac9c4ebeeabe158725bc67cf14c9f957e',1,'crow::multipart::part::operator double()']]],
-  ['operator_20int_2',['operator int',['../structcrow_1_1multipart_1_1header.html#adff380493f414108eb67420d06d426ee',1,'crow::multipart::header::operator int()'],['../structcrow_1_1multipart_1_1part.html#a06851f0fd2d36b71139e8488fb646b7e',1,'crow::multipart::part::operator int()']]],
-  ['operator_20std_3a_3astring_3',['string',['../classcrow_1_1json_1_1rvalue.html#a2d5dd8607112a132fe070dee432987ae',1,'crow::json::rvalue']]],
-  ['origin_4',['origin',['../structcrow_1_1_c_o_r_s_rules.html#a24c7fb4f22e72d9bf11c444eeefe27fe',1,'crow::CORSRules']]]
+  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['make_5fmiddleware_5ftuple_1',['make_middleware_tuple',['../classcrow_1_1_crow.html#a27542e789b5106909f3e6876f3e96a26',1,'crow::Crow']]],
+  ['max_5fage_2',['max_age',['../structcrow_1_1_cookie_parser_1_1_cookie.html#adcbcf37a34eb547ec0082a94fb0c7c25',1,'crow::CookieParser::Cookie::max_age()'],['../structcrow_1_1_c_o_r_s_rules.html#abea15691b1f8570da399c1b9a5353091',1,'crow::CORSRules::max_age()']]],
+  ['max_5fpayload_3',['max_payload',['../classcrow_1_1_web_socket_rule.html#a3000e7081fb4fa9e77bb103c47cc3f3e',1,'crow::WebSocketRule']]],
+  ['merge_5fback_4',['merge_back',['../structcrow_1_1detail_1_1middleware__indices.html#a3c23c2fd745612f1f126b63fbec1a547',1,'crow::detail::middleware_indices']]],
+  ['merge_5ffront_5',['merge_front',['../structcrow_1_1detail_1_1middleware__indices.html#ad18f7bb499a4f6f7164a9c606e6139eb',1,'crow::detail::middleware_indices']]],
+  ['message_6',['message',['../structcrow_1_1multipart_1_1message.html#a0007fa0cadffae1a8d16fac169d1527b',1,'crow::multipart::message::message(const ci_map &amp;headers, const std::string &amp;boundary, const std::vector&lt; part &gt; &amp;sections)'],['../structcrow_1_1multipart_1_1message.html#a32946a0f39a8d024aaf4643116a7561b',1,'crow::multipart::message::message(const request &amp;req)']]],
+  ['method_5ffrom_5fstring_7',['method_from_string',['../crow__all_8h.html#a71fc026072484584cd06fdcdf78a2455',1,'crow_all.h']]],
+  ['method_5fname_8',['method_name',['../namespacecrow.html#a2e95f26db5041c7f322bd38c2de6a6b1',1,'crow']]],
+  ['methods_9',['methods',['../structcrow_1_1_rule_parameter_traits.html#a72fa81da2752dff5a1c1e9c9f8c7ffe2',1,'crow::RuleParameterTraits::methods(HTTPMethod method)'],['../structcrow_1_1_rule_parameter_traits.html#a326028833978cb970df9bd4e11af14b9',1,'crow::RuleParameterTraits::methods(HTTPMethod method, MethodArgs... args_method)'],['../structcrow_1_1_c_o_r_s_rules.html#add84bf56b40ffde7d31066bad2e81acc',1,'crow::CORSRules::methods(crow::HTTPMethod method)'],['../structcrow_1_1_c_o_r_s_rules.html#a34e59d41310904e06f77d92f5c12bd55',1,'crow::CORSRules::methods(crow::HTTPMethod method, Methods... method_list)']]],
+  ['middleware_5fcall_5fcriteria_5fdynamic_10',['middleware_call_criteria_dynamic',['../structcrow_1_1detail_1_1middleware__call__criteria__dynamic_3_01false_01_4.html#a975e9db833b37965e9113a44787de713',1,'crow::detail::middleware_call_criteria_dynamic&lt; false &gt;::middleware_call_criteria_dynamic()'],['../structcrow_1_1detail_1_1middleware__call__criteria__dynamic_3_01true_01_4.html#a6f5d720273c0de6ae01a138e0bb84cc6',1,'crow::detail::middleware_call_criteria_dynamic&lt; true &gt;::middleware_call_criteria_dynamic()']]],
+  ['middleware_5fcall_5fhelper_11',['middleware_call_helper',['../namespacecrow_1_1detail.html#ad2062e8efff213c9172fbaa2d9db1eba',1,'crow::detail::middleware_call_helper(const CallCriteria &amp;cc, Container &amp;middlewares, request &amp;req, response &amp;res, Context &amp;ctx)'],['../namespacecrow_1_1detail.html#a595f5d1723137e6b446edb8282c52d48',1,'crow::detail::middleware_call_helper(const CallCriteria &amp;, Container &amp;, request &amp;, response &amp;, Context &amp;)']]],
+  ['middlewares_12',['middlewares',['../structcrow_1_1_rule_parameter_traits.html#a4d9e2e10a1736d3fe4b53b1ebf3b56dc',1,'crow::RuleParameterTraits::middlewares()'],['../classcrow_1_1_blueprint.html#a3c3880497e8d6d8fbac6719aea1525d5',1,'crow::Blueprint::middlewares()']]],
+  ['moved_13',['moved',['../structcrow_1_1response.html#a760bca5f5fdee03518d59d9538ce5432',1,'crow::response']]],
+  ['moved_5fperm_14',['moved_perm',['../structcrow_1_1response.html#a9ee58f8b775b2566418b298fe33c0dcc',1,'crow::response']]],
+  ['multithreaded_15',['multithreaded',['../classcrow_1_1_crow.html#a7a6277aa9a88b2ecf301e98e8cbf9c33',1,'crow::Crow']]],
+  ['mutex_16',['mutex',['../structcrow_1_1_session_middleware_1_1context.html#a468ababcf79faee97af45c74ac74f429',1,'crow::SessionMiddleware::context']]]
 ];

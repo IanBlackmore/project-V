@@ -1,0 +1,460 @@
+\doxysection{crow\+::response Struct Reference}
+\hypertarget{structcrow_1_1response}{}\label{structcrow_1_1response}\index{crow::response@{crow::response}}
+
+
+HTTP response.  
+
+
+
+
+{\ttfamily \#include $<$crow\+\_\+all.\+h$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1response_1_1static__file__info}{static\+\_\+file\+\_\+info}}
+\begin{DoxyCompactList}\small\item\em This constains metadata (coming from the {\ttfamily stat} command) related to any static files associated with this response. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structcrow_1_1response_ab2b9a9b9795fa6330bd47b66a716cb0b}{set\+\_\+header}} (std\+::string key, std\+::string value)
+\begin{DoxyCompactList}\small\item\em Set the value of an existing header in the response. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structcrow_1_1response_a16d1a8bcec6460ba97f90b80881693b8}{add\+\_\+header}} (std\+::string key, std\+::string value)
+\begin{DoxyCompactList}\small\item\em Add a new header to the response. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{structcrow_1_1response_abacb497ffe1a354b9fe24c21733f600d}{get\+\_\+header\+\_\+value}} (const std\+::string \&key)
+\item 
+\mbox{\hyperlink{structcrow_1_1response_a0f4955bc5dc914d698cff5e83bca1cdb}{response}} ()
+\item 
+\mbox{\hyperlink{structcrow_1_1response_a52e2658b1d16dcf106ed138b6396696b}{response}} (int \mbox{\hyperlink{structcrow_1_1response_aabc1f9b3264b8c5a2d05dcb409e8ff3f}{code}})
+\item 
+\mbox{\hyperlink{structcrow_1_1response_aab7485cb8f0efa3fcf062118476edfd5}{response}} (std\+::string \mbox{\hyperlink{structcrow_1_1response_ae9f3cc153eac05954f1f4e599527892d}{body}})
+\item 
+\mbox{\hyperlink{structcrow_1_1response_aeee8e7dd021783524bae9bd8775bae0f}{response}} (int \mbox{\hyperlink{structcrow_1_1response_aabc1f9b3264b8c5a2d05dcb409e8ff3f}{code}}, std\+::string \mbox{\hyperlink{structcrow_1_1response_ae9f3cc153eac05954f1f4e599527892d}{body}})
+\item 
+\mbox{\hyperlink{structcrow_1_1response_a693fd3f57d926251918b16a6f20be474}{response}} (\mbox{\hyperlink{structcrow_1_1returnable}{returnable}} \&\&value)
+\item 
+\mbox{\hyperlink{structcrow_1_1response_a70c56fc6910c94f42accb77a45d5686e}{response}} (\mbox{\hyperlink{structcrow_1_1returnable}{returnable}} \&value)
+\item 
+\mbox{\hyperlink{structcrow_1_1response_a37aaf5b69473066fe8bcf302e9ba4580}{response}} (int \mbox{\hyperlink{structcrow_1_1response_aabc1f9b3264b8c5a2d05dcb409e8ff3f}{code}}, \mbox{\hyperlink{structcrow_1_1returnable}{returnable}} \&value)
+\item 
+\mbox{\hyperlink{structcrow_1_1response_a3b9bfae36855265ddc1a64c78d0caf8e}{response}} (int \mbox{\hyperlink{structcrow_1_1response_aabc1f9b3264b8c5a2d05dcb409e8ff3f}{code}}, \mbox{\hyperlink{structcrow_1_1returnable}{returnable}} \&\&value)
+\item 
+\mbox{\hyperlink{structcrow_1_1response_abd924a9b90dfb505804fe4cf791768a3}{response}} (\mbox{\hyperlink{structcrow_1_1response}{response}} \&\&r)
+\item 
+\mbox{\hyperlink{structcrow_1_1response_ac7f3e75d48f2082a93e366d31298eb72}{response}} (std\+::string content\+Type, std\+::string \mbox{\hyperlink{structcrow_1_1response_ae9f3cc153eac05954f1f4e599527892d}{body}})
+\item 
+\mbox{\hyperlink{structcrow_1_1response_a58dd09e8a9b3f1d86fe9d676757c8a2c}{response}} (int \mbox{\hyperlink{structcrow_1_1response_aabc1f9b3264b8c5a2d05dcb409e8ff3f}{code}}, std\+::string content\+Type, std\+::string \mbox{\hyperlink{structcrow_1_1response_ae9f3cc153eac05954f1f4e599527892d}{body}})
+\item 
+\mbox{\hyperlink{structcrow_1_1response}{response}} \& \mbox{\hyperlink{structcrow_1_1response_ae5a691062543b20e51542f85e49707a5}{operator=}} (const \mbox{\hyperlink{structcrow_1_1response}{response}} \&r)=delete
+\item 
+\mbox{\hyperlink{structcrow_1_1response}{response}} \& \mbox{\hyperlink{structcrow_1_1response_a0bf17b5fab1feddb93b3104588b38ec6}{operator=}} (\mbox{\hyperlink{structcrow_1_1response}{response}} \&\&r) noexcept
+\item 
+bool \mbox{\hyperlink{structcrow_1_1response_a9fb82c40e0c0844db70b7b86b4a23e9f}{is\+\_\+completed}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Check if the response has completed (whether \doxylink{structcrow_1_1response_abef42200eca49c70dc1f5140ee3603ab}{response.\+end()} has been called) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structcrow_1_1response_a068269fc8b7f1df3d5421ccd384fe1f3}{clear}} ()
+\item 
+void \mbox{\hyperlink{structcrow_1_1response_ac04bbe2d4f54fd717cdffdb26af3e46f}{redirect}} (const std\+::string \&location)
+\begin{DoxyCompactList}\small\item\em Return a "{}\+Temporary Redirect"{} response. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structcrow_1_1response_a9e87a17c3cf8b434fd2a64a9b3d4b675}{redirect\+\_\+perm}} (const std\+::string \&location)
+\begin{DoxyCompactList}\small\item\em Return a "{}\+Permanent Redirect"{} response. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structcrow_1_1response_a760bca5f5fdee03518d59d9538ce5432}{moved}} (const std\+::string \&location)
+\begin{DoxyCompactList}\small\item\em Return a "{}\+Found (\+Moved Temporarily)"{} response. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structcrow_1_1response_a9ee58f8b775b2566418b298fe33c0dcc}{moved\+\_\+perm}} (const std\+::string \&location)
+\begin{DoxyCompactList}\small\item\em Return a "{}\+Moved Permanently"{} response. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structcrow_1_1response_a82bba7eaacfee514c55630a13a85410e}{write}} (const std\+::string \&body\+\_\+part)
+\item 
+void \mbox{\hyperlink{structcrow_1_1response_abef42200eca49c70dc1f5140ee3603ab}{end}} ()
+\begin{DoxyCompactList}\small\item\em Set the response completion flag and call the handler (to send the response). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structcrow_1_1response_a10da2e17421586b68f27ef1533ec677b}{end}} (const std\+::string \&body\+\_\+part)
+\begin{DoxyCompactList}\small\item\em Same as \doxylink{structcrow_1_1response_abef42200eca49c70dc1f5140ee3603ab}{end()} except it adds a body part right before ending. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structcrow_1_1response_ac29da52ee1e0b55086cd8eedd6c22da1}{is\+\_\+alive}} ()
+\begin{DoxyCompactList}\small\item\em Check if the connection is still alive (usually by checking the socket status). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structcrow_1_1response_aff527a091cf5054e933a244b078648c1}{is\+\_\+static\+\_\+type}} ()
+\begin{DoxyCompactList}\small\item\em Check whether the response has a static file defined. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structcrow_1_1response_a8f5e5caa08c3e658bccd03996e1a778a}{set\+\_\+static\+\_\+file\+\_\+info}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em Return a static file as the response body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structcrow_1_1response_adaaa1a62451d41e6f3831463296b4c08}{set\+\_\+static\+\_\+file\+\_\+info\+\_\+unsafe}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em Return a static file as the response body without sanitizing the path (use set\+\_\+static\+\_\+file\+\_\+info instead) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{structcrow_1_1response_aaa17d72d16081374c8991dc27d298d5f}{validate\+\_\+mime\+\_\+type}} (const std\+::string \&candidate) noexcept
+\item 
+static std\+::string \mbox{\hyperlink{structcrow_1_1response_aeddf9dbd0074584ec1fd5f93f5934e13}{get\+\_\+mime\+\_\+type}} (const std\+::string \&content\+Type)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structcrow_1_1response_aabc1f9b3264b8c5a2d05dcb409e8ff3f}{code}} \{200\}
+\begin{DoxyCompactList}\small\item\em The Status code for the response. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structcrow_1_1response_ae9f3cc153eac05954f1f4e599527892d}{body}}
+\begin{DoxyCompactList}\small\item\em The actual payload containing the response data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacecrow_a9c2fb4390329e219e3d1532e81925b87}{ci\+\_\+map}} \mbox{\hyperlink{structcrow_1_1response_ae56cfc39f24a56748c11016842427fb3}{headers}}
+\begin{DoxyCompactList}\small\item\em HTTP headers. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structcrow_1_1response_a548c4f5e059a7bb3b2560b7ac5800011}{skip\+\_\+body}} = false
+\begin{DoxyCompactList}\small\item\em Whether this is a response to a HEAD request. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structcrow_1_1response_a95f300c05782e1934dad522b6d6588cf}{manual\+\_\+length\+\_\+header}} = false
+\begin{DoxyCompactList}\small\item\em Whether \doxylink{classcrow_1_1_crow}{Crow} should automatically add a "{}\+Content-\/\+Length"{} header. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structcrow_1_1response_a7bb678afc0f683ce111b5b428c709d05}{completed\+\_\+}} \{\}
+\item 
+std\+::function$<$ void()$>$ \mbox{\hyperlink{structcrow_1_1response_a157629939cba3b77be204d2149d51af6}{complete\+\_\+request\+\_\+handler\+\_\+}}
+\item 
+std\+::function$<$ bool()$>$ \mbox{\hyperlink{structcrow_1_1response_ac3f46c895ba4d5f0976616426be3ce65}{is\+\_\+alive\+\_\+helper\+\_\+}}
+\item 
+\mbox{\hyperlink{structcrow_1_1response_1_1static__file__info}{static\+\_\+file\+\_\+info}} \mbox{\hyperlink{structcrow_1_1response_a2f4d18f1e2b50b260e8103e47939c448}{file\+\_\+info}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Adaptor , typename Handler , typename... Middlewares$>$ }\\class \mbox{\hyperlink{structcrow_1_1response_a13cd54cff7b7cea484654c3e9ace415d}{crow\+::\+Connection}}
+\item 
+class \mbox{\hyperlink{structcrow_1_1response_ad1fd3424328f664cd049fe429e0e3dc6}{Router}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+HTTP response. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structcrow_1_1response_a0f4955bc5dc914d698cff5e83bca1cdb}\label{structcrow_1_1response_a0f4955bc5dc914d698cff5e83bca1cdb} 
+\index{crow::response@{crow::response}!response@{response}}
+\index{response@{response}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}\hspace{0.1cm}{\footnotesize\ttfamily [1/11]}}
+{\footnotesize\ttfamily crow\+::response\+::response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1response_a52e2658b1d16dcf106ed138b6396696b}\label{structcrow_1_1response_a52e2658b1d16dcf106ed138b6396696b} 
+\index{crow::response@{crow::response}!response@{response}}
+\index{response@{response}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}\hspace{0.1cm}{\footnotesize\ttfamily [2/11]}}
+{\footnotesize\ttfamily crow\+::response\+::response (\begin{DoxyParamCaption}\item[{int}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\Hypertarget{structcrow_1_1response_aab7485cb8f0efa3fcf062118476edfd5}\label{structcrow_1_1response_aab7485cb8f0efa3fcf062118476edfd5} 
+\index{crow::response@{crow::response}!response@{response}}
+\index{response@{response}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}\hspace{0.1cm}{\footnotesize\ttfamily [3/11]}}
+{\footnotesize\ttfamily crow\+::response\+::response (\begin{DoxyParamCaption}\item[{std\+::string}]{body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1response_aeee8e7dd021783524bae9bd8775bae0f}\label{structcrow_1_1response_aeee8e7dd021783524bae9bd8775bae0f} 
+\index{crow::response@{crow::response}!response@{response}}
+\index{response@{response}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}\hspace{0.1cm}{\footnotesize\ttfamily [4/11]}}
+{\footnotesize\ttfamily crow\+::response\+::response (\begin{DoxyParamCaption}\item[{int}]{code,  }\item[{std\+::string}]{body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1response_a693fd3f57d926251918b16a6f20be474}\label{structcrow_1_1response_a693fd3f57d926251918b16a6f20be474} 
+\index{crow::response@{crow::response}!response@{response}}
+\index{response@{response}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}\hspace{0.1cm}{\footnotesize\ttfamily [5/11]}}
+{\footnotesize\ttfamily crow\+::response\+::response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1returnable}{returnable}} \&\&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1response_a70c56fc6910c94f42accb77a45d5686e}\label{structcrow_1_1response_a70c56fc6910c94f42accb77a45d5686e} 
+\index{crow::response@{crow::response}!response@{response}}
+\index{response@{response}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}\hspace{0.1cm}{\footnotesize\ttfamily [6/11]}}
+{\footnotesize\ttfamily crow\+::response\+::response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1returnable}{returnable}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1response_a37aaf5b69473066fe8bcf302e9ba4580}\label{structcrow_1_1response_a37aaf5b69473066fe8bcf302e9ba4580} 
+\index{crow::response@{crow::response}!response@{response}}
+\index{response@{response}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}\hspace{0.1cm}{\footnotesize\ttfamily [7/11]}}
+{\footnotesize\ttfamily crow\+::response\+::response (\begin{DoxyParamCaption}\item[{int}]{code,  }\item[{\mbox{\hyperlink{structcrow_1_1returnable}{returnable}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1response_a3b9bfae36855265ddc1a64c78d0caf8e}\label{structcrow_1_1response_a3b9bfae36855265ddc1a64c78d0caf8e} 
+\index{crow::response@{crow::response}!response@{response}}
+\index{response@{response}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}\hspace{0.1cm}{\footnotesize\ttfamily [8/11]}}
+{\footnotesize\ttfamily crow\+::response\+::response (\begin{DoxyParamCaption}\item[{int}]{code,  }\item[{\mbox{\hyperlink{structcrow_1_1returnable}{returnable}} \&\&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1response_abd924a9b90dfb505804fe4cf791768a3}\label{structcrow_1_1response_abd924a9b90dfb505804fe4cf791768a3} 
+\index{crow::response@{crow::response}!response@{response}}
+\index{response@{response}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}\hspace{0.1cm}{\footnotesize\ttfamily [9/11]}}
+{\footnotesize\ttfamily crow\+::response\+::response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&\&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1response_ac7f3e75d48f2082a93e366d31298eb72}\label{structcrow_1_1response_ac7f3e75d48f2082a93e366d31298eb72} 
+\index{crow::response@{crow::response}!response@{response}}
+\index{response@{response}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}\hspace{0.1cm}{\footnotesize\ttfamily [10/11]}}
+{\footnotesize\ttfamily crow\+::response\+::response (\begin{DoxyParamCaption}\item[{std\+::string}]{content\+Type,  }\item[{std\+::string}]{body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1response_a58dd09e8a9b3f1d86fe9d676757c8a2c}\label{structcrow_1_1response_a58dd09e8a9b3f1d86fe9d676757c8a2c} 
+\index{crow::response@{crow::response}!response@{response}}
+\index{response@{response}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}\hspace{0.1cm}{\footnotesize\ttfamily [11/11]}}
+{\footnotesize\ttfamily crow\+::response\+::response (\begin{DoxyParamCaption}\item[{int}]{code,  }\item[{std\+::string}]{content\+Type,  }\item[{std\+::string}]{body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structcrow_1_1response_a16d1a8bcec6460ba97f90b80881693b8}\label{structcrow_1_1response_a16d1a8bcec6460ba97f90b80881693b8} 
+\index{crow::response@{crow::response}!add\_header@{add\_header}}
+\index{add\_header@{add\_header}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{add\_header()}{add\_header()}}
+{\footnotesize\ttfamily void crow\+::response\+::add\+\_\+header (\begin{DoxyParamCaption}\item[{std\+::string}]{key,  }\item[{std\+::string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new header to the response. 
+
+\Hypertarget{structcrow_1_1response_a068269fc8b7f1df3d5421ccd384fe1f3}\label{structcrow_1_1response_a068269fc8b7f1df3d5421ccd384fe1f3} 
+\index{crow::response@{crow::response}!clear@{clear}}
+\index{clear@{clear}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void crow\+::response\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1response_abef42200eca49c70dc1f5140ee3603ab}\label{structcrow_1_1response_abef42200eca49c70dc1f5140ee3603ab} 
+\index{crow::response@{crow::response}!end@{end}}
+\index{end@{end}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void crow\+::response\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the response completion flag and call the handler (to send the response). 
+
+\Hypertarget{structcrow_1_1response_a10da2e17421586b68f27ef1533ec677b}\label{structcrow_1_1response_a10da2e17421586b68f27ef1533ec677b} 
+\index{crow::response@{crow::response}!end@{end}}
+\index{end@{end}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void crow\+::response\+::end (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{body\+\_\+part }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Same as \doxylink{structcrow_1_1response_abef42200eca49c70dc1f5140ee3603ab}{end()} except it adds a body part right before ending. 
+
+\Hypertarget{structcrow_1_1response_abacb497ffe1a354b9fe24c21733f600d}\label{structcrow_1_1response_abacb497ffe1a354b9fe24c21733f600d} 
+\index{crow::response@{crow::response}!get\_header\_value@{get\_header\_value}}
+\index{get\_header\_value@{get\_header\_value}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{get\_header\_value()}{get\_header\_value()}}
+{\footnotesize\ttfamily const std\+::string \& crow\+::response\+::get\+\_\+header\+\_\+value (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1response_aeddf9dbd0074584ec1fd5f93f5934e13}\label{structcrow_1_1response_aeddf9dbd0074584ec1fd5f93f5934e13} 
+\index{crow::response@{crow::response}!get\_mime\_type@{get\_mime\_type}}
+\index{get\_mime\_type@{get\_mime\_type}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{get\_mime\_type()}{get\_mime\_type()}}
+{\footnotesize\ttfamily static std\+::string crow\+::response\+::get\+\_\+mime\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{content\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{structcrow_1_1response_ac29da52ee1e0b55086cd8eedd6c22da1}\label{structcrow_1_1response_ac29da52ee1e0b55086cd8eedd6c22da1} 
+\index{crow::response@{crow::response}!is\_alive@{is\_alive}}
+\index{is\_alive@{is\_alive}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{is\_alive()}{is\_alive()}}
+{\footnotesize\ttfamily bool crow\+::response\+::is\+\_\+alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the connection is still alive (usually by checking the socket status). 
+
+\Hypertarget{structcrow_1_1response_a9fb82c40e0c0844db70b7b86b4a23e9f}\label{structcrow_1_1response_a9fb82c40e0c0844db70b7b86b4a23e9f} 
+\index{crow::response@{crow::response}!is\_completed@{is\_completed}}
+\index{is\_completed@{is\_completed}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{is\_completed()}{is\_completed()}}
+{\footnotesize\ttfamily bool crow\+::response\+::is\+\_\+completed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Check if the response has completed (whether \doxylink{structcrow_1_1response_abef42200eca49c70dc1f5140ee3603ab}{response.\+end()} has been called) 
+
+\Hypertarget{structcrow_1_1response_aff527a091cf5054e933a244b078648c1}\label{structcrow_1_1response_aff527a091cf5054e933a244b078648c1} 
+\index{crow::response@{crow::response}!is\_static\_type@{is\_static\_type}}
+\index{is\_static\_type@{is\_static\_type}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{is\_static\_type()}{is\_static\_type()}}
+{\footnotesize\ttfamily bool crow\+::response\+::is\+\_\+static\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check whether the response has a static file defined. 
+
+\Hypertarget{structcrow_1_1response_a760bca5f5fdee03518d59d9538ce5432}\label{structcrow_1_1response_a760bca5f5fdee03518d59d9538ce5432} 
+\index{crow::response@{crow::response}!moved@{moved}}
+\index{moved@{moved}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{moved()}{moved()}}
+{\footnotesize\ttfamily void crow\+::response\+::moved (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a "{}\+Found (\+Moved Temporarily)"{} response. 
+
+Location can either be a route or a full URL. \Hypertarget{structcrow_1_1response_a9ee58f8b775b2566418b298fe33c0dcc}\label{structcrow_1_1response_a9ee58f8b775b2566418b298fe33c0dcc} 
+\index{crow::response@{crow::response}!moved\_perm@{moved\_perm}}
+\index{moved\_perm@{moved\_perm}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{moved\_perm()}{moved\_perm()}}
+{\footnotesize\ttfamily void crow\+::response\+::moved\+\_\+perm (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a "{}\+Moved Permanently"{} response. 
+
+Location can either be a route or a full URL. \Hypertarget{structcrow_1_1response_ae5a691062543b20e51542f85e49707a5}\label{structcrow_1_1response_ae5a691062543b20e51542f85e49707a5} 
+\index{crow::response@{crow::response}!operator=@{operator=}}
+\index{operator=@{operator=}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcrow_1_1response}{response}} \& crow\+::response\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{structcrow_1_1response_a0bf17b5fab1feddb93b3104588b38ec6}\label{structcrow_1_1response_a0bf17b5fab1feddb93b3104588b38ec6} 
+\index{crow::response@{crow::response}!operator=@{operator=}}
+\index{operator=@{operator=}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcrow_1_1response}{response}} \& crow\+::response\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&\&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{structcrow_1_1response_ac04bbe2d4f54fd717cdffdb26af3e46f}\label{structcrow_1_1response_ac04bbe2d4f54fd717cdffdb26af3e46f} 
+\index{crow::response@{crow::response}!redirect@{redirect}}
+\index{redirect@{redirect}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{redirect()}{redirect()}}
+{\footnotesize\ttfamily void crow\+::response\+::redirect (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a "{}\+Temporary Redirect"{} response. 
+
+Location can either be a route or a full URL. \Hypertarget{structcrow_1_1response_a9e87a17c3cf8b434fd2a64a9b3d4b675}\label{structcrow_1_1response_a9e87a17c3cf8b434fd2a64a9b3d4b675} 
+\index{crow::response@{crow::response}!redirect\_perm@{redirect\_perm}}
+\index{redirect\_perm@{redirect\_perm}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{redirect\_perm()}{redirect\_perm()}}
+{\footnotesize\ttfamily void crow\+::response\+::redirect\+\_\+perm (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a "{}\+Permanent Redirect"{} response. 
+
+Location can either be a route or a full URL. \Hypertarget{structcrow_1_1response_ab2b9a9b9795fa6330bd47b66a716cb0b}\label{structcrow_1_1response_ab2b9a9b9795fa6330bd47b66a716cb0b} 
+\index{crow::response@{crow::response}!set\_header@{set\_header}}
+\index{set\_header@{set\_header}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{set\_header()}{set\_header()}}
+{\footnotesize\ttfamily void crow\+::response\+::set\+\_\+header (\begin{DoxyParamCaption}\item[{std\+::string}]{key,  }\item[{std\+::string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the value of an existing header in the response. 
+
+\Hypertarget{structcrow_1_1response_a8f5e5caa08c3e658bccd03996e1a778a}\label{structcrow_1_1response_a8f5e5caa08c3e658bccd03996e1a778a} 
+\index{crow::response@{crow::response}!set\_static\_file\_info@{set\_static\_file\_info}}
+\index{set\_static\_file\_info@{set\_static\_file\_info}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{set\_static\_file\_info()}{set\_static\_file\_info()}}
+{\footnotesize\ttfamily void crow\+::response\+::set\+\_\+static\+\_\+file\+\_\+info (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a static file as the response body. 
+
+\Hypertarget{structcrow_1_1response_adaaa1a62451d41e6f3831463296b4c08}\label{structcrow_1_1response_adaaa1a62451d41e6f3831463296b4c08} 
+\index{crow::response@{crow::response}!set\_static\_file\_info\_unsafe@{set\_static\_file\_info\_unsafe}}
+\index{set\_static\_file\_info\_unsafe@{set\_static\_file\_info\_unsafe}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{set\_static\_file\_info\_unsafe()}{set\_static\_file\_info\_unsafe()}}
+{\footnotesize\ttfamily void crow\+::response\+::set\+\_\+static\+\_\+file\+\_\+info\+\_\+unsafe (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a static file as the response body without sanitizing the path (use set\+\_\+static\+\_\+file\+\_\+info instead) 
+
+\Hypertarget{structcrow_1_1response_aaa17d72d16081374c8991dc27d298d5f}\label{structcrow_1_1response_aaa17d72d16081374c8991dc27d298d5f} 
+\index{crow::response@{crow::response}!validate\_mime\_type@{validate\_mime\_type}}
+\index{validate\_mime\_type@{validate\_mime\_type}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{validate\_mime\_type()}{validate\_mime\_type()}}
+{\footnotesize\ttfamily static bool crow\+::response\+::validate\+\_\+mime\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{candidate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{structcrow_1_1response_a82bba7eaacfee514c55630a13a85410e}\label{structcrow_1_1response_a82bba7eaacfee514c55630a13a85410e} 
+\index{crow::response@{crow::response}!write@{write}}
+\index{write@{write}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void crow\+::response\+::write (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{body\+\_\+part }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{structcrow_1_1response_a13cd54cff7b7cea484654c3e9ace415d}\label{structcrow_1_1response_a13cd54cff7b7cea484654c3e9ace415d} 
+\index{crow::response@{crow::response}!crow::Connection@{crow::Connection}}
+\index{crow::Connection@{crow::Connection}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{crow::Connection}{crow::Connection}}
+{\footnotesize\ttfamily template$<$typename Adaptor , typename Handler , typename... Middlewares$>$ \\
+friend class \mbox{\hyperlink{classcrow_1_1_connection}{crow\+::\+Connection}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\Hypertarget{structcrow_1_1response_ad1fd3424328f664cd049fe429e0e3dc6}\label{structcrow_1_1response_ad1fd3424328f664cd049fe429e0e3dc6} 
+\index{crow::response@{crow::response}!Router@{Router}}
+\index{Router@{Router}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{Router}{Router}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classcrow_1_1_router}{Router}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structcrow_1_1response_ae9f3cc153eac05954f1f4e599527892d}\label{structcrow_1_1response_ae9f3cc153eac05954f1f4e599527892d} 
+\index{crow::response@{crow::response}!body@{body}}
+\index{body@{body}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{body}{body}}
+{\footnotesize\ttfamily std\+::string crow\+::response\+::body}
+
+
+
+The actual payload containing the response data. 
+
+\Hypertarget{structcrow_1_1response_aabc1f9b3264b8c5a2d05dcb409e8ff3f}\label{structcrow_1_1response_aabc1f9b3264b8c5a2d05dcb409e8ff3f} 
+\index{crow::response@{crow::response}!code@{code}}
+\index{code@{code}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{code}{code}}
+{\footnotesize\ttfamily int crow\+::response\+::code \{200\}}
+
+
+
+The Status code for the response. 
+
+\Hypertarget{structcrow_1_1response_a157629939cba3b77be204d2149d51af6}\label{structcrow_1_1response_a157629939cba3b77be204d2149d51af6} 
+\index{crow::response@{crow::response}!complete\_request\_handler\_@{complete\_request\_handler\_}}
+\index{complete\_request\_handler\_@{complete\_request\_handler\_}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{complete\_request\_handler\_}{complete\_request\_handler\_}}
+{\footnotesize\ttfamily std\+::function$<$void()$>$ crow\+::response\+::complete\+\_\+request\+\_\+handler\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{structcrow_1_1response_a7bb678afc0f683ce111b5b428c709d05}\label{structcrow_1_1response_a7bb678afc0f683ce111b5b428c709d05} 
+\index{crow::response@{crow::response}!completed\_@{completed\_}}
+\index{completed\_@{completed\_}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{completed\_}{completed\_}}
+{\footnotesize\ttfamily bool crow\+::response\+::completed\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{structcrow_1_1response_a2f4d18f1e2b50b260e8103e47939c448}\label{structcrow_1_1response_a2f4d18f1e2b50b260e8103e47939c448} 
+\index{crow::response@{crow::response}!file\_info@{file\_info}}
+\index{file\_info@{file\_info}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{file\_info}{file\_info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcrow_1_1response_1_1static__file__info}{static\+\_\+file\+\_\+info}} crow\+::response\+::file\+\_\+info\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{structcrow_1_1response_ae56cfc39f24a56748c11016842427fb3}\label{structcrow_1_1response_ae56cfc39f24a56748c11016842427fb3} 
+\index{crow::response@{crow::response}!headers@{headers}}
+\index{headers@{headers}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{headers}{headers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacecrow_a9c2fb4390329e219e3d1532e81925b87}{ci\+\_\+map}} crow\+::response\+::headers}
+
+
+
+HTTP headers. 
+
+\Hypertarget{structcrow_1_1response_ac3f46c895ba4d5f0976616426be3ce65}\label{structcrow_1_1response_ac3f46c895ba4d5f0976616426be3ce65} 
+\index{crow::response@{crow::response}!is\_alive\_helper\_@{is\_alive\_helper\_}}
+\index{is\_alive\_helper\_@{is\_alive\_helper\_}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{is\_alive\_helper\_}{is\_alive\_helper\_}}
+{\footnotesize\ttfamily std\+::function$<$bool()$>$ crow\+::response\+::is\+\_\+alive\+\_\+helper\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{structcrow_1_1response_a95f300c05782e1934dad522b6d6588cf}\label{structcrow_1_1response_a95f300c05782e1934dad522b6d6588cf} 
+\index{crow::response@{crow::response}!manual\_length\_header@{manual\_length\_header}}
+\index{manual\_length\_header@{manual\_length\_header}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{manual\_length\_header}{manual\_length\_header}}
+{\footnotesize\ttfamily bool crow\+::response\+::manual\+\_\+length\+\_\+header = false}
+
+
+
+Whether \doxylink{classcrow_1_1_crow}{Crow} should automatically add a "{}\+Content-\/\+Length"{} header. 
+
+\Hypertarget{structcrow_1_1response_a548c4f5e059a7bb3b2560b7ac5800011}\label{structcrow_1_1response_a548c4f5e059a7bb3b2560b7ac5800011} 
+\index{crow::response@{crow::response}!skip\_body@{skip\_body}}
+\index{skip\_body@{skip\_body}!crow::response@{crow::response}}
+\doxysubsubsection{\texorpdfstring{skip\_body}{skip\_body}}
+{\footnotesize\ttfamily bool crow\+::response\+::skip\+\_\+body = false}
+
+
+
+Whether this is a response to a HEAD request. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{crow__all_8h}{crow\+\_\+all.\+h}}\end{DoxyCompactItemize}

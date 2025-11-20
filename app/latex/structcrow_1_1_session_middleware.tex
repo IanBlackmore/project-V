@@ -1,0 +1,170 @@
+\doxysection{crow\+::Session\+Middleware\texorpdfstring{$<$}{<} Store \texorpdfstring{$>$}{>} Struct Template Reference}
+\hypertarget{structcrow_1_1_session_middleware}{}\label{structcrow_1_1_session_middleware}\index{crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}}
+
+
+{\ttfamily \#include $<$crow\+\_\+all.\+h$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1_session_middleware_1_1context}{context}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{structcrow_1_1_session_middleware_a65b80dd03c71fe58e56db2df3586725e}{lock}} = std\+::lock\+\_\+guard$<$std\+::mutex$>$
+\item 
+using \mbox{\hyperlink{structcrow_1_1_session_middleware_a291d0e284dd9c9b0550a5ef4718336ff}{rc\+\_\+lock}} = std\+::lock\+\_\+guard$<$std\+::recursive\+\_\+mutex$>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Ts$>$ }\\\mbox{\hyperlink{structcrow_1_1_session_middleware_a22ff1c31d382431eb42696b50b0cf64d}{Session\+Middleware}} (\mbox{\hyperlink{structcrow_1_1_cookie_parser_1_1_cookie}{Cookie\+Parser\+::\+Cookie}} cookie, int id\+\_\+length, Ts... ts)
+\item 
+{\footnotesize template$<$typename... Ts$>$ }\\\mbox{\hyperlink{structcrow_1_1_session_middleware_a16695b86bc55c4e28b850310f49e96c4}{Session\+Middleware}} (Ts... ts)
+\item 
+{\footnotesize template$<$typename All\+Context $>$ }\\void \mbox{\hyperlink{structcrow_1_1_session_middleware_a23dc5effe24c805defa4bce8b380b486}{before\+\_\+handle}} (\mbox{\hyperlink{structcrow_1_1request}{request}} \&, \mbox{\hyperlink{structcrow_1_1response}{response}} \&, \mbox{\hyperlink{structcrow_1_1_session_middleware_1_1context}{context}} \&ctx, All\+Context \&all\+\_\+ctx)
+\item 
+{\footnotesize template$<$typename All\+Context $>$ }\\void \mbox{\hyperlink{structcrow_1_1_session_middleware_a650d4e9ec4c903b692f3543d8d9b83cd}{after\+\_\+handle}} (\mbox{\hyperlink{structcrow_1_1request}{request}} \&, \mbox{\hyperlink{structcrow_1_1response}{response}} \&, \mbox{\hyperlink{structcrow_1_1_session_middleware_1_1context}{context}} \&ctx, All\+Context \&all\+\_\+ctx)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structcrow_1_1_session_middleware_af8a064f9db3accffe6a1e176c8a8aba0}{next\+\_\+id}} ()
+\item 
+std\+::string \mbox{\hyperlink{structcrow_1_1_session_middleware_a8872e6be7b57669fa82e6d35d06229ee}{load\+\_\+id}} (const \mbox{\hyperlink{structcrow_1_1_cookie_parser_1_1context}{Cookie\+Parser\+::context}} \&cookies)
+\item 
+void \mbox{\hyperlink{structcrow_1_1_session_middleware_ae82eb5010b0def35b3cdad0afa80d7e9}{store\+\_\+id}} (\mbox{\hyperlink{structcrow_1_1_cookie_parser_1_1context}{Cookie\+Parser\+::context}} \&cookies, const std\+::string \&session\+\_\+id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structcrow_1_1_session_middleware_a817466664a41483dc9ce36315fe26994}{id\+\_\+length\+\_\+}}
+\item 
+\mbox{\hyperlink{structcrow_1_1_cookie_parser_1_1_cookie}{Cookie\+Parser\+::\+Cookie}} \mbox{\hyperlink{structcrow_1_1_session_middleware_a4307b754b050610ad66a33395b17a284}{cookie\+\_\+}}
+\item 
+Store \mbox{\hyperlink{structcrow_1_1_session_middleware_a99caa3f9be9d172111f56918be8ac0f1}{store\+\_\+}}
+\item 
+std\+::unique\+\_\+ptr$<$ std\+::mutex $>$ \mbox{\hyperlink{structcrow_1_1_session_middleware_a96caab9e7c99e0271d25219faa27fd9f}{mutex\+\_\+}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structcrow_1_1session_1_1_cached_session}{session\+::\+Cached\+Session}} $>$ $>$ \mbox{\hyperlink{structcrow_1_1_session_middleware_a30c1872db8357a4dd262c7611dcf0ec4}{cache\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\Hypertarget{structcrow_1_1_session_middleware_a65b80dd03c71fe58e56db2df3586725e}\label{structcrow_1_1_session_middleware_a65b80dd03c71fe58e56db2df3586725e} 
+\index{crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}!lock@{lock}}
+\index{lock@{lock}!crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}}
+\doxysubsubsection{\texorpdfstring{lock}{lock}}
+{\footnotesize\ttfamily template$<$typename Store $>$ \\
+using \mbox{\hyperlink{structcrow_1_1_session_middleware}{crow\+::\+Session\+Middleware}}$<$ Store $>$\+::lock = std\+::lock\+\_\+guard$<$std\+::mutex$>$}
+
+\Hypertarget{structcrow_1_1_session_middleware_a291d0e284dd9c9b0550a5ef4718336ff}\label{structcrow_1_1_session_middleware_a291d0e284dd9c9b0550a5ef4718336ff} 
+\index{crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}!rc\_lock@{rc\_lock}}
+\index{rc\_lock@{rc\_lock}!crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}}
+\doxysubsubsection{\texorpdfstring{rc\_lock}{rc\_lock}}
+{\footnotesize\ttfamily template$<$typename Store $>$ \\
+using \mbox{\hyperlink{structcrow_1_1_session_middleware}{crow\+::\+Session\+Middleware}}$<$ Store $>$\+::rc\+\_\+lock = std\+::lock\+\_\+guard$<$std\+::recursive\+\_\+mutex$>$}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structcrow_1_1_session_middleware_a22ff1c31d382431eb42696b50b0cf64d}\label{structcrow_1_1_session_middleware_a22ff1c31d382431eb42696b50b0cf64d} 
+\index{crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}!SessionMiddleware@{SessionMiddleware}}
+\index{SessionMiddleware@{SessionMiddleware}!crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}}
+\doxysubsubsection{\texorpdfstring{SessionMiddleware()}{SessionMiddleware()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Store $>$ \\
+template$<$typename... Ts$>$ \\
+\mbox{\hyperlink{structcrow_1_1_session_middleware}{crow\+::\+Session\+Middleware}}$<$ Store $>$\+::\+Session\+Middleware (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1_cookie_parser_1_1_cookie}{Cookie\+Parser\+::\+Cookie}}}]{cookie,  }\item[{int}]{id\+\_\+length,  }\item[{Ts...}]{ts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1_session_middleware_a16695b86bc55c4e28b850310f49e96c4}\label{structcrow_1_1_session_middleware_a16695b86bc55c4e28b850310f49e96c4} 
+\index{crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}!SessionMiddleware@{SessionMiddleware}}
+\index{SessionMiddleware@{SessionMiddleware}!crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}}
+\doxysubsubsection{\texorpdfstring{SessionMiddleware()}{SessionMiddleware()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Store $>$ \\
+template$<$typename... Ts$>$ \\
+\mbox{\hyperlink{structcrow_1_1_session_middleware}{crow\+::\+Session\+Middleware}}$<$ Store $>$\+::\+Session\+Middleware (\begin{DoxyParamCaption}\item[{Ts...}]{ts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structcrow_1_1_session_middleware_a650d4e9ec4c903b692f3543d8d9b83cd}\label{structcrow_1_1_session_middleware_a650d4e9ec4c903b692f3543d8d9b83cd} 
+\index{crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}!after\_handle@{after\_handle}}
+\index{after\_handle@{after\_handle}!crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}}
+\doxysubsubsection{\texorpdfstring{after\_handle()}{after\_handle()}}
+{\footnotesize\ttfamily template$<$typename Store $>$ \\
+template$<$typename All\+Context $>$ \\
+void \mbox{\hyperlink{structcrow_1_1_session_middleware}{crow\+::\+Session\+Middleware}}$<$ Store $>$\+::after\+\_\+handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{,  }\item[{\mbox{\hyperlink{structcrow_1_1_session_middleware_1_1context}{context}} \&}]{ctx,  }\item[{All\+Context \&}]{all\+\_\+ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1_session_middleware_a23dc5effe24c805defa4bce8b380b486}\label{structcrow_1_1_session_middleware_a23dc5effe24c805defa4bce8b380b486} 
+\index{crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}!before\_handle@{before\_handle}}
+\index{before\_handle@{before\_handle}!crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}}
+\doxysubsubsection{\texorpdfstring{before\_handle()}{before\_handle()}}
+{\footnotesize\ttfamily template$<$typename Store $>$ \\
+template$<$typename All\+Context $>$ \\
+void \mbox{\hyperlink{structcrow_1_1_session_middleware}{crow\+::\+Session\+Middleware}}$<$ Store $>$\+::before\+\_\+handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{,  }\item[{\mbox{\hyperlink{structcrow_1_1_session_middleware_1_1context}{context}} \&}]{ctx,  }\item[{All\+Context \&}]{all\+\_\+ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1_session_middleware_a8872e6be7b57669fa82e6d35d06229ee}\label{structcrow_1_1_session_middleware_a8872e6be7b57669fa82e6d35d06229ee} 
+\index{crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}!load\_id@{load\_id}}
+\index{load\_id@{load\_id}!crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}}
+\doxysubsubsection{\texorpdfstring{load\_id()}{load\_id()}}
+{\footnotesize\ttfamily template$<$typename Store $>$ \\
+std\+::string \mbox{\hyperlink{structcrow_1_1_session_middleware}{crow\+::\+Session\+Middleware}}$<$ Store $>$\+::load\+\_\+id (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structcrow_1_1_cookie_parser_1_1context}{Cookie\+Parser\+::context}} \&}]{cookies }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{structcrow_1_1_session_middleware_af8a064f9db3accffe6a1e176c8a8aba0}\label{structcrow_1_1_session_middleware_af8a064f9db3accffe6a1e176c8a8aba0} 
+\index{crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}!next\_id@{next\_id}}
+\index{next\_id@{next\_id}!crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}}
+\doxysubsubsection{\texorpdfstring{next\_id()}{next\_id()}}
+{\footnotesize\ttfamily template$<$typename Store $>$ \\
+std\+::string \mbox{\hyperlink{structcrow_1_1_session_middleware}{crow\+::\+Session\+Middleware}}$<$ Store $>$\+::next\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{structcrow_1_1_session_middleware_ae82eb5010b0def35b3cdad0afa80d7e9}\label{structcrow_1_1_session_middleware_ae82eb5010b0def35b3cdad0afa80d7e9} 
+\index{crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}!store\_id@{store\_id}}
+\index{store\_id@{store\_id}!crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}}
+\doxysubsubsection{\texorpdfstring{store\_id()}{store\_id()}}
+{\footnotesize\ttfamily template$<$typename Store $>$ \\
+void \mbox{\hyperlink{structcrow_1_1_session_middleware}{crow\+::\+Session\+Middleware}}$<$ Store $>$\+::store\+\_\+id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1_cookie_parser_1_1context}{Cookie\+Parser\+::context}} \&}]{cookies,  }\item[{const std\+::string \&}]{session\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structcrow_1_1_session_middleware_a30c1872db8357a4dd262c7611dcf0ec4}\label{structcrow_1_1_session_middleware_a30c1872db8357a4dd262c7611dcf0ec4} 
+\index{crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}!cache\_@{cache\_}}
+\index{cache\_@{cache\_}!crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}}
+\doxysubsubsection{\texorpdfstring{cache\_}{cache\_}}
+{\footnotesize\ttfamily template$<$typename Store $>$ \\
+std\+::unordered\+\_\+map$<$std\+::string, std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{structcrow_1_1session_1_1_cached_session}{session\+::\+Cached\+Session}}$>$ $>$ \mbox{\hyperlink{structcrow_1_1_session_middleware}{crow\+::\+Session\+Middleware}}$<$ Store $>$\+::cache\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{structcrow_1_1_session_middleware_a4307b754b050610ad66a33395b17a284}\label{structcrow_1_1_session_middleware_a4307b754b050610ad66a33395b17a284} 
+\index{crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}!cookie\_@{cookie\_}}
+\index{cookie\_@{cookie\_}!crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}}
+\doxysubsubsection{\texorpdfstring{cookie\_}{cookie\_}}
+{\footnotesize\ttfamily template$<$typename Store $>$ \\
+\mbox{\hyperlink{structcrow_1_1_cookie_parser_1_1_cookie}{Cookie\+Parser\+::\+Cookie}} \mbox{\hyperlink{structcrow_1_1_session_middleware}{crow\+::\+Session\+Middleware}}$<$ Store $>$\+::cookie\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{structcrow_1_1_session_middleware_a817466664a41483dc9ce36315fe26994}\label{structcrow_1_1_session_middleware_a817466664a41483dc9ce36315fe26994} 
+\index{crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}!id\_length\_@{id\_length\_}}
+\index{id\_length\_@{id\_length\_}!crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}}
+\doxysubsubsection{\texorpdfstring{id\_length\_}{id\_length\_}}
+{\footnotesize\ttfamily template$<$typename Store $>$ \\
+int \mbox{\hyperlink{structcrow_1_1_session_middleware}{crow\+::\+Session\+Middleware}}$<$ Store $>$\+::id\+\_\+length\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{structcrow_1_1_session_middleware_a96caab9e7c99e0271d25219faa27fd9f}\label{structcrow_1_1_session_middleware_a96caab9e7c99e0271d25219faa27fd9f} 
+\index{crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}!mutex\_@{mutex\_}}
+\index{mutex\_@{mutex\_}!crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}}
+\doxysubsubsection{\texorpdfstring{mutex\_}{mutex\_}}
+{\footnotesize\ttfamily template$<$typename Store $>$ \\
+std\+::unique\+\_\+ptr$<$std\+::mutex$>$ \mbox{\hyperlink{structcrow_1_1_session_middleware}{crow\+::\+Session\+Middleware}}$<$ Store $>$\+::mutex\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{structcrow_1_1_session_middleware_a99caa3f9be9d172111f56918be8ac0f1}\label{structcrow_1_1_session_middleware_a99caa3f9be9d172111f56918be8ac0f1} 
+\index{crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}!store\_@{store\_}}
+\index{store\_@{store\_}!crow::SessionMiddleware$<$ Store $>$@{crow::SessionMiddleware$<$ Store $>$}}
+\doxysubsubsection{\texorpdfstring{store\_}{store\_}}
+{\footnotesize\ttfamily template$<$typename Store $>$ \\
+Store \mbox{\hyperlink{structcrow_1_1_session_middleware}{crow\+::\+Session\+Middleware}}$<$ Store $>$\+::store\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{crow__all_8h}{crow\+\_\+all.\+h}}\end{DoxyCompactItemize}

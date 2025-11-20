@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>transaction team: crow::mustache::template_t Class Reference</title>
+<title>My Project: crow::mustache::template_t Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">transaction team
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -71,12 +71,14 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>crow</b></li><li class="navelem"><b>mustache</b></li><li class="navelem"><a class="el" href="classcrow_1_1mustache_1_1template__t.html">template_t</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecrow.html">crow</a></li><li class="navelem"><a class="el" href="namespacecrow_1_1mustache.html">mustache</a></li><li class="navelem"><a class="el" href="classcrow_1_1mustache_1_1template__t.html">template_t</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classcrow_1_1mustache_1_1template__t-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">crow::mustache::template_t Class Reference</div></div>
 </div><!--header-->
@@ -89,33 +91,503 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8c37d92fba8f0a4cf4d4f7a254847ccc" id="r_a8c37d92fba8f0a4cf4d4f7a254847ccc"><td class="memItemLeft" align="right" valign="top"><a id="a8c37d92fba8f0a4cf4d4f7a254847ccc" name="a8c37d92fba8f0a4cf4d4f7a254847ccc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>template_t</b> (std::string body)</td></tr>
+<tr class="memitem:a8c37d92fba8f0a4cf4d4f7a254847ccc" id="r_a8c37d92fba8f0a4cf4d4f7a254847ccc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c37d92fba8f0a4cf4d4f7a254847ccc">template_t</a> (std::string body)</td></tr>
 <tr class="separator:a8c37d92fba8f0a4cf4d4f7a254847ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67caf7e23349a829b913c897ab882a8e" id="r_a67caf7e23349a829b913c897ab882a8e"><td class="memItemLeft" align="right" valign="top"><a id="a67caf7e23349a829b913c897ab882a8e" name="a67caf7e23349a829b913c897ab882a8e"></a>
-<a class="el" href="structcrow_1_1mustache_1_1rendered__template.html">rendered_template</a>&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> () const</td></tr>
-<tr class="memdesc:a67caf7e23349a829b913c897ab882a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output a returnable template from this mustache template. <br /></td></tr>
+<tr class="memitem:a67caf7e23349a829b913c897ab882a8e" id="r_a67caf7e23349a829b913c897ab882a8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrow_1_1mustache_1_1rendered__template.html">rendered_template</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67caf7e23349a829b913c897ab882a8e">render</a> () const</td></tr>
+<tr class="memdesc:a67caf7e23349a829b913c897ab882a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output a returnable template from this mustache template.  <br /></td></tr>
 <tr class="separator:a67caf7e23349a829b913c897ab882a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77c579b71240695bd9fb634f48facd03" id="r_a77c579b71240695bd9fb634f48facd03"><td class="memItemLeft" align="right" valign="top"><a id="a77c579b71240695bd9fb634f48facd03" name="a77c579b71240695bd9fb634f48facd03"></a>
-<a class="el" href="structcrow_1_1mustache_1_1rendered__template.html">rendered_template</a>&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> (const <a class="el" href="classcrow_1_1json_1_1wvalue.html">context</a> &amp;ctx) const</td></tr>
-<tr class="memdesc:a77c579b71240695bd9fb634f48facd03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the values from the context provided and output a returnable template from this mustache template. <br /></td></tr>
+<tr class="memitem:a77c579b71240695bd9fb634f48facd03" id="r_a77c579b71240695bd9fb634f48facd03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrow_1_1mustache_1_1rendered__template.html">rendered_template</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77c579b71240695bd9fb634f48facd03">render</a> (const <a class="el" href="namespacecrow_1_1mustache.html#a3aa87645a7b19f68db0b1eddded3e77b">context</a> &amp;ctx) const</td></tr>
+<tr class="memdesc:a77c579b71240695bd9fb634f48facd03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the values from the context provided and output a returnable template from this mustache template.  <br /></td></tr>
 <tr class="separator:a77c579b71240695bd9fb634f48facd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8f2561efe590c0b5704df76b0c82aa5" id="r_ae8f2561efe590c0b5704df76b0c82aa5"><td class="memItemLeft" align="right" valign="top"><a id="ae8f2561efe590c0b5704df76b0c82aa5" name="ae8f2561efe590c0b5704df76b0c82aa5"></a>
-<a class="el" href="structcrow_1_1mustache_1_1rendered__template.html">rendered_template</a>&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> (const <a class="el" href="classcrow_1_1json_1_1wvalue.html">context</a> &amp;&amp;ctx) const</td></tr>
-<tr class="memdesc:ae8f2561efe590c0b5704df76b0c82aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the values from the context provided and output a returnable template from this mustache template. <br /></td></tr>
+<tr class="memitem:ae8f2561efe590c0b5704df76b0c82aa5" id="r_ae8f2561efe590c0b5704df76b0c82aa5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrow_1_1mustache_1_1rendered__template.html">rendered_template</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8f2561efe590c0b5704df76b0c82aa5">render</a> (const <a class="el" href="namespacecrow_1_1mustache.html#a3aa87645a7b19f68db0b1eddded3e77b">context</a> &amp;&amp;ctx) const</td></tr>
+<tr class="memdesc:ae8f2561efe590c0b5704df76b0c82aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the values from the context provided and output a returnable template from this mustache template.  <br /></td></tr>
 <tr class="separator:ae8f2561efe590c0b5704df76b0c82aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21199e08a066d7c66b5728354c2c40fd" id="r_a21199e08a066d7c66b5728354c2c40fd"><td class="memItemLeft" align="right" valign="top"><a id="a21199e08a066d7c66b5728354c2c40fd" name="a21199e08a066d7c66b5728354c2c40fd"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>render_string</b> () const</td></tr>
-<tr class="memdesc:a21199e08a066d7c66b5728354c2c40fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output a returnable template from this mustache template. <br /></td></tr>
+<tr class="memitem:a21199e08a066d7c66b5728354c2c40fd" id="r_a21199e08a066d7c66b5728354c2c40fd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21199e08a066d7c66b5728354c2c40fd">render_string</a> () const</td></tr>
+<tr class="memdesc:a21199e08a066d7c66b5728354c2c40fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output a returnable template from this mustache template.  <br /></td></tr>
 <tr class="separator:a21199e08a066d7c66b5728354c2c40fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2258136c497b02eadfacbf50704de08" id="r_af2258136c497b02eadfacbf50704de08"><td class="memItemLeft" align="right" valign="top"><a id="af2258136c497b02eadfacbf50704de08" name="af2258136c497b02eadfacbf50704de08"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>render_string</b> (const <a class="el" href="classcrow_1_1json_1_1wvalue.html">context</a> &amp;ctx) const</td></tr>
-<tr class="memdesc:af2258136c497b02eadfacbf50704de08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the values from the context provided and output a returnable template from this mustache template. <br /></td></tr>
+<tr class="memitem:af2258136c497b02eadfacbf50704de08" id="r_af2258136c497b02eadfacbf50704de08"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2258136c497b02eadfacbf50704de08">render_string</a> (const <a class="el" href="namespacecrow_1_1mustache.html#a3aa87645a7b19f68db0b1eddded3e77b">context</a> &amp;ctx) const</td></tr>
+<tr class="memdesc:af2258136c497b02eadfacbf50704de08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the values from the context provided and output a returnable template from this mustache template.  <br /></td></tr>
 <tr class="separator:af2258136c497b02eadfacbf50704de08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae90aca859d717a6e57a8aaa64a9e6d2d" id="r_ae90aca859d717a6e57a8aaa64a9e6d2d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae90aca859d717a6e57a8aaa64a9e6d2d">tag_name</a> (const <a class="el" href="structcrow_1_1mustache_1_1_action.html">Action</a> &amp;action) const</td></tr>
+<tr class="separator:ae90aca859d717a6e57a8aaa64a9e6d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982f4a6b83eed36e3c6c9e2e2467c665" id="r_a982f4a6b83eed36e3c6c9e2e2467c665"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a982f4a6b83eed36e3c6c9e2e2467c665">find_context</a> (const std::string &amp;name, const std::vector&lt; const <a class="el" href="namespacecrow_1_1mustache.html#a3aa87645a7b19f68db0b1eddded3e77b">context</a> * &gt; &amp;stack, bool shouldUseOnlyFirstStackValue=false) const -&gt; std::pair&lt; bool, const <a class="el" href="namespacecrow_1_1mustache.html#a3aa87645a7b19f68db0b1eddded3e77b">context</a> &amp; &gt;</td></tr>
+<tr class="separator:a982f4a6b83eed36e3c6c9e2e2467c665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ebad02ef7a8d0029369eab2975f0a27" id="r_a0ebad02ef7a8d0029369eab2975f0a27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ebad02ef7a8d0029369eab2975f0a27">escape</a> (const std::string &amp;in, std::string &amp;out) const</td></tr>
+<tr class="separator:a0ebad02ef7a8d0029369eab2975f0a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7661a223d71277c6080349f9426b29b0" id="r_a7661a223d71277c6080349f9426b29b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7661a223d71277c6080349f9426b29b0">isTagInsideObjectBlock</a> (const int &amp;current, const std::vector&lt; const <a class="el" href="namespacecrow_1_1mustache.html#a3aa87645a7b19f68db0b1eddded3e77b">context</a> * &gt; &amp;stack) const</td></tr>
+<tr class="separator:a7661a223d71277c6080349f9426b29b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19ed95ed47bedbb6ecf9cd10def5cae" id="r_ac19ed95ed47bedbb6ecf9cd10def5cae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac19ed95ed47bedbb6ecf9cd10def5cae">render_internal</a> (int actionBegin, int actionEnd, std::vector&lt; const <a class="el" href="namespacecrow_1_1mustache.html#a3aa87645a7b19f68db0b1eddded3e77b">context</a> * &gt; &amp;stack, std::string &amp;out, int indent) const</td></tr>
+<tr class="separator:ac19ed95ed47bedbb6ecf9cd10def5cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efb3fb30e8aa0ab09731bbf3b5d5de0" id="r_a5efb3fb30e8aa0ab09731bbf3b5d5de0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5efb3fb30e8aa0ab09731bbf3b5d5de0">render_fragment</a> (const std::pair&lt; int, int &gt; fragment, int indent, std::string &amp;out) const</td></tr>
+<tr class="separator:a5efb3fb30e8aa0ab09731bbf3b5d5de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af86743e3efa8b43b239b266116414a4f" id="r_af86743e3efa8b43b239b266116414a4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af86743e3efa8b43b239b266116414a4f">parse</a> ()</td></tr>
+<tr class="separator:af86743e3efa8b43b239b266116414a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aeaeeed169d27062a2744fdd46cf673db" id="r_aeaeeed169d27062a2744fdd46cf673db"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaeeed169d27062a2744fdd46cf673db">fragments_</a></td></tr>
+<tr class="separator:aeaeeed169d27062a2744fdd46cf673db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74cd8812b093f37d742108b6063fc12c" id="r_a74cd8812b093f37d742108b6063fc12c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structcrow_1_1mustache_1_1_action.html">Action</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74cd8812b093f37d742108b6063fc12c">actions_</a></td></tr>
+<tr class="separator:a74cd8812b093f37d742108b6063fc12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a331c7443dfae761244766dded5294132" id="r_a331c7443dfae761244766dded5294132"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a331c7443dfae761244766dded5294132">body_</a></td></tr>
+<tr class="separator:a331c7443dfae761244766dded5294132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A mustache template object. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8c37d92fba8f0a4cf4d4f7a254847ccc" name="a8c37d92fba8f0a4cf4d4f7a254847ccc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c37d92fba8f0a4cf4d4f7a254847ccc">&#9670;&#160;</a></span>template_t()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">crow::mustache::template_t::template_t </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>body</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0ebad02ef7a8d0029369eab2975f0a27" name="a0ebad02ef7a8d0029369eab2975f0a27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ebad02ef7a8d0029369eab2975f0a27">&#9670;&#160;</a></span>escape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void crow::mustache::template_t::escape </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>in</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a982f4a6b83eed36e3c6c9e2e2467c665" name="a982f4a6b83eed36e3c6c9e2e2467c665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a982f4a6b83eed36e3c6c9e2e2467c665">&#9670;&#160;</a></span>find_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto crow::mustache::template_t::find_context </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; const <a class="el" href="namespacecrow_1_1mustache.html#a3aa87645a7b19f68db0b1eddded3e77b">context</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>stack</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>shouldUseOnlyFirstStackValue</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span></span>&#160;) const -&gt; std::pair&lt;bool, const <a class="el" href="namespacecrow_1_1mustache.html#a3aa87645a7b19f68db0b1eddded3e77b">context</a>&amp;&gt;
+            </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7661a223d71277c6080349f9426b29b0" name="a7661a223d71277c6080349f9426b29b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7661a223d71277c6080349f9426b29b0">&#9670;&#160;</a></span>isTagInsideObjectBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool crow::mustache::template_t::isTagInsideObjectBlock </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>current</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; const <a class="el" href="namespacecrow_1_1mustache.html#a3aa87645a7b19f68db0b1eddded3e77b">context</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>stack</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af86743e3efa8b43b239b266116414a4f" name="af86743e3efa8b43b239b266116414a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af86743e3efa8b43b239b266116414a4f">&#9670;&#160;</a></span>parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void crow::mustache::template_t::parse </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67caf7e23349a829b913c897ab882a8e" name="a67caf7e23349a829b913c897ab882a8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67caf7e23349a829b913c897ab882a8e">&#9670;&#160;</a></span>render() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcrow_1_1mustache_1_1rendered__template.html">rendered_template</a> crow::mustache::template_t::render </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Output a returnable template from this mustache template. </p>
+
+</div>
+</div>
+<a id="ae8f2561efe590c0b5704df76b0c82aa5" name="ae8f2561efe590c0b5704df76b0c82aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8f2561efe590c0b5704df76b0c82aa5">&#9670;&#160;</a></span>render() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcrow_1_1mustache_1_1rendered__template.html">rendered_template</a> crow::mustache::template_t::render </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacecrow_1_1mustache.html#a3aa87645a7b19f68db0b1eddded3e77b">context</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Apply the values from the context provided and output a returnable template from this mustache template. </p>
+
+</div>
+</div>
+<a id="a77c579b71240695bd9fb634f48facd03" name="a77c579b71240695bd9fb634f48facd03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77c579b71240695bd9fb634f48facd03">&#9670;&#160;</a></span>render() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcrow_1_1mustache_1_1rendered__template.html">rendered_template</a> crow::mustache::template_t::render </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacecrow_1_1mustache.html#a3aa87645a7b19f68db0b1eddded3e77b">context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Apply the values from the context provided and output a returnable template from this mustache template. </p>
+
+</div>
+</div>
+<a id="a5efb3fb30e8aa0ab09731bbf3b5d5de0" name="a5efb3fb30e8aa0ab09731bbf3b5d5de0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5efb3fb30e8aa0ab09731bbf3b5d5de0">&#9670;&#160;</a></span>render_fragment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void crow::mustache::template_t::render_fragment </td>
+          <td>(</td>
+          <td class="paramtype">const std::pair&lt; int, int &gt;</td>          <td class="paramname"><span class="paramname"><em>fragment</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>indent</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac19ed95ed47bedbb6ecf9cd10def5cae" name="ac19ed95ed47bedbb6ecf9cd10def5cae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19ed95ed47bedbb6ecf9cd10def5cae">&#9670;&#160;</a></span>render_internal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void crow::mustache::template_t::render_internal </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>actionBegin</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>actionEnd</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; const <a class="el" href="namespacecrow_1_1mustache.html#a3aa87645a7b19f68db0b1eddded3e77b">context</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>stack</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>indent</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21199e08a066d7c66b5728354c2c40fd" name="a21199e08a066d7c66b5728354c2c40fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21199e08a066d7c66b5728354c2c40fd">&#9670;&#160;</a></span>render_string() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string crow::mustache::template_t::render_string </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Output a returnable template from this mustache template. </p>
+
+</div>
+</div>
+<a id="af2258136c497b02eadfacbf50704de08" name="af2258136c497b02eadfacbf50704de08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2258136c497b02eadfacbf50704de08">&#9670;&#160;</a></span>render_string() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string crow::mustache::template_t::render_string </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacecrow_1_1mustache.html#a3aa87645a7b19f68db0b1eddded3e77b">context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Apply the values from the context provided and output a returnable template from this mustache template. </p>
+
+</div>
+</div>
+<a id="ae90aca859d717a6e57a8aaa64a9e6d2d" name="ae90aca859d717a6e57a8aaa64a9e6d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae90aca859d717a6e57a8aaa64a9e6d2d">&#9670;&#160;</a></span>tag_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string crow::mustache::template_t::tag_name </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcrow_1_1mustache_1_1_action.html">Action</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>action</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a74cd8812b093f37d742108b6063fc12c" name="a74cd8812b093f37d742108b6063fc12c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74cd8812b093f37d742108b6063fc12c">&#9670;&#160;</a></span>actions_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structcrow_1_1mustache_1_1_action.html">Action</a>&gt; crow::mustache::template_t::actions_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a331c7443dfae761244766dded5294132" name="a331c7443dfae761244766dded5294132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a331c7443dfae761244766dded5294132">&#9670;&#160;</a></span>body_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string crow::mustache::template_t::body_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeaeeed169d27062a2744fdd46cf673db" name="aeaeeed169d27062a2744fdd46cf673db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaeeed169d27062a2744fdd46cf673db">&#9670;&#160;</a></span>fragments_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::pair&lt;int, int&gt; &gt; crow::mustache::template_t::fragments_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="crow__all_8h_source.html">crow_all.h</a></li>
 </ul>
 </div><!-- contents -->

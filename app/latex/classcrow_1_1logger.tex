@@ -1,0 +1,113 @@
+\doxysection{crow\+::logger Class Reference}
+\hypertarget{classcrow_1_1logger}{}\label{classcrow_1_1logger}\index{crow::logger@{crow::logger}}
+
+
+{\ttfamily \#include $<$crow\+\_\+all.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcrow_1_1logger_a1e8d38b6f23b020c5c008b0028210acc}{logger}} (\mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4}{Log\+Level}} level)
+\item 
+\mbox{\hyperlink{classcrow_1_1logger_a59b838e541514c082a01e9111c5a11f6}{\texorpdfstring{$\sim$}{\string~}logger}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classcrow_1_1logger}{logger}} \& \mbox{\hyperlink{classcrow_1_1logger_a76911a2d216b90e27ed9116da1652da9}{operator$<$$<$}} (T const \&value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcrow_1_1logger_a192c60c7a66815952a9855a467d07c0c}{set\+Log\+Level}} (\mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4}{Log\+Level}} level)
+\item 
+static void \mbox{\hyperlink{classcrow_1_1logger_a0992c13a4de3aa3e6fde79d907ef4bef}{set\+Handler}} (\mbox{\hyperlink{classcrow_1_1_i_log_handler}{ILog\+Handler}} \texorpdfstring{$\ast$}{*}handler)
+\item 
+static \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4}{Log\+Level}} \mbox{\hyperlink{classcrow_1_1logger_aa4cdbc8ac1fc9a28bddc7de736fde564}{get\+\_\+current\+\_\+log\+\_\+level}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4}{Log\+Level}} \& \mbox{\hyperlink{classcrow_1_1logger_ac3396aeca8e062261263b9772829e531}{get\+\_\+log\+\_\+level\+\_\+ref}} ()
+\item 
+static \mbox{\hyperlink{classcrow_1_1_i_log_handler}{ILog\+Handler}} \texorpdfstring{$\ast$}{*}\& \mbox{\hyperlink{classcrow_1_1logger_a329670731a614fc6489897bc7c4a14ff}{get\+\_\+handler\+\_\+ref}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostringstream \mbox{\hyperlink{classcrow_1_1logger_ad0d2f5004d51a61eacf63aeccf381154}{stringstream\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4}{Log\+Level}} \mbox{\hyperlink{classcrow_1_1logger_a07951fb47991e262ef4b901eb184d0b7}{level\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcrow_1_1logger_a1e8d38b6f23b020c5c008b0028210acc}\label{classcrow_1_1logger_a1e8d38b6f23b020c5c008b0028210acc} 
+\index{crow::logger@{crow::logger}!logger@{logger}}
+\index{logger@{logger}!crow::logger@{crow::logger}}
+\doxysubsubsection{\texorpdfstring{logger()}{logger()}}
+{\footnotesize\ttfamily crow\+::logger\+::logger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4}{Log\+Level}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1logger_a59b838e541514c082a01e9111c5a11f6}\label{classcrow_1_1logger_a59b838e541514c082a01e9111c5a11f6} 
+\index{crow::logger@{crow::logger}!````~logger@{\texorpdfstring{$\sim$}{\string~}logger}}
+\index{````~logger@{\texorpdfstring{$\sim$}{\string~}logger}!crow::logger@{crow::logger}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}logger()}{\string~logger()}}
+{\footnotesize\ttfamily crow\+::logger\+::\texorpdfstring{$\sim$}{\string~}logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcrow_1_1logger_aa4cdbc8ac1fc9a28bddc7de736fde564}\label{classcrow_1_1logger_aa4cdbc8ac1fc9a28bddc7de736fde564} 
+\index{crow::logger@{crow::logger}!get\_current\_log\_level@{get\_current\_log\_level}}
+\index{get\_current\_log\_level@{get\_current\_log\_level}!crow::logger@{crow::logger}}
+\doxysubsubsection{\texorpdfstring{get\_current\_log\_level()}{get\_current\_log\_level()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4}{Log\+Level}} crow\+::logger\+::get\+\_\+current\+\_\+log\+\_\+level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{classcrow_1_1logger_a329670731a614fc6489897bc7c4a14ff}\label{classcrow_1_1logger_a329670731a614fc6489897bc7c4a14ff} 
+\index{crow::logger@{crow::logger}!get\_handler\_ref@{get\_handler\_ref}}
+\index{get\_handler\_ref@{get\_handler\_ref}!crow::logger@{crow::logger}}
+\doxysubsubsection{\texorpdfstring{get\_handler\_ref()}{get\_handler\_ref()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcrow_1_1_i_log_handler}{ILog\+Handler}} \texorpdfstring{$\ast$}{*}\& crow\+::logger\+::get\+\_\+handler\+\_\+ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1logger_ac3396aeca8e062261263b9772829e531}\label{classcrow_1_1logger_ac3396aeca8e062261263b9772829e531} 
+\index{crow::logger@{crow::logger}!get\_log\_level\_ref@{get\_log\_level\_ref}}
+\index{get\_log\_level\_ref@{get\_log\_level\_ref}!crow::logger@{crow::logger}}
+\doxysubsubsection{\texorpdfstring{get\_log\_level\_ref()}{get\_log\_level\_ref()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4}{Log\+Level}} \& crow\+::logger\+::get\+\_\+log\+\_\+level\+\_\+ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1logger_a76911a2d216b90e27ed9116da1652da9}\label{classcrow_1_1logger_a76911a2d216b90e27ed9116da1652da9} 
+\index{crow::logger@{crow::logger}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!crow::logger@{crow::logger}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classcrow_1_1logger}{logger}} \& crow\+::logger\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{T const \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1logger_a0992c13a4de3aa3e6fde79d907ef4bef}\label{classcrow_1_1logger_a0992c13a4de3aa3e6fde79d907ef4bef} 
+\index{crow::logger@{crow::logger}!setHandler@{setHandler}}
+\index{setHandler@{setHandler}!crow::logger@{crow::logger}}
+\doxysubsubsection{\texorpdfstring{setHandler()}{setHandler()}}
+{\footnotesize\ttfamily static void crow\+::logger\+::set\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcrow_1_1_i_log_handler}{ILog\+Handler}} \texorpdfstring{$\ast$}{*}}]{handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{classcrow_1_1logger_a192c60c7a66815952a9855a467d07c0c}\label{classcrow_1_1logger_a192c60c7a66815952a9855a467d07c0c} 
+\index{crow::logger@{crow::logger}!setLogLevel@{setLogLevel}}
+\index{setLogLevel@{setLogLevel}!crow::logger@{crow::logger}}
+\doxysubsubsection{\texorpdfstring{setLogLevel()}{setLogLevel()}}
+{\footnotesize\ttfamily static void crow\+::logger\+::set\+Log\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4}{Log\+Level}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcrow_1_1logger_a07951fb47991e262ef4b901eb184d0b7}\label{classcrow_1_1logger_a07951fb47991e262ef4b901eb184d0b7} 
+\index{crow::logger@{crow::logger}!level\_@{level\_}}
+\index{level\_@{level\_}!crow::logger@{crow::logger}}
+\doxysubsubsection{\texorpdfstring{level\_}{level\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4}{Log\+Level}} crow\+::logger\+::level\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1logger_ad0d2f5004d51a61eacf63aeccf381154}\label{classcrow_1_1logger_ad0d2f5004d51a61eacf63aeccf381154} 
+\index{crow::logger@{crow::logger}!stringstream\_@{stringstream\_}}
+\index{stringstream\_@{stringstream\_}!crow::logger@{crow::logger}}
+\doxysubsubsection{\texorpdfstring{stringstream\_}{stringstream\_}}
+{\footnotesize\ttfamily std\+::ostringstream crow\+::logger\+::stringstream\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{crow__all_8h}{crow\+\_\+all.\+h}}\end{DoxyCompactItemize}

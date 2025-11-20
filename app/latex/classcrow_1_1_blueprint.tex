@@ -1,0 +1,239 @@
+\doxysection{crow\+::Blueprint Class Reference}
+\hypertarget{classcrow_1_1_blueprint}{}\label{classcrow_1_1_blueprint}\index{crow::Blueprint@{crow::Blueprint}}
+
+
+A blueprint can be considered a smaller section of a \doxylink{classcrow_1_1_crow}{Crow} app, specifically where the router is conecerned.  
+
+
+
+
+{\ttfamily \#include $<$crow\+\_\+all.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcrow_1_1_blueprint_a6938b2b0a1269f016e924f9df6c944b3}{Blueprint}} (const std\+::string \&\mbox{\hyperlink{classcrow_1_1_blueprint_a64c98b3f3c17650e2bd01491754240b8}{prefix}})
+\item 
+\mbox{\hyperlink{classcrow_1_1_blueprint_a41f0515e11ecbb9729a2953ee51beaf0}{Blueprint}} (const std\+::string \&\mbox{\hyperlink{classcrow_1_1_blueprint_a64c98b3f3c17650e2bd01491754240b8}{prefix}}, const std\+::string \&\mbox{\hyperlink{classcrow_1_1_blueprint_a9aa533304758b1461734b49f8273e7e4}{static\+\_\+dir}})
+\item 
+\mbox{\hyperlink{classcrow_1_1_blueprint_a1eddf3e4a0330754e43e06ec8ac99467}{Blueprint}} (const std\+::string \&\mbox{\hyperlink{classcrow_1_1_blueprint_a64c98b3f3c17650e2bd01491754240b8}{prefix}}, const std\+::string \&\mbox{\hyperlink{classcrow_1_1_blueprint_a9aa533304758b1461734b49f8273e7e4}{static\+\_\+dir}}, const std\+::string \&templates\+\_\+dir)
+\item 
+\mbox{\hyperlink{classcrow_1_1_blueprint_a0af074f28f07310e64b2b3561162870e}{Blueprint}} (\mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \&\&value)
+\item 
+\mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \& \mbox{\hyperlink{classcrow_1_1_blueprint_a091ee557045b1d3f8888a46211d9b3ac}{operator=}} (const \mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \&value)=delete
+\item 
+\mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \& \mbox{\hyperlink{classcrow_1_1_blueprint_a44b87ec33cbb374872297ceb0b4fa1d3}{operator=}} (\mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \&\&value) noexcept
+\item 
+bool \mbox{\hyperlink{classcrow_1_1_blueprint_a12b93ae342e7d5f2db0b86774a3b0ff5}{operator==}} (const \mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \&value)
+\item 
+bool \mbox{\hyperlink{classcrow_1_1_blueprint_a2c64b156ddd9feb9bc50ec796054c0ff}{operator!=}} (const \mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \&value)
+\item 
+std\+::string \mbox{\hyperlink{classcrow_1_1_blueprint_a64c98b3f3c17650e2bd01491754240b8}{prefix}} () const
+\item 
+std\+::string \mbox{\hyperlink{classcrow_1_1_blueprint_a9aa533304758b1461734b49f8273e7e4}{static\+\_\+dir}} () const
+\item 
+\mbox{\hyperlink{classcrow_1_1_dynamic_rule}{Dynamic\+Rule}} \& \mbox{\hyperlink{classcrow_1_1_blueprint_a399ec696e2cf9aee59049be361fa59d0}{new\+\_\+rule\+\_\+dynamic}} (std\+::string \&\&rule)
+\item 
+{\footnotesize template$<$uint64\+\_\+t N$>$ }\\black\+\_\+magic\+::arguments$<$ N $>$\+::type\+::template rebind$<$ \mbox{\hyperlink{classcrow_1_1_tagged_rule}{Tagged\+Rule}} $>$ \& \mbox{\hyperlink{classcrow_1_1_blueprint_aeb49fc3807051deec49944b8f4eec657}{new\+\_\+rule\+\_\+tagged}} (std\+::string \&\&rule)
+\item 
+void \mbox{\hyperlink{classcrow_1_1_blueprint_addfbb64ccb9b8841d82e1dad9c454acc}{register\+\_\+blueprint}} (\mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \&blueprint)
+\item 
+\mbox{\hyperlink{classcrow_1_1_catchall_rule}{Catchall\+Rule}} \& \mbox{\hyperlink{classcrow_1_1_blueprint_a425ad65437b48439e7660259714e4b78}{catchall\+\_\+rule}} ()
+\item 
+{\footnotesize template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} , typename... Middlewares$>$ }\\void \mbox{\hyperlink{classcrow_1_1_blueprint_a3c3880497e8d6d8fbac6719aea1525d5}{middlewares}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcrow_1_1_blueprint_a2ad869154b4a29e9e25de0b0bc663d91}{apply\+\_\+blueprint}} (\mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \&blueprint)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classcrow_1_1_blueprint_a5d059719b47dabc8993d709ac9569114}{prefix\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classcrow_1_1_blueprint_a5d30e73492bf393517964774ec560820}{static\+\_\+dir\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classcrow_1_1_blueprint_a81ae20f52d3be91294b2b3cdcc3273f2}{templates\+\_\+dir\+\_\+}}
+\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classcrow_1_1_base_rule}{Base\+Rule}} $>$ $>$ \mbox{\hyperlink{classcrow_1_1_blueprint_ac2b1cee795ef219e007845bae4540542}{all\+\_\+rules\+\_\+}}
+\item 
+\mbox{\hyperlink{classcrow_1_1_catchall_rule}{Catchall\+Rule}} \mbox{\hyperlink{classcrow_1_1_blueprint_a9440fb526f3ae36f2d86d0eefe4d1614}{catchall\+\_\+rule\+\_\+}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classcrow_1_1_blueprint_ab375bc8f225da5ad91f1b04892586da2}{blueprints\+\_\+}}
+\item 
+\mbox{\hyperlink{structcrow_1_1detail_1_1middleware__indices}{detail\+::middleware\+\_\+indices}} \mbox{\hyperlink{classcrow_1_1_blueprint_a85edb439b6cc7b09de96c7cd08e78724}{mw\+\_\+indices\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcrow_1_1_blueprint_ad1fd3424328f664cd049fe429e0e3dc6}{Router}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A blueprint can be considered a smaller section of a \doxylink{classcrow_1_1_crow}{Crow} app, specifically where the router is conecerned. 
+
+You can use blueprints to assign a common prefix to rules\textquotesingle{} prefix, set custom static and template folders, and set a custom catchall route. You can also assign nest blueprints for maximum Compartmentalization. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcrow_1_1_blueprint_a6938b2b0a1269f016e924f9df6c944b3}\label{classcrow_1_1_blueprint_a6938b2b0a1269f016e924f9df6c944b3} 
+\index{crow::Blueprint@{crow::Blueprint}!Blueprint@{Blueprint}}
+\index{Blueprint@{Blueprint}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{Blueprint()}{Blueprint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily crow\+::\+Blueprint\+::\+Blueprint (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a41f0515e11ecbb9729a2953ee51beaf0}\label{classcrow_1_1_blueprint_a41f0515e11ecbb9729a2953ee51beaf0} 
+\index{crow::Blueprint@{crow::Blueprint}!Blueprint@{Blueprint}}
+\index{Blueprint@{Blueprint}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{Blueprint()}{Blueprint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily crow\+::\+Blueprint\+::\+Blueprint (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{prefix,  }\item[{const std\+::string \&}]{static\+\_\+dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a1eddf3e4a0330754e43e06ec8ac99467}\label{classcrow_1_1_blueprint_a1eddf3e4a0330754e43e06ec8ac99467} 
+\index{crow::Blueprint@{crow::Blueprint}!Blueprint@{Blueprint}}
+\index{Blueprint@{Blueprint}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{Blueprint()}{Blueprint()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily crow\+::\+Blueprint\+::\+Blueprint (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{prefix,  }\item[{const std\+::string \&}]{static\+\_\+dir,  }\item[{const std\+::string \&}]{templates\+\_\+dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a0af074f28f07310e64b2b3561162870e}\label{classcrow_1_1_blueprint_a0af074f28f07310e64b2b3561162870e} 
+\index{crow::Blueprint@{crow::Blueprint}!Blueprint@{Blueprint}}
+\index{Blueprint@{Blueprint}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{Blueprint()}{Blueprint()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily crow\+::\+Blueprint\+::\+Blueprint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \&\&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcrow_1_1_blueprint_a2ad869154b4a29e9e25de0b0bc663d91}\label{classcrow_1_1_blueprint_a2ad869154b4a29e9e25de0b0bc663d91} 
+\index{crow::Blueprint@{crow::Blueprint}!apply\_blueprint@{apply\_blueprint}}
+\index{apply\_blueprint@{apply\_blueprint}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{apply\_blueprint()}{apply\_blueprint()}}
+{\footnotesize\ttfamily void crow\+::\+Blueprint\+::apply\+\_\+blueprint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \&}]{blueprint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a425ad65437b48439e7660259714e4b78}\label{classcrow_1_1_blueprint_a425ad65437b48439e7660259714e4b78} 
+\index{crow::Blueprint@{crow::Blueprint}!catchall\_rule@{catchall\_rule}}
+\index{catchall\_rule@{catchall\_rule}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{catchall\_rule()}{catchall\_rule()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcrow_1_1_catchall_rule}{Catchall\+Rule}} \& crow\+::\+Blueprint\+::catchall\+\_\+rule (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a3c3880497e8d6d8fbac6719aea1525d5}\label{classcrow_1_1_blueprint_a3c3880497e8d6d8fbac6719aea1525d5} 
+\index{crow::Blueprint@{crow::Blueprint}!middlewares@{middlewares}}
+\index{middlewares@{middlewares}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{middlewares()}{middlewares()}}
+{\footnotesize\ttfamily template$<$typename \mbox{\hyperlink{namespacecrow_ab93b42929a9113b865d7daa241983126}{App}} , typename... Middlewares$>$ \\
+void crow\+::\+Blueprint\+::middlewares (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a399ec696e2cf9aee59049be361fa59d0}\label{classcrow_1_1_blueprint_a399ec696e2cf9aee59049be361fa59d0} 
+\index{crow::Blueprint@{crow::Blueprint}!new\_rule\_dynamic@{new\_rule\_dynamic}}
+\index{new\_rule\_dynamic@{new\_rule\_dynamic}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{new\_rule\_dynamic()}{new\_rule\_dynamic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcrow_1_1_dynamic_rule}{Dynamic\+Rule}} \& crow\+::\+Blueprint\+::new\+\_\+rule\+\_\+dynamic (\begin{DoxyParamCaption}\item[{std\+::string \&\&}]{rule }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_blueprint_aeb49fc3807051deec49944b8f4eec657}\label{classcrow_1_1_blueprint_aeb49fc3807051deec49944b8f4eec657} 
+\index{crow::Blueprint@{crow::Blueprint}!new\_rule\_tagged@{new\_rule\_tagged}}
+\index{new\_rule\_tagged@{new\_rule\_tagged}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{new\_rule\_tagged()}{new\_rule\_tagged()}}
+{\footnotesize\ttfamily template$<$uint64\+\_\+t N$>$ \\
+black\+\_\+magic\+::arguments$<$ N $>$\+::type\+::template rebind$<$ \mbox{\hyperlink{classcrow_1_1_tagged_rule}{Tagged\+Rule}} $>$ \& crow\+::\+Blueprint\+::new\+\_\+rule\+\_\+tagged (\begin{DoxyParamCaption}\item[{std\+::string \&\&}]{rule }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a2c64b156ddd9feb9bc50ec796054c0ff}\label{classcrow_1_1_blueprint_a2c64b156ddd9feb9bc50ec796054c0ff} 
+\index{crow::Blueprint@{crow::Blueprint}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool crow\+::\+Blueprint\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a44b87ec33cbb374872297ceb0b4fa1d3}\label{classcrow_1_1_blueprint_a44b87ec33cbb374872297ceb0b4fa1d3} 
+\index{crow::Blueprint@{crow::Blueprint}!operator=@{operator=}}
+\index{operator=@{operator=}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \& crow\+::\+Blueprint\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \&\&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a091ee557045b1d3f8888a46211d9b3ac}\label{classcrow_1_1_blueprint_a091ee557045b1d3f8888a46211d9b3ac} 
+\index{crow::Blueprint@{crow::Blueprint}!operator=@{operator=}}
+\index{operator=@{operator=}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \& crow\+::\+Blueprint\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a12b93ae342e7d5f2db0b86774a3b0ff5}\label{classcrow_1_1_blueprint_a12b93ae342e7d5f2db0b86774a3b0ff5} 
+\index{crow::Blueprint@{crow::Blueprint}!operator==@{operator==}}
+\index{operator==@{operator==}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool crow\+::\+Blueprint\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a64c98b3f3c17650e2bd01491754240b8}\label{classcrow_1_1_blueprint_a64c98b3f3c17650e2bd01491754240b8} 
+\index{crow::Blueprint@{crow::Blueprint}!prefix@{prefix}}
+\index{prefix@{prefix}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{prefix()}{prefix()}}
+{\footnotesize\ttfamily std\+::string crow\+::\+Blueprint\+::prefix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_blueprint_addfbb64ccb9b8841d82e1dad9c454acc}\label{classcrow_1_1_blueprint_addfbb64ccb9b8841d82e1dad9c454acc} 
+\index{crow::Blueprint@{crow::Blueprint}!register\_blueprint@{register\_blueprint}}
+\index{register\_blueprint@{register\_blueprint}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{register\_blueprint()}{register\_blueprint()}}
+{\footnotesize\ttfamily void crow\+::\+Blueprint\+::register\+\_\+blueprint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \&}]{blueprint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a9aa533304758b1461734b49f8273e7e4}\label{classcrow_1_1_blueprint_a9aa533304758b1461734b49f8273e7e4} 
+\index{crow::Blueprint@{crow::Blueprint}!static\_dir@{static\_dir}}
+\index{static\_dir@{static\_dir}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{static\_dir()}{static\_dir()}}
+{\footnotesize\ttfamily std\+::string crow\+::\+Blueprint\+::static\+\_\+dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classcrow_1_1_blueprint_ad1fd3424328f664cd049fe429e0e3dc6}\label{classcrow_1_1_blueprint_ad1fd3424328f664cd049fe429e0e3dc6} 
+\index{crow::Blueprint@{crow::Blueprint}!Router@{Router}}
+\index{Router@{Router}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{Router}{Router}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classcrow_1_1_router}{Router}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcrow_1_1_blueprint_ac2b1cee795ef219e007845bae4540542}\label{classcrow_1_1_blueprint_ac2b1cee795ef219e007845bae4540542} 
+\index{crow::Blueprint@{crow::Blueprint}!all\_rules\_@{all\_rules\_}}
+\index{all\_rules\_@{all\_rules\_}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{all\_rules\_}{all\_rules\_}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classcrow_1_1_base_rule}{Base\+Rule}}$>$ $>$ crow\+::\+Blueprint\+::all\+\_\+rules\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_blueprint_ab375bc8f225da5ad91f1b04892586da2}\label{classcrow_1_1_blueprint_ab375bc8f225da5ad91f1b04892586da2} 
+\index{crow::Blueprint@{crow::Blueprint}!blueprints\_@{blueprints\_}}
+\index{blueprints\_@{blueprints\_}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{blueprints\_}{blueprints\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}}\texorpdfstring{$\ast$}{*}$>$ crow\+::\+Blueprint\+::blueprints\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a9440fb526f3ae36f2d86d0eefe4d1614}\label{classcrow_1_1_blueprint_a9440fb526f3ae36f2d86d0eefe4d1614} 
+\index{crow::Blueprint@{crow::Blueprint}!catchall\_rule\_@{catchall\_rule\_}}
+\index{catchall\_rule\_@{catchall\_rule\_}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{catchall\_rule\_}{catchall\_rule\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcrow_1_1_catchall_rule}{Catchall\+Rule}} crow\+::\+Blueprint\+::catchall\+\_\+rule\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a85edb439b6cc7b09de96c7cd08e78724}\label{classcrow_1_1_blueprint_a85edb439b6cc7b09de96c7cd08e78724} 
+\index{crow::Blueprint@{crow::Blueprint}!mw\_indices\_@{mw\_indices\_}}
+\index{mw\_indices\_@{mw\_indices\_}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{mw\_indices\_}{mw\_indices\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcrow_1_1detail_1_1middleware__indices}{detail\+::middleware\+\_\+indices}} crow\+::\+Blueprint\+::mw\+\_\+indices\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a5d059719b47dabc8993d709ac9569114}\label{classcrow_1_1_blueprint_a5d059719b47dabc8993d709ac9569114} 
+\index{crow::Blueprint@{crow::Blueprint}!prefix\_@{prefix\_}}
+\index{prefix\_@{prefix\_}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{prefix\_}{prefix\_}}
+{\footnotesize\ttfamily std\+::string crow\+::\+Blueprint\+::prefix\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a5d30e73492bf393517964774ec560820}\label{classcrow_1_1_blueprint_a5d30e73492bf393517964774ec560820} 
+\index{crow::Blueprint@{crow::Blueprint}!static\_dir\_@{static\_dir\_}}
+\index{static\_dir\_@{static\_dir\_}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{static\_dir\_}{static\_dir\_}}
+{\footnotesize\ttfamily std\+::string crow\+::\+Blueprint\+::static\+\_\+dir\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_blueprint_a81ae20f52d3be91294b2b3cdcc3273f2}\label{classcrow_1_1_blueprint_a81ae20f52d3be91294b2b3cdcc3273f2} 
+\index{crow::Blueprint@{crow::Blueprint}!templates\_dir\_@{templates\_dir\_}}
+\index{templates\_dir\_@{templates\_dir\_}!crow::Blueprint@{crow::Blueprint}}
+\doxysubsubsection{\texorpdfstring{templates\_dir\_}{templates\_dir\_}}
+{\footnotesize\ttfamily std\+::string crow\+::\+Blueprint\+::templates\+\_\+dir\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{crow__all_8h}{crow\+\_\+all.\+h}}\end{DoxyCompactItemize}

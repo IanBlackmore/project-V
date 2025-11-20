@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>transaction team: sha1::SHA1 Class Reference</title>
+<title>My Project: sha1::SHA1 Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">transaction team
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>sha1</b></li><li class="navelem"><a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacesha1.html">sha1</a></li><li class="navelem"><a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -80,59 +80,497 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classsha1_1_1_s_h_a1-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">sha1::SHA1 Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="crow__all_8h_source.html">crow_all.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a15f384f39d235a8912d5042dc920595f" id="r_a15f384f39d235a8912d5042dc920595f"><td class="memItemLeft" align="right" valign="top"><a id="a15f384f39d235a8912d5042dc920595f" name="a15f384f39d235a8912d5042dc920595f"></a>
-typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>digest32_t</b>[5]</td></tr>
+<tr class="memitem:a15f384f39d235a8912d5042dc920595f" id="r_a15f384f39d235a8912d5042dc920595f"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15f384f39d235a8912d5042dc920595f">digest32_t</a>[5]</td></tr>
 <tr class="separator:a15f384f39d235a8912d5042dc920595f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62b6c7838c4cdcb81700a6cc64fde994" id="r_a62b6c7838c4cdcb81700a6cc64fde994"><td class="memItemLeft" align="right" valign="top"><a id="a62b6c7838c4cdcb81700a6cc64fde994" name="a62b6c7838c4cdcb81700a6cc64fde994"></a>
-typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>digest8_t</b>[20]</td></tr>
+<tr class="memitem:a62b6c7838c4cdcb81700a6cc64fde994" id="r_a62b6c7838c4cdcb81700a6cc64fde994"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62b6c7838c4cdcb81700a6cc64fde994">digest8_t</a>[20]</td></tr>
 <tr class="separator:a62b6c7838c4cdcb81700a6cc64fde994"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1d63d04a7f146a42000e0a2a35314c6f" id="r_a1d63d04a7f146a42000e0a2a35314c6f"><td class="memItemLeft" align="right" valign="top"><a id="a1d63d04a7f146a42000e0a2a35314c6f" name="a1d63d04a7f146a42000e0a2a35314c6f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SHA1</b> (const <a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp;s)</td></tr>
+<tr class="memitem:a440d0c3f17da510418b678f4c9dcbdf2" id="r_a440d0c3f17da510418b678f4c9dcbdf2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a440d0c3f17da510418b678f4c9dcbdf2">SHA1</a> ()</td></tr>
+<tr class="separator:a440d0c3f17da510418b678f4c9dcbdf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7103b57eb1f51a498a92c095b9c21392" id="r_a7103b57eb1f51a498a92c095b9c21392"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7103b57eb1f51a498a92c095b9c21392">~SHA1</a> ()</td></tr>
+<tr class="separator:a7103b57eb1f51a498a92c095b9c21392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d63d04a7f146a42000e0a2a35314c6f" id="r_a1d63d04a7f146a42000e0a2a35314c6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d63d04a7f146a42000e0a2a35314c6f">SHA1</a> (const <a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp;s)</td></tr>
 <tr class="separator:a1d63d04a7f146a42000e0a2a35314c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e9b4b6a553b984a0395124365eccdd2" id="r_a6e9b4b6a553b984a0395124365eccdd2"><td class="memItemLeft" align="right" valign="top"><a id="a6e9b4b6a553b984a0395124365eccdd2" name="a6e9b4b6a553b984a0395124365eccdd2"></a>
-const <a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp;s)</td></tr>
+<tr class="memitem:a6e9b4b6a553b984a0395124365eccdd2" id="r_a6e9b4b6a553b984a0395124365eccdd2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e9b4b6a553b984a0395124365eccdd2">operator=</a> (const <a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp;s)</td></tr>
 <tr class="separator:a6e9b4b6a553b984a0395124365eccdd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef36db0c868aa10aca989723cd338436" id="r_aef36db0c868aa10aca989723cd338436"><td class="memItemLeft" align="right" valign="top"><a id="aef36db0c868aa10aca989723cd338436" name="aef36db0c868aa10aca989723cd338436"></a>
-<a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
+<tr class="memitem:aef36db0c868aa10aca989723cd338436" id="r_aef36db0c868aa10aca989723cd338436"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef36db0c868aa10aca989723cd338436">reset</a> ()</td></tr>
 <tr class="separator:aef36db0c868aa10aca989723cd338436"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61461d4ae157a5917b37105eeadb5780" id="r_a61461d4ae157a5917b37105eeadb5780"><td class="memItemLeft" align="right" valign="top"><a id="a61461d4ae157a5917b37105eeadb5780" name="a61461d4ae157a5917b37105eeadb5780"></a>
-<a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>processByte</b> (uint8_t octet)</td></tr>
+<tr class="memitem:a61461d4ae157a5917b37105eeadb5780" id="r_a61461d4ae157a5917b37105eeadb5780"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61461d4ae157a5917b37105eeadb5780">processByte</a> (uint8_t octet)</td></tr>
 <tr class="separator:a61461d4ae157a5917b37105eeadb5780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c27b7a0a294007e13e530a4c4fe6f32" id="r_a0c27b7a0a294007e13e530a4c4fe6f32"><td class="memItemLeft" align="right" valign="top"><a id="a0c27b7a0a294007e13e530a4c4fe6f32" name="a0c27b7a0a294007e13e530a4c4fe6f32"></a>
-<a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>processBlock</b> (const void *const start, const void *const end)</td></tr>
+<tr class="memitem:a0c27b7a0a294007e13e530a4c4fe6f32" id="r_a0c27b7a0a294007e13e530a4c4fe6f32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c27b7a0a294007e13e530a4c4fe6f32">processBlock</a> (const void *const start, const void *const end)</td></tr>
 <tr class="separator:a0c27b7a0a294007e13e530a4c4fe6f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7c3dbbf73800d34e03d27cbb24ede11" id="r_ae7c3dbbf73800d34e03d27cbb24ede11"><td class="memItemLeft" align="right" valign="top"><a id="ae7c3dbbf73800d34e03d27cbb24ede11" name="ae7c3dbbf73800d34e03d27cbb24ede11"></a>
-<a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>processBytes</b> (const void *const data, size_t len)</td></tr>
+<tr class="memitem:ae7c3dbbf73800d34e03d27cbb24ede11" id="r_ae7c3dbbf73800d34e03d27cbb24ede11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7c3dbbf73800d34e03d27cbb24ede11">processBytes</a> (const void *const data, size_t len)</td></tr>
 <tr class="separator:ae7c3dbbf73800d34e03d27cbb24ede11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21253bb7f39d0285e3b6d16ccb2d2427" id="r_a21253bb7f39d0285e3b6d16ccb2d2427"><td class="memItemLeft" align="right" valign="top"><a id="a21253bb7f39d0285e3b6d16ccb2d2427" name="a21253bb7f39d0285e3b6d16ccb2d2427"></a>
-const uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><b>getDigest</b> (digest32_t digest)</td></tr>
+<tr class="memitem:a21253bb7f39d0285e3b6d16ccb2d2427" id="r_a21253bb7f39d0285e3b6d16ccb2d2427"><td class="memItemLeft" align="right" valign="top">const uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21253bb7f39d0285e3b6d16ccb2d2427">getDigest</a> (<a class="el" href="#a15f384f39d235a8912d5042dc920595f">digest32_t</a> digest)</td></tr>
 <tr class="separator:a21253bb7f39d0285e3b6d16ccb2d2427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa201405badd32fcedba0d438a28f65b5" id="r_aa201405badd32fcedba0d438a28f65b5"><td class="memItemLeft" align="right" valign="top"><a id="aa201405badd32fcedba0d438a28f65b5" name="aa201405badd32fcedba0d438a28f65b5"></a>
-const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>getDigestBytes</b> (digest8_t digest)</td></tr>
+<tr class="memitem:aa201405badd32fcedba0d438a28f65b5" id="r_aa201405badd32fcedba0d438a28f65b5"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa201405badd32fcedba0d438a28f65b5">getDigestBytes</a> (<a class="el" href="#a62b6c7838c4cdcb81700a6cc64fde994">digest8_t</a> digest)</td></tr>
 <tr class="separator:aa201405badd32fcedba0d438a28f65b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a88fa19fad6a3b06522b2826a5966f355" id="r_a88fa19fad6a3b06522b2826a5966f355"><td class="memItemLeft" align="right" valign="top"><a id="a88fa19fad6a3b06522b2826a5966f355" name="a88fa19fad6a3b06522b2826a5966f355"></a>
-static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>LeftRotate</b> (uint32_t value, size_t count)</td></tr>
+<tr class="memitem:a88fa19fad6a3b06522b2826a5966f355" id="r_a88fa19fad6a3b06522b2826a5966f355"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88fa19fad6a3b06522b2826a5966f355">LeftRotate</a> (uint32_t value, size_t count)</td></tr>
 <tr class="separator:a88fa19fad6a3b06522b2826a5966f355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:af00112a350d5f1f67a9ac00a0fee6793" id="r_af00112a350d5f1f67a9ac00a0fee6793"><td class="memItemLeft" align="right" valign="top"><a id="af00112a350d5f1f67a9ac00a0fee6793" name="af00112a350d5f1f67a9ac00a0fee6793"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>processBlock</b> ()</td></tr>
+<tr class="memitem:af00112a350d5f1f67a9ac00a0fee6793" id="r_af00112a350d5f1f67a9ac00a0fee6793"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af00112a350d5f1f67a9ac00a0fee6793">processBlock</a> ()</td></tr>
 <tr class="separator:af00112a350d5f1f67a9ac00a0fee6793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:abf518fd3731336f4154ee6392f25bcc4" id="r_abf518fd3731336f4154ee6392f25bcc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a15f384f39d235a8912d5042dc920595f">digest32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf518fd3731336f4154ee6392f25bcc4">m_digest</a></td></tr>
+<tr class="separator:abf518fd3731336f4154ee6392f25bcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a085c3d380c205a79c2b21a394913fb7b" id="r_a085c3d380c205a79c2b21a394913fb7b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a085c3d380c205a79c2b21a394913fb7b">m_block</a> [64]</td></tr>
+<tr class="separator:a085c3d380c205a79c2b21a394913fb7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b14a3573a6f6424365ae85d9694966" id="r_a48b14a3573a6f6424365ae85d9694966"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48b14a3573a6f6424365ae85d9694966">m_blockByteIndex</a></td></tr>
+<tr class="separator:a48b14a3573a6f6424365ae85d9694966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0926d008ffb0968ad89f4f58b51fdd72" id="r_a0926d008ffb0968ad89f4f58b51fdd72"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0926d008ffb0968ad89f4f58b51fdd72">m_byteCount</a></td></tr>
+<tr class="separator:a0926d008ffb0968ad89f4f58b51fdd72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a15f384f39d235a8912d5042dc920595f" name="a15f384f39d235a8912d5042dc920595f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15f384f39d235a8912d5042dc920595f">&#9670;&#160;</a></span>digest32_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint32_t sha1::SHA1::digest32_t[5]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62b6c7838c4cdcb81700a6cc64fde994" name="a62b6c7838c4cdcb81700a6cc64fde994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62b6c7838c4cdcb81700a6cc64fde994">&#9670;&#160;</a></span>digest8_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint8_t sha1::SHA1::digest8_t[20]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a440d0c3f17da510418b678f4c9dcbdf2" name="a440d0c3f17da510418b678f4c9dcbdf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a440d0c3f17da510418b678f4c9dcbdf2">&#9670;&#160;</a></span>SHA1() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sha1::SHA1::SHA1 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7103b57eb1f51a498a92c095b9c21392" name="a7103b57eb1f51a498a92c095b9c21392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7103b57eb1f51a498a92c095b9c21392">&#9670;&#160;</a></span>~SHA1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual sha1::SHA1::~SHA1 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d63d04a7f146a42000e0a2a35314c6f" name="a1d63d04a7f146a42000e0a2a35314c6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d63d04a7f146a42000e0a2a35314c6f">&#9670;&#160;</a></span>SHA1() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sha1::SHA1::SHA1 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a21253bb7f39d0285e3b6d16ccb2d2427" name="a21253bb7f39d0285e3b6d16ccb2d2427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21253bb7f39d0285e3b6d16ccb2d2427">&#9670;&#160;</a></span>getDigest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t * sha1::SHA1::getDigest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a15f384f39d235a8912d5042dc920595f">digest32_t</a></td>          <td class="paramname"><span class="paramname"><em>digest</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa201405badd32fcedba0d438a28f65b5" name="aa201405badd32fcedba0d438a28f65b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa201405badd32fcedba0d438a28f65b5">&#9670;&#160;</a></span>getDigestBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t * sha1::SHA1::getDigestBytes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a62b6c7838c4cdcb81700a6cc64fde994">digest8_t</a></td>          <td class="paramname"><span class="paramname"><em>digest</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88fa19fad6a3b06522b2826a5966f355" name="a88fa19fad6a3b06522b2826a5966f355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88fa19fad6a3b06522b2826a5966f355">&#9670;&#160;</a></span>LeftRotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t sha1::SHA1::LeftRotate </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>value</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e9b4b6a553b984a0395124365eccdd2" name="a6e9b4b6a553b984a0395124365eccdd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e9b4b6a553b984a0395124365eccdd2">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp; sha1::SHA1::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af00112a350d5f1f67a9ac00a0fee6793" name="af00112a350d5f1f67a9ac00a0fee6793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af00112a350d5f1f67a9ac00a0fee6793">&#9670;&#160;</a></span>processBlock() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sha1::SHA1::processBlock </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c27b7a0a294007e13e530a4c4fe6f32" name="a0c27b7a0a294007e13e530a4c4fe6f32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c27b7a0a294007e13e530a4c4fe6f32">&#9670;&#160;</a></span>processBlock() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp; sha1::SHA1::processBlock </td>
+          <td>(</td>
+          <td class="paramtype">const void *const</td>          <td class="paramname"><span class="paramname"><em>start</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *const</td>          <td class="paramname"><span class="paramname"><em>end</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61461d4ae157a5917b37105eeadb5780" name="a61461d4ae157a5917b37105eeadb5780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61461d4ae157a5917b37105eeadb5780">&#9670;&#160;</a></span>processByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp; sha1::SHA1::processByte </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>octet</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7c3dbbf73800d34e03d27cbb24ede11" name="ae7c3dbbf73800d34e03d27cbb24ede11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7c3dbbf73800d34e03d27cbb24ede11">&#9670;&#160;</a></span>processBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp; sha1::SHA1::processBytes </td>
+          <td>(</td>
+          <td class="paramtype">const void *const</td>          <td class="paramname"><span class="paramname"><em>data</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>len</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef36db0c868aa10aca989723cd338436" name="aef36db0c868aa10aca989723cd338436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef36db0c868aa10aca989723cd338436">&#9670;&#160;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsha1_1_1_s_h_a1.html">SHA1</a> &amp; sha1::SHA1::reset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a085c3d380c205a79c2b21a394913fb7b" name="a085c3d380c205a79c2b21a394913fb7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a085c3d380c205a79c2b21a394913fb7b">&#9670;&#160;</a></span>m_block</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t sha1::SHA1::m_block[64]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48b14a3573a6f6424365ae85d9694966" name="a48b14a3573a6f6424365ae85d9694966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48b14a3573a6f6424365ae85d9694966">&#9670;&#160;</a></span>m_blockByteIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sha1::SHA1::m_blockByteIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0926d008ffb0968ad89f4f58b51fdd72" name="a0926d008ffb0968ad89f4f58b51fdd72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0926d008ffb0968ad89f4f58b51fdd72">&#9670;&#160;</a></span>m_byteCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sha1::SHA1::m_byteCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf518fd3731336f4154ee6392f25bcc4" name="abf518fd3731336f4154ee6392f25bcc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf518fd3731336f4154ee6392f25bcc4">&#9670;&#160;</a></span>m_digest</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a15f384f39d235a8912d5042dc920595f">digest32_t</a> sha1::SHA1::m_digest</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="crow__all_8h_source.html">crow_all.h</a></li>
 </ul>

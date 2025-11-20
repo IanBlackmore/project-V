@@ -1,0 +1,63 @@
+\doxysection{crow\+::In\+Memory\+Store Struct Reference}
+\hypertarget{structcrow_1_1_in_memory_store}{}\label{structcrow_1_1_in_memory_store}\index{crow::InMemoryStore@{crow::InMemoryStore}}
+
+
+\doxylink{structcrow_1_1_in_memory_store}{In\+Memory\+Store} stores all entries in memory.  
+
+
+
+
+{\ttfamily \#include $<$crow\+\_\+all.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structcrow_1_1_in_memory_store_af7f988e319fb83ccc6c5bab5e745bb2d}{load}} (\mbox{\hyperlink{structcrow_1_1session_1_1_cached_session}{session\+::\+Cached\+Session}} \&cn)
+\item 
+void \mbox{\hyperlink{structcrow_1_1_in_memory_store_a4b55259e9a5fc9893a1bcc079e94a7d9}{save}} (\mbox{\hyperlink{structcrow_1_1session_1_1_cached_session}{session\+::\+Cached\+Session}} \&cn)
+\item 
+bool \mbox{\hyperlink{structcrow_1_1_in_memory_store_a2d4c02f94bb38daf307f9cd771eae84b}{contains}} (const std\+::string \&key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structcrow_1_1session_1_1multi__value}{session\+::multi\+\_\+value}} $>$ $>$ \mbox{\hyperlink{structcrow_1_1_in_memory_store_a73591cb7887d570a35a9555fa378b205}{entries}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{structcrow_1_1_in_memory_store}{In\+Memory\+Store} stores all entries in memory. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structcrow_1_1_in_memory_store_a2d4c02f94bb38daf307f9cd771eae84b}\label{structcrow_1_1_in_memory_store_a2d4c02f94bb38daf307f9cd771eae84b} 
+\index{crow::InMemoryStore@{crow::InMemoryStore}!contains@{contains}}
+\index{contains@{contains}!crow::InMemoryStore@{crow::InMemoryStore}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool crow\+::\+In\+Memory\+Store\+::contains (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1_in_memory_store_af7f988e319fb83ccc6c5bab5e745bb2d}\label{structcrow_1_1_in_memory_store_af7f988e319fb83ccc6c5bab5e745bb2d} 
+\index{crow::InMemoryStore@{crow::InMemoryStore}!load@{load}}
+\index{load@{load}!crow::InMemoryStore@{crow::InMemoryStore}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void crow\+::\+In\+Memory\+Store\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1session_1_1_cached_session}{session\+::\+Cached\+Session}} \&}]{cn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1_in_memory_store_a4b55259e9a5fc9893a1bcc079e94a7d9}\label{structcrow_1_1_in_memory_store_a4b55259e9a5fc9893a1bcc079e94a7d9} 
+\index{crow::InMemoryStore@{crow::InMemoryStore}!save@{save}}
+\index{save@{save}!crow::InMemoryStore@{crow::InMemoryStore}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void crow\+::\+In\+Memory\+Store\+::save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1session_1_1_cached_session}{session\+::\+Cached\+Session}} \&}]{cn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structcrow_1_1_in_memory_store_a73591cb7887d570a35a9555fa378b205}\label{structcrow_1_1_in_memory_store_a73591cb7887d570a35a9555fa378b205} 
+\index{crow::InMemoryStore@{crow::InMemoryStore}!entries@{entries}}
+\index{entries@{entries}!crow::InMemoryStore@{crow::InMemoryStore}}
+\doxysubsubsection{\texorpdfstring{entries}{entries}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, std\+::unordered\+\_\+map$<$std\+::string, \mbox{\hyperlink{structcrow_1_1session_1_1multi__value}{session\+::multi\+\_\+value}}$>$ $>$ crow\+::\+In\+Memory\+Store\+::entries}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{crow__all_8h}{crow\+\_\+all.\+h}}\end{DoxyCompactItemize}

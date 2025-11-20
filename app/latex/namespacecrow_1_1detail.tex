@@ -1,0 +1,176 @@
+\doxysection{crow\+::detail Namespace Reference}
+\hypertarget{namespacecrow_1_1detail}{}\label{namespacecrow_1_1detail}\index{crow::detail@{crow::detail}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacecrow_1_1detail_1_1routing__handler__call__helper}{routing\+\_\+handler\+\_\+call\+\_\+helper}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1check__after__handle__arity__3}{check\+\_\+after\+\_\+handle\+\_\+arity\+\_\+3}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1check__after__handle__arity__3__const}{check\+\_\+after\+\_\+handle\+\_\+arity\+\_\+3\+\_\+const}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1check__before__handle__arity__3}{check\+\_\+before\+\_\+handle\+\_\+arity\+\_\+3}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1check__before__handle__arity__3__const}{check\+\_\+before\+\_\+handle\+\_\+arity\+\_\+3\+\_\+const}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1check__global__call__false}{check\+\_\+global\+\_\+call\+\_\+false}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1context}{context}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1is__after__handle__arity__3__impl}{is\+\_\+after\+\_\+handle\+\_\+arity\+\_\+3\+\_\+impl}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1is__before__handle__arity__3__impl}{is\+\_\+before\+\_\+handle\+\_\+arity\+\_\+3\+\_\+impl}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1is__middleware__global}{is\+\_\+middleware\+\_\+global}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1middleware__call__criteria__dynamic}{middleware\+\_\+call\+\_\+criteria\+\_\+dynamic}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1middleware__call__criteria__dynamic_3_01false_01_4}{middleware\+\_\+call\+\_\+criteria\+\_\+dynamic$<$ false $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1middleware__call__criteria__dynamic_3_01true_01_4}{middleware\+\_\+call\+\_\+criteria\+\_\+dynamic$<$ true $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1middleware__call__criteria__only__global}{middleware\+\_\+call\+\_\+criteria\+\_\+only\+\_\+global}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1middleware__indices}{middleware\+\_\+indices}}
+\begin{DoxyCompactList}\small\item\em Typesafe wrapper for storing lists of middleware as their indices in the App. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1partial__context}{partial\+\_\+context}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1partial__context_3_4}{partial\+\_\+context$<$$>$}}
+\item 
+class \mbox{\hyperlink{classcrow_1_1detail_1_1task__timer}{task\+\_\+timer}}
+\begin{DoxyCompactList}\small\item\em A class for scheduling functions to be called after a specific amount of ticks. A tick is equal to 1 second. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename MW , typename Context , typename Parent\+Context $>$ }\\std\+::enable\+\_\+if$<$!\mbox{\hyperlink{structcrow_1_1detail_1_1is__before__handle__arity__3__impl}{is\+\_\+before\+\_\+handle\+\_\+arity\+\_\+3\+\_\+impl}}$<$ MW $>$\+::value $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a3299769a85b70adcf3c5cbaa994ea371}{before\+\_\+handler\+\_\+call}} (MW \&mw, \mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res, Context \&ctx, Parent\+Context \&)
+\item 
+{\footnotesize template$<$typename MW , typename Context , typename Parent\+Context $>$ }\\std\+::enable\+\_\+if$<$ \mbox{\hyperlink{structcrow_1_1detail_1_1is__before__handle__arity__3__impl}{is\+\_\+before\+\_\+handle\+\_\+arity\+\_\+3\+\_\+impl}}$<$ MW $>$\+::value $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a81015d865129667f9f9b76bd20d581e7}{before\+\_\+handler\+\_\+call}} (MW \&mw, \mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res, Context \&ctx, Parent\+Context \&)
+\item 
+{\footnotesize template$<$typename MW , typename Context , typename Parent\+Context $>$ }\\std\+::enable\+\_\+if$<$!\mbox{\hyperlink{structcrow_1_1detail_1_1is__after__handle__arity__3__impl}{is\+\_\+after\+\_\+handle\+\_\+arity\+\_\+3\+\_\+impl}}$<$ MW $>$\+::value $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a4719793ead6a6f30d42d0d4ca530f281}{after\+\_\+handler\+\_\+call}} (MW \&mw, \mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res, Context \&ctx, Parent\+Context \&)
+\item 
+{\footnotesize template$<$typename MW , typename Context , typename Parent\+Context $>$ }\\std\+::enable\+\_\+if$<$ \mbox{\hyperlink{structcrow_1_1detail_1_1is__after__handle__arity__3__impl}{is\+\_\+after\+\_\+handle\+\_\+arity\+\_\+3\+\_\+impl}}$<$ MW $>$\+::value $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a0b254b8e4caa54fc30158a962c2a7054}{after\+\_\+handler\+\_\+call}} (MW \&mw, \mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res, Context \&ctx, Parent\+Context \&)
+\item 
+{\footnotesize template$<$typename Call\+Criteria , int N, typename Context , typename Container $>$ }\\std\+::enable\+\_\+if$<$(N$<$ std\+::tuple\+\_\+size$<$ typenamestd\+::remove\+\_\+reference$<$ Container $>$\+::type $>$\+::value), bool $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_ad2062e8efff213c9172fbaa2d9db1eba}{middleware\+\_\+call\+\_\+helper}} (const Call\+Criteria \&cc, Container \&middlewares, \mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res, Context \&ctx)
+\item 
+{\footnotesize template$<$typename Call\+Criteria , int N, typename Context , typename Container $>$ }\\std\+::enable\+\_\+if$<$(N $>$=std\+::tuple\+\_\+size$<$ typenamestd\+::remove\+\_\+reference$<$ Container $>$\+::type $>$\+::value), bool $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a595f5d1723137e6b446edb8282c52d48}{middleware\+\_\+call\+\_\+helper}} (const Call\+Criteria \&, Container \&, \mbox{\hyperlink{structcrow_1_1request}{request}} \&, \mbox{\hyperlink{structcrow_1_1response}{response}} \&, Context \&)
+\item 
+{\footnotesize template$<$typename Call\+Criteria , int N, typename Context , typename Container $>$ }\\std\+::enable\+\_\+if$<$(N$<$ 0)$>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a6ab4867a8cf66738f9de281dfeb562f1}{after\+\_\+handlers\+\_\+call\+\_\+helper}} (const Call\+Criteria \&, Container \&, Context \&, \mbox{\hyperlink{structcrow_1_1request}{request}} \&, \mbox{\hyperlink{structcrow_1_1response}{response}} \&)
+\item 
+{\footnotesize template$<$typename Call\+Criteria , int N, typename Context , typename Container $>$ }\\std\+::enable\+\_\+if$<$(N==0)$>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a9111261bc5c81aad1fc0f762e47a1258}{after\+\_\+handlers\+\_\+call\+\_\+helper}} (const Call\+Criteria \&cc, Container \&middlewares, Context \&ctx, \mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res)
+\item 
+{\footnotesize template$<$typename Call\+Criteria , int N, typename Context , typename Container $>$ }\\std\+::enable\+\_\+if$<$(N $>$0)$>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a157669b7b6ac9d9ba238acf3966e7d33}{after\+\_\+handlers\+\_\+call\+\_\+helper}} (const Call\+Criteria \&cc, Container \&middlewares, Context \&ctx, \mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res)
+\item 
+{\footnotesize template$<$typename F , typename... Args$>$ }\\std\+::enable\+\_\+if$<$ black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ Args... $>$ $>$\+::value, void $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a66d991e5d80ddf4f74d477d4f32e7d54}{wrapped\+\_\+handler\+\_\+call}} (\mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&res, const F \&f, Args \&\&... args)
+\item 
+{\footnotesize template$<$typename F , typename... Args$>$ }\\std\+::enable\+\_\+if$<$!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ Args... $>$ $>$\+::value \&\&black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, Args... $>$ $>$\+::value, void $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_ac89c13a434c22eabbf7625c6500a9c43}{wrapped\+\_\+handler\+\_\+call}} (\mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&res, const F \&f, Args \&\&... args)
+\item 
+{\footnotesize template$<$typename F , typename... Args$>$ }\\std\+::enable\+\_\+if$<$!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, Args... $>$ $>$\+::value \&\&black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&, Args... $>$ $>$\+::value, void $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_a91dfc3bd465aed89803c832fd173f220}{wrapped\+\_\+handler\+\_\+call}} (\mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&res, const F \&f, Args \&\&... args)
+\item 
+{\footnotesize template$<$typename F , typename... Args$>$ }\\std\+::enable\+\_\+if$<$!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&, Args... $>$ $>$\+::value \&\&black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ constcrow\+::request \&, \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&, Args... $>$ $>$\+::value, void $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_af369a95a7c5a4bfff99eca981c236e0e}{wrapped\+\_\+handler\+\_\+call}} (\mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&res, const F \&f, Args \&\&... args)
+\item 
+{\footnotesize template$<$typename F , typename... Args$>$ }\\std\+::enable\+\_\+if$<$!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&, Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ constcrow\+::request \&, \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&, Args... $>$ $>$\+::value, void $>$\+::type \mbox{\hyperlink{namespacecrow_1_1detail_ae839f420f99e06f31cfcbc8a43dc70be}{wrapped\+\_\+handler\+\_\+call}} (\mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&res, const F \&f, Args \&\&... args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacecrow_1_1detail_a4719793ead6a6f30d42d0d4ca530f281}\label{namespacecrow_1_1detail_a4719793ead6a6f30d42d0d4ca530f281} 
+\index{crow::detail@{crow::detail}!after\_handler\_call@{after\_handler\_call}}
+\index{after\_handler\_call@{after\_handler\_call}!crow::detail@{crow::detail}}
+\doxysubsubsection{\texorpdfstring{after\_handler\_call()}{after\_handler\_call()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename MW , typename Context , typename Parent\+Context $>$ \\
+std\+::enable\+\_\+if$<$!\mbox{\hyperlink{structcrow_1_1detail_1_1is__after__handle__arity__3__impl}{is\+\_\+after\+\_\+handle\+\_\+arity\+\_\+3\+\_\+impl}}$<$ MW $>$\+::value $>$\+::type crow\+::detail\+::after\+\_\+handler\+\_\+call (\begin{DoxyParamCaption}\item[{MW \&}]{mw,  }\item[{\mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{res,  }\item[{Context \&}]{ctx,  }\item[{Parent\+Context \&}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecrow_1_1detail_a0b254b8e4caa54fc30158a962c2a7054}\label{namespacecrow_1_1detail_a0b254b8e4caa54fc30158a962c2a7054} 
+\index{crow::detail@{crow::detail}!after\_handler\_call@{after\_handler\_call}}
+\index{after\_handler\_call@{after\_handler\_call}!crow::detail@{crow::detail}}
+\doxysubsubsection{\texorpdfstring{after\_handler\_call()}{after\_handler\_call()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename MW , typename Context , typename Parent\+Context $>$ \\
+std\+::enable\+\_\+if$<$ \mbox{\hyperlink{structcrow_1_1detail_1_1is__after__handle__arity__3__impl}{is\+\_\+after\+\_\+handle\+\_\+arity\+\_\+3\+\_\+impl}}$<$ MW $>$\+::value $>$\+::type crow\+::detail\+::after\+\_\+handler\+\_\+call (\begin{DoxyParamCaption}\item[{MW \&}]{mw,  }\item[{\mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{res,  }\item[{Context \&}]{ctx,  }\item[{Parent\+Context \&}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecrow_1_1detail_a6ab4867a8cf66738f9de281dfeb562f1}\label{namespacecrow_1_1detail_a6ab4867a8cf66738f9de281dfeb562f1} 
+\index{crow::detail@{crow::detail}!after\_handlers\_call\_helper@{after\_handlers\_call\_helper}}
+\index{after\_handlers\_call\_helper@{after\_handlers\_call\_helper}!crow::detail@{crow::detail}}
+\doxysubsubsection{\texorpdfstring{after\_handlers\_call\_helper()}{after\_handlers\_call\_helper()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Call\+Criteria , int N, typename Context , typename Container $>$ \\
+std\+::enable\+\_\+if$<$(N$<$ 0)$>$\+::type crow\+::detail\+::after\+\_\+handlers\+\_\+call\+\_\+helper (\begin{DoxyParamCaption}\item[{const Call\+Criteria \&}]{cc,  }\item[{Container \&}]{middlewares,  }\item[{Context \&}]{ctx,  }\item[{\mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{res }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecrow_1_1detail_a9111261bc5c81aad1fc0f762e47a1258}\label{namespacecrow_1_1detail_a9111261bc5c81aad1fc0f762e47a1258} 
+\index{crow::detail@{crow::detail}!after\_handlers\_call\_helper@{after\_handlers\_call\_helper}}
+\index{after\_handlers\_call\_helper@{after\_handlers\_call\_helper}!crow::detail@{crow::detail}}
+\doxysubsubsection{\texorpdfstring{after\_handlers\_call\_helper()}{after\_handlers\_call\_helper()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Call\+Criteria , int N, typename Context , typename Container $>$ \\
+std\+::enable\+\_\+if$<$(N==0)$>$\+::type crow\+::detail\+::after\+\_\+handlers\+\_\+call\+\_\+helper (\begin{DoxyParamCaption}\item[{const Call\+Criteria \&}]{cc,  }\item[{Container \&}]{middlewares,  }\item[{Context \&}]{ctx,  }\item[{\mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{res }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecrow_1_1detail_a157669b7b6ac9d9ba238acf3966e7d33}\label{namespacecrow_1_1detail_a157669b7b6ac9d9ba238acf3966e7d33} 
+\index{crow::detail@{crow::detail}!after\_handlers\_call\_helper@{after\_handlers\_call\_helper}}
+\index{after\_handlers\_call\_helper@{after\_handlers\_call\_helper}!crow::detail@{crow::detail}}
+\doxysubsubsection{\texorpdfstring{after\_handlers\_call\_helper()}{after\_handlers\_call\_helper()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Call\+Criteria , int N, typename Context , typename Container $>$ \\
+std\+::enable\+\_\+if$<$(N $>$0)$>$\+::type crow\+::detail\+::after\+\_\+handlers\+\_\+call\+\_\+helper (\begin{DoxyParamCaption}\item[{const Call\+Criteria \&}]{cc,  }\item[{Container \&}]{middlewares,  }\item[{Context \&}]{ctx,  }\item[{\mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{res }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecrow_1_1detail_a3299769a85b70adcf3c5cbaa994ea371}\label{namespacecrow_1_1detail_a3299769a85b70adcf3c5cbaa994ea371} 
+\index{crow::detail@{crow::detail}!before\_handler\_call@{before\_handler\_call}}
+\index{before\_handler\_call@{before\_handler\_call}!crow::detail@{crow::detail}}
+\doxysubsubsection{\texorpdfstring{before\_handler\_call()}{before\_handler\_call()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename MW , typename Context , typename Parent\+Context $>$ \\
+std\+::enable\+\_\+if$<$!\mbox{\hyperlink{structcrow_1_1detail_1_1is__before__handle__arity__3__impl}{is\+\_\+before\+\_\+handle\+\_\+arity\+\_\+3\+\_\+impl}}$<$ MW $>$\+::value $>$\+::type crow\+::detail\+::before\+\_\+handler\+\_\+call (\begin{DoxyParamCaption}\item[{MW \&}]{mw,  }\item[{\mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{res,  }\item[{Context \&}]{ctx,  }\item[{Parent\+Context \&}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecrow_1_1detail_a81015d865129667f9f9b76bd20d581e7}\label{namespacecrow_1_1detail_a81015d865129667f9f9b76bd20d581e7} 
+\index{crow::detail@{crow::detail}!before\_handler\_call@{before\_handler\_call}}
+\index{before\_handler\_call@{before\_handler\_call}!crow::detail@{crow::detail}}
+\doxysubsubsection{\texorpdfstring{before\_handler\_call()}{before\_handler\_call()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename MW , typename Context , typename Parent\+Context $>$ \\
+std\+::enable\+\_\+if$<$ \mbox{\hyperlink{structcrow_1_1detail_1_1is__before__handle__arity__3__impl}{is\+\_\+before\+\_\+handle\+\_\+arity\+\_\+3\+\_\+impl}}$<$ MW $>$\+::value $>$\+::type crow\+::detail\+::before\+\_\+handler\+\_\+call (\begin{DoxyParamCaption}\item[{MW \&}]{mw,  }\item[{\mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{res,  }\item[{Context \&}]{ctx,  }\item[{Parent\+Context \&}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecrow_1_1detail_a595f5d1723137e6b446edb8282c52d48}\label{namespacecrow_1_1detail_a595f5d1723137e6b446edb8282c52d48} 
+\index{crow::detail@{crow::detail}!middleware\_call\_helper@{middleware\_call\_helper}}
+\index{middleware\_call\_helper@{middleware\_call\_helper}!crow::detail@{crow::detail}}
+\doxysubsubsection{\texorpdfstring{middleware\_call\_helper()}{middleware\_call\_helper()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Call\+Criteria , int N, typename Context , typename Container $>$ \\
+std\+::enable\+\_\+if$<$(N $>$=std\+::tuple\+\_\+size$<$ typenamestd\+::remove\+\_\+reference$<$ Container $>$\+::type $>$\+::value), bool $>$\+::type crow\+::detail\+::middleware\+\_\+call\+\_\+helper (\begin{DoxyParamCaption}\item[{const Call\+Criteria \&}]{cc,  }\item[{Container \&}]{middlewares,  }\item[{\mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{res,  }\item[{Context \&}]{ctx }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecrow_1_1detail_ad2062e8efff213c9172fbaa2d9db1eba}\label{namespacecrow_1_1detail_ad2062e8efff213c9172fbaa2d9db1eba} 
+\index{crow::detail@{crow::detail}!middleware\_call\_helper@{middleware\_call\_helper}}
+\index{middleware\_call\_helper@{middleware\_call\_helper}!crow::detail@{crow::detail}}
+\doxysubsubsection{\texorpdfstring{middleware\_call\_helper()}{middleware\_call\_helper()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Call\+Criteria , int N, typename Context , typename Container $>$ \\
+std\+::enable\+\_\+if$<$(N$<$ std\+::tuple\+\_\+size$<$ typenamestd\+::remove\+\_\+reference$<$ Container $>$\+::type $>$\+::value), bool $>$\+::type crow\+::detail\+::middleware\+\_\+call\+\_\+helper (\begin{DoxyParamCaption}\item[{const Call\+Criteria \&}]{cc,  }\item[{Container \&}]{middlewares,  }\item[{\mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{res,  }\item[{Context \&}]{ctx }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecrow_1_1detail_a66d991e5d80ddf4f74d477d4f32e7d54}\label{namespacecrow_1_1detail_a66d991e5d80ddf4f74d477d4f32e7d54} 
+\index{crow::detail@{crow::detail}!wrapped\_handler\_call@{wrapped\_handler\_call}}
+\index{wrapped\_handler\_call@{wrapped\_handler\_call}!crow::detail@{crow::detail}}
+\doxysubsubsection{\texorpdfstring{wrapped\_handler\_call()}{wrapped\_handler\_call()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$typename F , typename... Args$>$ \\
+std\+::enable\+\_\+if$<$ black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ Args... $>$ $>$\+::value, void $>$\+::type crow\+::detail\+::wrapped\+\_\+handler\+\_\+call (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&}]{,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&}]{res,  }\item[{const F \&}]{f,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecrow_1_1detail_a91dfc3bd465aed89803c832fd173f220}\label{namespacecrow_1_1detail_a91dfc3bd465aed89803c832fd173f220} 
+\index{crow::detail@{crow::detail}!wrapped\_handler\_call@{wrapped\_handler\_call}}
+\index{wrapped\_handler\_call@{wrapped\_handler\_call}!crow::detail@{crow::detail}}
+\doxysubsubsection{\texorpdfstring{wrapped\_handler\_call()}{wrapped\_handler\_call()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$typename F , typename... Args$>$ \\
+std\+::enable\+\_\+if$<$!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, Args... $>$ $>$\+::value \&\&black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&, Args... $>$ $>$\+::value, void $>$\+::type crow\+::detail\+::wrapped\+\_\+handler\+\_\+call (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&}]{,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&}]{res,  }\item[{const F \&}]{f,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecrow_1_1detail_ac89c13a434c22eabbf7625c6500a9c43}\label{namespacecrow_1_1detail_ac89c13a434c22eabbf7625c6500a9c43} 
+\index{crow::detail@{crow::detail}!wrapped\_handler\_call@{wrapped\_handler\_call}}
+\index{wrapped\_handler\_call@{wrapped\_handler\_call}!crow::detail@{crow::detail}}
+\doxysubsubsection{\texorpdfstring{wrapped\_handler\_call()}{wrapped\_handler\_call()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$typename F , typename... Args$>$ \\
+std\+::enable\+\_\+if$<$!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ Args... $>$ $>$\+::value \&\&black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, Args... $>$ $>$\+::value, void $>$\+::type crow\+::detail\+::wrapped\+\_\+handler\+\_\+call (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&}]{res,  }\item[{const F \&}]{f,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecrow_1_1detail_af369a95a7c5a4bfff99eca981c236e0e}\label{namespacecrow_1_1detail_af369a95a7c5a4bfff99eca981c236e0e} 
+\index{crow::detail@{crow::detail}!wrapped\_handler\_call@{wrapped\_handler\_call}}
+\index{wrapped\_handler\_call@{wrapped\_handler\_call}!crow::detail@{crow::detail}}
+\doxysubsubsection{\texorpdfstring{wrapped\_handler\_call()}{wrapped\_handler\_call()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$typename F , typename... Args$>$ \\
+std\+::enable\+\_\+if$<$!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&, Args... $>$ $>$\+::value \&\&black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ constcrow\+::request \&, \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&, Args... $>$ $>$\+::value, void $>$\+::type crow\+::detail\+::wrapped\+\_\+handler\+\_\+call (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&}]{res,  }\item[{const F \&}]{f,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecrow_1_1detail_ae839f420f99e06f31cfcbc8a43dc70be}\label{namespacecrow_1_1detail_ae839f420f99e06f31cfcbc8a43dc70be} 
+\index{crow::detail@{crow::detail}!wrapped\_handler\_call@{wrapped\_handler\_call}}
+\index{wrapped\_handler\_call@{wrapped\_handler\_call}!crow::detail@{crow::detail}}
+\doxysubsubsection{\texorpdfstring{wrapped\_handler\_call()}{wrapped\_handler\_call()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$typename F , typename... Args$>$ \\
+std\+::enable\+\_\+if$<$!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&, Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&, Args... $>$ $>$\+::value \&\&!black\+\_\+magic\+::\+Call\+Helper$<$ F, black\+\_\+magic\+::S$<$ constcrow\+::request \&, \mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&, Args... $>$ $>$\+::value, void $>$\+::type crow\+::detail\+::wrapped\+\_\+handler\+\_\+call (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1request}{crow\+::request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{crow\+::response}} \&}]{res,  }\item[{const F \&}]{f,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})}
+

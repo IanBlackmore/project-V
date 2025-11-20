@@ -1,0 +1,144 @@
+\doxysection{crow\+::websocket\+::connection Struct Reference}
+\hypertarget{structcrow_1_1websocket_1_1connection}{}\label{structcrow_1_1websocket_1_1connection}\index{crow::websocket::connection@{crow::websocket::connection}}
+
+
+A base class for websocket connection.  
+
+
+
+
+{\ttfamily \#include $<$crow\+\_\+all.\+h$>$}
+
+Inheritance diagram for crow\+::websocket\+::connection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structcrow_1_1websocket_1_1connection}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{structcrow_1_1websocket_1_1connection_ab2e8c749261a4c32fbf4f49a62f630e2}{send\+\_\+binary}} (std\+::string msg)=0
+\item 
+virtual void \mbox{\hyperlink{structcrow_1_1websocket_1_1connection_a0d405c61d1476dd3958acac216b148a3}{send\+\_\+text}} (std\+::string msg)=0
+\item 
+virtual void \mbox{\hyperlink{structcrow_1_1websocket_1_1connection_af8acfc48d3e535f7658de77d08acc3e7}{send\+\_\+ping}} (std\+::string msg)=0
+\item 
+virtual void \mbox{\hyperlink{structcrow_1_1websocket_1_1connection_a3ed7b66fc6b722fa9f56fb63a1e24ad5}{send\+\_\+pong}} (std\+::string msg)=0
+\item 
+virtual void \mbox{\hyperlink{structcrow_1_1websocket_1_1connection_a0d1ac9e543d8e341979ed2b49c0fbaf7}{close}} (std\+::string const \&msg="{}quit"{})=0
+\item 
+virtual std\+::string \mbox{\hyperlink{structcrow_1_1websocket_1_1connection_a3980e17a609909a5e2140dd897fa704e}{get\+\_\+remote\+\_\+ip}} ()=0
+\item 
+virtual \mbox{\hyperlink{structcrow_1_1websocket_1_1connection_acd6cced463c0da38b8503b38ea876c31}{\texorpdfstring{$\sim$}{\string~}connection}} ()=default
+\item 
+void \mbox{\hyperlink{structcrow_1_1websocket_1_1connection_a75b25cfa1f5f8fd3bbae01b5637097f6}{userdata}} (void \texorpdfstring{$\ast$}{*}u)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structcrow_1_1websocket_1_1connection_a6ef0262451cd36b3b9f3529180da3dee}{userdata}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structcrow_1_1websocket_1_1connection_aa0134c4ca08e5ea74aa73de9be878764}{userdata\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A base class for websocket connection. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structcrow_1_1websocket_1_1connection_acd6cced463c0da38b8503b38ea876c31}\label{structcrow_1_1websocket_1_1connection_acd6cced463c0da38b8503b38ea876c31} 
+\index{crow::websocket::connection@{crow::websocket::connection}!````~connection@{\texorpdfstring{$\sim$}{\string~}connection}}
+\index{````~connection@{\texorpdfstring{$\sim$}{\string~}connection}!crow::websocket::connection@{crow::websocket::connection}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}connection()}{\string~connection()}}
+{\footnotesize\ttfamily virtual crow\+::websocket\+::connection\+::\texorpdfstring{$\sim$}{\string~}connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structcrow_1_1websocket_1_1connection_a0d1ac9e543d8e341979ed2b49c0fbaf7}\label{structcrow_1_1websocket_1_1connection_a0d1ac9e543d8e341979ed2b49c0fbaf7} 
+\index{crow::websocket::connection@{crow::websocket::connection}!close@{close}}
+\index{close@{close}!crow::websocket::connection@{crow::websocket::connection}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily virtual void crow\+::websocket\+::connection\+::close (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{msg = {\ttfamily "{}quit"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classcrow_1_1websocket_1_1_connection_a663d3f3917b8cc7f9b54e6c7dfc8d604}{crow\+::websocket\+::\+Connection$<$ Adaptor, Handler $>$}}.
+
+\Hypertarget{structcrow_1_1websocket_1_1connection_a3980e17a609909a5e2140dd897fa704e}\label{structcrow_1_1websocket_1_1connection_a3980e17a609909a5e2140dd897fa704e} 
+\index{crow::websocket::connection@{crow::websocket::connection}!get\_remote\_ip@{get\_remote\_ip}}
+\index{get\_remote\_ip@{get\_remote\_ip}!crow::websocket::connection@{crow::websocket::connection}}
+\doxysubsubsection{\texorpdfstring{get\_remote\_ip()}{get\_remote\_ip()}}
+{\footnotesize\ttfamily virtual std\+::string crow\+::websocket\+::connection\+::get\+\_\+remote\+\_\+ip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classcrow_1_1websocket_1_1_connection_ae6b8882caf42fc65295920e064e83ecc}{crow\+::websocket\+::\+Connection$<$ Adaptor, Handler $>$}}.
+
+\Hypertarget{structcrow_1_1websocket_1_1connection_ab2e8c749261a4c32fbf4f49a62f630e2}\label{structcrow_1_1websocket_1_1connection_ab2e8c749261a4c32fbf4f49a62f630e2} 
+\index{crow::websocket::connection@{crow::websocket::connection}!send\_binary@{send\_binary}}
+\index{send\_binary@{send\_binary}!crow::websocket::connection@{crow::websocket::connection}}
+\doxysubsubsection{\texorpdfstring{send\_binary()}{send\_binary()}}
+{\footnotesize\ttfamily virtual void crow\+::websocket\+::connection\+::send\+\_\+binary (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classcrow_1_1websocket_1_1_connection_ac8ba4036c9777f0e3af3531791d8ca62}{crow\+::websocket\+::\+Connection$<$ Adaptor, Handler $>$}}.
+
+\Hypertarget{structcrow_1_1websocket_1_1connection_af8acfc48d3e535f7658de77d08acc3e7}\label{structcrow_1_1websocket_1_1connection_af8acfc48d3e535f7658de77d08acc3e7} 
+\index{crow::websocket::connection@{crow::websocket::connection}!send\_ping@{send\_ping}}
+\index{send\_ping@{send\_ping}!crow::websocket::connection@{crow::websocket::connection}}
+\doxysubsubsection{\texorpdfstring{send\_ping()}{send\_ping()}}
+{\footnotesize\ttfamily virtual void crow\+::websocket\+::connection\+::send\+\_\+ping (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classcrow_1_1websocket_1_1_connection_ab5c1387014e5fdc0e9ebbb8661be04da}{crow\+::websocket\+::\+Connection$<$ Adaptor, Handler $>$}}.
+
+\Hypertarget{structcrow_1_1websocket_1_1connection_a3ed7b66fc6b722fa9f56fb63a1e24ad5}\label{structcrow_1_1websocket_1_1connection_a3ed7b66fc6b722fa9f56fb63a1e24ad5} 
+\index{crow::websocket::connection@{crow::websocket::connection}!send\_pong@{send\_pong}}
+\index{send\_pong@{send\_pong}!crow::websocket::connection@{crow::websocket::connection}}
+\doxysubsubsection{\texorpdfstring{send\_pong()}{send\_pong()}}
+{\footnotesize\ttfamily virtual void crow\+::websocket\+::connection\+::send\+\_\+pong (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classcrow_1_1websocket_1_1_connection_a22c353583685e0e878813ab67333342c}{crow\+::websocket\+::\+Connection$<$ Adaptor, Handler $>$}}.
+
+\Hypertarget{structcrow_1_1websocket_1_1connection_a0d405c61d1476dd3958acac216b148a3}\label{structcrow_1_1websocket_1_1connection_a0d405c61d1476dd3958acac216b148a3} 
+\index{crow::websocket::connection@{crow::websocket::connection}!send\_text@{send\_text}}
+\index{send\_text@{send\_text}!crow::websocket::connection@{crow::websocket::connection}}
+\doxysubsubsection{\texorpdfstring{send\_text()}{send\_text()}}
+{\footnotesize\ttfamily virtual void crow\+::websocket\+::connection\+::send\+\_\+text (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classcrow_1_1websocket_1_1_connection_a595b84a3c7206d4923286ac863b45ffb}{crow\+::websocket\+::\+Connection$<$ Adaptor, Handler $>$}}.
+
+\Hypertarget{structcrow_1_1websocket_1_1connection_a6ef0262451cd36b3b9f3529180da3dee}\label{structcrow_1_1websocket_1_1connection_a6ef0262451cd36b3b9f3529180da3dee} 
+\index{crow::websocket::connection@{crow::websocket::connection}!userdata@{userdata}}
+\index{userdata@{userdata}!crow::websocket::connection@{crow::websocket::connection}}
+\doxysubsubsection{\texorpdfstring{userdata()}{userdata()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void \texorpdfstring{$\ast$}{*} crow\+::websocket\+::connection\+::userdata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1websocket_1_1connection_a75b25cfa1f5f8fd3bbae01b5637097f6}\label{structcrow_1_1websocket_1_1connection_a75b25cfa1f5f8fd3bbae01b5637097f6} 
+\index{crow::websocket::connection@{crow::websocket::connection}!userdata@{userdata}}
+\index{userdata@{userdata}!crow::websocket::connection@{crow::websocket::connection}}
+\doxysubsubsection{\texorpdfstring{userdata()}{userdata()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void crow\+::websocket\+::connection\+::userdata (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structcrow_1_1websocket_1_1connection_aa0134c4ca08e5ea74aa73de9be878764}\label{structcrow_1_1websocket_1_1connection_aa0134c4ca08e5ea74aa73de9be878764} 
+\index{crow::websocket::connection@{crow::websocket::connection}!userdata\_@{userdata\_}}
+\index{userdata\_@{userdata\_}!crow::websocket::connection@{crow::websocket::connection}}
+\doxysubsubsection{\texorpdfstring{userdata\_}{userdata\_}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} crow\+::websocket\+::connection\+::userdata\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{crow__all_8h}{crow\+\_\+all.\+h}}\end{DoxyCompactItemize}

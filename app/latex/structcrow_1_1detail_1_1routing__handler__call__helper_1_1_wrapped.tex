@@ -1,0 +1,82 @@
+\doxysection{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::Wrapped\texorpdfstring{$<$}{<} Func, Args\+Wrapped \texorpdfstring{$>$}{>} Struct Template Reference}
+\hypertarget{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped}{}\label{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped}\index{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$@{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$}}
+
+
+{\ttfamily \#include $<$crow\+\_\+all.\+h$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_1_1handler__type__helper}{handler\+\_\+type\+\_\+helper}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_1_1handler__type__helper_3_012f01fc0d25e96ed100e3017a66fd4b36}{handler\+\_\+type\+\_\+helper$<$ const request \&, Args... $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_1_1handler__type__helper_3_01e78e01f0ab35f7c7c9ae99998f83560a}{handler\+\_\+type\+\_\+helper$<$ const request \&, response \&, Args... $>$}}
+\item 
+struct \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_1_1req__handler__wrapper}{req\+\_\+handler\+\_\+wrapper}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_a855baee4fb3ce90fd08a857abd965e26}{set\+\_\+}} (Func f, typename std\+::enable\+\_\+if$<$!std\+::is\+\_\+same$<$ typename std\+::tuple\+\_\+element$<$ 0, std\+::tuple$<$ Args..., void $>$ $>$\+::type, const \mbox{\hyperlink{structcrow_1_1request}{request}} \& $>$\+::value, int $>$\+::type=0)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_ac6d96b754b3b954349c6f7a1f1abf91d}{set\+\_\+}} (Func f, typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+same$<$ typename std\+::tuple\+\_\+element$<$ 0, std\+::tuple$<$ Args..., void $>$ $>$\+::type, const \mbox{\hyperlink{structcrow_1_1request}{request}} \& $>$\+::value \&\&!std\+::is\+\_\+same$<$ typename std\+::tuple\+\_\+element$<$ 1, std\+::tuple$<$ Args..., void, void $>$ $>$\+::type, \mbox{\hyperlink{structcrow_1_1response}{response}} \& $>$\+::value, int $>$\+::type=0)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_a78ee67f65af7e667f06bf5d2b6cdce56}{set\+\_\+}} (Func f, typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+same$<$ typename std\+::tuple\+\_\+element$<$ 0, std\+::tuple$<$ Args..., void $>$ $>$\+::type, const \mbox{\hyperlink{structcrow_1_1request}{request}} \& $>$\+::value \&\&std\+::is\+\_\+same$<$ typename std\+::tuple\+\_\+element$<$ 1, std\+::tuple$<$ Args..., void, void $>$ $>$\+::type, \mbox{\hyperlink{structcrow_1_1response}{response}} \& $>$\+::value, int $>$\+::type=0)
+\item 
+void \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_a7c6cb901c6ee98bc70ee42fe26b1e404}{operator()}} (\mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res, const routing\+\_\+params \&params)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_1_1handler__type__helper}{handler\+\_\+type\+\_\+helper}}$<$ Args\+Wrapped... $>$\+::type \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_ab8030d2b00c5a3f90c269423e1d26efe}{handler\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_a7c6cb901c6ee98bc70ee42fe26b1e404}\label{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_a7c6cb901c6ee98bc70ee42fe26b1e404} 
+\index{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$@{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$@{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename Func , typename... Args\+Wrapped$>$ \\
+void \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::\+Wrapped}}$<$ Func, Args\+Wrapped $>$\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{res,  }\item[{const routing\+\_\+params \&}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_ac6d96b754b3b954349c6f7a1f1abf91d}\label{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_ac6d96b754b3b954349c6f7a1f1abf91d} 
+\index{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$@{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$}!set\_@{set\_}}
+\index{set\_@{set\_}!crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$@{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$}}
+\doxysubsubsection{\texorpdfstring{set\_()}{set\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Func , typename... Args\+Wrapped$>$ \\
+template$<$typename... Args$>$ \\
+void \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::\+Wrapped}}$<$ Func, Args\+Wrapped $>$\+::set\+\_\+ (\begin{DoxyParamCaption}\item[{Func}]{f,  }\item[{typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+same$<$ typename std\+::tuple\+\_\+element$<$ 0, std\+::tuple$<$ Args..., void $>$ $>$\+::type, const \mbox{\hyperlink{structcrow_1_1request}{request}} \& $>$\+::value \&\&!std\+::is\+\_\+same$<$ typename std\+::tuple\+\_\+element$<$ 1, std\+::tuple$<$ Args..., void, void $>$ $>$\+::type, \mbox{\hyperlink{structcrow_1_1response}{response}} \& $>$\+::value, int $>$\+::type}]{ = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_a78ee67f65af7e667f06bf5d2b6cdce56}\label{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_a78ee67f65af7e667f06bf5d2b6cdce56} 
+\index{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$@{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$}!set\_@{set\_}}
+\index{set\_@{set\_}!crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$@{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$}}
+\doxysubsubsection{\texorpdfstring{set\_()}{set\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Func , typename... Args\+Wrapped$>$ \\
+template$<$typename... Args$>$ \\
+void \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::\+Wrapped}}$<$ Func, Args\+Wrapped $>$\+::set\+\_\+ (\begin{DoxyParamCaption}\item[{Func}]{f,  }\item[{typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+same$<$ typename std\+::tuple\+\_\+element$<$ 0, std\+::tuple$<$ Args..., void $>$ $>$\+::type, const \mbox{\hyperlink{structcrow_1_1request}{request}} \& $>$\+::value \&\&std\+::is\+\_\+same$<$ typename std\+::tuple\+\_\+element$<$ 1, std\+::tuple$<$ Args..., void, void $>$ $>$\+::type, \mbox{\hyperlink{structcrow_1_1response}{response}} \& $>$\+::value, int $>$\+::type}]{ = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_a855baee4fb3ce90fd08a857abd965e26}\label{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_a855baee4fb3ce90fd08a857abd965e26} 
+\index{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$@{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$}!set\_@{set\_}}
+\index{set\_@{set\_}!crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$@{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$}}
+\doxysubsubsection{\texorpdfstring{set\_()}{set\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Func , typename... Args\+Wrapped$>$ \\
+template$<$typename... Args$>$ \\
+void \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::\+Wrapped}}$<$ Func, Args\+Wrapped $>$\+::set\+\_\+ (\begin{DoxyParamCaption}\item[{Func}]{f,  }\item[{typename std\+::enable\+\_\+if$<$!std\+::is\+\_\+same$<$ typename std\+::tuple\+\_\+element$<$ 0, std\+::tuple$<$ Args..., void $>$ $>$\+::type, const \mbox{\hyperlink{structcrow_1_1request}{request}} \& $>$\+::value, int $>$\+::type}]{ = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_ab8030d2b00c5a3f90c269423e1d26efe}\label{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_ab8030d2b00c5a3f90c269423e1d26efe} 
+\index{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$@{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$}!handler\_@{handler\_}}
+\index{handler\_@{handler\_}!crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$@{crow::detail::routing\_handler\_call\_helper::Wrapped$<$ Func, ArgsWrapped $>$}}
+\doxysubsubsection{\texorpdfstring{handler\_}{handler\_}}
+{\footnotesize\ttfamily template$<$typename Func , typename... Args\+Wrapped$>$ \\
+\mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped_1_1handler__type__helper}{handler\+\_\+type\+\_\+helper}}$<$Args\+Wrapped...$>$\+::type \mbox{\hyperlink{structcrow_1_1detail_1_1routing__handler__call__helper_1_1_wrapped}{crow\+::detail\+::routing\+\_\+handler\+\_\+call\+\_\+helper\+::\+Wrapped}}$<$ Func, Args\+Wrapped $>$\+::handler\+\_\+}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{crow__all_8h}{crow\+\_\+all.\+h}}\end{DoxyCompactItemize}

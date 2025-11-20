@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>transaction team: crow::detail::task_timer Class Reference</title>
+<title>My Project: crow::detail::task_timer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">transaction team
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -71,13 +71,16 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>crow</b></li><li class="navelem"><b>detail</b></li><li class="navelem"><a class="el" href="classcrow_1_1detail_1_1task__timer.html">task_timer</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecrow.html">crow</a></li><li class="navelem"><a class="el" href="namespacecrow_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classcrow_1_1detail_1_1task__timer.html">task_timer</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classcrow_1_1detail_1_1task__timer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">crow::detail::task_timer Class Reference</div></div>
 </div><!--header-->
@@ -90,38 +93,263 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a3d26d472f56d5085b08e3045585618f1" id="r_a3d26d472f56d5085b08e3045585618f1"><td class="memItemLeft" align="right" valign="top"><a id="a3d26d472f56d5085b08e3045585618f1" name="a3d26d472f56d5085b08e3045585618f1"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>task_type</b> = std::function&lt;void()&gt;</td></tr>
+<tr class="memitem:a3d26d472f56d5085b08e3045585618f1" id="r_a3d26d472f56d5085b08e3045585618f1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d26d472f56d5085b08e3045585618f1">task_type</a> = std::function&lt;void()&gt;</td></tr>
 <tr class="separator:a3d26d472f56d5085b08e3045585618f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab902a1634760b439ab748d1cb0af56a" id="r_aab902a1634760b439ab748d1cb0af56a"><td class="memItemLeft" align="right" valign="top"><a id="aab902a1634760b439ab748d1cb0af56a" name="aab902a1634760b439ab748d1cb0af56a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>identifier_type</b> = size_t</td></tr>
+<tr class="memitem:aab902a1634760b439ab748d1cb0af56a" id="r_aab902a1634760b439ab748d1cb0af56a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab902a1634760b439ab748d1cb0af56a">identifier_type</a> = size_t</td></tr>
 <tr class="separator:aab902a1634760b439ab748d1cb0af56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a25715a0b6a6fae2d87c3aaef1d9387be" id="r_a25715a0b6a6fae2d87c3aaef1d9387be"><td class="memItemLeft" align="right" valign="top"><a id="a25715a0b6a6fae2d87c3aaef1d9387be" name="a25715a0b6a6fae2d87c3aaef1d9387be"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>task_timer</b> (asio::io_service &amp;io_service)</td></tr>
+<tr class="memitem:a25715a0b6a6fae2d87c3aaef1d9387be" id="r_a25715a0b6a6fae2d87c3aaef1d9387be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25715a0b6a6fae2d87c3aaef1d9387be">task_timer</a> (asio::io_service &amp;io_service)</td></tr>
 <tr class="separator:a25715a0b6a6fae2d87c3aaef1d9387be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05b9d2725c0992aace3c50c942d56e92" id="r_a05b9d2725c0992aace3c50c942d56e92"><td class="memItemLeft" align="right" valign="top"><a id="a05b9d2725c0992aace3c50c942d56e92" name="a05b9d2725c0992aace3c50c942d56e92"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cancel</b> (identifier_type id)</td></tr>
+<tr class="memitem:aea48cde928f27e3ff011ecd6c8387e99" id="r_aea48cde928f27e3ff011ecd6c8387e99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea48cde928f27e3ff011ecd6c8387e99">~task_timer</a> ()</td></tr>
+<tr class="separator:aea48cde928f27e3ff011ecd6c8387e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b9d2725c0992aace3c50c942d56e92" id="r_a05b9d2725c0992aace3c50c942d56e92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05b9d2725c0992aace3c50c942d56e92">cancel</a> (<a class="el" href="#aab902a1634760b439ab748d1cb0af56a">identifier_type</a> id)</td></tr>
 <tr class="separator:a05b9d2725c0992aace3c50c942d56e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1a35eb9b85887368b65e01c07d3c91c" id="r_ac1a35eb9b85887368b65e01c07d3c91c"><td class="memItemLeft" align="right" valign="top">identifier_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1a35eb9b85887368b65e01c07d3c91c">schedule</a> (const task_type &amp;task)</td></tr>
+<tr class="memitem:ac1a35eb9b85887368b65e01c07d3c91c" id="r_ac1a35eb9b85887368b65e01c07d3c91c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aab902a1634760b439ab748d1cb0af56a">identifier_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1a35eb9b85887368b65e01c07d3c91c">schedule</a> (const <a class="el" href="#a3d26d472f56d5085b08e3045585618f1">task_type</a> &amp;task)</td></tr>
 <tr class="memdesc:ac1a35eb9b85887368b65e01c07d3c91c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule the given task to be executed after the default amount of ticks.  <br /></td></tr>
 <tr class="separator:ac1a35eb9b85887368b65e01c07d3c91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a777c073f4e895c638d2cbbf6a27ad1fa" id="r_a777c073f4e895c638d2cbbf6a27ad1fa"><td class="memItemLeft" align="right" valign="top">identifier_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a777c073f4e895c638d2cbbf6a27ad1fa">schedule</a> (const task_type &amp;task, std::uint8_t timeout)</td></tr>
+<tr class="memitem:a777c073f4e895c638d2cbbf6a27ad1fa" id="r_a777c073f4e895c638d2cbbf6a27ad1fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aab902a1634760b439ab748d1cb0af56a">identifier_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a777c073f4e895c638d2cbbf6a27ad1fa">schedule</a> (const <a class="el" href="#a3d26d472f56d5085b08e3045585618f1">task_type</a> &amp;task, std::uint8_t timeout)</td></tr>
 <tr class="memdesc:a777c073f4e895c638d2cbbf6a27ad1fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule the given task to be executed after the given time.  <br /></td></tr>
 <tr class="separator:a777c073f4e895c638d2cbbf6a27ad1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa67cab7afc1646a4127b0c6c97e5f5ea" id="r_aa67cab7afc1646a4127b0c6c97e5f5ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa67cab7afc1646a4127b0c6c97e5f5ea">set_default_timeout</a> (std::uint8_t timeout)</td></tr>
 <tr class="memdesc:aa67cab7afc1646a4127b0c6c97e5f5ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the default timeout for this <a class="el" href="classcrow_1_1detail_1_1task__timer.html" title="A class for scheduling functions to be called after a specific amount of ticks. A tick is equal to 1 ...">task_timer</a> instance. (Default: 5)  <br /></td></tr>
 <tr class="separator:aa67cab7afc1646a4127b0c6c97e5f5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae11e1259251e562ea3be457457b3b287" id="r_ae11e1259251e562ea3be457457b3b287"><td class="memItemLeft" align="right" valign="top"><a id="ae11e1259251e562ea3be457457b3b287" name="ae11e1259251e562ea3be457457b3b287"></a>
-std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_default_timeout</b> () const</td></tr>
-<tr class="memdesc:ae11e1259251e562ea3be457457b3b287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default timeout. (Default: 5) <br /></td></tr>
+<tr class="memitem:ae11e1259251e562ea3be457457b3b287" id="r_ae11e1259251e562ea3be457457b3b287"><td class="memItemLeft" align="right" valign="top">std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae11e1259251e562ea3be457457b3b287">get_default_timeout</a> () const</td></tr>
+<tr class="memdesc:ae11e1259251e562ea3be457457b3b287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default timeout. (Default: 5)  <br /></td></tr>
 <tr class="separator:ae11e1259251e562ea3be457457b3b287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:aa06d4bf46f16b8b300778e0eb2dcceb8" id="r_aa06d4bf46f16b8b300778e0eb2dcceb8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa06d4bf46f16b8b300778e0eb2dcceb8">clock_type</a> = std::chrono::steady_clock</td></tr>
+<tr class="separator:aa06d4bf46f16b8b300778e0eb2dcceb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf87f8da0dbf8b213c285eb9d8450847" id="r_abf87f8da0dbf8b213c285eb9d8450847"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf87f8da0dbf8b213c285eb9d8450847">time_type</a> = clock_type::time_point</td></tr>
+<tr class="separator:abf87f8da0dbf8b213c285eb9d8450847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aa2d21738492c5a9b9c4c724a4045be0b" id="r_aa2d21738492c5a9b9c4c724a4045be0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2d21738492c5a9b9c4c724a4045be0b">process_tasks</a> ()</td></tr>
+<tr class="separator:aa2d21738492c5a9b9c4c724a4045be0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa395fbec3aa1a8d305a8c9e32e5dea81" id="r_aa395fbec3aa1a8d305a8c9e32e5dea81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa395fbec3aa1a8d305a8c9e32e5dea81">tick_handler</a> (const asio::error_code &amp;ec)</td></tr>
+<tr class="separator:aa395fbec3aa1a8d305a8c9e32e5dea81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a61024594a0de838c48b0bba78d9cafb1" id="r_a61024594a0de838c48b0bba78d9cafb1"><td class="memItemLeft" align="right" valign="top">std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61024594a0de838c48b0bba78d9cafb1">default_timeout_</a> {5}</td></tr>
+<tr class="separator:a61024594a0de838c48b0bba78d9cafb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a20a91b7315e872fe61c84ef96709f9" id="r_a0a20a91b7315e872fe61c84ef96709f9"><td class="memItemLeft" align="right" valign="top">asio::io_service &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a20a91b7315e872fe61c84ef96709f9">io_service_</a></td></tr>
+<tr class="separator:a0a20a91b7315e872fe61c84ef96709f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a868e4e3e492692c6817d68f7c509f229" id="r_a868e4e3e492692c6817d68f7c509f229"><td class="memItemLeft" align="right" valign="top">asio::basic_waitable_timer&lt; <a class="el" href="#aa06d4bf46f16b8b300778e0eb2dcceb8">clock_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a868e4e3e492692c6817d68f7c509f229">timer_</a></td></tr>
+<tr class="separator:a868e4e3e492692c6817d68f7c509f229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e14842e34ba47aa752c58a8a809332f" id="r_a7e14842e34ba47aa752c58a8a809332f"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#aab902a1634760b439ab748d1cb0af56a">identifier_type</a>, std::pair&lt; <a class="el" href="#abf87f8da0dbf8b213c285eb9d8450847">time_type</a>, <a class="el" href="#a3d26d472f56d5085b08e3045585618f1">task_type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e14842e34ba47aa752c58a8a809332f">tasks_</a></td></tr>
+<tr class="separator:a7e14842e34ba47aa752c58a8a809332f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c3de8abb3c5f0bfc939aafe668a7f9f" id="r_a3c3de8abb3c5f0bfc939aafe668a7f9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aab902a1634760b439ab748d1cb0af56a">identifier_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c3de8abb3c5f0bfc939aafe668a7f9f">highest_id_</a> {0}</td></tr>
+<tr class="separator:a3c3de8abb3c5f0bfc939aafe668a7f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for scheduling functions to be called after a specific amount of ticks. A tick is equal to 1 second. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aa06d4bf46f16b8b300778e0eb2dcceb8" name="aa06d4bf46f16b8b300778e0eb2dcceb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa06d4bf46f16b8b300778e0eb2dcceb8">&#9670;&#160;</a></span>clock_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#aa06d4bf46f16b8b300778e0eb2dcceb8">crow::detail::task_timer::clock_type</a> = std::chrono::steady_clock</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab902a1634760b439ab748d1cb0af56a" name="aab902a1634760b439ab748d1cb0af56a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab902a1634760b439ab748d1cb0af56a">&#9670;&#160;</a></span>identifier_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#aab902a1634760b439ab748d1cb0af56a">crow::detail::task_timer::identifier_type</a> = size_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d26d472f56d5085b08e3045585618f1" name="a3d26d472f56d5085b08e3045585618f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d26d472f56d5085b08e3045585618f1">&#9670;&#160;</a></span>task_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a3d26d472f56d5085b08e3045585618f1">crow::detail::task_timer::task_type</a> = std::function&lt;void()&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf87f8da0dbf8b213c285eb9d8450847" name="abf87f8da0dbf8b213c285eb9d8450847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf87f8da0dbf8b213c285eb9d8450847">&#9670;&#160;</a></span>time_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#abf87f8da0dbf8b213c285eb9d8450847">crow::detail::task_timer::time_type</a> = clock_type::time_point</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a25715a0b6a6fae2d87c3aaef1d9387be" name="a25715a0b6a6fae2d87c3aaef1d9387be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25715a0b6a6fae2d87c3aaef1d9387be">&#9670;&#160;</a></span>task_timer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">crow::detail::task_timer::task_timer </td>
+          <td>(</td>
+          <td class="paramtype">asio::io_service &amp;</td>          <td class="paramname"><span class="paramname"><em>io_service</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea48cde928f27e3ff011ecd6c8387e99" name="aea48cde928f27e3ff011ecd6c8387e99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea48cde928f27e3ff011ecd6c8387e99">&#9670;&#160;</a></span>~task_timer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">crow::detail::task_timer::~task_timer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a05b9d2725c0992aace3c50c942d56e92" name="a05b9d2725c0992aace3c50c942d56e92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b9d2725c0992aace3c50c942d56e92">&#9670;&#160;</a></span>cancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void crow::detail::task_timer::cancel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aab902a1634760b439ab748d1cb0af56a">identifier_type</a></td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae11e1259251e562ea3be457457b3b287" name="ae11e1259251e562ea3be457457b3b287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11e1259251e562ea3be457457b3b287">&#9670;&#160;</a></span>get_default_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint8_t crow::detail::task_timer::get_default_timeout </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the default timeout. (Default: 5) </p>
+
+</div>
+</div>
+<a id="aa2d21738492c5a9b9c4c724a4045be0b" name="aa2d21738492c5a9b9c4c724a4045be0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2d21738492c5a9b9c4c724a4045be0b">&#9670;&#160;</a></span>process_tasks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void crow::detail::task_timer::process_tasks </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac1a35eb9b85887368b65e01c07d3c91c" name="ac1a35eb9b85887368b65e01c07d3c91c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1a35eb9b85887368b65e01c07d3c91c">&#9670;&#160;</a></span>schedule() <span class="overload">[1/2]</span></h2>
 
@@ -132,9 +360,9 @@ std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_default_t
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">identifier_type crow::detail::task_timer::schedule </td>
+          <td class="memname"><a class="el" href="#aab902a1634760b439ab748d1cb0af56a">identifier_type</a> crow::detail::task_timer::schedule </td>
           <td>(</td>
-          <td class="paramtype">const task_type &amp;</td>          <td class="paramname"><span class="paramname"><em>task</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="#a3d26d472f56d5085b08e3045585618f1">task_type</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>task</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -160,9 +388,9 @@ std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_default_t
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">identifier_type crow::detail::task_timer::schedule </td>
+          <td class="memname"><a class="el" href="#aab902a1634760b439ab748d1cb0af56a">identifier_type</a> crow::detail::task_timer::schedule </td>
           <td>(</td>
-          <td class="paramtype">const task_type &amp;</td>          <td class="paramname"><span class="paramname"><em>task</em>, </span></td>
+          <td class="paramtype">const <a class="el" href="#a3d26d472f56d5085b08e3045585618f1">task_type</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>task</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -218,6 +446,142 @@ std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_default_t
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aa395fbec3aa1a8d305a8c9e32e5dea81" name="aa395fbec3aa1a8d305a8c9e32e5dea81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa395fbec3aa1a8d305a8c9e32e5dea81">&#9670;&#160;</a></span>tick_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void crow::detail::task_timer::tick_handler </td>
+          <td>(</td>
+          <td class="paramtype">const asio::error_code &amp;</td>          <td class="paramname"><span class="paramname"><em>ec</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a61024594a0de838c48b0bba78d9cafb1" name="a61024594a0de838c48b0bba78d9cafb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61024594a0de838c48b0bba78d9cafb1">&#9670;&#160;</a></span>default_timeout_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint8_t crow::detail::task_timer::default_timeout_ {5}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c3de8abb3c5f0bfc939aafe668a7f9f" name="a3c3de8abb3c5f0bfc939aafe668a7f9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c3de8abb3c5f0bfc939aafe668a7f9f">&#9670;&#160;</a></span>highest_id_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aab902a1634760b439ab748d1cb0af56a">identifier_type</a> crow::detail::task_timer::highest_id_ {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a20a91b7315e872fe61c84ef96709f9" name="a0a20a91b7315e872fe61c84ef96709f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a20a91b7315e872fe61c84ef96709f9">&#9670;&#160;</a></span>io_service_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">asio::io_service&amp; crow::detail::task_timer::io_service_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e14842e34ba47aa752c58a8a809332f" name="a7e14842e34ba47aa752c58a8a809332f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e14842e34ba47aa752c58a8a809332f">&#9670;&#160;</a></span>tasks_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="#aab902a1634760b439ab748d1cb0af56a">identifier_type</a>, std::pair&lt;<a class="el" href="#abf87f8da0dbf8b213c285eb9d8450847">time_type</a>, <a class="el" href="#a3d26d472f56d5085b08e3045585618f1">task_type</a>&gt; &gt; crow::detail::task_timer::tasks_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a868e4e3e492692c6817d68f7c509f229" name="a868e4e3e492692c6817d68f7c509f229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a868e4e3e492692c6817d68f7c509f229">&#9670;&#160;</a></span>timer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">asio::basic_waitable_timer&lt;<a class="el" href="#aa06d4bf46f16b8b300778e0eb2dcceb8">clock_type</a>&gt; crow::detail::task_timer::timer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

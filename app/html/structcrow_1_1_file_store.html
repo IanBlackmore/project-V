@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>transaction team: crow::FileStore Struct Reference</title>
+<title>My Project: crow::FileStore Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">transaction team
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>crow</b></li><li class="navelem"><a class="el" href="structcrow_1_1_file_store.html">FileStore</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecrow.html">crow</a></li><li class="navelem"><a class="el" href="structcrow_1_1_file_store.html">FileStore</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -82,46 +82,317 @@ $(function() {
   <div class="headertitle"><div class="title">crow::FileStore Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="crow__all_8h_source.html">crow_all.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abb247faa5b37800faf1681c6135873cb" id="r_abb247faa5b37800faf1681c6135873cb"><td class="memItemLeft" align="right" valign="top"><a id="abb247faa5b37800faf1681c6135873cb" name="abb247faa5b37800faf1681c6135873cb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FileStore</b> (const std::string &amp;folder, uint64_t expiration_seconds=30 *24 *60 *60)</td></tr>
+<tr class="memitem:abb247faa5b37800faf1681c6135873cb" id="r_abb247faa5b37800faf1681c6135873cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb247faa5b37800faf1681c6135873cb">FileStore</a> (const std::string &amp;folder, uint64_t expiration_seconds=30 *24 *60 *60)</td></tr>
 <tr class="separator:abb247faa5b37800faf1681c6135873cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd0f1c1384a68727e76fd2fc2b57f08e" id="r_abd0f1c1384a68727e76fd2fc2b57f08e"><td class="memItemLeft" align="right" valign="top"><a id="abd0f1c1384a68727e76fd2fc2b57f08e" name="abd0f1c1384a68727e76fd2fc2b57f08e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handle_expired</b> ()</td></tr>
+<tr class="memitem:a25d8848e78748954f0fc91f6a5b9b051" id="r_a25d8848e78748954f0fc91f6a5b9b051"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25d8848e78748954f0fc91f6a5b9b051">~FileStore</a> ()</td></tr>
+<tr class="separator:a25d8848e78748954f0fc91f6a5b9b051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd0f1c1384a68727e76fd2fc2b57f08e" id="r_abd0f1c1384a68727e76fd2fc2b57f08e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd0f1c1384a68727e76fd2fc2b57f08e">handle_expired</a> ()</td></tr>
 <tr class="separator:abd0f1c1384a68727e76fd2fc2b57f08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeecb64930be79a90d445807c2985240f" id="r_aeecb64930be79a90d445807c2985240f"><td class="memItemLeft" align="right" valign="top"><a id="aeecb64930be79a90d445807c2985240f" name="aeecb64930be79a90d445807c2985240f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (<a class="el" href="structcrow_1_1session_1_1_cached_session.html">session::CachedSession</a> &amp;cn)</td></tr>
+<tr class="memitem:aeecb64930be79a90d445807c2985240f" id="r_aeecb64930be79a90d445807c2985240f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeecb64930be79a90d445807c2985240f">load</a> (<a class="el" href="structcrow_1_1session_1_1_cached_session.html">session::CachedSession</a> &amp;cn)</td></tr>
 <tr class="separator:aeecb64930be79a90d445807c2985240f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88d9dae30b9a1c86440c7b783a1b1802" id="r_a88d9dae30b9a1c86440c7b783a1b1802"><td class="memItemLeft" align="right" valign="top"><a id="a88d9dae30b9a1c86440c7b783a1b1802" name="a88d9dae30b9a1c86440c7b783a1b1802"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> (<a class="el" href="structcrow_1_1session_1_1_cached_session.html">session::CachedSession</a> &amp;cn)</td></tr>
+<tr class="memitem:a88d9dae30b9a1c86440c7b783a1b1802" id="r_a88d9dae30b9a1c86440c7b783a1b1802"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88d9dae30b9a1c86440c7b783a1b1802">save</a> (<a class="el" href="structcrow_1_1session_1_1_cached_session.html">session::CachedSession</a> &amp;cn)</td></tr>
 <tr class="separator:a88d9dae30b9a1c86440c7b783a1b1802"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12a26b21bf86b6004419255ea2a19356" id="r_a12a26b21bf86b6004419255ea2a19356"><td class="memItemLeft" align="right" valign="top"><a id="a12a26b21bf86b6004419255ea2a19356" name="a12a26b21bf86b6004419255ea2a19356"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_filename</b> (const std::string &amp;key, bool suffix=true)</td></tr>
+<tr class="memitem:a12a26b21bf86b6004419255ea2a19356" id="r_a12a26b21bf86b6004419255ea2a19356"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12a26b21bf86b6004419255ea2a19356">get_filename</a> (const std::string &amp;key, bool suffix=true)</td></tr>
 <tr class="separator:a12a26b21bf86b6004419255ea2a19356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a157b782b07d7cc33ca1df1a36dc7f123" id="r_a157b782b07d7cc33ca1df1a36dc7f123"><td class="memItemLeft" align="right" valign="top"><a id="a157b782b07d7cc33ca1df1a36dc7f123" name="a157b782b07d7cc33ca1df1a36dc7f123"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>contains</b> (const std::string &amp;key)</td></tr>
+<tr class="memitem:a157b782b07d7cc33ca1df1a36dc7f123" id="r_a157b782b07d7cc33ca1df1a36dc7f123"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a157b782b07d7cc33ca1df1a36dc7f123">contains</a> (const std::string &amp;key)</td></tr>
 <tr class="separator:a157b782b07d7cc33ca1df1a36dc7f123"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4d0a57ad03688b86a9917b8dc85afc6" id="r_aa4d0a57ad03688b86a9917b8dc85afc6"><td class="memItemLeft" align="right" valign="top"><a id="aa4d0a57ad03688b86a9917b8dc85afc6" name="aa4d0a57ad03688b86a9917b8dc85afc6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>evict</b> (const std::string &amp;key)</td></tr>
+<tr class="memitem:aa4d0a57ad03688b86a9917b8dc85afc6" id="r_aa4d0a57ad03688b86a9917b8dc85afc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4d0a57ad03688b86a9917b8dc85afc6">evict</a> (const std::string &amp;key)</td></tr>
 <tr class="separator:aa4d0a57ad03688b86a9917b8dc85afc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2af99efb2b255865b3165e067ff62c2" id="r_ad2af99efb2b255865b3165e067ff62c2"><td class="memItemLeft" align="right" valign="top"><a id="ad2af99efb2b255865b3165e067ff62c2" name="ad2af99efb2b255865b3165e067ff62c2"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>chrono_time</b> () const</td></tr>
+<tr class="memitem:ad2af99efb2b255865b3165e067ff62c2" id="r_ad2af99efb2b255865b3165e067ff62c2"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2af99efb2b255865b3165e067ff62c2">chrono_time</a> () const</td></tr>
 <tr class="separator:ad2af99efb2b255865b3165e067ff62c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6472dc22b56e7c677f6a63f1f44da64f" id="r_a6472dc22b56e7c677f6a63f1f44da64f"><td class="memItemLeft" align="right" valign="top"><a id="a6472dc22b56e7c677f6a63f1f44da64f" name="a6472dc22b56e7c677f6a63f1f44da64f"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>path_</b></td></tr>
+<tr class="memitem:a6472dc22b56e7c677f6a63f1f44da64f" id="r_a6472dc22b56e7c677f6a63f1f44da64f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6472dc22b56e7c677f6a63f1f44da64f">path_</a></td></tr>
 <tr class="separator:a6472dc22b56e7c677f6a63f1f44da64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78dabec9a902dbdb16ab320f91ee0d6f" id="r_a78dabec9a902dbdb16ab320f91ee0d6f"><td class="memItemLeft" align="right" valign="top"><a id="a78dabec9a902dbdb16ab320f91ee0d6f" name="a78dabec9a902dbdb16ab320f91ee0d6f"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>expiration_seconds_</b></td></tr>
+<tr class="memitem:a78dabec9a902dbdb16ab320f91ee0d6f" id="r_a78dabec9a902dbdb16ab320f91ee0d6f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78dabec9a902dbdb16ab320f91ee0d6f">expiration_seconds_</a></td></tr>
 <tr class="separator:a78dabec9a902dbdb16ab320f91ee0d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86339c643e5d6b1fb36b4973a7efc9bf" id="r_a86339c643e5d6b1fb36b4973a7efc9bf"><td class="memItemLeft" align="right" valign="top"><a id="a86339c643e5d6b1fb36b4973a7efc9bf" name="a86339c643e5d6b1fb36b4973a7efc9bf"></a>
-<a class="el" href="structcrow_1_1session_1_1_expiration_tracker.html">session::ExpirationTracker</a>&#160;</td><td class="memItemRight" valign="bottom"><b>expirations_</b></td></tr>
+<tr class="memitem:a86339c643e5d6b1fb36b4973a7efc9bf" id="r_a86339c643e5d6b1fb36b4973a7efc9bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrow_1_1session_1_1_expiration_tracker.html">session::ExpirationTracker</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86339c643e5d6b1fb36b4973a7efc9bf">expirations_</a></td></tr>
 <tr class="separator:a86339c643e5d6b1fb36b4973a7efc9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="abb247faa5b37800faf1681c6135873cb" name="abb247faa5b37800faf1681c6135873cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb247faa5b37800faf1681c6135873cb">&#9670;&#160;</a></span>FileStore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">crow::FileStore::FileStore </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>folder</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>expiration_seconds</em><span class="paramdefsep"> = </span><span class="paramdefval">30&#160;*&#160;24&#160;*&#160;60&#160;*&#160;60</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25d8848e78748954f0fc91f6a5b9b051" name="a25d8848e78748954f0fc91f6a5b9b051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25d8848e78748954f0fc91f6a5b9b051">&#9670;&#160;</a></span>~FileStore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">crow::FileStore::~FileStore </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad2af99efb2b255865b3165e067ff62c2" name="ad2af99efb2b255865b3165e067ff62c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2af99efb2b255865b3165e067ff62c2">&#9670;&#160;</a></span>chrono_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t crow::FileStore::chrono_time </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a157b782b07d7cc33ca1df1a36dc7f123" name="a157b782b07d7cc33ca1df1a36dc7f123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a157b782b07d7cc33ca1df1a36dc7f123">&#9670;&#160;</a></span>contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool crow::FileStore::contains </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4d0a57ad03688b86a9917b8dc85afc6" name="aa4d0a57ad03688b86a9917b8dc85afc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4d0a57ad03688b86a9917b8dc85afc6">&#9670;&#160;</a></span>evict()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void crow::FileStore::evict </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12a26b21bf86b6004419255ea2a19356" name="a12a26b21bf86b6004419255ea2a19356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12a26b21bf86b6004419255ea2a19356">&#9670;&#160;</a></span>get_filename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string crow::FileStore::get_filename </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>suffix</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd0f1c1384a68727e76fd2fc2b57f08e" name="abd0f1c1384a68727e76fd2fc2b57f08e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd0f1c1384a68727e76fd2fc2b57f08e">&#9670;&#160;</a></span>handle_expired()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void crow::FileStore::handle_expired </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeecb64930be79a90d445807c2985240f" name="aeecb64930be79a90d445807c2985240f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeecb64930be79a90d445807c2985240f">&#9670;&#160;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void crow::FileStore::load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1session_1_1_cached_session.html">session::CachedSession</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>cn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88d9dae30b9a1c86440c7b783a1b1802" name="a88d9dae30b9a1c86440c7b783a1b1802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88d9dae30b9a1c86440c7b783a1b1802">&#9670;&#160;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void crow::FileStore::save </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1session_1_1_cached_session.html">session::CachedSession</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>cn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a78dabec9a902dbdb16ab320f91ee0d6f" name="a78dabec9a902dbdb16ab320f91ee0d6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78dabec9a902dbdb16ab320f91ee0d6f">&#9670;&#160;</a></span>expiration_seconds_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t crow::FileStore::expiration_seconds_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86339c643e5d6b1fb36b4973a7efc9bf" name="a86339c643e5d6b1fb36b4973a7efc9bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86339c643e5d6b1fb36b4973a7efc9bf">&#9670;&#160;</a></span>expirations_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcrow_1_1session_1_1_expiration_tracker.html">session::ExpirationTracker</a> crow::FileStore::expirations_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6472dc22b56e7c677f6a63f1f44da64f" name="a6472dc22b56e7c677f6a63f1f44da64f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6472dc22b56e7c677f6a63f1f44da64f">&#9670;&#160;</a></span>path_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string crow::FileStore::path_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="crow__all_8h_source.html">crow_all.h</a></li>
 </ul>

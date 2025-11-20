@@ -1,0 +1,783 @@
+\doxysection{crow\+::Crow\texorpdfstring{$<$}{<} Middlewares \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classcrow_1_1_crow}{}\label{classcrow_1_1_crow}\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+
+
+The main server application.  
+
+
+
+
+{\ttfamily \#include $<$crow\+\_\+all.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} = \mbox{\hyperlink{classcrow_1_1_crow}{Crow}}
+\begin{DoxyCompactList}\small\item\em This crow application. \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{classcrow_1_1_crow_a5df810d2619e31c2f024cc4e45898997}{server\+\_\+t}} = \mbox{\hyperlink{classcrow_1_1_server}{Server}}$<$\mbox{\hyperlink{classcrow_1_1_crow}{Crow}}, \mbox{\hyperlink{structcrow_1_1_socket_adaptor}{Socket\+Adaptor}}, Middlewares...$>$
+\begin{DoxyCompactList}\small\item\em The HTTP server. \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{classcrow_1_1_crow_a980ca09ad971f8915a3575d9a94fe78c}{context\+\_\+t}} = \mbox{\hyperlink{structcrow_1_1detail_1_1context}{detail\+::context}}$<$Middlewares...$>$
+\item 
+using \mbox{\hyperlink{classcrow_1_1_crow_aa78aacbc64349155aab3f81d32715189}{mw\+\_\+container\+\_\+t}} = std\+::tuple$<$Middlewares...$>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcrow_1_1_crow_a7a6ce30b00d6d2beb901ffbb3160c137}{Crow}} ()
+\item 
+{\footnotesize template$<$typename... Ts$>$ }\\\mbox{\hyperlink{classcrow_1_1_crow_abb69a7bf5d4a791a398c838d37086d94}{Crow}} (Ts \&\&... ts)
+\begin{DoxyCompactList}\small\item\em Construct \doxylink{classcrow_1_1_crow}{Crow} with a subset of middleware. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Adaptor $>$ }\\void \mbox{\hyperlink{classcrow_1_1_crow_a6e435bf5275735effd32647772bdbd04}{handle\+\_\+upgrade}} (const \mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res, Adaptor \&\&adaptor)
+\begin{DoxyCompactList}\small\item\em Process an Upgrade request. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structcrow_1_1routing__handle__result}{routing\+\_\+handle\+\_\+result}} $>$ \mbox{\hyperlink{classcrow_1_1_crow_ad5e54dd12437653844565aa7c6295436}{handle\+\_\+initial}} (\mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res)
+\begin{DoxyCompactList}\small\item\em Process only the method and URL of a request and provide a route (or an error response) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcrow_1_1_crow_a866cb219bb77c19326f39f431424e1c7}{handle}} (\mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structcrow_1_1routing__handle__result}{routing\+\_\+handle\+\_\+result}} $>$ \&found)
+\begin{DoxyCompactList}\small\item\em Process the fully parsed request and generate a response for it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcrow_1_1_crow_accf00be55c273297b758fa243f107018}{handle\+\_\+full}} (\mbox{\hyperlink{structcrow_1_1request}{request}} \&req, \mbox{\hyperlink{structcrow_1_1response}{response}} \&res)
+\begin{DoxyCompactList}\small\item\em Process a fully parsed request from start to finish (primarily used for debugging) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcrow_1_1_dynamic_rule}{Dynamic\+Rule}} \& \mbox{\hyperlink{classcrow_1_1_crow_a9438785f765882ced9b5273547803532}{route\+\_\+dynamic}} (std\+::string \&\&rule)
+\begin{DoxyCompactList}\small\item\em Create a dynamic route using a rule ({\bfseries{Use CROW\+\_\+\+ROUTE instead}}) \end{DoxyCompactList}\item 
+{\footnotesize template$<$uint64\+\_\+t Tag$>$ }\\auto \mbox{\hyperlink{classcrow_1_1_crow_af221cb25926e5dabc2da21a7a1c9713c}{route}} (std\+::string \&\&rule) -\/$>$ typename std\+::result\+\_\+of$<$ decltype(\&\mbox{\hyperlink{classcrow_1_1_router_a33600f2580d82f2f7d1a0f0e3f649650}{Router\+::new\+\_\+rule\+\_\+tagged}}$<$ Tag $>$)(\mbox{\hyperlink{classcrow_1_1_router}{Router}}, std\+::string \&\&)$>$\+::type
+\begin{DoxyCompactList}\small\item\em Create a route using a rule ({\bfseries{Use CROW\+\_\+\+ROUTE instead}}) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcrow_1_1_catchall_rule}{Catchall\+Rule}} \& \mbox{\hyperlink{classcrow_1_1_crow_abfb285bf01d12f28eabcc716423effe4}{catchall\+\_\+route}} ()
+\begin{DoxyCompactList}\small\item\em Create a route for any requests without a proper route ({\bfseries{Use CROW\+\_\+\+CATCHALL\+\_\+\+ROUTE instead}}) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow_ac30b84b54096d1bfe517a9cf81d65fc7}{websocket\+\_\+max\+\_\+payload}} (uint64\+\_\+t max\+\_\+payload)
+\begin{DoxyCompactList}\small\item\em Set the default max payload size for websockets. \end{DoxyCompactList}\item 
+uint64\+\_\+t \mbox{\hyperlink{classcrow_1_1_crow_a391a488c01ce53c0ccfd502c7ad15640}{websocket\+\_\+max\+\_\+payload}} ()
+\begin{DoxyCompactList}\small\item\em Get the default max payload size for websockets. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow_aff9ad0efd347b793bbab0d50f6618ab8}{signal\+\_\+clear}} ()
+\item 
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow_a8adb106a81a33368ca36d70f0af68682}{signal\+\_\+add}} (int signal\+\_\+number)
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classcrow_1_1_crow_a6941254ac64a249b5555a80622e1ba77}{signals}} ()
+\item 
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow_a97cc98d99417f21f757fa09e1bf1f0ca}{port}} (std\+::uint16\+\_\+t port)
+\begin{DoxyCompactList}\small\item\em Set the port that \doxylink{classcrow_1_1_crow}{Crow} will handle requests on. \end{DoxyCompactList}\item 
+std\+::uint16\+\_\+t \mbox{\hyperlink{classcrow_1_1_crow_a87d0e10ed791c6847d8b7dfff2369aae}{port}} ()
+\begin{DoxyCompactList}\small\item\em Get the port that \doxylink{classcrow_1_1_crow}{Crow} will handle requests on. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow_a1d69f60255f2bf1571d6570a6abb1552}{timeout}} (std\+::uint8\+\_\+t timeout)
+\begin{DoxyCompactList}\small\item\em Set the connection timeout in seconds (default is 5) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow_a5ee995b71b623f09998c19b8fdf03d71}{server\+\_\+name}} (std\+::string server\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Set the server name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow_ab12c2127972da09dbeb15c021d18d4f3}{bindaddr}} (std\+::string bindaddr)
+\begin{DoxyCompactList}\small\item\em The IP address that \doxylink{classcrow_1_1_crow}{Crow} will handle requests on (default is 0.\+0.\+0.\+0) \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classcrow_1_1_crow_a8c816534804e7bd351ca692005bf3343}{bindaddr}} ()
+\begin{DoxyCompactList}\small\item\em Get the address that \doxylink{classcrow_1_1_crow}{Crow} will handle requests on. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow_a7a6277aa9a88b2ecf301e98e8cbf9c33}{multithreaded}} ()
+\begin{DoxyCompactList}\small\item\em Run the server on multiple threads using all available threads. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow_aef4806351da08c271f1e0863e9c75b3e}{concurrency}} (std\+::uint16\+\_\+t concurrency)
+\begin{DoxyCompactList}\small\item\em Run the server on multiple threads using a specific number. \end{DoxyCompactList}\item 
+std\+::uint16\+\_\+t \mbox{\hyperlink{classcrow_1_1_crow_abd824d73fdd02ba810b8dd37e2900240}{concurrency}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of threads that server is using. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow_adaaea481094e3f4488569c991772d27f}{loglevel}} (\mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4}{Log\+Level}} level)
+\begin{DoxyCompactList}\small\item\em Set the server\textquotesingle{}s log level. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow_a058d8138c140c1073f0972c74cfa812b}{stream\+\_\+threshold}} (size\+\_\+t threshold)
+\begin{DoxyCompactList}\small\item\em Set the response body size (in bytes) beyond which \doxylink{classcrow_1_1_crow}{Crow} automatically streams responses (Default is 1MiB) \end{DoxyCompactList}\item 
+size\+\_\+t \& \mbox{\hyperlink{classcrow_1_1_crow_af35a53c39414aa79446690fea359e573}{stream\+\_\+threshold}} ()
+\begin{DoxyCompactList}\small\item\em Get the response body size (in bytes) beyond which \doxylink{classcrow_1_1_crow}{Crow} automatically streams responses. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow_afc5866a72f024bb6dfa9c4b61d7fe9f2}{register\+\_\+blueprint}} (\mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \&blueprint)
+\item 
+{\footnotesize template$<$typename Duration , typename Func $>$ }\\\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow_a7d5baf439ee8c85ad500cdb022bcd3a1}{tick}} (Duration d, Func f)
+\begin{DoxyCompactList}\small\item\em Set a custom duration and function to run on every tick. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcrow_1_1_crow_ab9a22c981e0afec0d55ee234683a6d38}{validate}} ()
+\begin{DoxyCompactList}\small\item\em A wrapper for {\ttfamily \doxylink{classcrow_1_1_crow_ab9a22c981e0afec0d55ee234683a6d38}{validate()}} in the router. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcrow_1_1_crow_a193d8b03f717234a841cd92f72c6b4b5}{run}} ()
+\begin{DoxyCompactList}\small\item\em Run the server. \end{DoxyCompactList}\item 
+std\+::future$<$ void $>$ \mbox{\hyperlink{classcrow_1_1_crow_afd29cf4e11557abfd7bce88b84af9b99}{run\+\_\+async}} ()
+\item 
+void \mbox{\hyperlink{classcrow_1_1_crow_a0266672657128919ab9a067d93f3868f}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Stop the server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcrow_1_1_crow_ad38f39dc7ba97b9f298390565a88125a}{add\+\_\+websocket}} (\mbox{\hyperlink{structcrow_1_1websocket_1_1connection}{crow\+::websocket\+::connection}} \texorpdfstring{$\ast$}{*}conn)
+\item 
+void \mbox{\hyperlink{classcrow_1_1_crow_a5305aba0aea70aa0e283c4ff8d78bbbf}{remove\+\_\+websocket}} (\mbox{\hyperlink{structcrow_1_1websocket_1_1connection}{crow\+::websocket\+::connection}} \texorpdfstring{$\ast$}{*}conn)
+\item 
+void \mbox{\hyperlink{classcrow_1_1_crow_a839c1e6f82d577308eb6f0d4948a4fbb}{debug\+\_\+print}} ()
+\begin{DoxyCompactList}\small\item\em Print the routing paths defined for each HTTP method. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename... Remain$>$ }\\\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow_a548c602b970e2856a9b828fa34de17f3}{ssl\+\_\+file}} (T \&\&, Remain \&\&...)
+\item 
+{\footnotesize template$<$typename T , typename... Remain$>$ }\\\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow_a7728615fcfb959222e5ca987516b0aa7}{ssl\+\_\+chainfile}} (T \&\&, Remain \&\&...)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow_a274d35c50c9737ab55ce53b2c44af5c9}{ssl}} (T \&\&)
+\item 
+bool \mbox{\hyperlink{classcrow_1_1_crow_ac804a73fa33d77a281c4609727ec1676}{ssl\+\_\+used}} () const
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::context \& \mbox{\hyperlink{classcrow_1_1_crow_add295abb1f4e32ceb64c8ed9d11f7b85}{get\+\_\+context}} (const \mbox{\hyperlink{structcrow_1_1request}{request}} \&req)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \& \mbox{\hyperlink{classcrow_1_1_crow_ac6a0c5b3660cc5807e4e2bb43107c89b}{get\+\_\+middleware}} ()
+\item 
+void \mbox{\hyperlink{classcrow_1_1_crow_a5e39821ccc9cbf8c6400fd86fc406c21}{wait\+\_\+for\+\_\+server\+\_\+start}} ()
+\begin{DoxyCompactList}\small\item\em Wait until the server has properly started. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Ts$>$ }\\std\+::tuple$<$ Middlewares... $>$ \mbox{\hyperlink{classcrow_1_1_crow_a27542e789b5106909f3e6876f3e96a26}{make\+\_\+middleware\+\_\+tuple}} (Ts \&\&... ts)
+\item 
+void \mbox{\hyperlink{classcrow_1_1_crow_a6bbe76405fff487a1913c7b5fccbbb81}{notify\+\_\+server\+\_\+start}} ()
+\begin{DoxyCompactList}\small\item\em Notify anything using {\ttfamily \doxylink{classcrow_1_1_crow_a5e39821ccc9cbf8c6400fd86fc406c21}{wait\+\_\+for\+\_\+server\+\_\+start()}} to proceed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::uint8\+\_\+t \mbox{\hyperlink{classcrow_1_1_crow_a00eb9ab7f051b536a09b6a81620bbe10}{timeout\+\_\+}} \{5\}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classcrow_1_1_crow_a4d29c04986c79d7673bdce43e622b318}{port\+\_\+}} = 80
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classcrow_1_1_crow_ad85be3c48e1c4bbcff2da1557969e7a1}{concurrency\+\_\+}} = 2
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classcrow_1_1_crow_a491022a697b577fed76b969372680b4f}{max\+\_\+payload\+\_\+}} \{UINT64\+\_\+\+MAX\}
+\item 
+bool \mbox{\hyperlink{classcrow_1_1_crow_a1999eafef329546dc756cdc6104fbcfa}{validated\+\_\+}} = false
+\item 
+std\+::string \mbox{\hyperlink{classcrow_1_1_crow_a4e0d308ef2ae95c29a301f3a6c554996}{server\+\_\+name\+\_\+}} = std\+::string("{}Crow/"{}) + VERSION
+\item 
+std\+::string \mbox{\hyperlink{classcrow_1_1_crow_a6ee0bf8953c7ebeac2f6d8d0779ccdd1}{bindaddr\+\_\+}} = "{}0.\+0.\+0.\+0"{}
+\item 
+size\+\_\+t \mbox{\hyperlink{classcrow_1_1_crow_a7b3ba1f746ca8200d90b5e8d2a63fdbf}{res\+\_\+stream\+\_\+threshold\+\_\+}} = 1048576
+\item 
+\mbox{\hyperlink{classcrow_1_1_router}{Router}} \mbox{\hyperlink{classcrow_1_1_crow_a3d642b9c4714dbde18f2c3de961b59db}{router\+\_\+}}
+\item 
+std\+::chrono\+::milliseconds \mbox{\hyperlink{classcrow_1_1_crow_ada9716af018efbaa2f1ad3b6cae0512c}{tick\+\_\+interval\+\_\+}}
+\item 
+std\+::function$<$ void()$>$ \mbox{\hyperlink{classcrow_1_1_crow_aab16af6d633110760d97059694cbe858}{tick\+\_\+function\+\_\+}}
+\item 
+std\+::tuple$<$ Middlewares... $>$ \mbox{\hyperlink{classcrow_1_1_crow_a41a5863bcc997bf0ec72102ef58bd228}{middlewares\+\_\+}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classcrow_1_1_crow_a5df810d2619e31c2f024cc4e45898997}{server\+\_\+t}} $>$ \mbox{\hyperlink{classcrow_1_1_crow_adf377ae376c17917d1172ec339e588a1}{server\+\_\+}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classcrow_1_1_crow_a87f31a337fd2e0ad86e211c6665ee319}{signals\+\_\+}} \{SIGINT, SIGTERM\}
+\item 
+bool \mbox{\hyperlink{classcrow_1_1_crow_a649de3c7552b621d449fff26c0b2f832}{server\+\_\+started\+\_\+}} \{false\}
+\item 
+std\+::condition\+\_\+variable \mbox{\hyperlink{classcrow_1_1_crow_a691671ec56b80633a044a1665b0ac645}{cv\+\_\+started\+\_\+}}
+\item 
+std\+::mutex \mbox{\hyperlink{classcrow_1_1_crow_abcc5468c8fd0d8da6d2b33bf149c4dbc}{start\+\_\+mutex\+\_\+}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structcrow_1_1websocket_1_1connection}{crow\+::websocket\+::connection}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classcrow_1_1_crow_aba7a14acbaf221c10c4e421252e85756}{websockets\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename... Middlewares$>$\newline
+class crow\+::\+Crow$<$ Middlewares $>$}
+The main server application. 
+
+Use {\ttfamily Simple\+App} or {\ttfamily App\texorpdfstring{$<$}{<}Middleware1, Middleware2, etc...\texorpdfstring{$>$}{>}} 
+
+\doxysubsection{Member Typedef Documentation}
+\Hypertarget{classcrow_1_1_crow_a980ca09ad971f8915a3575d9a94fe78c}\label{classcrow_1_1_crow_a980ca09ad971f8915a3575d9a94fe78c} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!context\_t@{context\_t}}
+\index{context\_t@{context\_t}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{context\_t}{context\_t}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+using \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::context\+\_\+t = \mbox{\hyperlink{structcrow_1_1detail_1_1context}{detail\+::context}}$<$Middlewares...$>$}
+
+\Hypertarget{classcrow_1_1_crow_aa78aacbc64349155aab3f81d32715189}\label{classcrow_1_1_crow_aa78aacbc64349155aab3f81d32715189} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!mw\_container\_t@{mw\_container\_t}}
+\index{mw\_container\_t@{mw\_container\_t}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{mw\_container\_t}{mw\_container\_t}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+using \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::mw\+\_\+container\+\_\+t = std\+::tuple$<$Middlewares...$>$}
+
+\Hypertarget{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}\label{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!self\_t@{self\_t}}
+\index{self\_t@{self\_t}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{self\_t}{self\_t}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+using \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::self\+\_\+t = \mbox{\hyperlink{classcrow_1_1_crow}{Crow}}}
+
+
+
+This crow application. 
+
+\Hypertarget{classcrow_1_1_crow_a5df810d2619e31c2f024cc4e45898997}\label{classcrow_1_1_crow_a5df810d2619e31c2f024cc4e45898997} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!server\_t@{server\_t}}
+\index{server\_t@{server\_t}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{server\_t}{server\_t}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+using \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::server\+\_\+t = \mbox{\hyperlink{classcrow_1_1_server}{Server}}$<$\mbox{\hyperlink{classcrow_1_1_crow}{Crow}}, \mbox{\hyperlink{structcrow_1_1_socket_adaptor}{Socket\+Adaptor}}, Middlewares...$>$}
+
+
+
+The HTTP server. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcrow_1_1_crow_a7a6ce30b00d6d2beb901ffbb3160c137}\label{classcrow_1_1_crow_a7a6ce30b00d6d2beb901ffbb3160c137} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!Crow@{Crow}}
+\index{Crow@{Crow}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{Crow()}{Crow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::\+Crow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_crow_abb69a7bf5d4a791a398c838d37086d94}\label{classcrow_1_1_crow_abb69a7bf5d4a791a398c838d37086d94} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!Crow@{Crow}}
+\index{Crow@{Crow}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{Crow()}{Crow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+template$<$typename... Ts$>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::\+Crow (\begin{DoxyParamCaption}\item[{Ts \&\&...}]{ts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct \doxylink{classcrow_1_1_crow}{Crow} with a subset of middleware. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcrow_1_1_crow_ad38f39dc7ba97b9f298390565a88125a}\label{classcrow_1_1_crow_ad38f39dc7ba97b9f298390565a88125a} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!add\_websocket@{add\_websocket}}
+\index{add\_websocket@{add\_websocket}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{add\_websocket()}{add\_websocket()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+void \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::add\+\_\+websocket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1websocket_1_1connection}{crow\+::websocket\+::connection}} \texorpdfstring{$\ast$}{*}}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_crow_a8c816534804e7bd351ca692005bf3343}\label{classcrow_1_1_crow_a8c816534804e7bd351ca692005bf3343} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!bindaddr@{bindaddr}}
+\index{bindaddr@{bindaddr}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{bindaddr()}{bindaddr()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::string \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::bindaddr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the address that \doxylink{classcrow_1_1_crow}{Crow} will handle requests on. 
+
+\Hypertarget{classcrow_1_1_crow_ab12c2127972da09dbeb15c021d18d4f3}\label{classcrow_1_1_crow_ab12c2127972da09dbeb15c021d18d4f3} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!bindaddr@{bindaddr}}
+\index{bindaddr@{bindaddr}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{bindaddr()}{bindaddr()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::bindaddr (\begin{DoxyParamCaption}\item[{std\+::string}]{bindaddr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The IP address that \doxylink{classcrow_1_1_crow}{Crow} will handle requests on (default is 0.\+0.\+0.\+0) 
+
+\Hypertarget{classcrow_1_1_crow_abfb285bf01d12f28eabcc716423effe4}\label{classcrow_1_1_crow_abfb285bf01d12f28eabcc716423effe4} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!catchall\_route@{catchall\_route}}
+\index{catchall\_route@{catchall\_route}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{catchall\_route()}{catchall\_route()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+\mbox{\hyperlink{classcrow_1_1_catchall_rule}{Catchall\+Rule}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::catchall\+\_\+route (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a route for any requests without a proper route ({\bfseries{Use CROW\+\_\+\+CATCHALL\+\_\+\+ROUTE instead}}) 
+
+\Hypertarget{classcrow_1_1_crow_abd824d73fdd02ba810b8dd37e2900240}\label{classcrow_1_1_crow_abd824d73fdd02ba810b8dd37e2900240} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!concurrency@{concurrency}}
+\index{concurrency@{concurrency}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{concurrency()}{concurrency()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::uint16\+\_\+t \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::concurrency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of threads that server is using. 
+
+\Hypertarget{classcrow_1_1_crow_aef4806351da08c271f1e0863e9c75b3e}\label{classcrow_1_1_crow_aef4806351da08c271f1e0863e9c75b3e} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!concurrency@{concurrency}}
+\index{concurrency@{concurrency}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{concurrency()}{concurrency()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::concurrency (\begin{DoxyParamCaption}\item[{std\+::uint16\+\_\+t}]{concurrency }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Run the server on multiple threads using a specific number. 
+
+\Hypertarget{classcrow_1_1_crow_a839c1e6f82d577308eb6f0d4948a4fbb}\label{classcrow_1_1_crow_a839c1e6f82d577308eb6f0d4948a4fbb} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!debug\_print@{debug\_print}}
+\index{debug\_print@{debug\_print}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{debug\_print()}{debug\_print()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+void \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::debug\+\_\+print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Print the routing paths defined for each HTTP method. 
+
+\Hypertarget{classcrow_1_1_crow_add295abb1f4e32ceb64c8ed9d11f7b85}\label{classcrow_1_1_crow_add295abb1f4e32ceb64c8ed9d11f7b85} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!get\_context@{get\_context}}
+\index{get\_context@{get\_context}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{get\_context()}{get\_context()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+template$<$typename T $>$ \\
+T\+::context \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::get\+\_\+context (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{req }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_crow_ac6a0c5b3660cc5807e4e2bb43107c89b}\label{classcrow_1_1_crow_ac6a0c5b3660cc5807e4e2bb43107c89b} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!get\_middleware@{get\_middleware}}
+\index{get\_middleware@{get\_middleware}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{get\_middleware()}{get\_middleware()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+template$<$typename T $>$ \\
+T \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::get\+\_\+middleware (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_crow_a866cb219bb77c19326f39f431424e1c7}\label{classcrow_1_1_crow_a866cb219bb77c19326f39f431424e1c7} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!handle@{handle}}
+\index{handle@{handle}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+void \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{res,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structcrow_1_1routing__handle__result}{routing\+\_\+handle\+\_\+result}} $>$ \&}]{found }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Process the fully parsed request and generate a response for it. 
+
+\Hypertarget{classcrow_1_1_crow_accf00be55c273297b758fa243f107018}\label{classcrow_1_1_crow_accf00be55c273297b758fa243f107018} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!handle\_full@{handle\_full}}
+\index{handle\_full@{handle\_full}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{handle\_full()}{handle\_full()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+void \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::handle\+\_\+full (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Process a fully parsed request from start to finish (primarily used for debugging) 
+
+\Hypertarget{classcrow_1_1_crow_ad5e54dd12437653844565aa7c6295436}\label{classcrow_1_1_crow_ad5e54dd12437653844565aa7c6295436} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!handle\_initial@{handle\_initial}}
+\index{handle\_initial@{handle\_initial}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{handle\_initial()}{handle\_initial()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structcrow_1_1routing__handle__result}{routing\+\_\+handle\+\_\+result}} $>$ \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::handle\+\_\+initial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Process only the method and URL of a request and provide a route (or an error response) 
+
+\Hypertarget{classcrow_1_1_crow_a6e435bf5275735effd32647772bdbd04}\label{classcrow_1_1_crow_a6e435bf5275735effd32647772bdbd04} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!handle\_upgrade@{handle\_upgrade}}
+\index{handle\_upgrade@{handle\_upgrade}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{handle\_upgrade()}{handle\_upgrade()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+template$<$typename Adaptor $>$ \\
+void \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::handle\+\_\+upgrade (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structcrow_1_1request}{request}} \&}]{req,  }\item[{\mbox{\hyperlink{structcrow_1_1response}{response}} \&}]{res,  }\item[{Adaptor \&\&}]{adaptor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Process an Upgrade request. 
+
+Currently used to upgrade an HTTP connection to a Web\+Socket connection \Hypertarget{classcrow_1_1_crow_adaaea481094e3f4488569c991772d27f}\label{classcrow_1_1_crow_adaaea481094e3f4488569c991772d27f} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!loglevel@{loglevel}}
+\index{loglevel@{loglevel}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{loglevel()}{loglevel()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::loglevel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4}{Log\+Level}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the server\textquotesingle{}s log level. 
+
+Possible values are\+:~\newline
+ \doxylink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4aa603905470e2a5b8c13e96b579ef0dba}{crow\+::\+Log\+Level\+::\+Debug} (0)~\newline
+ \doxylink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a4059b0251f66a18cb56f544728796875}{crow\+::\+Log\+Level\+::\+Info} (1)~\newline
+ \doxylink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a0eaadb4fcb48a0a0ed7bc9868be9fbaa}{crow\+::\+Log\+Level\+::\+Warning} (2)~\newline
+ \doxylink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a902b0d55fddef6f8d651fe1035b7d4bd}{crow\+::\+Log\+Level\+::\+Error} (3)~\newline
+ \doxylink{namespacecrow_ad07dc32e163caa516aa1225a1ec4afe4a278d01e5af56273bae1bb99a98b370cd}{crow\+::\+Log\+Level\+::\+Critical} (4)~\newline
+ \Hypertarget{classcrow_1_1_crow_a27542e789b5106909f3e6876f3e96a26}\label{classcrow_1_1_crow_a27542e789b5106909f3e6876f3e96a26} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!make\_middleware\_tuple@{make\_middleware\_tuple}}
+\index{make\_middleware\_tuple@{make\_middleware\_tuple}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{make\_middleware\_tuple()}{make\_middleware\_tuple()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+template$<$typename... Ts$>$ \\
+std\+::tuple$<$ Middlewares... $>$ \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::make\+\_\+middleware\+\_\+tuple (\begin{DoxyParamCaption}\item[{Ts \&\&...}]{ts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_a7a6277aa9a88b2ecf301e98e8cbf9c33}\label{classcrow_1_1_crow_a7a6277aa9a88b2ecf301e98e8cbf9c33} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!multithreaded@{multithreaded}}
+\index{multithreaded@{multithreaded}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{multithreaded()}{multithreaded()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::multithreaded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Run the server on multiple threads using all available threads. 
+
+\Hypertarget{classcrow_1_1_crow_a6bbe76405fff487a1913c7b5fccbbb81}\label{classcrow_1_1_crow_a6bbe76405fff487a1913c7b5fccbbb81} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!notify\_server\_start@{notify\_server\_start}}
+\index{notify\_server\_start@{notify\_server\_start}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{notify\_server\_start()}{notify\_server\_start()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+void \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::notify\+\_\+server\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Notify anything using {\ttfamily \doxylink{classcrow_1_1_crow_a5e39821ccc9cbf8c6400fd86fc406c21}{wait\+\_\+for\+\_\+server\+\_\+start()}} to proceed. 
+
+\Hypertarget{classcrow_1_1_crow_a87d0e10ed791c6847d8b7dfff2369aae}\label{classcrow_1_1_crow_a87d0e10ed791c6847d8b7dfff2369aae} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!port@{port}}
+\index{port@{port}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{port()}{port()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::uint16\+\_\+t \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the port that \doxylink{classcrow_1_1_crow}{Crow} will handle requests on. 
+
+\Hypertarget{classcrow_1_1_crow_a97cc98d99417f21f757fa09e1bf1f0ca}\label{classcrow_1_1_crow_a97cc98d99417f21f757fa09e1bf1f0ca} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!port@{port}}
+\index{port@{port}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{port()}{port()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::port (\begin{DoxyParamCaption}\item[{std\+::uint16\+\_\+t}]{port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the port that \doxylink{classcrow_1_1_crow}{Crow} will handle requests on. 
+
+\Hypertarget{classcrow_1_1_crow_afc5866a72f024bb6dfa9c4b61d7fe9f2}\label{classcrow_1_1_crow_afc5866a72f024bb6dfa9c4b61d7fe9f2} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!register\_blueprint@{register\_blueprint}}
+\index{register\_blueprint@{register\_blueprint}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{register\_blueprint()}{register\_blueprint()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::register\+\_\+blueprint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcrow_1_1_blueprint}{Blueprint}} \&}]{blueprint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_crow_a5305aba0aea70aa0e283c4ff8d78bbbf}\label{classcrow_1_1_crow_a5305aba0aea70aa0e283c4ff8d78bbbf} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!remove\_websocket@{remove\_websocket}}
+\index{remove\_websocket@{remove\_websocket}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{remove\_websocket()}{remove\_websocket()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+void \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::remove\+\_\+websocket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcrow_1_1websocket_1_1connection}{crow\+::websocket\+::connection}} \texorpdfstring{$\ast$}{*}}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_crow_af221cb25926e5dabc2da21a7a1c9713c}\label{classcrow_1_1_crow_af221cb25926e5dabc2da21a7a1c9713c} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!route@{route}}
+\index{route@{route}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{route()}{route()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+template$<$uint64\+\_\+t Tag$>$ \\
+auto \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::route (\begin{DoxyParamCaption}\item[{std\+::string \&\&}]{rule }\end{DoxyParamCaption}) -\/$>$ typename std\+::result\+\_\+of$<$decltype (\&\mbox{\hyperlink{classcrow_1_1_router_a33600f2580d82f2f7d1a0f0e3f649650}{Router\+::new\+\_\+rule\+\_\+tagged}}$<$Tag$>$)(\mbox{\hyperlink{classcrow_1_1_router}{Router}}, std\+::string\&\&)$>$\+::type          \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a route using a rule ({\bfseries{Use CROW\+\_\+\+ROUTE instead}}) 
+
+\Hypertarget{classcrow_1_1_crow_a9438785f765882ced9b5273547803532}\label{classcrow_1_1_crow_a9438785f765882ced9b5273547803532} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!route\_dynamic@{route\_dynamic}}
+\index{route\_dynamic@{route\_dynamic}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{route\_dynamic()}{route\_dynamic()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+\mbox{\hyperlink{classcrow_1_1_dynamic_rule}{Dynamic\+Rule}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::route\+\_\+dynamic (\begin{DoxyParamCaption}\item[{std\+::string \&\&}]{rule }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a dynamic route using a rule ({\bfseries{Use CROW\+\_\+\+ROUTE instead}}) 
+
+\Hypertarget{classcrow_1_1_crow_a193d8b03f717234a841cd92f72c6b4b5}\label{classcrow_1_1_crow_a193d8b03f717234a841cd92f72c6b4b5} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!run@{run}}
+\index{run@{run}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+void \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Run the server. 
+
+\Hypertarget{classcrow_1_1_crow_afd29cf4e11557abfd7bce88b84af9b99}\label{classcrow_1_1_crow_afd29cf4e11557abfd7bce88b84af9b99} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!run\_async@{run\_async}}
+\index{run\_async@{run\_async}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{run\_async()}{run\_async()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::future$<$ void $>$ \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::run\+\_\+async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Non-\/blocking version of \doxylink{classcrow_1_1_crow_a193d8b03f717234a841cd92f72c6b4b5}{run()}
+
+The output from this method needs to be saved into a variable! Otherwise the call will be made on the same thread. \Hypertarget{classcrow_1_1_crow_a5ee995b71b623f09998c19b8fdf03d71}\label{classcrow_1_1_crow_a5ee995b71b623f09998c19b8fdf03d71} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!server\_name@{server\_name}}
+\index{server\_name@{server\_name}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{server\_name()}{server\_name()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::server\+\_\+name (\begin{DoxyParamCaption}\item[{std\+::string}]{server\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the server name. 
+
+\Hypertarget{classcrow_1_1_crow_a8adb106a81a33368ca36d70f0af68682}\label{classcrow_1_1_crow_a8adb106a81a33368ca36d70f0af68682} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!signal\_add@{signal\_add}}
+\index{signal\_add@{signal\_add}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{signal\_add()}{signal\_add()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::signal\+\_\+add (\begin{DoxyParamCaption}\item[{int}]{signal\+\_\+number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_crow_aff9ad0efd347b793bbab0d50f6618ab8}\label{classcrow_1_1_crow_aff9ad0efd347b793bbab0d50f6618ab8} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!signal\_clear@{signal\_clear}}
+\index{signal\_clear@{signal\_clear}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{signal\_clear()}{signal\_clear()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::signal\+\_\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_crow_a6941254ac64a249b5555a80622e1ba77}\label{classcrow_1_1_crow_a6941254ac64a249b5555a80622e1ba77} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!signals@{signals}}
+\index{signals@{signals}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{signals()}{signals()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::signals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_crow_a274d35c50c9737ab55ce53b2c44af5c9}\label{classcrow_1_1_crow_a274d35c50c9737ab55ce53b2c44af5c9} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!ssl@{ssl}}
+\index{ssl@{ssl}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{ssl()}{ssl()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+template$<$typename T $>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::ssl (\begin{DoxyParamCaption}\item[{T \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_crow_a7728615fcfb959222e5ca987516b0aa7}\label{classcrow_1_1_crow_a7728615fcfb959222e5ca987516b0aa7} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!ssl\_chainfile@{ssl\_chainfile}}
+\index{ssl\_chainfile@{ssl\_chainfile}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{ssl\_chainfile()}{ssl\_chainfile()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+template$<$typename T , typename... Remain$>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::ssl\+\_\+chainfile (\begin{DoxyParamCaption}\item[{T \&\&}]{,  }\item[{Remain \&\&}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_crow_a548c602b970e2856a9b828fa34de17f3}\label{classcrow_1_1_crow_a548c602b970e2856a9b828fa34de17f3} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!ssl\_file@{ssl\_file}}
+\index{ssl\_file@{ssl\_file}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{ssl\_file()}{ssl\_file()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+template$<$typename T , typename... Remain$>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::ssl\+\_\+file (\begin{DoxyParamCaption}\item[{T \&\&}]{,  }\item[{Remain \&\&}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_crow_ac804a73fa33d77a281c4609727ec1676}\label{classcrow_1_1_crow_ac804a73fa33d77a281c4609727ec1676} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!ssl\_used@{ssl\_used}}
+\index{ssl\_used@{ssl\_used}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{ssl\_used()}{ssl\_used()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+bool \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::ssl\+\_\+used (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classcrow_1_1_crow_a0266672657128919ab9a067d93f3868f}\label{classcrow_1_1_crow_a0266672657128919ab9a067d93f3868f} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!stop@{stop}}
+\index{stop@{stop}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+void \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Stop the server. 
+
+\Hypertarget{classcrow_1_1_crow_af35a53c39414aa79446690fea359e573}\label{classcrow_1_1_crow_af35a53c39414aa79446690fea359e573} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!stream\_threshold@{stream\_threshold}}
+\index{stream\_threshold@{stream\_threshold}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{stream\_threshold()}{stream\_threshold()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+size\+\_\+t \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::stream\+\_\+threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the response body size (in bytes) beyond which \doxylink{classcrow_1_1_crow}{Crow} automatically streams responses. 
+
+\Hypertarget{classcrow_1_1_crow_a058d8138c140c1073f0972c74cfa812b}\label{classcrow_1_1_crow_a058d8138c140c1073f0972c74cfa812b} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!stream\_threshold@{stream\_threshold}}
+\index{stream\_threshold@{stream\_threshold}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{stream\_threshold()}{stream\_threshold()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::stream\+\_\+threshold (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{threshold }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the response body size (in bytes) beyond which \doxylink{classcrow_1_1_crow}{Crow} automatically streams responses (Default is 1MiB) 
+
+Any streamed response is unaffected by \doxylink{classcrow_1_1_crow}{Crow}\textquotesingle{}s timer, and therefore won\textquotesingle{}t timeout before a response is fully sent. \Hypertarget{classcrow_1_1_crow_a7d5baf439ee8c85ad500cdb022bcd3a1}\label{classcrow_1_1_crow_a7d5baf439ee8c85ad500cdb022bcd3a1} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!tick@{tick}}
+\index{tick@{tick}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+template$<$typename Duration , typename Func $>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::tick (\begin{DoxyParamCaption}\item[{Duration}]{d,  }\item[{Func}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set a custom duration and function to run on every tick. 
+
+\Hypertarget{classcrow_1_1_crow_a1d69f60255f2bf1571d6570a6abb1552}\label{classcrow_1_1_crow_a1d69f60255f2bf1571d6570a6abb1552} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!timeout@{timeout}}
+\index{timeout@{timeout}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{timeout()}{timeout()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::timeout (\begin{DoxyParamCaption}\item[{std\+::uint8\+\_\+t}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the connection timeout in seconds (default is 5) 
+
+\Hypertarget{classcrow_1_1_crow_ab9a22c981e0afec0d55ee234683a6d38}\label{classcrow_1_1_crow_ab9a22c981e0afec0d55ee234683a6d38} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!validate@{validate}}
+\index{validate@{validate}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+void \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::validate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A wrapper for {\ttfamily \doxylink{classcrow_1_1_crow_ab9a22c981e0afec0d55ee234683a6d38}{validate()}} in the router. 
+
+Go through the rules, upgrade them if possible, and add them to the list of rules \Hypertarget{classcrow_1_1_crow_a5e39821ccc9cbf8c6400fd86fc406c21}\label{classcrow_1_1_crow_a5e39821ccc9cbf8c6400fd86fc406c21} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!wait\_for\_server\_start@{wait\_for\_server\_start}}
+\index{wait\_for\_server\_start@{wait\_for\_server\_start}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{wait\_for\_server\_start()}{wait\_for\_server\_start()}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+void \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::wait\+\_\+for\+\_\+server\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wait until the server has properly started. 
+
+\Hypertarget{classcrow_1_1_crow_a391a488c01ce53c0ccfd502c7ad15640}\label{classcrow_1_1_crow_a391a488c01ce53c0ccfd502c7ad15640} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!websocket\_max\_payload@{websocket\_max\_payload}}
+\index{websocket\_max\_payload@{websocket\_max\_payload}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{websocket\_max\_payload()}{websocket\_max\_payload()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+uint64\+\_\+t \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::websocket\+\_\+max\+\_\+payload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the default max payload size for websockets. 
+
+\Hypertarget{classcrow_1_1_crow_ac30b84b54096d1bfe517a9cf81d65fc7}\label{classcrow_1_1_crow_ac30b84b54096d1bfe517a9cf81d65fc7} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!websocket\_max\_payload@{websocket\_max\_payload}}
+\index{websocket\_max\_payload@{websocket\_max\_payload}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{websocket\_max\_payload()}{websocket\_max\_payload()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+\mbox{\hyperlink{classcrow_1_1_crow_a5b0a203a6f9070ea8010227dcdbcec60}{self\+\_\+t}} \& \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::websocket\+\_\+max\+\_\+payload (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{max\+\_\+payload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the default max payload size for websockets. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcrow_1_1_crow_a6ee0bf8953c7ebeac2f6d8d0779ccdd1}\label{classcrow_1_1_crow_a6ee0bf8953c7ebeac2f6d8d0779ccdd1} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!bindaddr\_@{bindaddr\_}}
+\index{bindaddr\_@{bindaddr\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{bindaddr\_}{bindaddr\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::string \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::bindaddr\+\_\+ = "{}0.\+0.\+0.\+0"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_ad85be3c48e1c4bbcff2da1557969e7a1}\label{classcrow_1_1_crow_ad85be3c48e1c4bbcff2da1557969e7a1} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!concurrency\_@{concurrency\_}}
+\index{concurrency\_@{concurrency\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{concurrency\_}{concurrency\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+uint16\+\_\+t \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::concurrency\+\_\+ = 2\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_a691671ec56b80633a044a1665b0ac645}\label{classcrow_1_1_crow_a691671ec56b80633a044a1665b0ac645} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!cv\_started\_@{cv\_started\_}}
+\index{cv\_started\_@{cv\_started\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{cv\_started\_}{cv\_started\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::condition\+\_\+variable \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::cv\+\_\+started\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_a491022a697b577fed76b969372680b4f}\label{classcrow_1_1_crow_a491022a697b577fed76b969372680b4f} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!max\_payload\_@{max\_payload\_}}
+\index{max\_payload\_@{max\_payload\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{max\_payload\_}{max\_payload\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+uint64\+\_\+t \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::max\+\_\+payload\+\_\+ \{UINT64\+\_\+\+MAX\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_a41a5863bcc997bf0ec72102ef58bd228}\label{classcrow_1_1_crow_a41a5863bcc997bf0ec72102ef58bd228} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!middlewares\_@{middlewares\_}}
+\index{middlewares\_@{middlewares\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{middlewares\_}{middlewares\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::tuple$<$Middlewares...$>$ \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::middlewares\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_a4d29c04986c79d7673bdce43e622b318}\label{classcrow_1_1_crow_a4d29c04986c79d7673bdce43e622b318} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!port\_@{port\_}}
+\index{port\_@{port\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{port\_}{port\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+uint16\+\_\+t \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::port\+\_\+ = 80\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_a7b3ba1f746ca8200d90b5e8d2a63fdbf}\label{classcrow_1_1_crow_a7b3ba1f746ca8200d90b5e8d2a63fdbf} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!res\_stream\_threshold\_@{res\_stream\_threshold\_}}
+\index{res\_stream\_threshold\_@{res\_stream\_threshold\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{res\_stream\_threshold\_}{res\_stream\_threshold\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+size\+\_\+t \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::res\+\_\+stream\+\_\+threshold\+\_\+ = 1048576\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_a3d642b9c4714dbde18f2c3de961b59db}\label{classcrow_1_1_crow_a3d642b9c4714dbde18f2c3de961b59db} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!router\_@{router\_}}
+\index{router\_@{router\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{router\_}{router\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+\mbox{\hyperlink{classcrow_1_1_router}{Router}} \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::router\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_adf377ae376c17917d1172ec339e588a1}\label{classcrow_1_1_crow_adf377ae376c17917d1172ec339e588a1} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!server\_@{server\_}}
+\index{server\_@{server\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{server\_}{server\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classcrow_1_1_crow_a5df810d2619e31c2f024cc4e45898997}{server\+\_\+t}}$>$ \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::server\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_a4e0d308ef2ae95c29a301f3a6c554996}\label{classcrow_1_1_crow_a4e0d308ef2ae95c29a301f3a6c554996} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!server\_name\_@{server\_name\_}}
+\index{server\_name\_@{server\_name\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{server\_name\_}{server\_name\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::string \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::server\+\_\+name\+\_\+ = std\+::string("{}Crow/"{}) + VERSION\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_a649de3c7552b621d449fff26c0b2f832}\label{classcrow_1_1_crow_a649de3c7552b621d449fff26c0b2f832} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!server\_started\_@{server\_started\_}}
+\index{server\_started\_@{server\_started\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{server\_started\_}{server\_started\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+bool \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::server\+\_\+started\+\_\+ \{false\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_a87f31a337fd2e0ad86e211c6665ee319}\label{classcrow_1_1_crow_a87f31a337fd2e0ad86e211c6665ee319} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!signals\_@{signals\_}}
+\index{signals\_@{signals\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{signals\_}{signals\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::vector$<$int$>$ \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::signals\+\_\+ \{SIGINT, SIGTERM\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_abcc5468c8fd0d8da6d2b33bf149c4dbc}\label{classcrow_1_1_crow_abcc5468c8fd0d8da6d2b33bf149c4dbc} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!start\_mutex\_@{start\_mutex\_}}
+\index{start\_mutex\_@{start\_mutex\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{start\_mutex\_}{start\_mutex\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::mutex \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::start\+\_\+mutex\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_aab16af6d633110760d97059694cbe858}\label{classcrow_1_1_crow_aab16af6d633110760d97059694cbe858} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!tick\_function\_@{tick\_function\_}}
+\index{tick\_function\_@{tick\_function\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{tick\_function\_}{tick\_function\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::function$<$void()$>$ \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::tick\+\_\+function\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_ada9716af018efbaa2f1ad3b6cae0512c}\label{classcrow_1_1_crow_ada9716af018efbaa2f1ad3b6cae0512c} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!tick\_interval\_@{tick\_interval\_}}
+\index{tick\_interval\_@{tick\_interval\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{tick\_interval\_}{tick\_interval\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::chrono\+::milliseconds \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::tick\+\_\+interval\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_a00eb9ab7f051b536a09b6a81620bbe10}\label{classcrow_1_1_crow_a00eb9ab7f051b536a09b6a81620bbe10} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!timeout\_@{timeout\_}}
+\index{timeout\_@{timeout\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{timeout\_}{timeout\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::uint8\+\_\+t \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::timeout\+\_\+ \{5\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_a1999eafef329546dc756cdc6104fbcfa}\label{classcrow_1_1_crow_a1999eafef329546dc756cdc6104fbcfa} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!validated\_@{validated\_}}
+\index{validated\_@{validated\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{validated\_}{validated\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+bool \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::validated\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcrow_1_1_crow_aba7a14acbaf221c10c4e421252e85756}\label{classcrow_1_1_crow_aba7a14acbaf221c10c4e421252e85756} 
+\index{crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}!websockets\_@{websockets\_}}
+\index{websockets\_@{websockets\_}!crow::Crow$<$ Middlewares $>$@{crow::Crow$<$ Middlewares $>$}}
+\doxysubsubsection{\texorpdfstring{websockets\_}{websockets\_}}
+{\footnotesize\ttfamily template$<$typename... Middlewares$>$ \\
+std\+::vector$<$\mbox{\hyperlink{structcrow_1_1websocket_1_1connection}{crow\+::websocket\+::connection}}\texorpdfstring{$\ast$}{*}$>$ \mbox{\hyperlink{classcrow_1_1_crow}{crow\+::\+Crow}}$<$ Middlewares $>$\+::websockets\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{crow__all_8h}{crow\+\_\+all.\+h}}\end{DoxyCompactItemize}

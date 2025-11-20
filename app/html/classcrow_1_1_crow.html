@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>transaction team: crow::Crow&lt; Middlewares &gt; Class Template Reference</title>
+<title>My Project: crow::Crow&lt; Middlewares &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">transaction team
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -71,13 +71,15 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>crow</b></li><li class="navelem"><a class="el" href="classcrow_1_1_crow.html">Crow</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecrow.html">crow</a></li><li class="navelem"><a class="el" href="classcrow_1_1_crow.html">Crow</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classcrow_1_1_crow-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">crow::Crow&lt; Middlewares &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -90,184 +92,685 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5b0a203a6f9070ea8010227dcdbcec60" id="r_a5b0a203a6f9070ea8010227dcdbcec60"><td class="memItemLeft" align="right" valign="top"><a id="a5b0a203a6f9070ea8010227dcdbcec60" name="a5b0a203a6f9070ea8010227dcdbcec60"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>self_t</b> = <a class="el" href="classcrow_1_1_crow.html">Crow</a></td></tr>
-<tr class="memdesc:a5b0a203a6f9070ea8010227dcdbcec60"><td class="mdescLeft">&#160;</td><td class="mdescRight">This crow application. <br /></td></tr>
+<tr class="memitem:a5b0a203a6f9070ea8010227dcdbcec60" id="r_a5b0a203a6f9070ea8010227dcdbcec60"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> = <a class="el" href="classcrow_1_1_crow.html">Crow</a></td></tr>
+<tr class="memdesc:a5b0a203a6f9070ea8010227dcdbcec60"><td class="mdescLeft">&#160;</td><td class="mdescRight">This crow application.  <br /></td></tr>
 <tr class="separator:a5b0a203a6f9070ea8010227dcdbcec60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5df810d2619e31c2f024cc4e45898997" id="r_a5df810d2619e31c2f024cc4e45898997"><td class="memItemLeft" align="right" valign="top"><a id="a5df810d2619e31c2f024cc4e45898997" name="a5df810d2619e31c2f024cc4e45898997"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>server_t</b> = <a class="el" href="classcrow_1_1_server.html">Server</a>&lt;<a class="el" href="classcrow_1_1_crow.html">Crow</a>, <a class="el" href="structcrow_1_1_socket_adaptor.html">SocketAdaptor</a>, Middlewares...&gt;</td></tr>
-<tr class="memdesc:a5df810d2619e31c2f024cc4e45898997"><td class="mdescLeft">&#160;</td><td class="mdescRight">The HTTP server. <br /></td></tr>
+<tr class="memitem:a5df810d2619e31c2f024cc4e45898997" id="r_a5df810d2619e31c2f024cc4e45898997"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5df810d2619e31c2f024cc4e45898997">server_t</a> = <a class="el" href="classcrow_1_1_server.html">Server</a>&lt;<a class="el" href="classcrow_1_1_crow.html">Crow</a>, <a class="el" href="structcrow_1_1_socket_adaptor.html">SocketAdaptor</a>, Middlewares...&gt;</td></tr>
+<tr class="memdesc:a5df810d2619e31c2f024cc4e45898997"><td class="mdescLeft">&#160;</td><td class="mdescRight">The HTTP server.  <br /></td></tr>
 <tr class="separator:a5df810d2619e31c2f024cc4e45898997"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a980ca09ad971f8915a3575d9a94fe78c" id="r_a980ca09ad971f8915a3575d9a94fe78c"><td class="memItemLeft" align="right" valign="top"><a id="a980ca09ad971f8915a3575d9a94fe78c" name="a980ca09ad971f8915a3575d9a94fe78c"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>context_t</b> = <a class="el" href="structcrow_1_1detail_1_1context.html">detail::context</a>&lt;Middlewares...&gt;</td></tr>
+<tr class="memitem:a980ca09ad971f8915a3575d9a94fe78c" id="r_a980ca09ad971f8915a3575d9a94fe78c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a980ca09ad971f8915a3575d9a94fe78c">context_t</a> = <a class="el" href="structcrow_1_1detail_1_1context.html">detail::context</a>&lt;Middlewares...&gt;</td></tr>
 <tr class="separator:a980ca09ad971f8915a3575d9a94fe78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa78aacbc64349155aab3f81d32715189" id="r_aa78aacbc64349155aab3f81d32715189"><td class="memItemLeft" align="right" valign="top"><a id="aa78aacbc64349155aab3f81d32715189" name="aa78aacbc64349155aab3f81d32715189"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>mw_container_t</b> = std::tuple&lt;Middlewares...&gt;</td></tr>
+<tr class="memitem:aa78aacbc64349155aab3f81d32715189" id="r_aa78aacbc64349155aab3f81d32715189"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa78aacbc64349155aab3f81d32715189">mw_container_t</a> = std::tuple&lt;Middlewares...&gt;</td></tr>
 <tr class="separator:aa78aacbc64349155aab3f81d32715189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abb69a7bf5d4a791a398c838d37086d94" id="r_abb69a7bf5d4a791a398c838d37086d94"><td class="memTemplParams" colspan="2"><a id="abb69a7bf5d4a791a398c838d37086d94" name="abb69a7bf5d4a791a398c838d37086d94"></a>
-template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:abb69a7bf5d4a791a398c838d37086d94"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Crow</b> (Ts &amp;&amp;... ts)</td></tr>
-<tr class="memdesc:abb69a7bf5d4a791a398c838d37086d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> with a subset of middleware. <br /></td></tr>
+<tr class="memitem:a7a6ce30b00d6d2beb901ffbb3160c137" id="r_a7a6ce30b00d6d2beb901ffbb3160c137"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a6ce30b00d6d2beb901ffbb3160c137">Crow</a> ()</td></tr>
+<tr class="separator:a7a6ce30b00d6d2beb901ffbb3160c137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb69a7bf5d4a791a398c838d37086d94" id="r_abb69a7bf5d4a791a398c838d37086d94"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:abb69a7bf5d4a791a398c838d37086d94"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#abb69a7bf5d4a791a398c838d37086d94">Crow</a> (Ts &amp;&amp;... ts)</td></tr>
+<tr class="memdesc:abb69a7bf5d4a791a398c838d37086d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> with a subset of middleware.  <br /></td></tr>
 <tr class="separator:abb69a7bf5d4a791a398c838d37086d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e435bf5275735effd32647772bdbd04" id="r_a6e435bf5275735effd32647772bdbd04"><td class="memTemplParams" colspan="2">template&lt;typename Adaptor &gt; </td></tr>
 <tr class="memitem:a6e435bf5275735effd32647772bdbd04"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6e435bf5275735effd32647772bdbd04">handle_upgrade</a> (const <a class="el" href="structcrow_1_1request.html">request</a> &amp;req, <a class="el" href="structcrow_1_1response.html">response</a> &amp;res, Adaptor &amp;&amp;adaptor)</td></tr>
 <tr class="memdesc:a6e435bf5275735effd32647772bdbd04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process an Upgrade request.  <br /></td></tr>
 <tr class="separator:a6e435bf5275735effd32647772bdbd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5e54dd12437653844565aa7c6295436" id="r_ad5e54dd12437653844565aa7c6295436"><td class="memItemLeft" align="right" valign="top"><a id="ad5e54dd12437653844565aa7c6295436" name="ad5e54dd12437653844565aa7c6295436"></a>
-std::unique_ptr&lt; <a class="el" href="structcrow_1_1routing__handle__result.html">routing_handle_result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>handle_initial</b> (<a class="el" href="structcrow_1_1request.html">request</a> &amp;req, <a class="el" href="structcrow_1_1response.html">response</a> &amp;res)</td></tr>
-<tr class="memdesc:ad5e54dd12437653844565aa7c6295436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process only the method and URL of a request and provide a route (or an error response) <br /></td></tr>
+<tr class="memitem:ad5e54dd12437653844565aa7c6295436" id="r_ad5e54dd12437653844565aa7c6295436"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structcrow_1_1routing__handle__result.html">routing_handle_result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5e54dd12437653844565aa7c6295436">handle_initial</a> (<a class="el" href="structcrow_1_1request.html">request</a> &amp;req, <a class="el" href="structcrow_1_1response.html">response</a> &amp;res)</td></tr>
+<tr class="memdesc:ad5e54dd12437653844565aa7c6295436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process only the method and URL of a request and provide a route (or an error response)  <br /></td></tr>
 <tr class="separator:ad5e54dd12437653844565aa7c6295436"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a866cb219bb77c19326f39f431424e1c7" id="r_a866cb219bb77c19326f39f431424e1c7"><td class="memItemLeft" align="right" valign="top"><a id="a866cb219bb77c19326f39f431424e1c7" name="a866cb219bb77c19326f39f431424e1c7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> (<a class="el" href="structcrow_1_1request.html">request</a> &amp;req, <a class="el" href="structcrow_1_1response.html">response</a> &amp;res, std::unique_ptr&lt; <a class="el" href="structcrow_1_1routing__handle__result.html">routing_handle_result</a> &gt; &amp;found)</td></tr>
-<tr class="memdesc:a866cb219bb77c19326f39f431424e1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the fully parsed request and generate a response for it. <br /></td></tr>
+<tr class="memitem:a866cb219bb77c19326f39f431424e1c7" id="r_a866cb219bb77c19326f39f431424e1c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a866cb219bb77c19326f39f431424e1c7">handle</a> (<a class="el" href="structcrow_1_1request.html">request</a> &amp;req, <a class="el" href="structcrow_1_1response.html">response</a> &amp;res, std::unique_ptr&lt; <a class="el" href="structcrow_1_1routing__handle__result.html">routing_handle_result</a> &gt; &amp;found)</td></tr>
+<tr class="memdesc:a866cb219bb77c19326f39f431424e1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the fully parsed request and generate a response for it.  <br /></td></tr>
 <tr class="separator:a866cb219bb77c19326f39f431424e1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accf00be55c273297b758fa243f107018" id="r_accf00be55c273297b758fa243f107018"><td class="memItemLeft" align="right" valign="top"><a id="accf00be55c273297b758fa243f107018" name="accf00be55c273297b758fa243f107018"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handle_full</b> (<a class="el" href="structcrow_1_1request.html">request</a> &amp;req, <a class="el" href="structcrow_1_1response.html">response</a> &amp;res)</td></tr>
-<tr class="memdesc:accf00be55c273297b758fa243f107018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a fully parsed request from start to finish (primarily used for debugging) <br /></td></tr>
+<tr class="memitem:accf00be55c273297b758fa243f107018" id="r_accf00be55c273297b758fa243f107018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accf00be55c273297b758fa243f107018">handle_full</a> (<a class="el" href="structcrow_1_1request.html">request</a> &amp;req, <a class="el" href="structcrow_1_1response.html">response</a> &amp;res)</td></tr>
+<tr class="memdesc:accf00be55c273297b758fa243f107018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a fully parsed request from start to finish (primarily used for debugging)  <br /></td></tr>
 <tr class="separator:accf00be55c273297b758fa243f107018"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9438785f765882ced9b5273547803532" id="r_a9438785f765882ced9b5273547803532"><td class="memItemLeft" align="right" valign="top"><a id="a9438785f765882ced9b5273547803532" name="a9438785f765882ced9b5273547803532"></a>
-<a class="el" href="classcrow_1_1_dynamic_rule.html">DynamicRule</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>route_dynamic</b> (std::string &amp;&amp;rule)</td></tr>
-<tr class="memdesc:a9438785f765882ced9b5273547803532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a dynamic route using a rule (<b>Use CROW_ROUTE instead</b>) <br /></td></tr>
+<tr class="memitem:a9438785f765882ced9b5273547803532" id="r_a9438785f765882ced9b5273547803532"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcrow_1_1_dynamic_rule.html">DynamicRule</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9438785f765882ced9b5273547803532">route_dynamic</a> (std::string &amp;&amp;rule)</td></tr>
+<tr class="memdesc:a9438785f765882ced9b5273547803532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a dynamic route using a rule (<b>Use CROW_ROUTE instead</b>)  <br /></td></tr>
 <tr class="separator:a9438785f765882ced9b5273547803532"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af221cb25926e5dabc2da21a7a1c9713c" id="r_af221cb25926e5dabc2da21a7a1c9713c"><td class="memTemplParams" colspan="2"><a id="af221cb25926e5dabc2da21a7a1c9713c" name="af221cb25926e5dabc2da21a7a1c9713c"></a>
-template&lt;uint64_t Tag&gt; </td></tr>
-<tr class="memitem:af221cb25926e5dabc2da21a7a1c9713c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>route</b> (std::string &amp;&amp;rule) -&gt; typename std::result_of&lt; decltype(&amp;Router::new_rule_tagged&lt; Tag &gt;)(<a class="el" href="classcrow_1_1_router.html">Router</a>, std::string &amp;&amp;)&gt;::type</td></tr>
-<tr class="memdesc:af221cb25926e5dabc2da21a7a1c9713c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a route using a rule (<b>Use CROW_ROUTE instead</b>) <br /></td></tr>
+<tr class="memitem:af221cb25926e5dabc2da21a7a1c9713c" id="r_af221cb25926e5dabc2da21a7a1c9713c"><td class="memTemplParams" colspan="2">template&lt;uint64_t Tag&gt; </td></tr>
+<tr class="memitem:af221cb25926e5dabc2da21a7a1c9713c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af221cb25926e5dabc2da21a7a1c9713c">route</a> (std::string &amp;&amp;rule) -&gt; typename std::result_of&lt; decltype(&amp;<a class="el" href="classcrow_1_1_router.html#a33600f2580d82f2f7d1a0f0e3f649650">Router::new_rule_tagged</a>&lt; Tag &gt;)(<a class="el" href="classcrow_1_1_router.html">Router</a>, std::string &amp;&amp;)&gt;::type</td></tr>
+<tr class="memdesc:af221cb25926e5dabc2da21a7a1c9713c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a route using a rule (<b>Use CROW_ROUTE instead</b>)  <br /></td></tr>
 <tr class="separator:af221cb25926e5dabc2da21a7a1c9713c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfb285bf01d12f28eabcc716423effe4" id="r_abfb285bf01d12f28eabcc716423effe4"><td class="memItemLeft" align="right" valign="top"><a id="abfb285bf01d12f28eabcc716423effe4" name="abfb285bf01d12f28eabcc716423effe4"></a>
-<a class="el" href="classcrow_1_1_catchall_rule.html">CatchallRule</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>catchall_route</b> ()</td></tr>
-<tr class="memdesc:abfb285bf01d12f28eabcc716423effe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a route for any requests without a proper route (<b>Use CROW_CATCHALL_ROUTE instead</b>) <br /></td></tr>
+<tr class="memitem:abfb285bf01d12f28eabcc716423effe4" id="r_abfb285bf01d12f28eabcc716423effe4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcrow_1_1_catchall_rule.html">CatchallRule</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfb285bf01d12f28eabcc716423effe4">catchall_route</a> ()</td></tr>
+<tr class="memdesc:abfb285bf01d12f28eabcc716423effe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a route for any requests without a proper route (<b>Use CROW_CATCHALL_ROUTE instead</b>)  <br /></td></tr>
 <tr class="separator:abfb285bf01d12f28eabcc716423effe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac30b84b54096d1bfe517a9cf81d65fc7" id="r_ac30b84b54096d1bfe517a9cf81d65fc7"><td class="memItemLeft" align="right" valign="top"><a id="ac30b84b54096d1bfe517a9cf81d65fc7" name="ac30b84b54096d1bfe517a9cf81d65fc7"></a>
-<a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>websocket_max_payload</b> (uint64_t max_payload)</td></tr>
-<tr class="memdesc:ac30b84b54096d1bfe517a9cf81d65fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the default max payload size for websockets. <br /></td></tr>
+<tr class="memitem:ac30b84b54096d1bfe517a9cf81d65fc7" id="r_ac30b84b54096d1bfe517a9cf81d65fc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac30b84b54096d1bfe517a9cf81d65fc7">websocket_max_payload</a> (uint64_t max_payload)</td></tr>
+<tr class="memdesc:ac30b84b54096d1bfe517a9cf81d65fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the default max payload size for websockets.  <br /></td></tr>
 <tr class="separator:ac30b84b54096d1bfe517a9cf81d65fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a391a488c01ce53c0ccfd502c7ad15640" id="r_a391a488c01ce53c0ccfd502c7ad15640"><td class="memItemLeft" align="right" valign="top"><a id="a391a488c01ce53c0ccfd502c7ad15640" name="a391a488c01ce53c0ccfd502c7ad15640"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>websocket_max_payload</b> ()</td></tr>
-<tr class="memdesc:a391a488c01ce53c0ccfd502c7ad15640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default max payload size for websockets. <br /></td></tr>
+<tr class="memitem:a391a488c01ce53c0ccfd502c7ad15640" id="r_a391a488c01ce53c0ccfd502c7ad15640"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a391a488c01ce53c0ccfd502c7ad15640">websocket_max_payload</a> ()</td></tr>
+<tr class="memdesc:a391a488c01ce53c0ccfd502c7ad15640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default max payload size for websockets.  <br /></td></tr>
 <tr class="separator:a391a488c01ce53c0ccfd502c7ad15640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff9ad0efd347b793bbab0d50f6618ab8" id="r_aff9ad0efd347b793bbab0d50f6618ab8"><td class="memItemLeft" align="right" valign="top"><a id="aff9ad0efd347b793bbab0d50f6618ab8" name="aff9ad0efd347b793bbab0d50f6618ab8"></a>
-<a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>signal_clear</b> ()</td></tr>
+<tr class="memitem:aff9ad0efd347b793bbab0d50f6618ab8" id="r_aff9ad0efd347b793bbab0d50f6618ab8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff9ad0efd347b793bbab0d50f6618ab8">signal_clear</a> ()</td></tr>
 <tr class="separator:aff9ad0efd347b793bbab0d50f6618ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8adb106a81a33368ca36d70f0af68682" id="r_a8adb106a81a33368ca36d70f0af68682"><td class="memItemLeft" align="right" valign="top"><a id="a8adb106a81a33368ca36d70f0af68682" name="a8adb106a81a33368ca36d70f0af68682"></a>
-<a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>signal_add</b> (int signal_number)</td></tr>
+<tr class="memitem:a8adb106a81a33368ca36d70f0af68682" id="r_a8adb106a81a33368ca36d70f0af68682"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8adb106a81a33368ca36d70f0af68682">signal_add</a> (int signal_number)</td></tr>
 <tr class="separator:a8adb106a81a33368ca36d70f0af68682"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6941254ac64a249b5555a80622e1ba77" id="r_a6941254ac64a249b5555a80622e1ba77"><td class="memItemLeft" align="right" valign="top"><a id="a6941254ac64a249b5555a80622e1ba77" name="a6941254ac64a249b5555a80622e1ba77"></a>
-std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>signals</b> ()</td></tr>
+<tr class="memitem:a6941254ac64a249b5555a80622e1ba77" id="r_a6941254ac64a249b5555a80622e1ba77"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6941254ac64a249b5555a80622e1ba77">signals</a> ()</td></tr>
 <tr class="separator:a6941254ac64a249b5555a80622e1ba77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97cc98d99417f21f757fa09e1bf1f0ca" id="r_a97cc98d99417f21f757fa09e1bf1f0ca"><td class="memItemLeft" align="right" valign="top"><a id="a97cc98d99417f21f757fa09e1bf1f0ca" name="a97cc98d99417f21f757fa09e1bf1f0ca"></a>
-<a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>port</b> (std::uint16_t port)</td></tr>
-<tr class="memdesc:a97cc98d99417f21f757fa09e1bf1f0ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the port that <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> will handle requests on. <br /></td></tr>
+<tr class="memitem:a97cc98d99417f21f757fa09e1bf1f0ca" id="r_a97cc98d99417f21f757fa09e1bf1f0ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97cc98d99417f21f757fa09e1bf1f0ca">port</a> (std::uint16_t port)</td></tr>
+<tr class="memdesc:a97cc98d99417f21f757fa09e1bf1f0ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the port that <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> will handle requests on.  <br /></td></tr>
 <tr class="separator:a97cc98d99417f21f757fa09e1bf1f0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87d0e10ed791c6847d8b7dfff2369aae" id="r_a87d0e10ed791c6847d8b7dfff2369aae"><td class="memItemLeft" align="right" valign="top"><a id="a87d0e10ed791c6847d8b7dfff2369aae" name="a87d0e10ed791c6847d8b7dfff2369aae"></a>
-std::uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>port</b> ()</td></tr>
-<tr class="memdesc:a87d0e10ed791c6847d8b7dfff2369aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the port that <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> will handle requests on. <br /></td></tr>
+<tr class="memitem:a87d0e10ed791c6847d8b7dfff2369aae" id="r_a87d0e10ed791c6847d8b7dfff2369aae"><td class="memItemLeft" align="right" valign="top">std::uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87d0e10ed791c6847d8b7dfff2369aae">port</a> ()</td></tr>
+<tr class="memdesc:a87d0e10ed791c6847d8b7dfff2369aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the port that <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> will handle requests on.  <br /></td></tr>
 <tr class="separator:a87d0e10ed791c6847d8b7dfff2369aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d69f60255f2bf1571d6570a6abb1552" id="r_a1d69f60255f2bf1571d6570a6abb1552"><td class="memItemLeft" align="right" valign="top"><a id="a1d69f60255f2bf1571d6570a6abb1552" name="a1d69f60255f2bf1571d6570a6abb1552"></a>
-<a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>timeout</b> (std::uint8_t timeout)</td></tr>
-<tr class="memdesc:a1d69f60255f2bf1571d6570a6abb1552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the connection timeout in seconds (default is 5) <br /></td></tr>
+<tr class="memitem:a1d69f60255f2bf1571d6570a6abb1552" id="r_a1d69f60255f2bf1571d6570a6abb1552"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d69f60255f2bf1571d6570a6abb1552">timeout</a> (std::uint8_t timeout)</td></tr>
+<tr class="memdesc:a1d69f60255f2bf1571d6570a6abb1552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the connection timeout in seconds (default is 5)  <br /></td></tr>
 <tr class="separator:a1d69f60255f2bf1571d6570a6abb1552"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ee995b71b623f09998c19b8fdf03d71" id="r_a5ee995b71b623f09998c19b8fdf03d71"><td class="memItemLeft" align="right" valign="top"><a id="a5ee995b71b623f09998c19b8fdf03d71" name="a5ee995b71b623f09998c19b8fdf03d71"></a>
-<a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>server_name</b> (std::string server_name)</td></tr>
-<tr class="memdesc:a5ee995b71b623f09998c19b8fdf03d71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the server name. <br /></td></tr>
+<tr class="memitem:a5ee995b71b623f09998c19b8fdf03d71" id="r_a5ee995b71b623f09998c19b8fdf03d71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ee995b71b623f09998c19b8fdf03d71">server_name</a> (std::string server_name)</td></tr>
+<tr class="memdesc:a5ee995b71b623f09998c19b8fdf03d71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the server name.  <br /></td></tr>
 <tr class="separator:a5ee995b71b623f09998c19b8fdf03d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab12c2127972da09dbeb15c021d18d4f3" id="r_ab12c2127972da09dbeb15c021d18d4f3"><td class="memItemLeft" align="right" valign="top"><a id="ab12c2127972da09dbeb15c021d18d4f3" name="ab12c2127972da09dbeb15c021d18d4f3"></a>
-<a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>bindaddr</b> (std::string bindaddr)</td></tr>
-<tr class="memdesc:ab12c2127972da09dbeb15c021d18d4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The IP address that <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> will handle requests on (default is 0.0.0.0) <br /></td></tr>
+<tr class="memitem:ab12c2127972da09dbeb15c021d18d4f3" id="r_ab12c2127972da09dbeb15c021d18d4f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab12c2127972da09dbeb15c021d18d4f3">bindaddr</a> (std::string bindaddr)</td></tr>
+<tr class="memdesc:ab12c2127972da09dbeb15c021d18d4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The IP address that <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> will handle requests on (default is 0.0.0.0)  <br /></td></tr>
 <tr class="separator:ab12c2127972da09dbeb15c021d18d4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c816534804e7bd351ca692005bf3343" id="r_a8c816534804e7bd351ca692005bf3343"><td class="memItemLeft" align="right" valign="top"><a id="a8c816534804e7bd351ca692005bf3343" name="a8c816534804e7bd351ca692005bf3343"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>bindaddr</b> ()</td></tr>
-<tr class="memdesc:a8c816534804e7bd351ca692005bf3343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the address that <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> will handle requests on. <br /></td></tr>
+<tr class="memitem:a8c816534804e7bd351ca692005bf3343" id="r_a8c816534804e7bd351ca692005bf3343"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c816534804e7bd351ca692005bf3343">bindaddr</a> ()</td></tr>
+<tr class="memdesc:a8c816534804e7bd351ca692005bf3343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the address that <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> will handle requests on.  <br /></td></tr>
 <tr class="separator:a8c816534804e7bd351ca692005bf3343"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a6277aa9a88b2ecf301e98e8cbf9c33" id="r_a7a6277aa9a88b2ecf301e98e8cbf9c33"><td class="memItemLeft" align="right" valign="top"><a id="a7a6277aa9a88b2ecf301e98e8cbf9c33" name="a7a6277aa9a88b2ecf301e98e8cbf9c33"></a>
-<a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>multithreaded</b> ()</td></tr>
-<tr class="memdesc:a7a6277aa9a88b2ecf301e98e8cbf9c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the server on multiple threads using all available threads. <br /></td></tr>
+<tr class="memitem:a7a6277aa9a88b2ecf301e98e8cbf9c33" id="r_a7a6277aa9a88b2ecf301e98e8cbf9c33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a6277aa9a88b2ecf301e98e8cbf9c33">multithreaded</a> ()</td></tr>
+<tr class="memdesc:a7a6277aa9a88b2ecf301e98e8cbf9c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the server on multiple threads using all available threads.  <br /></td></tr>
 <tr class="separator:a7a6277aa9a88b2ecf301e98e8cbf9c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef4806351da08c271f1e0863e9c75b3e" id="r_aef4806351da08c271f1e0863e9c75b3e"><td class="memItemLeft" align="right" valign="top"><a id="aef4806351da08c271f1e0863e9c75b3e" name="aef4806351da08c271f1e0863e9c75b3e"></a>
-<a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>concurrency</b> (std::uint16_t concurrency)</td></tr>
-<tr class="memdesc:aef4806351da08c271f1e0863e9c75b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the server on multiple threads using a specific number. <br /></td></tr>
+<tr class="memitem:aef4806351da08c271f1e0863e9c75b3e" id="r_aef4806351da08c271f1e0863e9c75b3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef4806351da08c271f1e0863e9c75b3e">concurrency</a> (std::uint16_t concurrency)</td></tr>
+<tr class="memdesc:aef4806351da08c271f1e0863e9c75b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the server on multiple threads using a specific number.  <br /></td></tr>
 <tr class="separator:aef4806351da08c271f1e0863e9c75b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd824d73fdd02ba810b8dd37e2900240" id="r_abd824d73fdd02ba810b8dd37e2900240"><td class="memItemLeft" align="right" valign="top"><a id="abd824d73fdd02ba810b8dd37e2900240" name="abd824d73fdd02ba810b8dd37e2900240"></a>
-std::uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>concurrency</b> ()</td></tr>
-<tr class="memdesc:abd824d73fdd02ba810b8dd37e2900240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of threads that server is using. <br /></td></tr>
+<tr class="memitem:abd824d73fdd02ba810b8dd37e2900240" id="r_abd824d73fdd02ba810b8dd37e2900240"><td class="memItemLeft" align="right" valign="top">std::uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd824d73fdd02ba810b8dd37e2900240">concurrency</a> ()</td></tr>
+<tr class="memdesc:abd824d73fdd02ba810b8dd37e2900240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of threads that server is using.  <br /></td></tr>
 <tr class="separator:abd824d73fdd02ba810b8dd37e2900240"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaaea481094e3f4488569c991772d27f" id="r_adaaea481094e3f4488569c991772d27f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaaea481094e3f4488569c991772d27f">loglevel</a> (LogLevel level)</td></tr>
+<tr class="memitem:adaaea481094e3f4488569c991772d27f" id="r_adaaea481094e3f4488569c991772d27f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaaea481094e3f4488569c991772d27f">loglevel</a> (<a class="el" href="namespacecrow.html#ad07dc32e163caa516aa1225a1ec4afe4">LogLevel</a> level)</td></tr>
 <tr class="memdesc:adaaea481094e3f4488569c991772d27f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the server's log level.  <br /></td></tr>
 <tr class="separator:adaaea481094e3f4488569c991772d27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a058d8138c140c1073f0972c74cfa812b" id="r_a058d8138c140c1073f0972c74cfa812b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a058d8138c140c1073f0972c74cfa812b">stream_threshold</a> (size_t threshold)</td></tr>
 <tr class="memdesc:a058d8138c140c1073f0972c74cfa812b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the response body size (in bytes) beyond which <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> automatically streams responses (Default is 1MiB)  <br /></td></tr>
 <tr class="separator:a058d8138c140c1073f0972c74cfa812b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af35a53c39414aa79446690fea359e573" id="r_af35a53c39414aa79446690fea359e573"><td class="memItemLeft" align="right" valign="top"><a id="af35a53c39414aa79446690fea359e573" name="af35a53c39414aa79446690fea359e573"></a>
-size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>stream_threshold</b> ()</td></tr>
-<tr class="memdesc:af35a53c39414aa79446690fea359e573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the response body size (in bytes) beyond which <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> automatically streams responses. <br /></td></tr>
+<tr class="memitem:af35a53c39414aa79446690fea359e573" id="r_af35a53c39414aa79446690fea359e573"><td class="memItemLeft" align="right" valign="top">size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af35a53c39414aa79446690fea359e573">stream_threshold</a> ()</td></tr>
+<tr class="memdesc:af35a53c39414aa79446690fea359e573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the response body size (in bytes) beyond which <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> automatically streams responses.  <br /></td></tr>
 <tr class="separator:af35a53c39414aa79446690fea359e573"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc5866a72f024bb6dfa9c4b61d7fe9f2" id="r_afc5866a72f024bb6dfa9c4b61d7fe9f2"><td class="memItemLeft" align="right" valign="top"><a id="afc5866a72f024bb6dfa9c4b61d7fe9f2" name="afc5866a72f024bb6dfa9c4b61d7fe9f2"></a>
-<a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>register_blueprint</b> (<a class="el" href="classcrow_1_1_blueprint.html">Blueprint</a> &amp;blueprint)</td></tr>
+<tr class="memitem:afc5866a72f024bb6dfa9c4b61d7fe9f2" id="r_afc5866a72f024bb6dfa9c4b61d7fe9f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc5866a72f024bb6dfa9c4b61d7fe9f2">register_blueprint</a> (<a class="el" href="classcrow_1_1_blueprint.html">Blueprint</a> &amp;blueprint)</td></tr>
 <tr class="separator:afc5866a72f024bb6dfa9c4b61d7fe9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d5baf439ee8c85ad500cdb022bcd3a1" id="r_a7d5baf439ee8c85ad500cdb022bcd3a1"><td class="memTemplParams" colspan="2"><a id="a7d5baf439ee8c85ad500cdb022bcd3a1" name="a7d5baf439ee8c85ad500cdb022bcd3a1"></a>
-template&lt;typename Duration , typename Func &gt; </td></tr>
-<tr class="memitem:a7d5baf439ee8c85ad500cdb022bcd3a1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>tick</b> (Duration d, Func f)</td></tr>
-<tr class="memdesc:a7d5baf439ee8c85ad500cdb022bcd3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a custom duration and function to run on every tick. <br /></td></tr>
+<tr class="memitem:a7d5baf439ee8c85ad500cdb022bcd3a1" id="r_a7d5baf439ee8c85ad500cdb022bcd3a1"><td class="memTemplParams" colspan="2">template&lt;typename Duration , typename Func &gt; </td></tr>
+<tr class="memitem:a7d5baf439ee8c85ad500cdb022bcd3a1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7d5baf439ee8c85ad500cdb022bcd3a1">tick</a> (Duration d, Func f)</td></tr>
+<tr class="memdesc:a7d5baf439ee8c85ad500cdb022bcd3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a custom duration and function to run on every tick.  <br /></td></tr>
 <tr class="separator:a7d5baf439ee8c85ad500cdb022bcd3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9a22c981e0afec0d55ee234683a6d38" id="r_ab9a22c981e0afec0d55ee234683a6d38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9a22c981e0afec0d55ee234683a6d38">validate</a> ()</td></tr>
 <tr class="memdesc:ab9a22c981e0afec0d55ee234683a6d38"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper for <code><a class="el" href="#ab9a22c981e0afec0d55ee234683a6d38" title="A wrapper for validate() in the router.">validate()</a></code> in the router.  <br /></td></tr>
 <tr class="separator:ab9a22c981e0afec0d55ee234683a6d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a193d8b03f717234a841cd92f72c6b4b5" id="r_a193d8b03f717234a841cd92f72c6b4b5"><td class="memItemLeft" align="right" valign="top"><a id="a193d8b03f717234a841cd92f72c6b4b5" name="a193d8b03f717234a841cd92f72c6b4b5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
-<tr class="memdesc:a193d8b03f717234a841cd92f72c6b4b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the server. <br /></td></tr>
+<tr class="memitem:a193d8b03f717234a841cd92f72c6b4b5" id="r_a193d8b03f717234a841cd92f72c6b4b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a193d8b03f717234a841cd92f72c6b4b5">run</a> ()</td></tr>
+<tr class="memdesc:a193d8b03f717234a841cd92f72c6b4b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the server.  <br /></td></tr>
 <tr class="separator:a193d8b03f717234a841cd92f72c6b4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd29cf4e11557abfd7bce88b84af9b99" id="r_afd29cf4e11557abfd7bce88b84af9b99"><td class="memItemLeft" align="right" valign="top">std::future&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd29cf4e11557abfd7bce88b84af9b99">run_async</a> ()</td></tr>
 <tr class="separator:afd29cf4e11557abfd7bce88b84af9b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0266672657128919ab9a067d93f3868f" id="r_a0266672657128919ab9a067d93f3868f"><td class="memItemLeft" align="right" valign="top"><a id="a0266672657128919ab9a067d93f3868f" name="a0266672657128919ab9a067d93f3868f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
-<tr class="memdesc:a0266672657128919ab9a067d93f3868f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the server. <br /></td></tr>
+<tr class="memitem:a0266672657128919ab9a067d93f3868f" id="r_a0266672657128919ab9a067d93f3868f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0266672657128919ab9a067d93f3868f">stop</a> ()</td></tr>
+<tr class="memdesc:a0266672657128919ab9a067d93f3868f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the server.  <br /></td></tr>
 <tr class="separator:a0266672657128919ab9a067d93f3868f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad38f39dc7ba97b9f298390565a88125a" id="r_ad38f39dc7ba97b9f298390565a88125a"><td class="memItemLeft" align="right" valign="top"><a id="ad38f39dc7ba97b9f298390565a88125a" name="ad38f39dc7ba97b9f298390565a88125a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_websocket</b> (<a class="el" href="structcrow_1_1websocket_1_1connection.html">crow::websocket::connection</a> *conn)</td></tr>
+<tr class="memitem:ad38f39dc7ba97b9f298390565a88125a" id="r_ad38f39dc7ba97b9f298390565a88125a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad38f39dc7ba97b9f298390565a88125a">add_websocket</a> (<a class="el" href="structcrow_1_1websocket_1_1connection.html">crow::websocket::connection</a> *conn)</td></tr>
 <tr class="separator:ad38f39dc7ba97b9f298390565a88125a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5305aba0aea70aa0e283c4ff8d78bbbf" id="r_a5305aba0aea70aa0e283c4ff8d78bbbf"><td class="memItemLeft" align="right" valign="top"><a id="a5305aba0aea70aa0e283c4ff8d78bbbf" name="a5305aba0aea70aa0e283c4ff8d78bbbf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>remove_websocket</b> (<a class="el" href="structcrow_1_1websocket_1_1connection.html">crow::websocket::connection</a> *conn)</td></tr>
+<tr class="memitem:a5305aba0aea70aa0e283c4ff8d78bbbf" id="r_a5305aba0aea70aa0e283c4ff8d78bbbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5305aba0aea70aa0e283c4ff8d78bbbf">remove_websocket</a> (<a class="el" href="structcrow_1_1websocket_1_1connection.html">crow::websocket::connection</a> *conn)</td></tr>
 <tr class="separator:a5305aba0aea70aa0e283c4ff8d78bbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a839c1e6f82d577308eb6f0d4948a4fbb" id="r_a839c1e6f82d577308eb6f0d4948a4fbb"><td class="memItemLeft" align="right" valign="top"><a id="a839c1e6f82d577308eb6f0d4948a4fbb" name="a839c1e6f82d577308eb6f0d4948a4fbb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>debug_print</b> ()</td></tr>
-<tr class="memdesc:a839c1e6f82d577308eb6f0d4948a4fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the routing paths defined for each HTTP method. <br /></td></tr>
+<tr class="memitem:a839c1e6f82d577308eb6f0d4948a4fbb" id="r_a839c1e6f82d577308eb6f0d4948a4fbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a839c1e6f82d577308eb6f0d4948a4fbb">debug_print</a> ()</td></tr>
+<tr class="memdesc:a839c1e6f82d577308eb6f0d4948a4fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the routing paths defined for each HTTP method.  <br /></td></tr>
 <tr class="separator:a839c1e6f82d577308eb6f0d4948a4fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a548c602b970e2856a9b828fa34de17f3" id="r_a548c602b970e2856a9b828fa34de17f3"><td class="memTemplParams" colspan="2"><a id="a548c602b970e2856a9b828fa34de17f3" name="a548c602b970e2856a9b828fa34de17f3"></a>
-template&lt;typename T , typename... Remain&gt; </td></tr>
-<tr class="memitem:a548c602b970e2856a9b828fa34de17f3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ssl_file</b> (T &amp;&amp;, Remain &amp;&amp;...)</td></tr>
+<tr class="memitem:a548c602b970e2856a9b828fa34de17f3" id="r_a548c602b970e2856a9b828fa34de17f3"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Remain&gt; </td></tr>
+<tr class="memitem:a548c602b970e2856a9b828fa34de17f3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a548c602b970e2856a9b828fa34de17f3">ssl_file</a> (T &amp;&amp;, Remain &amp;&amp;...)</td></tr>
 <tr class="separator:a548c602b970e2856a9b828fa34de17f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7728615fcfb959222e5ca987516b0aa7" id="r_a7728615fcfb959222e5ca987516b0aa7"><td class="memTemplParams" colspan="2"><a id="a7728615fcfb959222e5ca987516b0aa7" name="a7728615fcfb959222e5ca987516b0aa7"></a>
-template&lt;typename T , typename... Remain&gt; </td></tr>
-<tr class="memitem:a7728615fcfb959222e5ca987516b0aa7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ssl_chainfile</b> (T &amp;&amp;, Remain &amp;&amp;...)</td></tr>
+<tr class="memitem:a7728615fcfb959222e5ca987516b0aa7" id="r_a7728615fcfb959222e5ca987516b0aa7"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Remain&gt; </td></tr>
+<tr class="memitem:a7728615fcfb959222e5ca987516b0aa7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7728615fcfb959222e5ca987516b0aa7">ssl_chainfile</a> (T &amp;&amp;, Remain &amp;&amp;...)</td></tr>
 <tr class="separator:a7728615fcfb959222e5ca987516b0aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a274d35c50c9737ab55ce53b2c44af5c9" id="r_a274d35c50c9737ab55ce53b2c44af5c9"><td class="memTemplParams" colspan="2"><a id="a274d35c50c9737ab55ce53b2c44af5c9" name="a274d35c50c9737ab55ce53b2c44af5c9"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a274d35c50c9737ab55ce53b2c44af5c9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ssl</b> (T &amp;&amp;)</td></tr>
+<tr class="memitem:a274d35c50c9737ab55ce53b2c44af5c9" id="r_a274d35c50c9737ab55ce53b2c44af5c9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a274d35c50c9737ab55ce53b2c44af5c9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a274d35c50c9737ab55ce53b2c44af5c9">ssl</a> (T &amp;&amp;)</td></tr>
 <tr class="separator:a274d35c50c9737ab55ce53b2c44af5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac804a73fa33d77a281c4609727ec1676" id="r_ac804a73fa33d77a281c4609727ec1676"><td class="memItemLeft" align="right" valign="top"><a id="ac804a73fa33d77a281c4609727ec1676" name="ac804a73fa33d77a281c4609727ec1676"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ssl_used</b> () const</td></tr>
+<tr class="memitem:ac804a73fa33d77a281c4609727ec1676" id="r_ac804a73fa33d77a281c4609727ec1676"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac804a73fa33d77a281c4609727ec1676">ssl_used</a> () const</td></tr>
 <tr class="separator:ac804a73fa33d77a281c4609727ec1676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add295abb1f4e32ceb64c8ed9d11f7b85" id="r_add295abb1f4e32ceb64c8ed9d11f7b85"><td class="memTemplParams" colspan="2"><a id="add295abb1f4e32ceb64c8ed9d11f7b85" name="add295abb1f4e32ceb64c8ed9d11f7b85"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:add295abb1f4e32ceb64c8ed9d11f7b85"><td class="memTemplItemLeft" align="right" valign="top">T::context &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_context</b> (const <a class="el" href="structcrow_1_1request.html">request</a> &amp;req)</td></tr>
+<tr class="memitem:add295abb1f4e32ceb64c8ed9d11f7b85" id="r_add295abb1f4e32ceb64c8ed9d11f7b85"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:add295abb1f4e32ceb64c8ed9d11f7b85"><td class="memTemplItemLeft" align="right" valign="top">T::context &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#add295abb1f4e32ceb64c8ed9d11f7b85">get_context</a> (const <a class="el" href="structcrow_1_1request.html">request</a> &amp;req)</td></tr>
 <tr class="separator:add295abb1f4e32ceb64c8ed9d11f7b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6a0c5b3660cc5807e4e2bb43107c89b" id="r_ac6a0c5b3660cc5807e4e2bb43107c89b"><td class="memTemplParams" colspan="2"><a id="ac6a0c5b3660cc5807e4e2bb43107c89b" name="ac6a0c5b3660cc5807e4e2bb43107c89b"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac6a0c5b3660cc5807e4e2bb43107c89b"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_middleware</b> ()</td></tr>
+<tr class="memitem:ac6a0c5b3660cc5807e4e2bb43107c89b" id="r_ac6a0c5b3660cc5807e4e2bb43107c89b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac6a0c5b3660cc5807e4e2bb43107c89b"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac6a0c5b3660cc5807e4e2bb43107c89b">get_middleware</a> ()</td></tr>
 <tr class="separator:ac6a0c5b3660cc5807e4e2bb43107c89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e39821ccc9cbf8c6400fd86fc406c21" id="r_a5e39821ccc9cbf8c6400fd86fc406c21"><td class="memItemLeft" align="right" valign="top"><a id="a5e39821ccc9cbf8c6400fd86fc406c21" name="a5e39821ccc9cbf8c6400fd86fc406c21"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>wait_for_server_start</b> ()</td></tr>
-<tr class="memdesc:a5e39821ccc9cbf8c6400fd86fc406c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait until the server has properly started. <br /></td></tr>
+<tr class="memitem:a5e39821ccc9cbf8c6400fd86fc406c21" id="r_a5e39821ccc9cbf8c6400fd86fc406c21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e39821ccc9cbf8c6400fd86fc406c21">wait_for_server_start</a> ()</td></tr>
+<tr class="memdesc:a5e39821ccc9cbf8c6400fd86fc406c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait until the server has properly started.  <br /></td></tr>
 <tr class="separator:a5e39821ccc9cbf8c6400fd86fc406c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a27542e789b5106909f3e6876f3e96a26" id="r_a27542e789b5106909f3e6876f3e96a26"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:a27542e789b5106909f3e6876f3e96a26"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; Middlewares... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a27542e789b5106909f3e6876f3e96a26">make_middleware_tuple</a> (Ts &amp;&amp;... ts)</td></tr>
+<tr class="separator:a27542e789b5106909f3e6876f3e96a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bbe76405fff487a1913c7b5fccbbb81" id="r_a6bbe76405fff487a1913c7b5fccbbb81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bbe76405fff487a1913c7b5fccbbb81">notify_server_start</a> ()</td></tr>
+<tr class="memdesc:a6bbe76405fff487a1913c7b5fccbbb81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify anything using <code><a class="el" href="#a5e39821ccc9cbf8c6400fd86fc406c21" title="Wait until the server has properly started.">wait_for_server_start()</a></code> to proceed.  <br /></td></tr>
+<tr class="separator:a6bbe76405fff487a1913c7b5fccbbb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a00eb9ab7f051b536a09b6a81620bbe10" id="r_a00eb9ab7f051b536a09b6a81620bbe10"><td class="memItemLeft" align="right" valign="top">std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00eb9ab7f051b536a09b6a81620bbe10">timeout_</a> {5}</td></tr>
+<tr class="separator:a00eb9ab7f051b536a09b6a81620bbe10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d29c04986c79d7673bdce43e622b318" id="r_a4d29c04986c79d7673bdce43e622b318"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d29c04986c79d7673bdce43e622b318">port_</a> = 80</td></tr>
+<tr class="separator:a4d29c04986c79d7673bdce43e622b318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad85be3c48e1c4bbcff2da1557969e7a1" id="r_ad85be3c48e1c4bbcff2da1557969e7a1"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad85be3c48e1c4bbcff2da1557969e7a1">concurrency_</a> = 2</td></tr>
+<tr class="separator:ad85be3c48e1c4bbcff2da1557969e7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491022a697b577fed76b969372680b4f" id="r_a491022a697b577fed76b969372680b4f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a491022a697b577fed76b969372680b4f">max_payload_</a> {UINT64_MAX}</td></tr>
+<tr class="separator:a491022a697b577fed76b969372680b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1999eafef329546dc756cdc6104fbcfa" id="r_a1999eafef329546dc756cdc6104fbcfa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1999eafef329546dc756cdc6104fbcfa">validated_</a> = false</td></tr>
+<tr class="separator:a1999eafef329546dc756cdc6104fbcfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e0d308ef2ae95c29a301f3a6c554996" id="r_a4e0d308ef2ae95c29a301f3a6c554996"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e0d308ef2ae95c29a301f3a6c554996">server_name_</a> = std::string(&quot;Crow/&quot;) + VERSION</td></tr>
+<tr class="separator:a4e0d308ef2ae95c29a301f3a6c554996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee0bf8953c7ebeac2f6d8d0779ccdd1" id="r_a6ee0bf8953c7ebeac2f6d8d0779ccdd1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ee0bf8953c7ebeac2f6d8d0779ccdd1">bindaddr_</a> = &quot;0.0.0.0&quot;</td></tr>
+<tr class="separator:a6ee0bf8953c7ebeac2f6d8d0779ccdd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b3ba1f746ca8200d90b5e8d2a63fdbf" id="r_a7b3ba1f746ca8200d90b5e8d2a63fdbf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b3ba1f746ca8200d90b5e8d2a63fdbf">res_stream_threshold_</a> = 1048576</td></tr>
+<tr class="separator:a7b3ba1f746ca8200d90b5e8d2a63fdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d642b9c4714dbde18f2c3de961b59db" id="r_a3d642b9c4714dbde18f2c3de961b59db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcrow_1_1_router.html">Router</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d642b9c4714dbde18f2c3de961b59db">router_</a></td></tr>
+<tr class="separator:a3d642b9c4714dbde18f2c3de961b59db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada9716af018efbaa2f1ad3b6cae0512c" id="r_ada9716af018efbaa2f1ad3b6cae0512c"><td class="memItemLeft" align="right" valign="top">std::chrono::milliseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada9716af018efbaa2f1ad3b6cae0512c">tick_interval_</a></td></tr>
+<tr class="separator:ada9716af018efbaa2f1ad3b6cae0512c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab16af6d633110760d97059694cbe858" id="r_aab16af6d633110760d97059694cbe858"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab16af6d633110760d97059694cbe858">tick_function_</a></td></tr>
+<tr class="separator:aab16af6d633110760d97059694cbe858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a5863bcc997bf0ec72102ef58bd228" id="r_a41a5863bcc997bf0ec72102ef58bd228"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; Middlewares... &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41a5863bcc997bf0ec72102ef58bd228">middlewares_</a></td></tr>
+<tr class="separator:a41a5863bcc997bf0ec72102ef58bd228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf377ae376c17917d1172ec339e588a1" id="r_adf377ae376c17917d1172ec339e588a1"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="#a5df810d2619e31c2f024cc4e45898997">server_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf377ae376c17917d1172ec339e588a1">server_</a></td></tr>
+<tr class="separator:adf377ae376c17917d1172ec339e588a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f31a337fd2e0ad86e211c6665ee319" id="r_a87f31a337fd2e0ad86e211c6665ee319"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87f31a337fd2e0ad86e211c6665ee319">signals_</a> {SIGINT, SIGTERM}</td></tr>
+<tr class="separator:a87f31a337fd2e0ad86e211c6665ee319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649de3c7552b621d449fff26c0b2f832" id="r_a649de3c7552b621d449fff26c0b2f832"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a649de3c7552b621d449fff26c0b2f832">server_started_</a> {false}</td></tr>
+<tr class="separator:a649de3c7552b621d449fff26c0b2f832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691671ec56b80633a044a1665b0ac645" id="r_a691671ec56b80633a044a1665b0ac645"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a691671ec56b80633a044a1665b0ac645">cv_started_</a></td></tr>
+<tr class="separator:a691671ec56b80633a044a1665b0ac645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcc5468c8fd0d8da6d2b33bf149c4dbc" id="r_abcc5468c8fd0d8da6d2b33bf149c4dbc"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcc5468c8fd0d8da6d2b33bf149c4dbc">start_mutex_</a></td></tr>
+<tr class="separator:abcc5468c8fd0d8da6d2b33bf149c4dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7a14acbaf221c10c4e421252e85756" id="r_aba7a14acbaf221c10c4e421252e85756"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structcrow_1_1websocket_1_1connection.html">crow::websocket::connection</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba7a14acbaf221c10c4e421252e85756">websockets_</a></td></tr>
+<tr class="separator:aba7a14acbaf221c10c4e421252e85756"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename... Middlewares&gt;<br />
 class crow::Crow&lt; Middlewares &gt;</div><p>The main server application. </p>
 <p>Use <code>SimpleApp</code> or <code>App&lt;Middleware1, Middleware2, etc...&gt;</code> </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a980ca09ad971f8915a3575d9a94fe78c" name="a980ca09ad971f8915a3575d9a94fe78c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980ca09ad971f8915a3575d9a94fe78c">&#9670;&#160;</a></span>context_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::context_t = <a class="el" href="structcrow_1_1detail_1_1context.html">detail::context</a>&lt;Middlewares...&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa78aacbc64349155aab3f81d32715189" name="aa78aacbc64349155aab3f81d32715189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa78aacbc64349155aab3f81d32715189">&#9670;&#160;</a></span>mw_container_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::mw_container_t = std::tuple&lt;Middlewares...&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b0a203a6f9070ea8010227dcdbcec60" name="a5b0a203a6f9070ea8010227dcdbcec60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b0a203a6f9070ea8010227dcdbcec60">&#9670;&#160;</a></span>self_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::self_t = <a class="el" href="classcrow_1_1_crow.html">Crow</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This crow application. </p>
+
+</div>
+</div>
+<a id="a5df810d2619e31c2f024cc4e45898997" name="a5df810d2619e31c2f024cc4e45898997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5df810d2619e31c2f024cc4e45898997">&#9670;&#160;</a></span>server_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::server_t = <a class="el" href="classcrow_1_1_server.html">Server</a>&lt;<a class="el" href="classcrow_1_1_crow.html">Crow</a>, <a class="el" href="structcrow_1_1_socket_adaptor.html">SocketAdaptor</a>, Middlewares...&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The HTTP server. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7a6ce30b00d6d2beb901ffbb3160c137" name="a7a6ce30b00d6d2beb901ffbb3160c137"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a6ce30b00d6d2beb901ffbb3160c137">&#9670;&#160;</a></span>Crow() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::Crow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb69a7bf5d4a791a398c838d37086d94" name="abb69a7bf5d4a791a398c838d37086d94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb69a7bf5d4a791a398c838d37086d94">&#9670;&#160;</a></span>Crow() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<div class="memtemplate">
+template&lt;typename... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::Crow </td>
+          <td>(</td>
+          <td class="paramtype">Ts &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>ts</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> with a subset of middleware. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad38f39dc7ba97b9f298390565a88125a" name="ad38f39dc7ba97b9f298390565a88125a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad38f39dc7ba97b9f298390565a88125a">&#9670;&#160;</a></span>add_websocket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::add_websocket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1websocket_1_1connection.html">crow::websocket::connection</a> *</td>          <td class="paramname"><span class="paramname"><em>conn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c816534804e7bd351ca692005bf3343" name="a8c816534804e7bd351ca692005bf3343"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c816534804e7bd351ca692005bf3343">&#9670;&#160;</a></span>bindaddr() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::bindaddr </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the address that <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> will handle requests on. </p>
+
+</div>
+</div>
+<a id="ab12c2127972da09dbeb15c021d18d4f3" name="ab12c2127972da09dbeb15c021d18d4f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab12c2127972da09dbeb15c021d18d4f3">&#9670;&#160;</a></span>bindaddr() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::bindaddr </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>bindaddr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The IP address that <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> will handle requests on (default is 0.0.0.0) </p>
+
+</div>
+</div>
+<a id="abfb285bf01d12f28eabcc716423effe4" name="abfb285bf01d12f28eabcc716423effe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb285bf01d12f28eabcc716423effe4">&#9670;&#160;</a></span>catchall_route()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcrow_1_1_catchall_rule.html">CatchallRule</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::catchall_route </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a route for any requests without a proper route (<b>Use CROW_CATCHALL_ROUTE instead</b>) </p>
+
+</div>
+</div>
+<a id="abd824d73fdd02ba810b8dd37e2900240" name="abd824d73fdd02ba810b8dd37e2900240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd824d73fdd02ba810b8dd37e2900240">&#9670;&#160;</a></span>concurrency() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint16_t <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::concurrency </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the number of threads that server is using. </p>
+
+</div>
+</div>
+<a id="aef4806351da08c271f1e0863e9c75b3e" name="aef4806351da08c271f1e0863e9c75b3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef4806351da08c271f1e0863e9c75b3e">&#9670;&#160;</a></span>concurrency() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::concurrency </td>
+          <td>(</td>
+          <td class="paramtype">std::uint16_t</td>          <td class="paramname"><span class="paramname"><em>concurrency</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Run the server on multiple threads using a specific number. </p>
+
+</div>
+</div>
+<a id="a839c1e6f82d577308eb6f0d4948a4fbb" name="a839c1e6f82d577308eb6f0d4948a4fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a839c1e6f82d577308eb6f0d4948a4fbb">&#9670;&#160;</a></span>debug_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::debug_print </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Print the routing paths defined for each HTTP method. </p>
+
+</div>
+</div>
+<a id="add295abb1f4e32ceb64c8ed9d11f7b85" name="add295abb1f4e32ceb64c8ed9d11f7b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add295abb1f4e32ceb64c8ed9d11f7b85">&#9670;&#160;</a></span>get_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T::context &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::get_context </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcrow_1_1request.html">request</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>req</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6a0c5b3660cc5807e4e2bb43107c89b" name="ac6a0c5b3660cc5807e4e2bb43107c89b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6a0c5b3660cc5807e4e2bb43107c89b">&#9670;&#160;</a></span>get_middleware()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::get_middleware </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a866cb219bb77c19326f39f431424e1c7" name="a866cb219bb77c19326f39f431424e1c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a866cb219bb77c19326f39f431424e1c7">&#9670;&#160;</a></span>handle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::handle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1request.html">request</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>req</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1response.html">response</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="structcrow_1_1routing__handle__result.html">routing_handle_result</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>found</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Process the fully parsed request and generate a response for it. </p>
+
+</div>
+</div>
+<a id="accf00be55c273297b758fa243f107018" name="accf00be55c273297b758fa243f107018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf00be55c273297b758fa243f107018">&#9670;&#160;</a></span>handle_full()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::handle_full </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1request.html">request</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>req</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1response.html">response</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Process a fully parsed request from start to finish (primarily used for debugging) </p>
+
+</div>
+</div>
+<a id="ad5e54dd12437653844565aa7c6295436" name="ad5e54dd12437653844565aa7c6295436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5e54dd12437653844565aa7c6295436">&#9670;&#160;</a></span>handle_initial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="structcrow_1_1routing__handle__result.html">routing_handle_result</a> &gt; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::handle_initial </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1request.html">request</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>req</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1response.html">response</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Process only the method and URL of a request and provide a route (or an error response) </p>
+
+</div>
+</div>
 <a id="a6e435bf5275735effd32647772bdbd04" name="a6e435bf5275735effd32647772bdbd04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6e435bf5275735effd32647772bdbd04">&#9670;&#160;</a></span>handle_upgrade()</h2>
 
@@ -323,7 +826,7 @@ template&lt;typename... Middlewares&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::loglevel </td>
           <td>(</td>
-          <td class="paramtype">LogLevel</td>          <td class="paramname"><span class="paramname"><em>level</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacecrow.html#ad07dc32e163caa516aa1225a1ec4afe4">LogLevel</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -336,12 +839,302 @@ template&lt;typename... Middlewares&gt; </div>
 
 <p>Set the server's log level. </p>
 <p>Possible values are:<br  />
- crow::LogLevel::Debug (0)<br  />
- crow::LogLevel::Info (1)<br  />
- crow::LogLevel::Warning (2)<br  />
- crow::LogLevel::Error (3)<br  />
- crow::LogLevel::Critical (4)<br  />
+ <a class="el" href="namespacecrow.html#ad07dc32e163caa516aa1225a1ec4afe4aa603905470e2a5b8c13e96b579ef0dba">crow::LogLevel::Debug</a> (0)<br  />
+ <a class="el" href="namespacecrow.html#ad07dc32e163caa516aa1225a1ec4afe4a4059b0251f66a18cb56f544728796875">crow::LogLevel::Info</a> (1)<br  />
+ <a class="el" href="namespacecrow.html#ad07dc32e163caa516aa1225a1ec4afe4a0eaadb4fcb48a0a0ed7bc9868be9fbaa">crow::LogLevel::Warning</a> (2)<br  />
+ <a class="el" href="namespacecrow.html#ad07dc32e163caa516aa1225a1ec4afe4a902b0d55fddef6f8d651fe1035b7d4bd">crow::LogLevel::Error</a> (3)<br  />
+ <a class="el" href="namespacecrow.html#ad07dc32e163caa516aa1225a1ec4afe4a278d01e5af56273bae1bb99a98b370cd">crow::LogLevel::Critical</a> (4)<br  />
  </p>
+
+</div>
+</div>
+<a id="a27542e789b5106909f3e6876f3e96a26" name="a27542e789b5106909f3e6876f3e96a26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27542e789b5106909f3e6876f3e96a26">&#9670;&#160;</a></span>make_middleware_tuple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<div class="memtemplate">
+template&lt;typename... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt; Middlewares... &gt; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::make_middleware_tuple </td>
+          <td>(</td>
+          <td class="paramtype">Ts &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>ts</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a6277aa9a88b2ecf301e98e8cbf9c33" name="a7a6277aa9a88b2ecf301e98e8cbf9c33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a6277aa9a88b2ecf301e98e8cbf9c33">&#9670;&#160;</a></span>multithreaded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::multithreaded </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Run the server on multiple threads using all available threads. </p>
+
+</div>
+</div>
+<a id="a6bbe76405fff487a1913c7b5fccbbb81" name="a6bbe76405fff487a1913c7b5fccbbb81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bbe76405fff487a1913c7b5fccbbb81">&#9670;&#160;</a></span>notify_server_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::notify_server_start </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Notify anything using <code><a class="el" href="#a5e39821ccc9cbf8c6400fd86fc406c21" title="Wait until the server has properly started.">wait_for_server_start()</a></code> to proceed. </p>
+
+</div>
+</div>
+<a id="a87d0e10ed791c6847d8b7dfff2369aae" name="a87d0e10ed791c6847d8b7dfff2369aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d0e10ed791c6847d8b7dfff2369aae">&#9670;&#160;</a></span>port() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint16_t <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::port </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the port that <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> will handle requests on. </p>
+
+</div>
+</div>
+<a id="a97cc98d99417f21f757fa09e1bf1f0ca" name="a97cc98d99417f21f757fa09e1bf1f0ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97cc98d99417f21f757fa09e1bf1f0ca">&#9670;&#160;</a></span>port() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::port </td>
+          <td>(</td>
+          <td class="paramtype">std::uint16_t</td>          <td class="paramname"><span class="paramname"><em>port</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the port that <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> will handle requests on. </p>
+
+</div>
+</div>
+<a id="afc5866a72f024bb6dfa9c4b61d7fe9f2" name="afc5866a72f024bb6dfa9c4b61d7fe9f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc5866a72f024bb6dfa9c4b61d7fe9f2">&#9670;&#160;</a></span>register_blueprint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::register_blueprint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcrow_1_1_blueprint.html">Blueprint</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>blueprint</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5305aba0aea70aa0e283c4ff8d78bbbf" name="a5305aba0aea70aa0e283c4ff8d78bbbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5305aba0aea70aa0e283c4ff8d78bbbf">&#9670;&#160;</a></span>remove_websocket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::remove_websocket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcrow_1_1websocket_1_1connection.html">crow::websocket::connection</a> *</td>          <td class="paramname"><span class="paramname"><em>conn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af221cb25926e5dabc2da21a7a1c9713c" name="af221cb25926e5dabc2da21a7a1c9713c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af221cb25926e5dabc2da21a7a1c9713c">&#9670;&#160;</a></span>route()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<div class="memtemplate">
+template&lt;uint64_t Tag&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::route </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>rule</em></span></td><td>)</td>
+          <td> -&gt; typename std::result_of&lt;decltype (&amp;<a class="el" href="classcrow_1_1_router.html#a33600f2580d82f2f7d1a0f0e3f649650">Router::new_rule_tagged</a>&lt;Tag&gt;)(<a class="el" href="classcrow_1_1_router.html">Router</a>, std::string&amp;&amp;)&gt;::type
+
+        </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a route using a rule (<b>Use CROW_ROUTE instead</b>) </p>
+
+</div>
+</div>
+<a id="a9438785f765882ced9b5273547803532" name="a9438785f765882ced9b5273547803532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9438785f765882ced9b5273547803532">&#9670;&#160;</a></span>route_dynamic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcrow_1_1_dynamic_rule.html">DynamicRule</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::route_dynamic </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>rule</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a dynamic route using a rule (<b>Use CROW_ROUTE instead</b>) </p>
+
+</div>
+</div>
+<a id="a193d8b03f717234a841cd92f72c6b4b5" name="a193d8b03f717234a841cd92f72c6b4b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a193d8b03f717234a841cd92f72c6b4b5">&#9670;&#160;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::run </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Run the server. </p>
 
 </div>
 </div>
@@ -374,8 +1167,298 @@ template&lt;typename... Middlewares&gt; </div>
 
 </div>
 </div>
+<a id="a5ee995b71b623f09998c19b8fdf03d71" name="a5ee995b71b623f09998c19b8fdf03d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ee995b71b623f09998c19b8fdf03d71">&#9670;&#160;</a></span>server_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::server_name </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>server_name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the server name. </p>
+
+</div>
+</div>
+<a id="a8adb106a81a33368ca36d70f0af68682" name="a8adb106a81a33368ca36d70f0af68682"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8adb106a81a33368ca36d70f0af68682">&#9670;&#160;</a></span>signal_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::signal_add </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>signal_number</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff9ad0efd347b793bbab0d50f6618ab8" name="aff9ad0efd347b793bbab0d50f6618ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff9ad0efd347b793bbab0d50f6618ab8">&#9670;&#160;</a></span>signal_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::signal_clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6941254ac64a249b5555a80622e1ba77" name="a6941254ac64a249b5555a80622e1ba77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6941254ac64a249b5555a80622e1ba77">&#9670;&#160;</a></span>signals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; int &gt; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::signals </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a274d35c50c9737ab55ce53b2c44af5c9" name="a274d35c50c9737ab55ce53b2c44af5c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a274d35c50c9737ab55ce53b2c44af5c9">&#9670;&#160;</a></span>ssl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::ssl </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7728615fcfb959222e5ca987516b0aa7" name="a7728615fcfb959222e5ca987516b0aa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7728615fcfb959222e5ca987516b0aa7">&#9670;&#160;</a></span>ssl_chainfile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<div class="memtemplate">
+template&lt;typename T , typename... Remain&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::ssl_chainfile </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;</td>          <td class="paramname"><span class="paramname">, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Remain &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>...</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a548c602b970e2856a9b828fa34de17f3" name="a548c602b970e2856a9b828fa34de17f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a548c602b970e2856a9b828fa34de17f3">&#9670;&#160;</a></span>ssl_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<div class="memtemplate">
+template&lt;typename T , typename... Remain&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::ssl_file </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;</td>          <td class="paramname"><span class="paramname">, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Remain &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>...</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac804a73fa33d77a281c4609727ec1676" name="ac804a73fa33d77a281c4609727ec1676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac804a73fa33d77a281c4609727ec1676">&#9670;&#160;</a></span>ssl_used()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::ssl_used </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0266672657128919ab9a067d93f3868f" name="a0266672657128919ab9a067d93f3868f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0266672657128919ab9a067d93f3868f">&#9670;&#160;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::stop </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stop the server. </p>
+
+</div>
+</div>
+<a id="af35a53c39414aa79446690fea359e573" name="af35a53c39414aa79446690fea359e573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af35a53c39414aa79446690fea359e573">&#9670;&#160;</a></span>stream_threshold() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::stream_threshold </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the response body size (in bytes) beyond which <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> automatically streams responses. </p>
+
+</div>
+</div>
 <a id="a058d8138c140c1073f0972c74cfa812b" name="a058d8138c140c1073f0972c74cfa812b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a058d8138c140c1073f0972c74cfa812b">&#9670;&#160;</a></span>stream_threshold()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a058d8138c140c1073f0972c74cfa812b">&#9670;&#160;</a></span>stream_threshold() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,6 +1484,70 @@ template&lt;typename... Middlewares&gt; </div>
 
 <p>Set the response body size (in bytes) beyond which <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a> automatically streams responses (Default is 1MiB) </p>
 <p>Any streamed response is unaffected by <a class="el" href="classcrow_1_1_crow.html" title="The main server application.">Crow</a>'s timer, and therefore won't timeout before a response is fully sent. </p>
+
+</div>
+</div>
+<a id="a7d5baf439ee8c85ad500cdb022bcd3a1" name="a7d5baf439ee8c85ad500cdb022bcd3a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d5baf439ee8c85ad500cdb022bcd3a1">&#9670;&#160;</a></span>tick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<div class="memtemplate">
+template&lt;typename Duration , typename Func &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::tick </td>
+          <td>(</td>
+          <td class="paramtype">Duration</td>          <td class="paramname"><span class="paramname"><em>d</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func</td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set a custom duration and function to run on every tick. </p>
+
+</div>
+</div>
+<a id="a1d69f60255f2bf1571d6570a6abb1552" name="a1d69f60255f2bf1571d6570a6abb1552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d69f60255f2bf1571d6570a6abb1552">&#9670;&#160;</a></span>timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::timeout </td>
+          <td>(</td>
+          <td class="paramtype">std::uint8_t</td>          <td class="paramname"><span class="paramname"><em>timeout</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the connection timeout in seconds (default is 5) </p>
 
 </div>
 </div>
@@ -431,6 +1578,526 @@ template&lt;typename... Middlewares&gt; </div>
 
 <p>A wrapper for <code><a class="el" href="#ab9a22c981e0afec0d55ee234683a6d38" title="A wrapper for validate() in the router.">validate()</a></code> in the router. </p>
 <p>Go through the rules, upgrade them if possible, and add them to the list of rules </p>
+
+</div>
+</div>
+<a id="a5e39821ccc9cbf8c6400fd86fc406c21" name="a5e39821ccc9cbf8c6400fd86fc406c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e39821ccc9cbf8c6400fd86fc406c21">&#9670;&#160;</a></span>wait_for_server_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::wait_for_server_start </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wait until the server has properly started. </p>
+
+</div>
+</div>
+<a id="a391a488c01ce53c0ccfd502c7ad15640" name="a391a488c01ce53c0ccfd502c7ad15640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a391a488c01ce53c0ccfd502c7ad15640">&#9670;&#160;</a></span>websocket_max_payload() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::websocket_max_payload </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the default max payload size for websockets. </p>
+
+</div>
+</div>
+<a id="ac30b84b54096d1bfe517a9cf81d65fc7" name="ac30b84b54096d1bfe517a9cf81d65fc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac30b84b54096d1bfe517a9cf81d65fc7">&#9670;&#160;</a></span>websocket_max_payload() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5b0a203a6f9070ea8010227dcdbcec60">self_t</a> &amp; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::websocket_max_payload </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>max_payload</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the default max payload size for websockets. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6ee0bf8953c7ebeac2f6d8d0779ccdd1" name="a6ee0bf8953c7ebeac2f6d8d0779ccdd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ee0bf8953c7ebeac2f6d8d0779ccdd1">&#9670;&#160;</a></span>bindaddr_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::bindaddr_ = &quot;0.0.0.0&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad85be3c48e1c4bbcff2da1557969e7a1" name="ad85be3c48e1c4bbcff2da1557969e7a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad85be3c48e1c4bbcff2da1557969e7a1">&#9670;&#160;</a></span>concurrency_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::concurrency_ = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a691671ec56b80633a044a1665b0ac645" name="a691671ec56b80633a044a1665b0ac645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a691671ec56b80633a044a1665b0ac645">&#9670;&#160;</a></span>cv_started_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::condition_variable <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::cv_started_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a491022a697b577fed76b969372680b4f" name="a491022a697b577fed76b969372680b4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a491022a697b577fed76b969372680b4f">&#9670;&#160;</a></span>max_payload_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::max_payload_ {UINT64_MAX}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41a5863bcc997bf0ec72102ef58bd228" name="a41a5863bcc997bf0ec72102ef58bd228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41a5863bcc997bf0ec72102ef58bd228">&#9670;&#160;</a></span>middlewares_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt;Middlewares...&gt; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::middlewares_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d29c04986c79d7673bdce43e622b318" name="a4d29c04986c79d7673bdce43e622b318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d29c04986c79d7673bdce43e622b318">&#9670;&#160;</a></span>port_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::port_ = 80</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b3ba1f746ca8200d90b5e8d2a63fdbf" name="a7b3ba1f746ca8200d90b5e8d2a63fdbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b3ba1f746ca8200d90b5e8d2a63fdbf">&#9670;&#160;</a></span>res_stream_threshold_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::res_stream_threshold_ = 1048576</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d642b9c4714dbde18f2c3de961b59db" name="a3d642b9c4714dbde18f2c3de961b59db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d642b9c4714dbde18f2c3de961b59db">&#9670;&#160;</a></span>router_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcrow_1_1_router.html">Router</a> <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::router_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf377ae376c17917d1172ec339e588a1" name="adf377ae376c17917d1172ec339e588a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf377ae376c17917d1172ec339e588a1">&#9670;&#160;</a></span>server_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="#a5df810d2619e31c2f024cc4e45898997">server_t</a>&gt; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::server_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e0d308ef2ae95c29a301f3a6c554996" name="a4e0d308ef2ae95c29a301f3a6c554996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e0d308ef2ae95c29a301f3a6c554996">&#9670;&#160;</a></span>server_name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::server_name_ = std::string(&quot;Crow/&quot;) + VERSION</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a649de3c7552b621d449fff26c0b2f832" name="a649de3c7552b621d449fff26c0b2f832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a649de3c7552b621d449fff26c0b2f832">&#9670;&#160;</a></span>server_started_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::server_started_ {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87f31a337fd2e0ad86e211c6665ee319" name="a87f31a337fd2e0ad86e211c6665ee319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f31a337fd2e0ad86e211c6665ee319">&#9670;&#160;</a></span>signals_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::signals_ {SIGINT, SIGTERM}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcc5468c8fd0d8da6d2b33bf149c4dbc" name="abcc5468c8fd0d8da6d2b33bf149c4dbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcc5468c8fd0d8da6d2b33bf149c4dbc">&#9670;&#160;</a></span>start_mutex_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::start_mutex_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab16af6d633110760d97059694cbe858" name="aab16af6d633110760d97059694cbe858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab16af6d633110760d97059694cbe858">&#9670;&#160;</a></span>tick_function_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void()&gt; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::tick_function_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada9716af018efbaa2f1ad3b6cae0512c" name="ada9716af018efbaa2f1ad3b6cae0512c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada9716af018efbaa2f1ad3b6cae0512c">&#9670;&#160;</a></span>tick_interval_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::chrono::milliseconds <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::tick_interval_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00eb9ab7f051b536a09b6a81620bbe10" name="a00eb9ab7f051b536a09b6a81620bbe10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00eb9ab7f051b536a09b6a81620bbe10">&#9670;&#160;</a></span>timeout_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint8_t <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::timeout_ {5}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1999eafef329546dc756cdc6104fbcfa" name="a1999eafef329546dc756cdc6104fbcfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1999eafef329546dc756cdc6104fbcfa">&#9670;&#160;</a></span>validated_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::validated_ = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba7a14acbaf221c10c4e421252e85756" name="aba7a14acbaf221c10c4e421252e85756"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba7a14acbaf221c10c4e421252e85756">&#9670;&#160;</a></span>websockets_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Middlewares&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structcrow_1_1websocket_1_1connection.html">crow::websocket::connection</a>*&gt; <a class="el" href="classcrow_1_1_crow.html">crow::Crow</a>&lt; Middlewares &gt;::websockets_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

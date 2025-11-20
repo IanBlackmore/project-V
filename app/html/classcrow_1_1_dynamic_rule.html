@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>transaction team: crow::DynamicRule Class Reference</title>
+<title>My Project: crow::DynamicRule Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">transaction team
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -71,13 +71,14 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>crow</b></li><li class="navelem"><a class="el" href="classcrow_1_1_dynamic_rule.html">DynamicRule</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecrow.html">crow</a></li><li class="navelem"><a class="el" href="classcrow_1_1_dynamic_rule.html">DynamicRule</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classcrow_1_1_dynamic_rule-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">crow::DynamicRule Class Reference</div></div>
 </div><!--header-->
@@ -100,96 +101,107 @@ Inheritance diagram for crow::DynamicRule:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae34a9eac492ec9ed8e7c7ef036afcfec" id="r_ae34a9eac492ec9ed8e7c7ef036afcfec"><td class="memItemLeft" align="right" valign="top"><a id="ae34a9eac492ec9ed8e7c7ef036afcfec" name="ae34a9eac492ec9ed8e7c7ef036afcfec"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicRule</b> (std::string rule)</td></tr>
+<tr class="memitem:ae34a9eac492ec9ed8e7c7ef036afcfec" id="r_ae34a9eac492ec9ed8e7c7ef036afcfec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae34a9eac492ec9ed8e7c7ef036afcfec">DynamicRule</a> (std::string <a class="el" href="classcrow_1_1_base_rule.html#a068f3cacedc95b632efb0ed1035c95ac">rule</a>)</td></tr>
 <tr class="separator:ae34a9eac492ec9ed8e7c7ef036afcfec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad044e4cacd82591b1d9b1115f0d0bea1" id="r_ad044e4cacd82591b1d9b1115f0d0bea1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad044e4cacd82591b1d9b1115f0d0bea1">validate</a> () override</td></tr>
 <tr class="separator:ad044e4cacd82591b1d9b1115f0d0bea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad15e58c75d76bb1d6120302ef2c36c58" id="r_ad15e58c75d76bb1d6120302ef2c36c58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad15e58c75d76bb1d6120302ef2c36c58">handle</a> (<a class="el" href="structcrow_1_1request.html">request</a> &amp;req, <a class="el" href="structcrow_1_1response.html">response</a> &amp;res, const routing_params &amp;params) override</td></tr>
 <tr class="separator:ad15e58c75d76bb1d6120302ef2c36c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a482a85c52b9815f5e0715e0840ab7024" id="r_a482a85c52b9815f5e0715e0840ab7024"><td class="memTemplParams" colspan="2"><a id="a482a85c52b9815f5e0715e0840ab7024" name="a482a85c52b9815f5e0715e0840ab7024"></a>
-template&lt;typename Func &gt; </td></tr>
-<tr class="memitem:a482a85c52b9815f5e0715e0840ab7024"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (Func f)</td></tr>
+<tr class="memitem:a482a85c52b9815f5e0715e0840ab7024" id="r_a482a85c52b9815f5e0715e0840ab7024"><td class="memTemplParams" colspan="2">template&lt;typename Func &gt; </td></tr>
+<tr class="memitem:a482a85c52b9815f5e0715e0840ab7024"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a482a85c52b9815f5e0715e0840ab7024">operator()</a> (Func f)</td></tr>
 <tr class="separator:a482a85c52b9815f5e0715e0840ab7024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c18b9fad80fd47934051f41286a4a9e" id="r_a8c18b9fad80fd47934051f41286a4a9e"><td class="memTemplParams" colspan="2"><a id="a8c18b9fad80fd47934051f41286a4a9e" name="a8c18b9fad80fd47934051f41286a4a9e"></a>
-template&lt;typename Func &gt; </td></tr>
-<tr class="memitem:a8c18b9fad80fd47934051f41286a4a9e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (std::string name, Func &amp;&amp;f)</td></tr>
+<tr class="memitem:a8c18b9fad80fd47934051f41286a4a9e" id="r_a8c18b9fad80fd47934051f41286a4a9e"><td class="memTemplParams" colspan="2">template&lt;typename Func &gt; </td></tr>
+<tr class="memitem:a8c18b9fad80fd47934051f41286a4a9e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8c18b9fad80fd47934051f41286a4a9e">operator()</a> (std::string <a class="el" href="structcrow_1_1_rule_parameter_traits.html#a96513932326ccac296224ba286248fb7">name</a>, Func &amp;&amp;f)</td></tr>
 <tr class="separator:a8c18b9fad80fd47934051f41286a4a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcrow_1_1_base_rule"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classcrow_1_1_base_rule')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcrow_1_1_base_rule.html">crow::BaseRule</a></td></tr>
-<tr class="memitem:ada4c61f94eb32ebbb5d553cacbc83013 inherit pub_methods_classcrow_1_1_base_rule" id="r_ada4c61f94eb32ebbb5d553cacbc83013"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>BaseRule</b> (std::string rule)</td></tr>
+<tr class="memitem:ada4c61f94eb32ebbb5d553cacbc83013 inherit pub_methods_classcrow_1_1_base_rule" id="r_ada4c61f94eb32ebbb5d553cacbc83013"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrow_1_1_base_rule.html#ada4c61f94eb32ebbb5d553cacbc83013">BaseRule</a> (std::string <a class="el" href="classcrow_1_1_base_rule.html#a068f3cacedc95b632efb0ed1035c95ac">rule</a>)</td></tr>
 <tr class="separator:ada4c61f94eb32ebbb5d553cacbc83013 inherit pub_methods_classcrow_1_1_base_rule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c36eddaa2be13eb3b3b8be7b2882c7b inherit pub_methods_classcrow_1_1_base_rule" id="r_a4c36eddaa2be13eb3b3b8be7b2882c7b"><td class="memItemLeft" align="right" valign="top">
-std::unique_ptr&lt; <a class="el" href="classcrow_1_1_base_rule.html">BaseRule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>upgrade</b> ()</td></tr>
+<tr class="memitem:a270efe3d144ed2cc638e78758d08b0d8 inherit pub_methods_classcrow_1_1_base_rule" id="r_a270efe3d144ed2cc638e78758d08b0d8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrow_1_1_base_rule.html#a270efe3d144ed2cc638e78758d08b0d8">~BaseRule</a> ()</td></tr>
+<tr class="separator:a270efe3d144ed2cc638e78758d08b0d8 inherit pub_methods_classcrow_1_1_base_rule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c36eddaa2be13eb3b3b8be7b2882c7b inherit pub_methods_classcrow_1_1_base_rule" id="r_a4c36eddaa2be13eb3b3b8be7b2882c7b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classcrow_1_1_base_rule.html">BaseRule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrow_1_1_base_rule.html#a4c36eddaa2be13eb3b3b8be7b2882c7b">upgrade</a> ()</td></tr>
 <tr class="separator:a4c36eddaa2be13eb3b3b8be7b2882c7b inherit pub_methods_classcrow_1_1_base_rule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf37339742cfca68b60b9d872382a43d inherit pub_methods_classcrow_1_1_base_rule" id="r_acf37339742cfca68b60b9d872382a43d"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>handle_upgrade</b> (const <a class="el" href="structcrow_1_1request.html">request</a> &amp;, <a class="el" href="structcrow_1_1response.html">response</a> &amp;res, <a class="el" href="structcrow_1_1_socket_adaptor.html">SocketAdaptor</a> &amp;&amp;)</td></tr>
+<tr class="memitem:acf37339742cfca68b60b9d872382a43d inherit pub_methods_classcrow_1_1_base_rule" id="r_acf37339742cfca68b60b9d872382a43d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrow_1_1_base_rule.html#acf37339742cfca68b60b9d872382a43d">handle_upgrade</a> (const <a class="el" href="structcrow_1_1request.html">request</a> &amp;, <a class="el" href="structcrow_1_1response.html">response</a> &amp;res, <a class="el" href="structcrow_1_1_socket_adaptor.html">SocketAdaptor</a> &amp;&amp;)</td></tr>
 <tr class="separator:acf37339742cfca68b60b9d872382a43d inherit pub_methods_classcrow_1_1_base_rule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba0284ef74a04b9c2401b3a5022f57a6 inherit pub_methods_classcrow_1_1_base_rule" id="r_aba0284ef74a04b9c2401b3a5022f57a6"><td class="memItemLeft" align="right" valign="top">
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_methods</b> ()</td></tr>
+<tr class="memitem:aba0284ef74a04b9c2401b3a5022f57a6 inherit pub_methods_classcrow_1_1_base_rule" id="r_aba0284ef74a04b9c2401b3a5022f57a6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrow_1_1_base_rule.html#aba0284ef74a04b9c2401b3a5022f57a6">get_methods</a> ()</td></tr>
 <tr class="separator:aba0284ef74a04b9c2401b3a5022f57a6 inherit pub_methods_classcrow_1_1_base_rule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adea69ae04c498740b73408455197d6a0 inherit pub_methods_classcrow_1_1_base_rule" id="r_adea69ae04c498740b73408455197d6a0"><td class="memTemplParams" colspan="2">
-template&lt;typename F &gt; </td></tr>
-<tr class="memitem:adea69ae04c498740b73408455197d6a0 inherit pub_methods_classcrow_1_1_base_rule"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>foreach_method</b> (F f)</td></tr>
+<tr class="memitem:adea69ae04c498740b73408455197d6a0 inherit pub_methods_classcrow_1_1_base_rule" id="r_adea69ae04c498740b73408455197d6a0"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:adea69ae04c498740b73408455197d6a0 inherit pub_methods_classcrow_1_1_base_rule"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcrow_1_1_base_rule.html#adea69ae04c498740b73408455197d6a0">foreach_method</a> (F f)</td></tr>
 <tr class="separator:adea69ae04c498740b73408455197d6a0 inherit pub_methods_classcrow_1_1_base_rule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a068f3cacedc95b632efb0ed1035c95ac inherit pub_methods_classcrow_1_1_base_rule" id="r_a068f3cacedc95b632efb0ed1035c95ac"><td class="memItemLeft" align="right" valign="top">
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>rule</b> ()</td></tr>
+<tr class="memitem:a068f3cacedc95b632efb0ed1035c95ac inherit pub_methods_classcrow_1_1_base_rule" id="r_a068f3cacedc95b632efb0ed1035c95ac"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrow_1_1_base_rule.html#a068f3cacedc95b632efb0ed1035c95ac">rule</a> ()</td></tr>
 <tr class="separator:a068f3cacedc95b632efb0ed1035c95ac inherit pub_methods_classcrow_1_1_base_rule"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structcrow_1_1_rule_parameter_traits"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structcrow_1_1_rule_parameter_traits')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structcrow_1_1_rule_parameter_traits.html">crow::RuleParameterTraits&lt; DynamicRule &gt;</a></td></tr>
-<tr class="memitem:a8d4fd0402125e6af06fb2855215c97d6 inherit pub_methods_structcrow_1_1_rule_parameter_traits" id="r_a8d4fd0402125e6af06fb2855215c97d6"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classcrow_1_1_web_socket_rule.html">WebSocketRule</a>&lt; <a class="el" href="classcrow_1_1_crow.html">App</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>websocket</b> (<a class="el" href="classcrow_1_1_crow.html">App</a> *app)</td></tr>
+<tr class="memitem:a8d4fd0402125e6af06fb2855215c97d6 inherit pub_methods_structcrow_1_1_rule_parameter_traits" id="r_a8d4fd0402125e6af06fb2855215c97d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcrow_1_1_web_socket_rule.html">WebSocketRule</a>&lt; <a class="el" href="namespacecrow.html#ab93b42929a9113b865d7daa241983126">App</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrow_1_1_rule_parameter_traits.html#a8d4fd0402125e6af06fb2855215c97d6">websocket</a> (<a class="el" href="namespacecrow.html#ab93b42929a9113b865d7daa241983126">App</a> *app)</td></tr>
 <tr class="separator:a8d4fd0402125e6af06fb2855215c97d6 inherit pub_methods_structcrow_1_1_rule_parameter_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96513932326ccac296224ba286248fb7 inherit pub_methods_structcrow_1_1_rule_parameter_traits" id="r_a96513932326ccac296224ba286248fb7"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classcrow_1_1_dynamic_rule.html">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (std::string name) noexcept</td></tr>
+<tr class="memitem:a96513932326ccac296224ba286248fb7 inherit pub_methods_structcrow_1_1_rule_parameter_traits" id="r_a96513932326ccac296224ba286248fb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrow_1_1_rule_parameter_traits.html#aa408e9880526bcb494f3600077a9cee2">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrow_1_1_rule_parameter_traits.html#a96513932326ccac296224ba286248fb7">name</a> (std::string name) noexcept</td></tr>
 <tr class="separator:a96513932326ccac296224ba286248fb7 inherit pub_methods_structcrow_1_1_rule_parameter_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72fa81da2752dff5a1c1e9c9f8c7ffe2 inherit pub_methods_structcrow_1_1_rule_parameter_traits" id="r_a72fa81da2752dff5a1c1e9c9f8c7ffe2"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classcrow_1_1_dynamic_rule.html">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>methods</b> (HTTPMethod method)</td></tr>
+<tr class="memitem:a72fa81da2752dff5a1c1e9c9f8c7ffe2 inherit pub_methods_structcrow_1_1_rule_parameter_traits" id="r_a72fa81da2752dff5a1c1e9c9f8c7ffe2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrow_1_1_rule_parameter_traits.html#aa408e9880526bcb494f3600077a9cee2">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrow_1_1_rule_parameter_traits.html#a72fa81da2752dff5a1c1e9c9f8c7ffe2">methods</a> (<a class="el" href="namespacecrow.html#afe3a72ef7c3edbf71d0bceacf02517c4">HTTPMethod</a> method)</td></tr>
 <tr class="separator:a72fa81da2752dff5a1c1e9c9f8c7ffe2 inherit pub_methods_structcrow_1_1_rule_parameter_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a326028833978cb970df9bd4e11af14b9 inherit pub_methods_structcrow_1_1_rule_parameter_traits" id="r_a326028833978cb970df9bd4e11af14b9"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classcrow_1_1_dynamic_rule.html">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>methods</b> (HTTPMethod method, MethodArgs... args_method)</td></tr>
+<tr class="memitem:a326028833978cb970df9bd4e11af14b9 inherit pub_methods_structcrow_1_1_rule_parameter_traits" id="r_a326028833978cb970df9bd4e11af14b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrow_1_1_rule_parameter_traits.html#aa408e9880526bcb494f3600077a9cee2">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrow_1_1_rule_parameter_traits.html#a326028833978cb970df9bd4e11af14b9">methods</a> (<a class="el" href="namespacecrow.html#afe3a72ef7c3edbf71d0bceacf02517c4">HTTPMethod</a> method, MethodArgs... args_method)</td></tr>
 <tr class="separator:a326028833978cb970df9bd4e11af14b9 inherit pub_methods_structcrow_1_1_rule_parameter_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d9e2e10a1736d3fe4b53b1ebf3b56dc inherit pub_methods_structcrow_1_1_rule_parameter_traits" id="r_a4d9e2e10a1736d3fe4b53b1ebf3b56dc"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classcrow_1_1_dynamic_rule.html">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>middlewares</b> ()</td></tr>
-<tr class="memdesc:a4d9e2e10a1736d3fe4b53b1ebf3b56dc inherit pub_methods_structcrow_1_1_rule_parameter_traits"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable local middleware for this handler. <br /></td></tr>
+<tr class="memitem:a4d9e2e10a1736d3fe4b53b1ebf3b56dc inherit pub_methods_structcrow_1_1_rule_parameter_traits" id="r_a4d9e2e10a1736d3fe4b53b1ebf3b56dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrow_1_1_rule_parameter_traits.html#aa408e9880526bcb494f3600077a9cee2">self_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrow_1_1_rule_parameter_traits.html#a4d9e2e10a1736d3fe4b53b1ebf3b56dc">middlewares</a> ()</td></tr>
+<tr class="memdesc:a4d9e2e10a1736d3fe4b53b1ebf3b56dc inherit pub_methods_structcrow_1_1_rule_parameter_traits"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable local middleware for this handler.  <br /></td></tr>
 <tr class="separator:a4d9e2e10a1736d3fe4b53b1ebf3b56dc inherit pub_methods_structcrow_1_1_rule_parameter_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:acd4dafc34261dc805c8effc99e18fe3e" id="r_acd4dafc34261dc805c8effc99e18fe3e"><td class="memTemplParams" colspan="2"><a id="acd4dafc34261dc805c8effc99e18fe3e" name="acd4dafc34261dc805c8effc99e18fe3e"></a>
-template&lt;typename Func , unsigned... Indices&gt; </td></tr>
-<tr class="memitem:acd4dafc34261dc805c8effc99e18fe3e"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="structcrow_1_1request.html">request</a> &amp;, <a class="el" href="structcrow_1_1response.html">response</a> &amp;, const routing_params &amp;)&#160;</td><td class="memTemplItemRight" valign="bottom"><b>wrap</b> )(Func f, black_magic::seq&lt; Indices... &gt;)</td></tr>
+<tr class="memitem:acd4dafc34261dc805c8effc99e18fe3e" id="r_acd4dafc34261dc805c8effc99e18fe3e"><td class="memTemplParams" colspan="2">template&lt;typename Func , unsigned... Indices&gt; </td></tr>
+<tr class="memitem:acd4dafc34261dc805c8effc99e18fe3e"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="structcrow_1_1request.html">request</a> &amp;, <a class="el" href="structcrow_1_1response.html">response</a> &amp;, const routing_params &amp;)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#acd4dafc34261dc805c8effc99e18fe3e">wrap</a> )(Func f, black_magic::seq&lt; Indices... &gt;)</td></tr>
 <tr class="separator:acd4dafc34261dc805c8effc99e18fe3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classcrow_1_1_base_rule"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classcrow_1_1_base_rule')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classcrow_1_1_base_rule.html">crow::BaseRule</a></td></tr>
-<tr class="memitem:a864205b350008d9c4d8092797acbe4e5 inherit pub_attribs_classcrow_1_1_base_rule" id="r_a864205b350008d9c4d8092797acbe4e5"><td class="memItemLeft" align="right" valign="top">
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>custom_templates_base</b></td></tr>
+<tr class="memitem:a864205b350008d9c4d8092797acbe4e5 inherit pub_attribs_classcrow_1_1_base_rule" id="r_a864205b350008d9c4d8092797acbe4e5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrow_1_1_base_rule.html#a864205b350008d9c4d8092797acbe4e5">custom_templates_base</a></td></tr>
 <tr class="separator:a864205b350008d9c4d8092797acbe4e5 inherit pub_attribs_classcrow_1_1_base_rule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a1674edfbdb21e42f117bb8e719398b8d" id="r_a1674edfbdb21e42f117bb8e719398b8d"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="structcrow_1_1request.html">request</a> &amp;, <a class="el" href="structcrow_1_1response.html">response</a> &amp;, const routing_params &amp;)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1674edfbdb21e42f117bb8e719398b8d">erased_handler_</a> )</td></tr>
+<tr class="separator:a1674edfbdb21e42f117bb8e719398b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_structcrow_1_1_rule_parameter_traits"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_structcrow_1_1_rule_parameter_traits')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="structcrow_1_1_rule_parameter_traits.html">crow::RuleParameterTraits&lt; DynamicRule &gt;</a></td></tr>
-<tr class="memitem:aa408e9880526bcb494f3600077a9cee2 inherit pub_types_structcrow_1_1_rule_parameter_traits" id="r_aa408e9880526bcb494f3600077a9cee2"><td class="memItemLeft" align="right" valign="top">
-using&#160;</td><td class="memItemRight" valign="bottom"><b>self_t</b></td></tr>
+<tr class="memitem:aa408e9880526bcb494f3600077a9cee2 inherit pub_types_structcrow_1_1_rule_parameter_traits" id="r_aa408e9880526bcb494f3600077a9cee2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrow_1_1_rule_parameter_traits.html#aa408e9880526bcb494f3600077a9cee2">self_t</a></td></tr>
 <tr class="separator:aa408e9880526bcb494f3600077a9cee2 inherit pub_types_structcrow_1_1_rule_parameter_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classcrow_1_1_base_rule"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classcrow_1_1_base_rule')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classcrow_1_1_base_rule.html">crow::BaseRule</a></td></tr>
-<tr class="memitem:a997e9942d597fe133df84c94558c1e13 inherit pro_attribs_classcrow_1_1_base_rule" id="r_a997e9942d597fe133df84c94558c1e13"><td class="memItemLeft" align="right" valign="top">
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>methods_</b> {1 &lt;&lt; static_cast&lt;int&gt;(HTTPMethod::Get)}</td></tr>
+<tr class="memitem:a997e9942d597fe133df84c94558c1e13 inherit pro_attribs_classcrow_1_1_base_rule" id="r_a997e9942d597fe133df84c94558c1e13"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrow_1_1_base_rule.html#a997e9942d597fe133df84c94558c1e13">methods_</a> {1 &lt;&lt; static_cast&lt;int&gt;(<a class="el" href="namespacecrow.html#afe3a72ef7c3edbf71d0bceacf02517c4ac55582518cba2c464f29f5bae1c68def">HTTPMethod::Get</a>)}</td></tr>
 <tr class="separator:a997e9942d597fe133df84c94558c1e13 inherit pro_attribs_classcrow_1_1_base_rule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39f73fef34a8ff67907d96ef9c92b35a inherit pro_attribs_classcrow_1_1_base_rule" id="r_a39f73fef34a8ff67907d96ef9c92b35a"><td class="memItemLeft" align="right" valign="top">
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>rule_</b></td></tr>
+<tr class="memitem:a39f73fef34a8ff67907d96ef9c92b35a inherit pro_attribs_classcrow_1_1_base_rule" id="r_a39f73fef34a8ff67907d96ef9c92b35a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrow_1_1_base_rule.html#a39f73fef34a8ff67907d96ef9c92b35a">rule_</a></td></tr>
 <tr class="separator:a39f73fef34a8ff67907d96ef9c92b35a inherit pro_attribs_classcrow_1_1_base_rule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34d579887fac170e179e9e69eac3d771 inherit pro_attribs_classcrow_1_1_base_rule" id="r_a34d579887fac170e179e9e69eac3d771"><td class="memItemLeft" align="right" valign="top">
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name_</b></td></tr>
+<tr class="memitem:a34d579887fac170e179e9e69eac3d771 inherit pro_attribs_classcrow_1_1_base_rule" id="r_a34d579887fac170e179e9e69eac3d771"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrow_1_1_base_rule.html#a34d579887fac170e179e9e69eac3d771">name_</a></td></tr>
 <tr class="separator:a34d579887fac170e179e9e69eac3d771 inherit pro_attribs_classcrow_1_1_base_rule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa08be2b793fe80d462f71c064a9949b8 inherit pro_attribs_classcrow_1_1_base_rule" id="r_aa08be2b793fe80d462f71c064a9949b8"><td class="memItemLeft" align="right" valign="top">
-std::unique_ptr&lt; <a class="el" href="classcrow_1_1_base_rule.html">BaseRule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>rule_to_upgrade_</b></td></tr>
+<tr class="memitem:aa08be2b793fe80d462f71c064a9949b8 inherit pro_attribs_classcrow_1_1_base_rule" id="r_aa08be2b793fe80d462f71c064a9949b8"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classcrow_1_1_base_rule.html">BaseRule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrow_1_1_base_rule.html#aa08be2b793fe80d462f71c064a9949b8">rule_to_upgrade_</a></td></tr>
 <tr class="separator:aa08be2b793fe80d462f71c064a9949b8 inherit pro_attribs_classcrow_1_1_base_rule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd5207b9a30813fcb344ae97bdcdeb72 inherit pro_attribs_classcrow_1_1_base_rule" id="r_acd5207b9a30813fcb344ae97bdcdeb72"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="structcrow_1_1detail_1_1middleware__indices.html">detail::middleware_indices</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mw_indices_</b></td></tr>
+<tr class="memitem:acd5207b9a30813fcb344ae97bdcdeb72 inherit pro_attribs_classcrow_1_1_base_rule" id="r_acd5207b9a30813fcb344ae97bdcdeb72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrow_1_1detail_1_1middleware__indices.html">detail::middleware_indices</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrow_1_1_base_rule.html#acd5207b9a30813fcb344ae97bdcdeb72">mw_indices_</a></td></tr>
 <tr class="separator:acd5207b9a30813fcb344ae97bdcdeb72 inherit pro_attribs_classcrow_1_1_base_rule"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A rule that can change its parameters during runtime. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae34a9eac492ec9ed8e7c7ef036afcfec" name="ae34a9eac492ec9ed8e7c7ef036afcfec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae34a9eac492ec9ed8e7c7ef036afcfec">&#9670;&#160;</a></span>DynamicRule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">crow::DynamicRule::DynamicRule </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>rule</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad15e58c75d76bb1d6120302ef2c36c58" name="ad15e58c75d76bb1d6120302ef2c36c58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad15e58c75d76bb1d6120302ef2c36c58">&#9670;&#160;</a></span>handle()</h2>
 
@@ -222,7 +234,65 @@ std::unique_ptr&lt; <a class="el" href="classcrow_1_1_base_rule.html">BaseRule</
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classcrow_1_1_base_rule.html">crow::BaseRule</a>.</p>
+<p>Implements <a class="el" href="classcrow_1_1_base_rule.html#a0bdeac0dadf0aba8ae19b579e1e615ab">crow::BaseRule</a>.</p>
+
+</div>
+</div>
+<a id="a482a85c52b9815f5e0715e0840ab7024" name="a482a85c52b9815f5e0715e0840ab7024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a482a85c52b9815f5e0715e0840ab7024">&#9670;&#160;</a></span>operator()() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Func &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void crow::DynamicRule::operator() </td>
+          <td>(</td>
+          <td class="paramtype">Func</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c18b9fad80fd47934051f41286a4a9e" name="a8c18b9fad80fd47934051f41286a4a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c18b9fad80fd47934051f41286a4a9e">&#9670;&#160;</a></span>operator()() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Func &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void crow::DynamicRule::operator() </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -249,7 +319,54 @@ std::unique_ptr&lt; <a class="el" href="classcrow_1_1_base_rule.html">BaseRule</
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classcrow_1_1_base_rule.html">crow::BaseRule</a>.</p>
+<p>Implements <a class="el" href="classcrow_1_1_base_rule.html#a895d85332340788206cee0b1555ac8c2">crow::BaseRule</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1674edfbdb21e42f117bb8e719398b8d" name="a1674edfbdb21e42f117bb8e719398b8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1674edfbdb21e42f117bb8e719398b8d">&#9670;&#160;</a></span>erased_handler_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(<a class="el" href="structcrow_1_1request.html">request</a>&amp;, <a class="el" href="structcrow_1_1response.html">response</a>&amp;, const routing_params&amp;) crow::DynamicRule::erased_handler_) </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd4dafc34261dc805c8effc99e18fe3e" name="acd4dafc34261dc805c8effc99e18fe3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd4dafc34261dc805c8effc99e18fe3e">&#9670;&#160;</a></span>wrap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Func , unsigned... Indices&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt; void(<a class="el" href="structcrow_1_1request.html">request</a> &amp;, <a class="el" href="structcrow_1_1response.html">response</a> &amp;, const routing_params &amp;) crow::DynamicRule::wrap) (Func f, black_magic::seq&lt; Indices... &gt;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
