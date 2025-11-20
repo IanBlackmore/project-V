@@ -27,6 +27,8 @@ URL: http://localhost:23500/
 ```bash
 Post /add_transaction/<double>/<string>/<string>
 ```
+<Money in/Money out>/<Transactions Details>/<Team>
+
 Example
 ```bash
 Post /add_transaction/-$4.50/burgur-bought/Menu-Team
