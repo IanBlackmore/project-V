@@ -7,4 +7,3 @@ make
 ./apiTests
 ./MoneyFormatterTests
 ./proj_v
-
