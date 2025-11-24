@@ -1,16 +1,17 @@
 FROM alpine:3.22.2
 EXPOSE 23500
+ENV TZ=America/Toronto \
+DEBIAN_FRONTEND=noninteractive
 # Update the package list and install necessary tools and libraries
-RUN apk update
-RUN apk add build-base 
-RUN apk add cmake 
-RUN apk add g++ 
-RUN apk add gcc 
-RUN apk add boost-dev 
-RUN apk add asio-dev 
-RUN apk add libstdc++ libc6-compat
-RUN apk add bash
-RUN apk add && rm -rf /var/lib/apt/lists/*
+RUN apk --no-cache update
+RUN apk --no-cache add build-base \
+cmake \
+g++ \
+gcc \
+boost-dev \
+asio-dev \
+libstdc++ libc6-compat \
+bash
 
 WORKDIR /app
 COPY app .
