@@ -16,7 +16,7 @@ bash
 WORKDIR /app
 COPY app .
 
-CMD ["./runCommands.sh"]
+CMD ["./build/proj_v"]
 
 
 #FROM ubuntu:latest
