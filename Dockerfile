@@ -15,9 +15,8 @@ bash
 
 WORKDIR /app
 COPY app .
-RUN chmod +x build/proj_v
 
-CMD ["./build/proj_v"]
+CMD ["./runCommands.sh"]
 
 
 #FROM ubuntu:latest
