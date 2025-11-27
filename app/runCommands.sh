@@ -6,4 +6,5 @@ cmake ..
 make
 ./apiTests
 ./MoneyFormatterTests
+./TransactionReporterTests
 ./proj_v

@@ -47,3 +47,14 @@ target_link_libraries(MoneyFormatterTests
                       ${Boost_SYSTEM_LIBRARY}
                       ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY}		      
                       )
+
+
+# TransactionReporter tests
+add_executable(TransactionReporterTests TransactionReporterTests.cpp)
+target_link_libraries(TransactionReporterTests Transaction TransactionReporter TransactionAPI MoneyFormatter)
+add_test(NAME TransactionReporterTests COMMAND TransactionReporterTests)
+target_link_libraries(TransactionReporterTests
+                      ${Boost_FILESYSTEM_LIBRARY}
+                      ${Boost_SYSTEM_LIBRARY}
+                      ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY}
+                      )
