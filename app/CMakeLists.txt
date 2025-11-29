@@ -29,7 +29,8 @@ target_link_libraries(proj_v ${Boost_LIBRARIES} Threads::Threads TransactionRepo
 target_link_libraries(proj_v ${Boost_LIBRARIES} Threads::Threads MoneyFormatter)
 
 # format for adding tests. formatting may be mangled from importing from another project
-add_executable(apiTests TransactionAPITests.cpp)
+add_executable(apiTests TransactionAPITests.cpp
+        TransactionTests.cpp)
 target_link_libraries(apiTests Transaction)
 target_link_libraries(apiTests TransactionAPI)
 add_test(NAME apiTests COMMAND apiTests)
